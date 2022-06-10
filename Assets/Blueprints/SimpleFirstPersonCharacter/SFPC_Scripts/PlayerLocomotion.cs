@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 /// <summary>
 /// Скрипт перемещения
@@ -16,6 +17,10 @@ public class PlayerLocomotion : MonoBehaviour
     private float terminalVelocity = -10.0f;
     [SerializeField, Range(0.1f, 5), Tooltip("Сила притяжения. g=1 - земная гравитация")] private float gravity = 1f;
 
+
+
+
+    private LocomotionType locomotionType;
     private CharacterController charController;
     private Vector3 moveVector;
     private float vertSpeed;
@@ -39,13 +44,27 @@ public class PlayerLocomotion : MonoBehaviour
         vertSpeed = minFall;
         charController = GetComponent<CharacterController>();
         fall = true;
+        locomotionType = LocomotionType.Default;
     }
     void Update()
     {
         if(opportunityToMove)
         {
-            Jump();
-            PlayerMove();
+            switch (locomotionType)
+            {
+                case LocomotionType.Default:
+                    Jump();
+                    PlayerMove();
+                    break;
+                case LocomotionType.Water:
+                    PlayerSwim();
+                    FallInTheWater();
+                    break;
+                default:
+                    Jump();
+                    PlayerMove();
+                    break;
+            }
         }
     }
 
@@ -151,7 +170,54 @@ public class PlayerLocomotion : MonoBehaviour
         moveVector *= Time.deltaTime;
         charController.Move(moveVector);
     }
+    private void PlayerSwim()
+    {
+        float deltaX = Input.GetAxis("Horizontal");
+        float deltaZ = Input.GetAxis("Vertical");
+        float deltaY = Input.GetAxis("UpDown");
 
+        if (deltaY > 0)
+            vertSpeed = 0;
+
+        moveVector = myTransform.forward * deltaZ + myTransform.right * deltaX;
+        moveVector.y = 0;
+        moveVector = moveVector.normalized * speed;
+        moveVector.y = deltaY * speed;
+        moveVector *= Time.deltaTime;
+        charController.Move(moveVector + Vector3.up * vertSpeed * Time.deltaTime);
+    }
+    private void FallInTheWater()
+    {
+        if (moveVector.magnitude <= 0.1f)
+        {
+            vertSpeed = SmoothChangeToTarget(vertSpeed, -1);
+        }
+        else
+        {
+            vertSpeed = SmoothChangeToTarget(vertSpeed, 0);
+        }
+    }
+
+    private float SmoothChangeToTarget(float value, float target)
+    {
+        if(Mathf.Abs(target - value) > Time.deltaTime * 3f)
+        {
+            if (value < target)
+            {
+                value += Time.deltaTime;
+            }
+            else
+            {
+                value -= Time.deltaTime;
+            }
+        }
+        else
+        {
+            value = target;
+        }
+
+        return value;
+    }
     private IEnumerator SmoothMoveToPointCoroutine(Transform point)
     {
         float t = 0;
@@ -176,6 +242,11 @@ public class PlayerLocomotion : MonoBehaviour
             transformFixator = other;
             myTransform.parent = other.transform;
         }
+        else if(other.CompareTag("Water"))
+        {
+            locomotionType = LocomotionType.Water;
+            vertSpeed = terminalVelocity/10;
+        }
     }
     private void OnTriggerExit(Collider other)
     {
@@ -183,5 +254,16 @@ public class PlayerLocomotion : MonoBehaviour
         {
             myTransform.parent = null;
         }
+        else if (other.CompareTag("Water"))
+        {
+            locomotionType = LocomotionType.Default;
+            vertSpeed = jumpForce;
+        }
     }
+}
+
+public enum LocomotionType
+{
+    Default,
+    Water
 }
