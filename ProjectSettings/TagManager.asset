@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Water
   - TransformFixator
+  - InteractiveObject
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - 
