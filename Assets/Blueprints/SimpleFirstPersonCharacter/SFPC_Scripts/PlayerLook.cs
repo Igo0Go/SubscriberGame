@@ -17,7 +17,6 @@ public class PlayerLook : MonoBehaviour
     [SerializeField, Tooltip("Ограничение угла камеры сверху"), Range(0, 90)] private float maximumVert = 45.0f;
 
     private float _rotationX = 0;
-    private bool opportunityToView;
     private const float multiplicator = 100;
 
     private void Start()
@@ -27,7 +26,7 @@ public class PlayerLook : MonoBehaviour
 
     void LateUpdate()
     {
-        if(opportunityToView)
+        if(GameTools.opportunityToView)
         {
             Rotate();
         }
@@ -41,24 +40,6 @@ public class PlayerLook : MonoBehaviour
         float rotationY = transform.localEulerAngles.y + delta;
         transform.localEulerAngles = new Vector3(0, rotationY, 0);
         cam.localEulerAngles = new Vector3(_rotationX, 0, 0);
-    }
-
-    /// <summary>
-    /// Задать видимость курсора
-    /// </summary>
-    /// <param name="value">Можно ли пользоваться курсором</param>
-    public void SetCursorVisible(bool value)
-    {
-        if(value)
-        {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-        }
-        else if(opportunityToView)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-        }
     }
 
     /// <summary>
@@ -104,7 +85,7 @@ public class PlayerLook : MonoBehaviour
     private IEnumerator SetOpportunityToViewAfterDelay(float delayTime, bool state)
     {
         yield return new WaitForSeconds(delayTime);
-        opportunityToView = state;
-        SetCursorVisible(!state);
+        GameTools.opportunityToView = state;
+        GameTools.SetCursorVisible(!state);
     }
 }

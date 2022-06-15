@@ -17,9 +17,6 @@ public class PlayerLocomotion : MonoBehaviour
     private float terminalVelocity = -10.0f;
     [SerializeField, Range(0.1f, 5), Tooltip("Сила притяжения. g=1 - земная гравитация")] private float gravity = 1f;
 
-
-
-
     private LocomotionType locomotionType;
     private CharacterController charController;
     private Vector3 moveVector;
@@ -46,7 +43,7 @@ public class PlayerLocomotion : MonoBehaviour
         fall = true;
         locomotionType = LocomotionType.Default;
     }
-    void Update()
+    private void Update()
     {
         if(opportunityToMove)
         {
@@ -73,10 +70,16 @@ public class PlayerLocomotion : MonoBehaviour
     /// <summary>
     /// Запретить игроку перемещаться
     /// </summary>
-    public void SetLocomotionOpportunity(bool value)
+    public void SetLocomotionOpportunityAndCharacterController(bool value)
     {
         opportunityToMove = charController.enabled = value;
     }
+
+    /// <summary>
+    /// Задать значение для блокировки перемещения
+    /// </summary>
+    /// <param name="opportunity">значение - возможность двигаться</param>
+    public void SetLocomotionOpportunity(bool opportunity) => opportunityToMove = opportunity;
 
     /// <summary>
     /// Плавно переместить игрока в точку (предварительно нужно заблокировать)
@@ -87,6 +90,14 @@ public class PlayerLocomotion : MonoBehaviour
         StartCoroutine(SmoothMoveToPointCoroutine(point));
     }
 
+    /// <summary>
+    /// Двигать игрока в каком-то направлении
+    /// </summary>
+    /// <param name="direction">направление движение</param>
+    public void SmoothMoveByDirection(Vector3 direction)
+    {
+        charController.Move(direction);
+    }
 
     /// <summary>
     /// Задаёт значение enabled для characterController (требуется для телепортации)
@@ -108,7 +119,7 @@ public class PlayerLocomotion : MonoBehaviour
     }
 
     /// <summary>
-    /// Быстрая телепортация (без необходимости блокировтаь)
+    /// Быстрая телепортация (без необходимости блокировать)
     /// </summary>
     /// <param name="point"></param>
     public void FastTeleportToPoint(Transform point)
@@ -265,5 +276,6 @@ public class PlayerLocomotion : MonoBehaviour
 public enum LocomotionType
 {
     Default,
-    Water
+    Water,
+    Empty
 }
