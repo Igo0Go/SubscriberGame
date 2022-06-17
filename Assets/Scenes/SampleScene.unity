@@ -1680,7 +1680,7 @@ MonoBehaviour:
   harponLength: 100
   ignoreMask:
     serializedVersion: 2
-    m_Bits: 12
+    m_Bits: 28
   playerLocomotion: {fileID: 1536138646}
 --- !u!120 &1064436313
 LineRenderer:
@@ -2149,7 +2149,7 @@ GameObject:
   - component: {fileID: 1270051454}
   - component: {fileID: 1270051453}
   - component: {fileID: 1270051452}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Water
   m_TagString: Water
   m_Icon: {fileID: 0}
