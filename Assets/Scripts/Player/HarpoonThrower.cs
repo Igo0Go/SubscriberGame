@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(LineRenderer))]
 public class HarpoonThrower : MonoBehaviour
@@ -20,6 +21,9 @@ public class HarpoonThrower : MonoBehaviour
     private LayerMask ignoreMask;
     [SerializeField]
     private PlayerLocomotion playerLocomotion;
+    [SerializeField]
+    private UnityEvent UseHarpoon;
+
 
     private bool drawLine;
     private float harpoonTime;
@@ -75,6 +79,7 @@ public class HarpoonThrower : MonoBehaviour
             oldPos = harpoon.position;
             shootInput = MoveHarpoon;
             drawLine = true;
+            UseHarpoon?.Invoke();
         }
     }
 
@@ -99,7 +104,6 @@ public class HarpoonThrower : MonoBehaviour
             shootInput = ReturnGarpoon;
         }
 
-
         if(Input.GetMouseButton(1))
         {
             ReturnGarpoon();
@@ -123,6 +127,7 @@ public class HarpoonThrower : MonoBehaviour
 
         if (Input.GetMouseButton(1))
         {
+            UseHarpoon?.Invoke();
             Vector3 direction = harpoon.position - playerLocomotion.transform.position;
 
             playerLocomotion.SmoothMoveByDirection(direction.normalized * harponMoveSpeed * Time.deltaTime);
@@ -156,6 +161,7 @@ public class HarpoonThrower : MonoBehaviour
 
     private void ReturnGarpoon()
     {
+        UseHarpoon?.Invoke();
         Vector3 Direction = harpoonPoint.position - harpoon.position;
 
         harpoon.position += Direction.normalized * harponMoveSpeed * 2 * Time.deltaTime;

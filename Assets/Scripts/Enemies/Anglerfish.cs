@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-
-[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(Collider))]
 public class Anglerfish : AliveController
 {
@@ -32,13 +31,21 @@ public class Anglerfish : AliveController
     private Transform myTransform;
     private Transform target;
     private Action curentBehaviour;
-    private Rigidbody rb;
+    private Animator anim;
 
     private void Awake()
     {
+        anim = GetComponent<Animator>();
         myTransform = transform;
         curentBehaviour = Sleep;
         GetNewBehaviour();
+        anim.SetBool("Sleep", false);
+        anim.SetBool("Attack", false);
+    }
+
+    private void Start()
+    {
+        FindObjectOfType<SoundOrigin>().SoundLaunched.AddListener(OnHearSound);
     }
 
     private void Update()
@@ -58,8 +65,12 @@ public class Anglerfish : AliveController
         currentWayPointIndex = UnityEngine.Random.Range(0, wayPoints.Count - 1);
         wayPoints.Add(bufer);
         target = wayPoints[currentWayPointIndex];
-        StartCoroutine(indicator.ChangeIndicatorState(IndicatorState.DefaultState));
+        if(isHunt == 0)
+        {
+            StartCoroutine(indicator.ChangeIndicatorState(IndicatorState.DefaultState));
+        }
         curentBehaviour = ToTargetSwim;
+        anim.SetBool("Sleep", false);
     }
 
     private void ToTargetSwim()
@@ -68,6 +79,13 @@ public class Anglerfish : AliveController
         {
             Vector3 direction = GetWayDirectionToTarget();
 
+            if(isHunt > 2 && direction.magnitude > targetThresholdDistance * 5)
+            {
+                isHunt--;
+                GetNewBehaviour();
+                return;
+            }
+
             if (direction.magnitude > targetThresholdDistance)
             {
                 myTransform.forward = direction.normalized;
@@ -75,9 +93,11 @@ public class Anglerfish : AliveController
             }
             else
             {
-                if (isHunt > 0)
+                if (isHunt > 2)
                 {
+                    StartCoroutine(indicator.ChangeIndicatorState(IndicatorState.Agressive));
                     StartCoroutine(AttackCoroutine());
+                    anim.SetBool("Attack", true);
                     curentBehaviour = Sleep;
                 }
                 else
@@ -90,19 +110,40 @@ public class Anglerfish : AliveController
 
     private void GetNewBehaviour()
     {
-        FindNewWayPoint();
+        isHunt--;
 
-        //isHunt--;
-        //if (UnityEngine.Random.Range(0, 10) == 0)
-        //{
-        //    StartCoroutine(StartMethodWithDelayCoroutine(30, GetNewBehaviour));
-        //    StartCoroutine(indicator.ChangeIndicatorState(IndicatorState.Sleep));
-        //    curentBehaviour = Sleep;
-        //}
-        //else
-        //{
-        //    FindNewWayPoint();
-        //}
+        if(isHunt > 0)
+        {
+            if (UnityEngine.Random.Range(0, 10) == 0)
+            {
+                StartCoroutine(StartMethodWithDelayCoroutine(30, GetNewBehaviour));
+                StartCoroutine(indicator.ChangeIndicatorState(IndicatorState.Sleep));
+                anim.SetBool("Sleep", true);
+                curentBehaviour = Sleep;
+            }
+            else
+            {
+                FindNewWayPoint();
+            }
+        }
+        else
+        {
+            FindNewWayPoint();
+        }
+    }
+
+    private void OnHearSound(Transform soundOrigin)
+    {
+        if (target != soundOrigin)
+        {
+            if(Vector3.Distance(myTransform.position, soundOrigin.position) < targetThresholdDistance * 3)
+            {
+                target = soundOrigin;
+                isHunt = 3;
+                StartCoroutine(indicator.ChangeIndicatorState(IndicatorState.Question));
+                curentBehaviour = ToTargetSwim;
+            }
+        }
     }
 
     private Vector3 GetWayDirectionToTarget()
@@ -130,28 +171,35 @@ public class Anglerfish : AliveController
         while (t < 1)
         {
             t += Time.deltaTime;
-            myTransform.position -= myTransform.forward * moveSpeed / 2 * Time.deltaTime;
+            myTransform.position -= myTransform.forward * moveSpeed * 2 * Time.deltaTime;
             yield return null;
         }
 
         t = 0;
 
+        yield return new WaitForSeconds(0.3f);
+
         while(true)
         {
-            myTransform.position += myTransform.forward * moveSpeed * Time.deltaTime;
+            myTransform.position += myTransform.forward * moveSpeed * 3 * Time.deltaTime;
             if (Physics.SphereCast(myTransform.position, 1f, myTransform.forward, out RaycastHit hit,
-                targetThresholdDistance, ~ignoreMask))
+                targetThresholdDistance / 2, ~ignoreMask))
             {
+                anim.SetBool("Attack", false);
                 break;
             }
+            yield return null;
         }
 
         while (t < 1)
         {
             t += Time.deltaTime;
-            myTransform.position -= myTransform.forward * moveSpeed / 2 * Time.deltaTime;
+            myTransform.position -= myTransform.forward * moveSpeed * 2 * Time.deltaTime;
             yield return null;
         }
+
+        StartCoroutine(indicator.ChangeIndicatorState(IndicatorState.Question));
+        GetNewBehaviour();
     }
 
     private IEnumerator StartMethodWithDelayCoroutine(float delay, Action method)

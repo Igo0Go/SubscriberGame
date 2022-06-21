@@ -17,6 +17,10 @@ public class PlayerLocomotion : MonoBehaviour
     private float terminalVelocity = -10.0f;
     [SerializeField, Range(0.1f, 5), Tooltip("Сила притяжения. g=1 - земная гравитация")] private float gravity = 1f;
 
+    [SerializeField]
+    private UnityEvent useSound;
+
+
     private LocomotionType locomotionType;
     private CharacterController charController;
     private Vector3 moveVector;
@@ -186,6 +190,12 @@ public class PlayerLocomotion : MonoBehaviour
         float deltaX = Input.GetAxis("Horizontal");
         float deltaZ = Input.GetAxis("Vertical");
         float deltaY = Input.GetAxis("UpDown");
+
+        if(Vector3.Magnitude(new Vector3(deltaX, deltaY, deltaZ)) > 0.3f)
+        {
+            useSound?.Invoke();
+        }
+
 
         if (deltaY > 0)
             vertSpeed = 0;

@@ -9,6 +9,7 @@ public class EnemyStateIndicator
     public Color questionColor = Color.yellow;
     public Color agressiveColor = Color.red;
     public Color sleepColor = Color.white;
+    public Renderer renderer;
 
     public IEnumerator ChangeIndicatorState(IndicatorState state)
     {
@@ -41,6 +42,7 @@ public class EnemyStateIndicator
             t += Time.deltaTime;
 
             indicatorLight.color = Color.Lerp(startColor, targetColor, t);
+            renderer.material.color = indicatorLight.color;
 
             yield return null;
         }
