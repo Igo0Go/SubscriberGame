@@ -24,6 +24,10 @@ public class HarpoonThrower : MonoBehaviour
     private PlayerLocomotion playerLocomotion;
     [SerializeField]
     private UnityEvent UseHarpoon;
+    [SerializeField]
+    private UnityEvent OnLaunchHarpoon;
+    [SerializeField]
+    private UnityEvent OnReturnHarpoon;
 
     [SerializeField]
     private Gradient defaultHarpoonColor;
@@ -99,6 +103,7 @@ public class HarpoonThrower : MonoBehaviour
             shootInput = MoveHarpoon;
             drawLine = true;
             UseHarpoon?.Invoke();
+            OnLaunchHarpoon?.Invoke();
         }
     }
 
@@ -214,6 +219,7 @@ public class HarpoonThrower : MonoBehaviour
             lineRenderer.SetPosition(0, harpoonPoint.position);
             lineRenderer.SetPosition(1, harpoonPoint.position);
             drawLine = false;
+            OnReturnHarpoon?.Invoke();
             shootInput = LaunchHarpoon;
         }
     }

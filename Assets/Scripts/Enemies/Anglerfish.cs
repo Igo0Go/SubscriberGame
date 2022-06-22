@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(Collider))]
@@ -25,6 +26,9 @@ public class Anglerfish : AliveController
     [SerializeField]
     [Min(0)]
     private float obstacleSensivity = 0.5f;
+
+    [SerializeField]
+    private UnityEvent onAttack;
 
     private int currentWayPointIndex;
     private int isHunt = 0;
@@ -158,6 +162,7 @@ public class Anglerfish : AliveController
         {
             if(Vector3.Distance(myTransform.position, soundOrigin.position) < targetThresholdDistance * 3)
             {
+                anim.SetBool("Sleep", false);
                 target = soundOrigin;
                 isHunt = 3;
                 StartCoroutine(indicator.ChangeIndicatorState(IndicatorState.Question));
@@ -201,6 +206,7 @@ public class Anglerfish : AliveController
     private IEnumerator AttackCoroutine()
     {
         float t = 0;
+
         while (t < 1)
         {
             t += Time.deltaTime;
@@ -223,7 +229,7 @@ public class Anglerfish : AliveController
             }
             yield return null;
         }
-
+        onAttack?.Invoke();
         while (t < 1)
         {
             t += Time.deltaTime;
