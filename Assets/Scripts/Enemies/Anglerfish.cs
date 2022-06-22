@@ -28,10 +28,24 @@ public class Anglerfish : AliveController
 
     private int currentWayPointIndex;
     private int isHunt = 0;
+    private bool shock = false;
     private Transform myTransform;
     private Transform target;
     private Action curentBehaviour;
     private Animator anim;
+
+    public override void GetDamage(int damage)
+    {
+        if(damage == 0)
+        {
+            StartCoroutine(ShockCoroutine(5));
+        }
+        else
+        {
+            base.GetDamage(damage);
+
+        }
+    }
 
     private void Awake()
     {
@@ -65,10 +79,15 @@ public class Anglerfish : AliveController
         currentWayPointIndex = UnityEngine.Random.Range(0, wayPoints.Count - 1);
         wayPoints.Add(bufer);
         target = wayPoints[currentWayPointIndex];
-        if(isHunt == 0)
+        if(isHunt <= 0)
         {
             StartCoroutine(indicator.ChangeIndicatorState(IndicatorState.DefaultState));
         }
+        else
+        {
+            StartCoroutine(indicator.ChangeIndicatorState(IndicatorState.Question));
+        }
+
         curentBehaviour = ToTargetSwim;
         anim.SetBool("Sleep", false);
     }
@@ -78,6 +97,9 @@ public class Anglerfish : AliveController
         if(target!= null)
         {
             Vector3 direction = GetWayDirectionToTarget();
+
+            if (direction == Vector3.zero)
+                return;
 
             if(isHunt > 2 && direction.magnitude > targetThresholdDistance * 5)
             {
@@ -110,16 +132,14 @@ public class Anglerfish : AliveController
 
     private void GetNewBehaviour()
     {
-        isHunt--;
+        if(isHunt > 0)
+            isHunt--;
 
         if(isHunt > 0)
         {
             if (UnityEngine.Random.Range(0, 10) == 0)
             {
-                StartCoroutine(StartMethodWithDelayCoroutine(30, GetNewBehaviour));
-                StartCoroutine(indicator.ChangeIndicatorState(IndicatorState.Sleep));
-                anim.SetBool("Sleep", true);
-                curentBehaviour = Sleep;
+                ToSleep(30);
             }
             else
             {
@@ -134,7 +154,7 @@ public class Anglerfish : AliveController
 
     private void OnHearSound(Transform soundOrigin)
     {
-        if (target != soundOrigin)
+        if (target != soundOrigin && !shock)
         {
             if(Vector3.Distance(myTransform.position, soundOrigin.position) < targetThresholdDistance * 3)
             {
@@ -144,6 +164,14 @@ public class Anglerfish : AliveController
                 curentBehaviour = ToTargetSwim;
             }
         }
+    }
+
+    private void ToSleep(float sleepTime)
+    {
+        StartCoroutine(StartMethodWithDelayCoroutine(sleepTime, GetNewBehaviour));
+        StartCoroutine(indicator.ChangeIndicatorState(IndicatorState.Sleep));
+        anim.SetBool("Sleep", true);
+        curentBehaviour = Sleep;
     }
 
     private Vector3 GetWayDirectionToTarget()
@@ -156,6 +184,11 @@ public class Anglerfish : AliveController
         {
             if(obstacles[i].transform != myTransform)
             {
+                //if(obstacles[i].TryGetComponent(out PlayerLocomotion player))
+                //{
+                //    OnHearSound(player.transform);
+                //}
+
                 bufer = myTransform.position - obstacles[i].transform.position;
 
                 direction += bufer.normalized * (1 / bufer.magnitude) * obstacleSensivity * Time.deltaTime;
@@ -206,5 +239,13 @@ public class Anglerfish : AliveController
     {
         yield return new WaitForSeconds(delay);
         method();
+    }
+
+    private IEnumerator ShockCoroutine(int shockTime)
+    {
+        shock = true;
+        ToSleep(shockTime);
+        yield return new WaitForSeconds(shockTime);
+        shock = false;
     }
 }

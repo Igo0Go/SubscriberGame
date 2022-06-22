@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.Events;
@@ -17,6 +16,8 @@ public class HarpoonThrower : MonoBehaviour
     private float harponMoveSpeed;
     [SerializeField, Min(100)]
     private float harponLength = 100;
+    [SerializeField, Min(1)]
+    private float electroRadius = 1;
     [SerializeField]
     private LayerMask ignoreMask;
     [SerializeField]
@@ -24,9 +25,26 @@ public class HarpoonThrower : MonoBehaviour
     [SerializeField]
     private UnityEvent UseHarpoon;
 
+    [SerializeField]
+    private Gradient defaultHarpoonColor;
+    [SerializeField]
+    private Gradient electroHarpoonColor;
+
+    private bool UseShock
+    { 
+        get
+        {
+            return _useShock;
+        }
+        set
+        {
+            _useShock = value;
+            lineRenderer.colorGradient = _useShock? electroHarpoonColor : defaultHarpoonColor;
+        }
+    }
+    private bool _useShock = false;
 
     private bool drawLine;
-    private float harpoonTime;
     private Vector3 oldPos;
     private LineRenderer lineRenderer;
 
@@ -36,10 +54,10 @@ public class HarpoonThrower : MonoBehaviour
     {
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.positionCount = 2;
+        UseShock = false;
         shootInput = LaunchHarpoon;
     }
 
-    // Update is called once per frame
     void Update()
     {
         shootInput?.Invoke();
@@ -65,7 +83,8 @@ public class HarpoonThrower : MonoBehaviour
         {
             Vector3 direction = playerCamera.transform.forward * harponLength;
 
-            if (Physics.Raycast(playerCamera.transform.position, direction.normalized, out RaycastHit hit))
+            if (Physics.Raycast(playerCamera.transform.position, direction.normalized, out RaycastHit hit, direction.magnitude,
+                ~ignoreMask))
             {
                 direction = (hit.point - harpoon.position).normalized;
             }
@@ -94,6 +113,7 @@ public class HarpoonThrower : MonoBehaviour
                 shootInput = UseHarpoonAsGrabTool;
                 return;
             }
+            harpoon.parent = hit.transform;
             shootInput = UseHarpoonAsPoint;
             return;
         }
@@ -108,10 +128,12 @@ public class HarpoonThrower : MonoBehaviour
         {
             ReturnGarpoon();
         }
-        else if(Input.GetMouseButton(0))
+        else if (Input.GetKey(KeyCode.Q))
         {
-            //пустить ток
+            ReturnGarpoon();
         }
+
+        UseElectroImput();
     }
 
     private void UseHarpoonAsPoint()
@@ -139,12 +161,19 @@ public class HarpoonThrower : MonoBehaviour
                 harpoon.position = harpoonPoint.position;
                 harpoon.forward = harpoonPoint.forward;
                 harpoon.parent = harpoonPoint;
+                harpoon.localScale = Vector3.one;
                 lineRenderer.SetPosition(0, harpoonPoint.position);
                 lineRenderer.SetPosition(1, harpoonPoint.position);
                 drawLine = false;
                 shootInput = LaunchHarpoon;
             }
         }
+        else if (Input.GetKey(KeyCode.Q))
+        {
+            ReturnGarpoon();
+        }
+
+        UseElectroImput();
     }
 
     private void UseHarpoonAsGrabTool()
@@ -153,9 +182,19 @@ public class HarpoonThrower : MonoBehaviour
         {
             ReturnGarpoon();
         }
-        if (Input.GetMouseButton(0))
+        else if (Input.GetKey(KeyCode.Q))
         {
-            //пустить ток
+            ReturnGarpoon();
+        }
+
+        UseElectroImput();
+    }
+
+    private void UseElectroImput()
+    {
+        if (Input.GetMouseButtonDown(0) && !UseShock)
+        {
+            StartCoroutine(ElectroCoroutine(2));
         }
     }
 
@@ -177,5 +216,21 @@ public class HarpoonThrower : MonoBehaviour
             drawLine = false;
             shootInput = LaunchHarpoon;
         }
+    }
+
+    private IEnumerator ElectroCoroutine(float delayTime)
+    {
+        UseShock = true;
+        var items = Physics.OverlapSphere(harpoon.position, electroRadius, ~ignoreMask);
+        foreach (var item in items)
+        {
+            if (item.TryGetComponent(out AliveController controller))
+            {
+                UseHarpoon?.Invoke();
+                controller.GetDamage(0);
+            }
+        }
+        yield return new WaitForSeconds(delayTime);
+        UseShock = false;
     }
 }
