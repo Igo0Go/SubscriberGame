@@ -8,31 +8,79 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Collider))]
 public class Anglerfish : AliveController
 {
+    [Header("Скорость")]
     [SerializeField]
     [Min(0)]
     private float moveSpeed = 1;
+
+    [Space(10)]
+    [Header("Дистанция")]
     [SerializeField]
     [Min(0)]
-    private float targetThresholdDistance;
+    private float targetThresholdDistance = 5;
     [SerializeField]
     [Min(0)]
-    private float obstacleThresholdDistance;
+    private float obstacleThresholdDistance = 5;
+    [SerializeField]
+    [Min(0)]
+    private float hearThresholdDistance = 3;
+    [SerializeField]
+    [Min(0)]
+    private float pursuitThresholdDistance = 10;
+
+    [Space(10)]
+    [Header("Время")]
+    [SerializeField]
+    [Min(0)]
+    private float sleepTime = 30f;
+    [SerializeField]
+    [Min(0)]
+    private float shockTime = 10f;
+
+    [Space(10)]
+    [Header("Вероятности и множетили")]
+    [SerializeField]
+    [Min(0)]
+    private float probabilityOfSleep = 0.1f;
+    [SerializeField]
+    [Min(0)]
+    private float obstacleSensivity = 0.5f;
+    [SerializeField]
+    [Min(0)]
+    private float attackSpeedMultiplicator = 1;
+    [SerializeField]
+    [Range(0.1f, 2)]
+    private float rotateSpeedMultiplicator = 1;
+
+    [Space(10)]
+    [Header("Другие настройки")]
     [SerializeField]
     private LayerMask ignoreMask;
     [SerializeField]
     private List<Transform> wayPoints;
     [SerializeField]
     private EnemyStateIndicator indicator;
-    [SerializeField]
-    [Min(0)]
-    private float obstacleSensivity = 0.5f;
 
+    [Space(10)]
+    [Header("События удильщика")]
     [SerializeField]
     private UnityEvent onAttack;
+
+    [Space(10)]
+    [Header("Отладка")]
+    [SerializeField]
+    private bool drawTargetThresholdDistance;
+    [SerializeField]
+    private bool drawObstacleThresholdDistance;
+    [SerializeField]
+    private bool drawHearThresholdDistance;
+    [SerializeField]
+    private bool drawPursuitThresholdDistance;
 
     private int currentWayPointIndex;
     private int isHunt = 0;
     private bool shock = false;
+    private float rotateT = 0;
     private Transform myTransform;
     private Transform target;
     private Action curentBehaviour;
@@ -42,7 +90,8 @@ public class Anglerfish : AliveController
     {
         if(damage == 0)
         {
-            StartCoroutine(ShockCoroutine(5));
+            StopAllCoroutines();
+            StartCoroutine(ShockCoroutine(shockTime));
         }
         else
         {
@@ -105,7 +154,7 @@ public class Anglerfish : AliveController
             if (direction == Vector3.zero)
                 return;
 
-            if(isHunt > 2 && direction.magnitude > targetThresholdDistance * 5)
+            if(isHunt > 2 && direction.magnitude > pursuitThresholdDistance)
             {
                 isHunt--;
                 GetNewBehaviour();
@@ -114,7 +163,8 @@ public class Anglerfish : AliveController
 
             if (direction.magnitude > targetThresholdDistance)
             {
-                myTransform.forward = direction.normalized;
+                rotateT = Mathf.Clamp01(rotateT + Time.deltaTime * rotateSpeedMultiplicator);
+                myTransform.forward = Vector3.Lerp(myTransform.forward, direction.normalized, rotateT);
                 myTransform.position += direction.normalized * moveSpeed * Time.deltaTime;
             }
             else
@@ -136,14 +186,15 @@ public class Anglerfish : AliveController
 
     private void GetNewBehaviour()
     {
+        rotateT = 0;
         if(isHunt > 0)
             isHunt--;
 
         if(isHunt > 0)
         {
-            if (UnityEngine.Random.Range(0, 10) == 0)
+            if (UnityEngine.Random.Range(0f, 1f) <= probabilityOfSleep)
             {
-                ToSleep(30);
+                ToSleep(sleepTime);
             }
             else
             {
@@ -160,7 +211,7 @@ public class Anglerfish : AliveController
     {
         if (target != soundOrigin && !shock)
         {
-            if(Vector3.Distance(myTransform.position, soundOrigin.position) < targetThresholdDistance * 3)
+            if(Vector3.Distance(myTransform.position, soundOrigin.position) < hearThresholdDistance)
             {
                 anim.SetBool("Sleep", false);
                 target = soundOrigin;
@@ -175,6 +226,7 @@ public class Anglerfish : AliveController
     {
         StartCoroutine(StartMethodWithDelayCoroutine(sleepTime, GetNewBehaviour));
         StartCoroutine(indicator.ChangeIndicatorState(IndicatorState.Sleep));
+        anim.SetBool("Attack", false);
         anim.SetBool("Sleep", true);
         curentBehaviour = Sleep;
     }
@@ -183,7 +235,7 @@ public class Anglerfish : AliveController
     {
         Vector3 direction = target.position - transform.position;
 
-        Collider[] obstacles = Physics.OverlapSphere(myTransform.position, obstacleThresholdDistance * 2, ~ignoreMask);
+        Collider[] obstacles = Physics.OverlapSphere(myTransform.position, obstacleThresholdDistance, ~ignoreMask);
         Vector3 bufer;
         for (int i = 0; i < obstacles.Length; i++)
         {
@@ -210,7 +262,7 @@ public class Anglerfish : AliveController
         while (t < 1)
         {
             t += Time.deltaTime;
-            myTransform.position -= myTransform.forward * moveSpeed * 2 * Time.deltaTime;
+            myTransform.position -= myTransform.forward * moveSpeed * Time.deltaTime;
             yield return null;
         }
 
@@ -220,7 +272,7 @@ public class Anglerfish : AliveController
 
         while(true)
         {
-            myTransform.position += myTransform.forward * moveSpeed * 3 * Time.deltaTime;
+            myTransform.position += myTransform.forward * moveSpeed * attackSpeedMultiplicator * Time.deltaTime;
             if (Physics.SphereCast(myTransform.position, 1f, myTransform.forward, out RaycastHit hit,
                 targetThresholdDistance / 2, ~ignoreMask))
             {
@@ -233,7 +285,7 @@ public class Anglerfish : AliveController
         while (t < 1)
         {
             t += Time.deltaTime;
-            myTransform.position -= myTransform.forward * moveSpeed * 2 * Time.deltaTime;
+            myTransform.position -= myTransform.forward * moveSpeed * Time.deltaTime;
             yield return null;
         }
 
@@ -247,11 +299,38 @@ public class Anglerfish : AliveController
         method();
     }
 
-    private IEnumerator ShockCoroutine(int shockTime)
+    private IEnumerator ShockCoroutine(float shockTime)
     {
         shock = true;
         ToSleep(shockTime);
         yield return new WaitForSeconds(shockTime);
         shock = false;
+        GetNewBehaviour();
     }
+
+#if UNITY_EDITOR
+    private void OnDrawGizmos()
+    {
+        if(drawHearThresholdDistance)
+        {
+            Gizmos.color = Color.magenta;
+            Gizmos.DrawWireSphere(transform.position, hearThresholdDistance);
+        }
+        if (drawObstacleThresholdDistance)
+        {
+            Gizmos.color = Color.white;
+            Gizmos.DrawWireSphere(transform.position, obstacleThresholdDistance);
+        }
+        if (drawPursuitThresholdDistance)
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawWireSphere(transform.position, pursuitThresholdDistance);
+        }
+        if (drawTargetThresholdDistance)
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawWireSphere(transform.position, targetThresholdDistance);
+        }
+    }
+#endif
 }
