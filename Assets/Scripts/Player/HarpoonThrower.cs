@@ -23,6 +23,9 @@ public class HarpoonThrower : MonoBehaviour
     [SerializeField]
     private PlayerLocomotion playerLocomotion;
     [SerializeField]
+    private GameObject electroParticles;
+
+    [SerializeField]
     private UnityEvent UseHarpoon;
     [SerializeField]
     private UnityEvent OnLaunchHarpoon;
@@ -228,6 +231,7 @@ public class HarpoonThrower : MonoBehaviour
     {
         UseShock = true;
         var items = Physics.OverlapSphere(harpoon.position, electroRadius, ~ignoreMask);
+        GameTools.levelSpawner.SpawnMeInPosition(harpoon.position, electroParticles);
         foreach (var item in items)
         {
             if (item.TryGetComponent(out AliveController controller))
