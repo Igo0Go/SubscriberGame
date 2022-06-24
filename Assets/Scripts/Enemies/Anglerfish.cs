@@ -91,12 +91,12 @@ public class Anglerfish : AliveController
         if(damage == 0)
         {
             StopAllCoroutines();
+            ToSleep(shockTime);
             StartCoroutine(ShockCoroutine(shockTime));
         }
         else
         {
             base.GetDamage(damage);
-
         }
     }
 
@@ -224,6 +224,7 @@ public class Anglerfish : AliveController
 
     private void ToSleep(float sleepTime)
     {
+        target = null;
         StartCoroutine(StartMethodWithDelayCoroutine(sleepTime, GetNewBehaviour));
         StartCoroutine(indicator.ChangeIndicatorState(IndicatorState.Sleep));
         anim.SetBool("Attack", false);
@@ -302,7 +303,6 @@ public class Anglerfish : AliveController
     private IEnumerator ShockCoroutine(float shockTime)
     {
         shock = true;
-        ToSleep(shockTime);
         yield return new WaitForSeconds(shockTime);
         shock = false;
         GetNewBehaviour();
