@@ -1,9 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public static class GameTools
 {
+    public static Spawner levelSpawner;
+
     public static bool opportunityToView;
 
     /// <summary>
