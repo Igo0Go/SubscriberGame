@@ -4,22 +4,21 @@ using UnityEngine;
 public class Submarine : MonoBehaviour
 {
     [SerializeField]
-    [Min(0.1f)]
-    private float engineForce = 1;
+    private Vector3 engineForce = Vector3.one;
 
-    [SerializeField, Range(0, 2)]
-    private float sensivity = 0.5f;
+    [SerializeField]
+    private Vector3 sensivity = Vector3.one;
+
+    [SerializeField]
+    [Range(0.01f,1)]
+    private float stabilizatorForce = 0.5f;
 
     private Rigidbody rb;
     private Vector3 moveVector;
     private Vector3 rotVector;
     private Transform myTransform;
 
-    private float rotationX;
-    private float rotationY;
-    private float rotationZ;
     private float t;
-
     private const float multiplicator = 100;
 
     void Start()
@@ -32,18 +31,39 @@ public class Submarine : MonoBehaviour
 
     void Update()
     {
-        ReadInput();
-    }
-    private void FixedUpdate()
-    {
         Move();
+        ReadRotateInput();
     }
     private void LateUpdate()
     {
         Rotate();
     }
 
-    private void ReadInput()
+    private void ReadRotateInput()
+    {
+        Vector3 bufer;
+
+        bufer.x = -Input.GetAxis("Mouse Y") * sensivity.x;
+        bufer.y = Input.GetAxis("Mouse X") * sensivity.y;
+        bufer.z = -Input.GetAxis("ZRot") * sensivity.z;
+
+        if (bufer == Vector3.zero)
+        {
+            if (t < 0)
+            {
+                t = 0;
+            }
+            t += Time.deltaTime * stabilizatorForce;
+            rotVector = Vector3.Lerp(rotVector, bufer, t);
+        }
+        else
+        {
+            t = -1;
+            rotVector = Vector3.Lerp(rotVector, bufer, 1 - stabilizatorForce);
+        }
+    }
+
+    private void Move()
     {
         float deltaX = Input.GetAxis("Horizontal");
         float deltaZ = Input.GetAxis("Vertical");
@@ -51,42 +71,14 @@ public class Submarine : MonoBehaviour
 
         moveVector = new Vector3(deltaX, deltaY, deltaZ);
 
-        rotationX = Input.GetAxis("Mouse Y") * sensivity;
-        rotationY = Input.GetAxis("Mouse X") * sensivity; 
-        rotationZ = Input.GetAxis("ZRot") * sensivity;
+        moveVector.Normalize();
+        moveVector = moveVector.Multiplicate(engineForce) * Time.deltaTime;
 
-        Vector3 bufer = new Vector3(-rotationX, rotationY, -rotationZ);
-
-        if(bufer == Vector3.zero)
-        {
-            if(t > 1)
-            {
-                t = 0;
-            }
-
-            rotVector = Vector3.Lerp(rotVector, Vector3.zero, t);
-
-            t += Time.deltaTime;
-        }
-        else
-        {
-            t = 2;
-            rotVector = bufer * multiplicator * Time.deltaTime;
-        }
-    }
-
-    private void Move()
-    {
-        moveVector = myTransform.right * moveVector.x +
-            myTransform.up * moveVector.y +
-            myTransform.forward * moveVector.z;
-        moveVector *= engineForce;
-
-        rb.AddForce(moveVector);
+        rb.AddRelativeForce(moveVector, ForceMode.Impulse);
     }
 
     private void Rotate()
     {
-        myTransform.rotation *= Quaternion.Euler(rotVector);
+        rb.MoveRotation(myTransform.rotation * Quaternion.Euler(rotVector));
     }
 }
