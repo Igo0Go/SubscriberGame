@@ -13,13 +13,16 @@ public class Submarine : MonoBehaviour
     [Range(0.01f,1)]
     private float stabilizatorForce = 0.5f;
 
+    [SerializeField]
+    private SoundOrigin soundOrigin;
+
+
     private Rigidbody rb;
     private Vector3 moveVector;
     private Vector3 rotVector;
     private Transform myTransform;
 
     private float t;
-    private const float multiplicator = 100;
 
     void Start()
     {
@@ -70,6 +73,11 @@ public class Submarine : MonoBehaviour
         float deltaY = Input.GetAxis("UpDown");
 
         moveVector = new Vector3(deltaX, deltaY, deltaZ);
+
+        if(moveVector.magnitude > 0.3f)
+        {
+            soundOrigin.StartSound();
+        }
 
         moveVector.Normalize();
         moveVector = moveVector.Multiplicate(engineForce) * Time.deltaTime;

@@ -207,14 +207,15 @@ public class Anglerfish : AliveController
         }
     }
 
-    private void OnHearSound(Transform soundOrigin)
+    private void OnHearSound(SoundOrigin soundOrigin)
     {
         if (target != soundOrigin && !shock)
         {
-            if(Vector3.Distance(myTransform.position, soundOrigin.position) < hearThresholdDistance)
+            if(Vector3.Distance(myTransform.position, soundOrigin.transform.position) < hearThresholdDistance 
+                + soundOrigin.soundDistance)
             {
                 anim.SetBool("Sleep", false);
-                target = soundOrigin;
+                target = soundOrigin.transform;
                 isHunt = 3;
                 StartCoroutine(indicator.ChangeIndicatorState(IndicatorState.Question));
                 curentBehaviour = ToTargetSwim;
