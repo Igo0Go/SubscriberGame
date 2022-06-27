@@ -11,12 +11,16 @@ public abstract class AliveController : MonoBehaviour
         }
         set
         {
-            int newHealth = _health - value;
-            OnHealthChanged.Invoke(newHealth, _health);
-            _health = newHealth;
-            if(_health <= 0)
+            if(_health > 0)
             {
-                Dead();
+                int newHealth = value;
+                OnHealthChanged.Invoke(newHealth, _health);
+                _health = newHealth;
+                if (_health <= 0)
+                {
+                    _health = 0;
+                    Dead();
+                }
             }
         }
     }

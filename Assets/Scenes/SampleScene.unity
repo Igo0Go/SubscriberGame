@@ -1791,7 +1791,7 @@ MonoBehaviour:
   ignoreMask:
     serializedVersion: 2
     m_Bits: 62
-  damage: 1
+  damage: 100
   OnShot:
     m_PersistentCalls:
       m_Calls:
@@ -7021,10 +7021,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 379517259}
     m_Modifications:
     - target: {fileID: 1911242945, guid: 7859b4feaafc1054e87398e06283f422, type: 3}
-      propertyPath: targetThresholdDistance
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911242945, guid: 7859b4feaafc1054e87398e06283f422, type: 3}
       propertyPath: wayPoints.Array.data[0]
       value: 
       objectReference: {fileID: 406344661}
@@ -7055,10 +7051,6 @@ PrefabInstance:
     - target: {fileID: 5809670318298395829, guid: 7859b4feaafc1054e87398e06283f422, type: 3}
       propertyPath: m_Name
       value: Anglerfish
-      objectReference: {fileID: 0}
-    - target: {fileID: 5809670318298395829, guid: 7859b4feaafc1054e87398e06283f422, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5809670318298395850, guid: 7859b4feaafc1054e87398e06283f422, type: 3}
       propertyPath: m_RootOrder
@@ -19252,7 +19244,7 @@ MonoBehaviour:
   ignoreMask:
     serializedVersion: 2
     m_Bits: 30
-  damage: 1
+  damage: 6
   OnShot:
     m_PersistentCalls:
       m_Calls:

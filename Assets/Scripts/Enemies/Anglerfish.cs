@@ -100,6 +100,13 @@ public class Anglerfish : AliveController
         }
     }
 
+    protected override void Dead()
+    {
+        curentBehaviour = Sleep;
+        anim.SetTrigger("Dead");
+        base.Dead();
+    }
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -118,6 +125,21 @@ public class Anglerfish : AliveController
     private void Update()
     {
         curentBehaviour();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Explosion"))
+        {
+            int distance = (int)Vector3.Distance(other.transform.position, myTransform.position);
+
+            if(distance == 0)
+            {
+                GetDamage(15);
+            }
+
+            GetDamage(15 / distance);
+        }
     }
 
     private void Sleep()
@@ -237,22 +259,22 @@ public class Anglerfish : AliveController
     {
         Vector3 direction = target.position - transform.position;
 
-        Collider[] obstacles = Physics.OverlapSphere(myTransform.position, obstacleThresholdDistance, ~ignoreMask);
-        Vector3 bufer;
-        for (int i = 0; i < obstacles.Length; i++)
-        {
-            if(obstacles[i].transform != myTransform)
-            {
-                //if(obstacles[i].TryGetComponent(out PlayerLocomotion player))
-                //{
-                //    OnHearSound(player.transform);
-                //}
+        //Collider[] obstacles = Physics.OverlapSphere(myTransform.position, obstacleThresholdDistance, ~ignoreMask);
+        //Vector3 bufer;
+        //for (int i = 0; i < obstacles.Length; i++)
+        //{
+        //    if(obstacles[i].transform != myTransform)
+        //    {
+        //        //if(obstacles[i].TryGetComponent(out PlayerLocomotion player))
+        //        //{
+        //        //    OnHearSound(player.transform);
+        //        //}
 
-                bufer = myTransform.position - obstacles[i].transform.position;
+        //        bufer = myTransform.position - obstacles[i].transform.position;
 
-                direction += bufer.normalized * (1 / bufer.magnitude) * obstacleSensivity * Time.deltaTime;
-            }
-        }
+        //        direction += bufer.normalized * (1 / bufer.magnitude) * obstacleSensivity * Time.deltaTime;
+        //    }
+        //}
 
         return direction;
     }
