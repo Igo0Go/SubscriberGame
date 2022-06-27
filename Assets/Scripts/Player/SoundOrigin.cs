@@ -3,19 +3,28 @@ using UnityEngine.Events;
 
 public class SoundOrigin : MonoBehaviour
 {
-    [HideInInspector]
-    public UnityEvent<Transform> SoundLaunched;
+    [Min(1)]
+    public float soundDistance = 5;
 
-    private Transform myTransform;
+    [HideInInspector]
+    public UnityEvent<SoundOrigin> SoundLaunched;
 
     private void Awake()
     {
-        myTransform = transform;
-        SoundLaunched = new UnityEvent<Transform>();
+        SoundLaunched = new UnityEvent<SoundOrigin>();
     }
 
     public void StartSound()
     {
-        SoundLaunched?.Invoke(myTransform);
+        SoundLaunched?.Invoke(this);
     }
+
+
+#if UNITY_EDITOR
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position, soundDistance);
+    }
+#endif
 }

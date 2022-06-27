@@ -8,11 +8,15 @@ public class AudioSystem : MonoBehaviour
     [SerializeField]
     private List<AudioMode> audioModes;
 
+    [SerializeField]
+    private AudioModeType startType = AudioModeType.Standard;
+
     private AudioSource[] sources;
 
     private void Start()
     {
         sources = FindObjectsOfType<AudioSource>();
+        SetModeForAllSources(FindAudioModeOfType(startType));
     }
 
     public void SetWaterAudioMode()
