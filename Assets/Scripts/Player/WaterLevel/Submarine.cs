@@ -1,7 +1,8 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
-public class Submarine : MonoBehaviour
+public class Submarine : AliveController
 {
     [SerializeField]
     private Vector3 engineForce = Vector3.one;
@@ -17,6 +18,10 @@ public class Submarine : MonoBehaviour
     private SoundOrigin soundOrigin;
 
 
+    [SerializeField]
+    private Slider shieldSlider;
+
+
     private Rigidbody rb;
     private Vector3 moveVector;
     private Vector3 rotVector;
@@ -26,12 +31,13 @@ public class Submarine : MonoBehaviour
 
     void Start()
     {
+
+        shieldSlider.maxValue = shieldSlider.value = Health;
         myTransform = transform;
         rb = GetComponent<Rigidbody>();
         GameTools.opportunityToView = true;
         GameTools.SetCursorVisible(false);
     }
-
     void Update()
     {
         Move();
@@ -40,6 +46,12 @@ public class Submarine : MonoBehaviour
     private void LateUpdate()
     {
         Rotate();
+    }
+
+    public override void GetDamage(int damage)
+    {
+        Health -= damage;
+        shieldSlider.value = Health;
     }
 
     private void ReadRotateInput()
