@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(Collider))]
-public class Anglerfish : AliveController
+public class Anglerfish : Enemy
 {
     [Header("Скорость")]
     [SerializeField]
@@ -83,7 +83,7 @@ public class Anglerfish : AliveController
     private float rotateT = 0;
     private Transform myTransform;
     private Transform target;
-    private Action curentBehaviour;
+
     private Animator anim;
 
     public override void GetDamage(int damage)
@@ -298,9 +298,18 @@ public class Anglerfish : AliveController
         {
             myTransform.position += myTransform.forward * moveSpeed * attackSpeedMultiplicator * Time.deltaTime;
             if (Physics.SphereCast(myTransform.position, 1f, myTransform.forward, out RaycastHit hit,
-                targetThresholdDistance / 2, ~ignoreMask))
+                targetThresholdDistance, ~ignoreMask))
             {
+                Debug.Log(hit.collider.gameObject.name);
+
+
                 anim.SetBool("Attack", false);
+
+                if(hit.collider.TryGetComponent(out AliveController alive))
+                {
+                    alive.GetDamage(damage);
+                }
+
                 break;
             }
             yield return null;

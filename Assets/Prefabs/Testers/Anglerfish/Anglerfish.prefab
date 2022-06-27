@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 320593483}
   - component: {fileID: 320593484}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AudioEffects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1631323047}
   - component: {fileID: 1631323048}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AnglerfishEffect_shot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,7 +187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2106127318}
   - component: {fileID: 2106127319}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AnglerfishEffect_loop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 5809670317831388957}
   - component: {fileID: 5809670317831388947}
   - component: {fileID: 5809670317831388946}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -396,7 +396,7 @@ GameObject:
   - component: {fileID: 5809670317853150945}
   - component: {fileID: 5809670317853150951}
   - component: {fileID: 5809670317853150950}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -477,7 +477,7 @@ GameObject:
   - component: {fileID: 5809670317858563023}
   - component: {fileID: 5809670317858563021}
   - component: {fileID: 5809670317858563020}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -558,7 +558,7 @@ GameObject:
   - component: {fileID: 5809670317954848002}
   - component: {fileID: 5809670317954848000}
   - component: {fileID: 5809670317954848003}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -637,7 +637,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5809670317969327279}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: UpJaw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -680,7 +680,7 @@ GameObject:
   - component: {fileID: 5809670318071586882}
   - component: {fileID: 5809670318071586880}
   - component: {fileID: 5809670318071586883}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -761,7 +761,7 @@ GameObject:
   - component: {fileID: 5809670318078605667}
   - component: {fileID: 5809670318078605665}
   - component: {fileID: 5809670318078605664}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -844,9 +844,9 @@ GameObject:
   - component: {fileID: 1911242947}
   - component: {fileID: 1911242948}
   - component: {fileID: 1911242945}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Anglerfish
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -894,9 +894,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 2.44
-  m_Height: 6.47
+  m_Height: 5.2265387
   m_Direction: 2
-  m_Center: {x: 0, y: -0.46, z: 0}
+  m_Center: {x: 0, y: -0.46000004, z: 0.6217303}
 --- !u!95 &1911242948
 Animator:
   serializedVersion: 3
@@ -936,8 +936,9 @@ MonoBehaviour:
   OnDead:
     m_PersistentCalls:
       m_Calls: []
+  damage: 15
   moveSpeed: 3
-  targetThresholdDistance: 8
+  targetThresholdDistance: 6
   obstacleThresholdDistance: 13
   hearThresholdDistance: 10
   pursuitThresholdDistance: 30
@@ -965,6 +966,7 @@ MonoBehaviour:
     agressiveColor: {r: 0.9622642, g: 0.104396604, b: 0.104396604, a: 1}
     sleepColor: {r: 0.25872195, g: 0.5489973, b: 0.9622642, a: 1}
     renderer: {fileID: 5809670319847466792}
+  attackTrigger: {fileID: 0}
   onAttack:
     m_PersistentCalls:
       m_Calls:
@@ -995,7 +997,7 @@ GameObject:
   - component: {fileID: 5809670318401953643}
   - component: {fileID: 5809670318401953641}
   - component: {fileID: 5809670318401953640}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1076,7 +1078,7 @@ GameObject:
   - component: {fileID: 5809670318599621866}
   - component: {fileID: 5809670318599621864}
   - component: {fileID: 5809670318599621867}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1155,7 +1157,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5809670318770769875}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DownJaw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1194,7 +1196,7 @@ GameObject:
   - component: {fileID: 5809670318809272935}
   - component: {fileID: 5809670318809272933}
   - component: {fileID: 5809670318809272932}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1275,7 +1277,7 @@ GameObject:
   - component: {fileID: 5809670318815895359}
   - component: {fileID: 5809670318815895357}
   - component: {fileID: 5809670318815895356}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1356,7 +1358,7 @@ GameObject:
   - component: {fileID: 5809670318836487412}
   - component: {fileID: 5809670318836487434}
   - component: {fileID: 5809670318836487413}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1437,7 +1439,7 @@ GameObject:
   - component: {fileID: 5809670318984211623}
   - component: {fileID: 5809670318984211621}
   - component: {fileID: 5809670318984211620}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1518,7 +1520,7 @@ GameObject:
   - component: {fileID: 5809670319008815823}
   - component: {fileID: 5809670319008815821}
   - component: {fileID: 5809670319008815820}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1599,7 +1601,7 @@ GameObject:
   - component: {fileID: 5809670319084931220}
   - component: {fileID: 5809670319084931242}
   - component: {fileID: 5809670319084931221}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1680,7 +1682,7 @@ GameObject:
   - component: {fileID: 5809670319365796886}
   - component: {fileID: 5809670319365796884}
   - component: {fileID: 5809670319365796887}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1759,7 +1761,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5809670319409949612}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1793,7 +1795,7 @@ GameObject:
   - component: {fileID: 5809670319438085120}
   - component: {fileID: 5809670319438085126}
   - component: {fileID: 5809670319438085121}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1874,7 +1876,7 @@ GameObject:
   - component: {fileID: 5809670319447671662}
   - component: {fileID: 5809670319447671660}
   - component: {fileID: 5809670319447671663}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1955,7 +1957,7 @@ GameObject:
   - component: {fileID: 5809670319487852827}
   - component: {fileID: 5809670319487852825}
   - component: {fileID: 5809670319487852824}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2036,7 +2038,7 @@ GameObject:
   - component: {fileID: 5809670319491809842}
   - component: {fileID: 5809670319491809840}
   - component: {fileID: 5809670319491809843}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2117,7 +2119,7 @@ GameObject:
   - component: {fileID: 5809670319520368465}
   - component: {fileID: 5809670319520368471}
   - component: {fileID: 5809670319520368470}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2199,7 +2201,7 @@ GameObject:
   - component: {fileID: 5809670319847466793}
   - component: {fileID: 5809670319847466792}
   - component: {fileID: 5809670319847466795}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2342,7 +2344,7 @@ GameObject:
   - component: {fileID: 5809670319856554300}
   - component: {fileID: 5809670319856554290}
   - component: {fileID: 5809670319856554301}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2421,7 +2423,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5675656631862509782}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2453,7 +2455,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2261990092467950031}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LightOrigin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2485,7 +2487,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5345814223401353228}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bufer
   m_TagString: Untagged
   m_Icon: {fileID: 0}

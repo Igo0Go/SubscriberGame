@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class RocketLauncher : MonoBehaviour
 {
@@ -29,6 +30,9 @@ public class RocketLauncher : MonoBehaviour
     private int damage = 1;
 
     [SerializeField]
+    private Text rocketCountText;
+
+    [SerializeField]
     private UnityEvent OnShot;
 
     private Bullet currentBullet;
@@ -36,6 +40,7 @@ public class RocketLauncher : MonoBehaviour
 
     void Start()
     {
+        rocketCountText.text = currentRocketCount.ToString();
         currentDelay = 0;
         Reload();
     }
@@ -46,6 +51,7 @@ public class RocketLauncher : MonoBehaviour
         {
             currentDelay = 0;
             currentRocketCount--;
+            rocketCountText.text = currentRocketCount.ToString();
             Vector3 direction = cameraTransfrom.position + cameraTransfrom.forward * 100;
             if (Physics.Raycast(cameraTransfrom.position, cameraTransfrom.forward, out RaycastHit hit, 100, ~ignoreMask))
                 direction = hit.point - shootPoint.position;
