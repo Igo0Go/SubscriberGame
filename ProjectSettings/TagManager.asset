@@ -6,9 +6,9 @@ TagManager:
   tags:
   - Water
   - TransformFixator
-  - InteractiveObject
   - Explosion
   - Enemy
+  - Interactable
   layers:
   - Default
   - TransparentFX
@@ -17,7 +17,7 @@ TagManager:
   - Water
   - UI
   - Enemies
-  - 
+  - Debug
   - 
   - 
   - 

@@ -115,7 +115,7 @@ public class HarpoonThrower : MonoBehaviour
         harpoon.position += harpoon.forward * harponMoveSpeed * Time.deltaTime;
         if(Physics.Linecast(oldPos, harpoon.position, out RaycastHit hit, ~ignoreMask))
         {
-            if(hit.collider.CompareTag("InteractiveObject"))
+            if(hit.collider.CompareTag("Interactable"))
             {
                 hit.transform.parent = harpoon;
                 shootInput = UseHarpoonAsGrabTool;
