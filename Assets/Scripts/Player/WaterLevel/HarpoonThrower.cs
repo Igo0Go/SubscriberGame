@@ -231,7 +231,7 @@ public class HarpoonThrower : MonoBehaviour
     {
         UseShock = true;
         var items = Physics.OverlapSphere(harpoon.position, electroRadius, ~ignoreMask);
-        GameTools.levelSpawner.SpawnMeInPosition(harpoon.position, electroParticles);
+        Instantiate(electroParticles, harpoon.position, Quaternion.identity);
         foreach (var item in items)
         {
             if (item.TryGetComponent(out AliveController controller))

@@ -2,8 +2,6 @@ using UnityEngine;
 
 public static class GameTools
 {
-    public static Spawner levelSpawner;
-
     public static bool opportunityToView;
 
     /// <summary>

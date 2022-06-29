@@ -18,14 +18,14 @@ public class HeadTrigerReactor : MonoBehaviour
         if (other.CompareTag("Water"))
         {
             OnEnterInTheWater?.Invoke();
-            GameTools.levelSpawner.SpawnMeInPosition(transform.position, waterSplashParticles);
+            Instantiate(waterSplashParticles, transform.position, Quaternion.identity);
         }
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Water"))
         {
-            GameTools.levelSpawner.SpawnMeInPosition(transform.position, waterSplashParticles);
+            Instantiate(waterSplashParticles, transform.position, Quaternion.identity);
             OnOutOfTheWater?.Invoke();
         }
     }
