@@ -26,7 +26,7 @@ public class PlayerLook : MonoBehaviour
 
     void LateUpdate()
     {
-        if(GameTools.opportunityToView)
+        if(GameTools.OpportunityToView)
         {
             Rotate();
         }
@@ -85,7 +85,7 @@ public class PlayerLook : MonoBehaviour
     private IEnumerator SetOpportunityToViewAfterDelay(float delayTime, bool state)
     {
         yield return new WaitForSeconds(delayTime);
-        GameTools.opportunityToView = state;
+        GameTools.OpportunityToView = state;
         GameTools.SetCursorVisible(!state);
     }
 }
