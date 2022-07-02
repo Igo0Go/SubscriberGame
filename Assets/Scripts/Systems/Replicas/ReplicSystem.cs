@@ -92,7 +92,7 @@ public class ReplicSystem : MonoBehaviour
             {
                 subsPanel.SetSubs(item.CharacterName, item.characterText, item.characterColor);
             }
-
+            item.onReplicaStart?.Invoke();
             yield return new WaitForSeconds(item.characterVoice.length);
             replicaPacks[0].mainList.RemoveAt(0);
             item.onReplicaEnd?.Invoke();
@@ -130,7 +130,7 @@ public class ReplicSystem : MonoBehaviour
             {
                 subsPanel.SetSubs(item.CharacterName, item.characterText, item.characterColor);
             }
-
+            item.onReplicaStart?.Invoke();
             yield return new WaitForSeconds(item.characterVoice.length);
             replicaPacks[0].skipList.RemoveAt(0);
             item.onReplicaEnd?.Invoke();
@@ -180,6 +180,7 @@ public class ReplicaItem
     [TextArea]
     public string characterText;
     public AudioClip characterVoice;
+    public UnityEvent onReplicaStart;
     public UnityEvent onReplicaEnd;
 }
 
