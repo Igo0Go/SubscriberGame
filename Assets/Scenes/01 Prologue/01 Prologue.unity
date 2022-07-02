@@ -2396,6 +2396,21 @@ MonoBehaviour:
       characterText: "\u041F\u0440\u0438\u0432\u0435\u0442, \u0438\u0433\u0440\u043E\u043A,
         \u044F \u0435\u0441\u0442\u044C \u0442\u0432\u043E\u0439 \u043F\u0440\u043E\u0432\u043E\u0434\u043D\u0438\u043A!"
       characterVoice: {fileID: 8300000, guid: 3a3047424e810d041a55ca8c42c53058, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 7300664510405855954}
+            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
+            m_MethodName: Talk_Joy
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       onReplicaEnd:
         m_PersistentCalls:
           m_Calls: []
@@ -2405,6 +2420,9 @@ MonoBehaviour:
         \u0432\u0435\u0441\u044C \u043F\u0443\u0442\u044C. \u041F\u0440\u0430\u0432\u0434\u0430
         \u0432\u0435\u0441\u0435\u043B\u043E?"
       characterVoice: {fileID: 8300000, guid: a69cd7b8f8e81f44fb77bd1144a6db35, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
       onReplicaEnd:
         m_PersistentCalls:
           m_Calls: []
@@ -2414,6 +2432,9 @@ MonoBehaviour:
         \u0438\u0433\u0440\u0430 \u0431\u044B\u043B \u0441\u0434\u0435\u043B\u0430\u043D
         \u0441\u043E\u0432\u0441\u0435\u043C \u043D\u0435\u0434\u0430\u0432\u043D\u043E!"
       characterVoice: {fileID: 8300000, guid: d0dd7d9ece27a4a4b9e90c84c957fc73, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
       onReplicaEnd:
         m_PersistentCalls:
           m_Calls: []
@@ -2422,6 +2443,21 @@ MonoBehaviour:
       characterText: "\u041E\u043D \u0431\u044B\u043B \u0441\u0434\u0435\u043B\u0430\u043D
         \u0432\u0441\u0435\u0433\u043E \u043E\u0434\u0438\u043D \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A!"
       characterVoice: {fileID: 8300000, guid: 5c056b71393a78440a9c9dffd2c29c5e, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 7300664510405855954}
+            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
+            m_MethodName: Talk_Yes
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       onReplicaEnd:
         m_PersistentCalls:
           m_Calls: []
@@ -2431,6 +2467,9 @@ MonoBehaviour:
         \u0432\u0440\u0435\u043C\u044F \u0434\u043B\u044F \u0441\u0432\u043E\u0439
         \u0440\u0430\u0431\u043E\u0442\u0430."
       characterVoice: {fileID: 8300000, guid: 242b2f73c3d7dc644a512b3d4c516564, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
       onReplicaEnd:
         m_PersistentCalls:
           m_Calls: []
@@ -2442,6 +2481,21 @@ MonoBehaviour:
         \u043B\u0438\u043D\u043E\u043B\u0435\u0443\u043C \u0438 \u0434\u0440\u0443\u0433\u043E\u0439
         \u0442\u0435\u043A\u0441\u0442\u0443\u0440\u0430!"
       characterVoice: {fileID: 8300000, guid: fc7fed38e322bc340b6cac1a47a3acf6, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 7300664510405855954}
+            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
+            m_MethodName: Talk_Sad
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       onReplicaEnd:
         m_PersistentCalls:
           m_Calls: []
@@ -2454,6 +2508,9 @@ MonoBehaviour:
         \u043C\u044B \u0442\u0430\u043A \u0438 \u043D\u0435 \u043C\u043E\u0447\u044C
         \u0438\u0441\u043F\u0440\u0430\u0432\u0438\u0442\u044C!"
       characterVoice: {fileID: 8300000, guid: c36315b2441a6594a8ef86e5def37a54, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
       onReplicaEnd:
         m_PersistentCalls:
           m_Calls: []
@@ -2463,6 +2520,9 @@ MonoBehaviour:
         \u0447\u0442\u043E \u043D\u0430 \u0442\u0432\u043E\u0439 \u043F\u0440\u043E\u0445\u043E\u0436\u0434\u0435\u043D\u0438\u0435
         \u044D\u0442\u043E\u0442 \u043E\u0448\u0438\u0431\u043A\u0430 \u0441\u043F\u0440\u044F\u0442\u0430\u0442\u044C\u0441\u044F!"
       characterVoice: {fileID: 8300000, guid: 2072ad6e5e3c7ac4aae892d65efa672c, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
       onReplicaEnd:
         m_PersistentCalls:
           m_Calls: []
@@ -2474,6 +2534,21 @@ MonoBehaviour:
         \u0434\u0438\u0437\u0430\u0439\u043D \u0438 \u043F\u043B\u043E\u0445\u043E\u0439
         \u043C\u043E\u0434\u0435\u043B\u044C\u043A\u0430."
       characterVoice: {fileID: 8300000, guid: 70f536ad6345d2647be0fedbaa3ba3db, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 7300664510405855954}
+            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
+            m_MethodName: Talk_Yes
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       onReplicaEnd:
         m_PersistentCalls:
           m_Calls: []
@@ -2484,6 +2559,9 @@ MonoBehaviour:
         \u0434\u043E\u0434\u0435\u043B\u0430\u0442\u044C \u044D\u0442\u043E\u0442
         \u0438\u0433\u0440\u0430!"
       characterVoice: {fileID: 8300000, guid: a60fda1bee71f28488be248476a84a08, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
       onReplicaEnd:
         m_PersistentCalls:
           m_Calls: []
@@ -2494,6 +2572,9 @@ MonoBehaviour:
         \u0447\u0442\u043E \u0431\u044B\u0442\u044C \u043F\u043E\u043C\u0435\u0447\u0435\u043D
         \u0430\u043B\u044C\u0444\u0430-\u0432\u0435\u0440\u0441\u0438\u044F."
       characterVoice: {fileID: 8300000, guid: e1b46ef814a90e94283ae3faa308fe85, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
       onReplicaEnd:
         m_PersistentCalls:
           m_Calls: []
@@ -2505,6 +2586,9 @@ MonoBehaviour:
         \u043F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u0430\u0432\u043E \u043D\u0430
         \u043D\u0435\u043F\u0440\u0438\u043A\u043E\u0441\u043D\u043E\u0432\u0435\u043D\u043D\u043E\u0441\u0442\u044C!"
       characterVoice: {fileID: 8300000, guid: ed59433f354a59c4baaee0c1fa2131a7, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
       onReplicaEnd:
         m_PersistentCalls:
           m_Calls: []
@@ -2514,6 +2598,21 @@ MonoBehaviour:
         \u0434\u0430\u0436\u0435 \u043D\u0435 \u043F\u044B\u0442\u0430\u0442\u044C\u0441\u044F
         \u0437\u043B\u0438\u0442\u044C\u0441\u044F!"
       characterVoice: {fileID: 8300000, guid: 8f6dccba336588946a239b0f1804189f, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 7300664510405855954}
+            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
+            m_MethodName: Talk_No
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       onReplicaEnd:
         m_PersistentCalls:
           m_Calls: []
@@ -2522,6 +2621,9 @@ MonoBehaviour:
       characterText: "\u0410 \u0441\u0435\u0439\u0447\u0430\u0441 \u043C\u044B \u043D\u0430\u0447\u0430\u0442\u044C
         \u0438\u0433\u0440\u0430!"
       characterVoice: {fileID: 8300000, guid: a797551d1dd832042891d7382cd72c0f, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
       onReplicaEnd:
         m_PersistentCalls:
           m_Calls: []
@@ -2531,6 +2633,21 @@ MonoBehaviour:
         \u0432\u0441\u0451 \u0435\u0449\u0451 \u043D\u0435 \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u0438\u0442\u044C
         \u0441\u0442\u0430\u0440\u0442\u043E\u0432\u044B\u0439 \u0432\u0438\u0434\u0435\u043E\u0440\u043E\u043B\u0438\u043A,"
       characterVoice: {fileID: 8300000, guid: 4a76bdbe5c809aa4fb115d463cbc8806, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 7300664510405855954}
+            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
+            m_MethodName: Talk_Decision
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       onReplicaEnd:
         m_PersistentCalls:
           m_Calls: []
@@ -2540,6 +2657,9 @@ MonoBehaviour:
         \u043F\u0440\u0438\u0442\u0432\u043E\u0440\u044F\u0442\u044C\u0441\u044F,
         \u0447\u0442\u043E \u0442\u044B \u0432\u0441\u0451 \u0437\u043D\u0430\u0442\u044C!"
       characterVoice: {fileID: 8300000, guid: 2f2c3d740ac3e7449af2192cd0bb1217, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
       onReplicaEnd:
         m_PersistentCalls:
           m_Calls: []
@@ -2550,13 +2670,31 @@ MonoBehaviour:
         \u0442\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u043E \u043F\u043E\u0434\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F
         \u043D\u0430 \u043A\u0430\u043D\u0430\u043B!"
       characterVoice: {fileID: 8300000, guid: 146ce1894f671ca4596e2f437ba053c2, type: 3}
-      onReplicaEnd:
+      onReplicaStart:
         m_PersistentCalls:
           m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 7300664510405855954}
+            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
+            m_MethodName: StopTalk
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
       characterText: "\u041F\u043E\u0435\u0445\u0430\u0442\u044C!"
       characterVoice: {fileID: 8300000, guid: 36c9e38227d10eb4795505091d380322, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
       onReplicaEnd:
         m_PersistentCalls:
           m_Calls:
@@ -2580,6 +2718,21 @@ MonoBehaviour:
         \u0437\u0430\u0442\u044B\u043A\u0430\u0442\u044C \u0442\u0432\u043E\u0439
         \u0441\u043E\u0431\u0435\u0441\u0435\u0434\u043D\u0438\u043A, \u043B\u0430\u0434\u043D\u043E?"
       characterVoice: {fileID: 8300000, guid: 43377c318f9a2b0409b0d1f71c004808, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 7300664510405855954}
+            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
+            m_MethodName: Talk_Decision
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       onReplicaEnd:
         m_PersistentCalls:
           m_Calls: []
@@ -2587,6 +2740,9 @@ MonoBehaviour:
       characterColor: {r: 1, g: 1, b: 1, a: 1}
       characterText: "\u041B\u0430\u0434\u043D\u043E!"
       characterVoice: {fileID: 8300000, guid: 20cfc61103529d2469dff8ace75d7d67, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
       onReplicaEnd:
         m_PersistentCalls:
           m_Calls: []
@@ -2595,12 +2751,27 @@ MonoBehaviour:
       characterText: "\u0421\u0435\u0439\u0447\u0430\u0441 \u043C\u044B \u043D\u0430\u0447\u0430\u0442\u044C
         \u0438\u0433\u0440\u0430. \u041F\u043E\u0435\u0445\u0430\u0442\u044C!"
       characterVoice: {fileID: 8300000, guid: 5a295376636b67044b9091d9f8e86ce6, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
       onReplicaEnd:
         m_PersistentCalls:
           m_Calls:
           - m_Target: {fileID: 2030077137}
             m_TargetAssemblyTypeName: TransformModule, Assembly-CSharp
             m_MethodName: ActivateModule
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 7300664510405855954}
+            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
+            m_MethodName: StopTalk
             m_Mode: 1
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
@@ -5009,8 +5180,16 @@ PrefabInstance:
       value: -0.00000013411041
       objectReference: {fileID: 0}
     - target: {fileID: 324907147090366657, guid: e585aacb0bf3bf247ad42e235f2dbc28, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 324907147090366657, guid: e585aacb0bf3bf247ad42e235f2dbc28, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 81.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 324907147090366657, guid: e585aacb0bf3bf247ad42e235f2dbc28, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 624569500690835416, guid: e585aacb0bf3bf247ad42e235f2dbc28, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5346,3 +5525,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7300664510405855954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7300664510405855952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46e95ea38c15dd2439e4228929e81ab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 7300664510405855953}
