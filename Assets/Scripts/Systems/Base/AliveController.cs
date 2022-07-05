@@ -33,7 +33,7 @@ public abstract class AliveController : MonoBehaviour
     private float deadDelay = 0;
 
     public UnityEvent<int, int> OnHealthChanged;
-    public UnityEvent<int, int> OnDead;
+    public UnityEvent OnDead;
 
     public virtual void GetDamage(int damage)
     {

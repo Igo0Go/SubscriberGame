@@ -9,7 +9,6 @@ public class HeadTrigerReactor : MonoBehaviour
     private UnityEvent OnEnterInTheWater;
     [SerializeField]
     private UnityEvent OnOutOfTheWater;
-
     [SerializeField]
     private GameObject waterSplashParticles;
 
