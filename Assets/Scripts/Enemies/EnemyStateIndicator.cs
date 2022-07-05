@@ -10,11 +10,17 @@ public class EnemyStateIndicator
     public Color agressiveColor = Color.red;
     public Color sleepColor = Color.white;
     public Renderer renderer;
+    [Min(0)]
+    public int targetMaterialNumber;
+    public string targetColorValue = "_EmissionColor";
 
     public IEnumerator ChangeIndicatorState(IndicatorState state)
     {
         Color targetColor;
         Color startColor = indicatorLight.color;
+
+        Material mat = renderer.materials[targetMaterialNumber];
+
 
         switch (state)
         {
@@ -42,7 +48,7 @@ public class EnemyStateIndicator
             t += Time.deltaTime;
 
             indicatorLight.color = Color.Lerp(startColor, targetColor, t);
-            renderer.material.color = indicatorLight.color;
+            mat.SetColor(targetColorValue, indicatorLight.color);
 
             yield return null;
         }

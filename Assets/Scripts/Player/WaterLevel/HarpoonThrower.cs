@@ -70,6 +70,19 @@ public class HarpoonThrower : MonoBehaviour
         shootInput?.Invoke();
     }
 
+    public void ReloadHarpoon()
+    {
+        harpoon.position = harpoonPoint.position;
+        harpoon.forward = harpoonPoint.forward;
+        harpoon.parent = harpoonPoint;
+        harpoon.localScale = Vector3.one;
+        lineRenderer.SetPosition(0, harpoonPoint.position);
+        lineRenderer.SetPosition(1, harpoonPoint.position);
+        drawLine = false;
+        OnReturnHarpoon?.Invoke();
+        shootInput = LaunchHarpoon;
+    }
+
     private void LateUpdate()
     {
         DrawLine();
@@ -216,14 +229,7 @@ public class HarpoonThrower : MonoBehaviour
 
         if (Direction.magnitude <= 1.5f)
         {
-            harpoon.position = harpoonPoint.position;
-            harpoon.forward = harpoonPoint.forward;
-            harpoon.parent = harpoonPoint;
-            lineRenderer.SetPosition(0, harpoonPoint.position);
-            lineRenderer.SetPosition(1, harpoonPoint.position);
-            drawLine = false;
-            OnReturnHarpoon?.Invoke();
-            shootInput = LaunchHarpoon;
+            ReloadHarpoon();
         }
     }
 

@@ -17,10 +17,10 @@ public class Anglerfish : Enemy
     [Header("Дистанция")]
     [SerializeField]
     [Min(0)]
-    private float targetThresholdDistance = 5;
+    private float targetThresholdDistance = 7;
     [SerializeField]
     [Min(0)]
-    private float obstacleThresholdDistance = 5;
+    private float stopAttackDistance = 4;
     [SerializeField]
     [Min(0)]
     private float hearThresholdDistance = 3;
@@ -42,9 +42,6 @@ public class Anglerfish : Enemy
     [SerializeField]
     [Min(0)]
     private float probabilityOfSleep = 0.1f;
-    [SerializeField]
-    [Min(0)]
-    private float obstacleSensivity = 0.5f;
     [SerializeField]
     [Min(0)]
     private float attackSpeedMultiplicator = 1;
@@ -71,7 +68,7 @@ public class Anglerfish : Enemy
     [SerializeField]
     private bool drawTargetThresholdDistance;
     [SerializeField]
-    private bool drawObstacleThresholdDistance;
+    private bool drawStopAttackDistance;
     [SerializeField]
     private bool drawHearThresholdDistance;
     [SerializeField]
@@ -144,7 +141,6 @@ public class Anglerfish : Enemy
 
     private void Sleep()
     {
-
     }
 
     private void FindNewWayPoint()
@@ -169,7 +165,7 @@ public class Anglerfish : Enemy
 
     private void ToTargetSwim()
     {
-        if(target!= null)
+        if (target!= null)
         {
             Vector3 direction = GetWayDirectionToTarget();
 
@@ -197,6 +193,7 @@ public class Anglerfish : Enemy
                     StartCoroutine(AttackCoroutine());
                     anim.SetBool("Attack", true);
                     curentBehaviour = Sleep;
+                    return;
                 }
                 else
                 {
@@ -231,7 +228,7 @@ public class Anglerfish : Enemy
 
     private void OnHearSound(SoundOrigin soundOrigin)
     {
-        if (target != soundOrigin && !shock)
+        if (isHunt < 3 && target != soundOrigin && !shock)
         {
             if(Vector3.Distance(myTransform.position, soundOrigin.transform.position) < hearThresholdDistance 
                 + soundOrigin.soundDistance)
@@ -292,28 +289,28 @@ public class Anglerfish : Enemy
 
         t = 0;
 
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(1f);
 
-        while(true)
+
+
+        while (true)
         {
             myTransform.position += myTransform.forward * moveSpeed * attackSpeedMultiplicator * Time.deltaTime;
-            if (Physics.SphereCast(myTransform.position, 1f, myTransform.forward, out RaycastHit hit,
-                targetThresholdDistance, ~ignoreMask))
+            if (Physics.SphereCast(myTransform.position, 3, myTransform.forward, out RaycastHit hit,
+                stopAttackDistance, ~ignoreMask))
             {
-                Debug.Log(hit.collider.gameObject.name);
-
-
-                anim.SetBool("Attack", false);
-
-                if(hit.collider.TryGetComponent(out AliveController alive))
+                if(hit.collider.CompareTag("Player"))
                 {
-                    alive.GetDamage(damage);
+                    if (hit.collider.TryGetComponent(out AliveController alive))
+                    {
+                        alive.GetDamage(damage);
+                    }
                 }
-
                 break;
             }
             yield return null;
         }
+        anim.SetBool("Attack", false);
         onAttack?.Invoke();
         while (t < 1)
         {
@@ -348,10 +345,10 @@ public class Anglerfish : Enemy
             Gizmos.color = Color.magenta;
             Gizmos.DrawWireSphere(transform.position, hearThresholdDistance);
         }
-        if (drawObstacleThresholdDistance)
+        if (drawStopAttackDistance)
         {
-            Gizmos.color = Color.white;
-            Gizmos.DrawWireSphere(transform.position, obstacleThresholdDistance);
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, stopAttackDistance);
         }
         if (drawPursuitThresholdDistance)
         {

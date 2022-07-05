@@ -134,6 +134,25 @@ public class PlayerLocomotion : MonoBehaviour
         charController.enabled = true;
     }
 
+    public void SetLocomotionType(LocomotionType locType)
+    {
+        locomotionType = locType;
+        switch (locomotionType)
+        {
+            case LocomotionType.Default:
+                vertSpeed = jumpForce;
+                break;
+            case LocomotionType.Water:
+                vertSpeed = terminalVelocity / 10;
+                break;
+            case LocomotionType.Empty:
+                break;
+            default:
+                vertSpeed = jumpForce;
+                break;
+        }
+    }
+
     #endregion
 
     private void Jump()
@@ -265,8 +284,7 @@ public class PlayerLocomotion : MonoBehaviour
         }
         else if(other.CompareTag("Water"))
         {
-            locomotionType = LocomotionType.Water;
-            vertSpeed = terminalVelocity/10;
+            SetLocomotionType(LocomotionType.Water);
         }
     }
     private void OnTriggerExit(Collider other)
@@ -277,8 +295,7 @@ public class PlayerLocomotion : MonoBehaviour
         }
         else if (other.CompareTag("Water"))
         {
-            locomotionType = LocomotionType.Default;
-            vertSpeed = jumpForce;
+            SetLocomotionType(LocomotionType.Default);
         }
     }
 }
