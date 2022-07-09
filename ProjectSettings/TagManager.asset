@@ -9,6 +9,7 @@ TagManager:
   - Explosion
   - Enemy
   - Interactable
+  - Air
   layers:
   - Default
   - TransparentFX
