@@ -11,21 +11,36 @@ public class HeadTrigerReactor : MonoBehaviour
     private UnityEvent OnOutOfTheWater;
     [SerializeField]
     private GameObject waterSplashParticles;
+    [SerializeField]
+    private PlayerLocomotion playerLocomotion;
+
+    private int airValue;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Water"))
+        if (other.CompareTag("Air"))
         {
-            OnEnterInTheWater?.Invoke();
-            Instantiate(waterSplashParticles, transform.position, Quaternion.identity);
+            if(airValue == 0)
+            {
+                Instantiate(waterSplashParticles, transform.position, Quaternion.identity);
+                playerLocomotion.SetLocomotionType(LocomotionType.Default);
+                OnOutOfTheWater?.Invoke();
+            }
+            airValue++;
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Water"))
+        if (other.CompareTag("Air"))
         {
-            Instantiate(waterSplashParticles, transform.position, Quaternion.identity);
-            OnOutOfTheWater?.Invoke();
+            airValue--;
+            if(airValue <= 0)
+            {
+                airValue = 0;
+                OnEnterInTheWater?.Invoke();
+                playerLocomotion.SetLocomotionType(LocomotionType.Water);
+                Instantiate(waterSplashParticles, transform.position, Quaternion.identity);
+            }
         }
     }
 }

@@ -282,20 +282,12 @@ public class PlayerLocomotion : MonoBehaviour
             transformFixator = other;
             myTransform.parent = other.transform;
         }
-        else if(other.CompareTag("Water"))
-        {
-            SetLocomotionType(LocomotionType.Water);
-        }
     }
     private void OnTriggerExit(Collider other)
     {
         if(other == transformFixator)
         {
             myTransform.parent = null;
-        }
-        else if (other.CompareTag("Water"))
-        {
-            SetLocomotionType(LocomotionType.Default);
         }
     }
 }
