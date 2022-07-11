@@ -24,6 +24,8 @@ public class HarpoonThrower : MonoBehaviour
     private PlayerLocomotion playerLocomotion;
     [SerializeField]
     private GameObject electroParticles;
+    [SerializeField]
+    private Transform winch;
 
     [SerializeField]
     private UnityEvent UseHarpoon;
@@ -52,6 +54,7 @@ public class HarpoonThrower : MonoBehaviour
     private bool _useShock = false;
 
     private bool drawLine;
+    private Animator anim;
     private Vector3 oldPos;
     private LineRenderer lineRenderer;
 
@@ -59,10 +62,12 @@ public class HarpoonThrower : MonoBehaviour
 
     void Start()
     {
+        anim = GetComponent<Animator>();
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.positionCount = 2;
         UseShock = false;
         shootInput = LaunchHarpoon;
+        anim.SetBool("IsReady", true);
     }
 
     void Update()
@@ -72,6 +77,7 @@ public class HarpoonThrower : MonoBehaviour
 
     public void ReloadHarpoon()
     {
+        anim.SetBool("IsUsed", false);
         harpoon.position = harpoonPoint.position;
         harpoon.forward = harpoonPoint.forward;
         harpoon.parent = harpoonPoint;
@@ -118,6 +124,7 @@ public class HarpoonThrower : MonoBehaviour
             oldPos = harpoon.position;
             shootInput = MoveHarpoon;
             drawLine = true;
+            anim.SetBool("IsUsed", true);
             UseHarpoon?.Invoke();
             OnLaunchHarpoon?.Invoke();
         }
@@ -126,6 +133,7 @@ public class HarpoonThrower : MonoBehaviour
     private void MoveHarpoon()
     {
         harpoon.position += harpoon.forward * harponMoveSpeed * Time.deltaTime;
+        winch.Rotate(Vector3.right, 10 * harponMoveSpeed, Space.Self);
         if(Physics.Linecast(oldPos, harpoon.position, out RaycastHit hit, ~ignoreMask))
         {
             if(hit.collider.CompareTag("Interactable"))
@@ -175,10 +183,12 @@ public class HarpoonThrower : MonoBehaviour
 
             playerLocomotion.SmoothMoveByDirection(direction.normalized * harponMoveSpeed * Time.deltaTime);
 
-            if(direction.magnitude <= 1.5f)
+            winch.Rotate(Vector3.right, -10 * harponMoveSpeed, Space.Self);
+
+            if (direction.magnitude <= 1.5f)
             {
                 playerLocomotion.SetLocomotionOpportunityAndCharacterController(true);
-
+                anim.SetBool("IsUsed", false);
                 harpoon.position = harpoonPoint.position;
                 harpoon.forward = harpoonPoint.forward;
                 harpoon.parent = harpoonPoint;
@@ -223,7 +233,7 @@ public class HarpoonThrower : MonoBehaviour
     {
         UseHarpoon?.Invoke();
         Vector3 Direction = harpoonPoint.position - harpoon.position;
-
+        winch.Rotate(Vector3.right, -10 * harponMoveSpeed, Space.Self);
         harpoon.position += Direction.normalized * harponMoveSpeed * 2 * Time.deltaTime;
         harpoon.forward = -Direction.normalized;
 
