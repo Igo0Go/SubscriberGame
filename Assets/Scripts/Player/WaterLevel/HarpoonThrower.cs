@@ -132,7 +132,7 @@ public class HarpoonThrower : MonoBehaviour
 
     private void MoveHarpoon()
     {
-        harpoon.position += harpoon.forward * harponMoveSpeed * Time.deltaTime;
+        harpoon.position += harponMoveSpeed * Time.deltaTime * harpoon.forward;
         winch.Rotate(Vector3.right, 10 * harponMoveSpeed, Space.Self);
         if(Physics.Linecast(oldPos, harpoon.position, out RaycastHit hit, ~ignoreMask))
         {
@@ -181,7 +181,7 @@ public class HarpoonThrower : MonoBehaviour
             UseHarpoon?.Invoke();
             Vector3 direction = harpoon.position - playerLocomotion.transform.position;
 
-            playerLocomotion.SmoothMoveByDirection(direction.normalized * harponMoveSpeed * Time.deltaTime);
+            playerLocomotion.SmoothMoveByDirection(harponMoveSpeed * Time.deltaTime * direction.normalized);
 
             winch.Rotate(Vector3.right, -10 * harponMoveSpeed, Space.Self);
 
@@ -234,7 +234,7 @@ public class HarpoonThrower : MonoBehaviour
         UseHarpoon?.Invoke();
         Vector3 Direction = harpoonPoint.position - harpoon.position;
         winch.Rotate(Vector3.right, -10 * harponMoveSpeed, Space.Self);
-        harpoon.position += Direction.normalized * harponMoveSpeed * 2 * Time.deltaTime;
+        harpoon.position += 2 * harponMoveSpeed * Time.deltaTime * Direction.normalized;
         harpoon.forward = -Direction.normalized;
 
         if (Direction.magnitude <= 1.5f)

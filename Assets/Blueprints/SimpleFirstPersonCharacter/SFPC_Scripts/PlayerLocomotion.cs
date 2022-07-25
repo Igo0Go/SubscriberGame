@@ -28,7 +28,7 @@ public class PlayerLocomotion : MonoBehaviour
     private bool fall;
     private float fallTimer;
     private bool opportunityToMove;
-    private float minFall = -1.5f;
+    private readonly float minFall = -1.5f;
 
     /// <summary>
     /// Этот коэффициент используется, чтобы добиться ощущения "правильной" гравитации при gravity = 1.
@@ -118,8 +118,7 @@ public class PlayerLocomotion : MonoBehaviour
     /// <param name="point">Целевое положение</param>
     public void TeleportToPoint(Transform point)
     {
-        myTransform.position = point.position;
-        myTransform.rotation = point.rotation;
+        myTransform.SetPositionAndRotation(point.position, point.rotation);
     }
 
     /// <summary>
@@ -129,8 +128,7 @@ public class PlayerLocomotion : MonoBehaviour
     public void FastTeleportToPoint(Transform point)
     {
         charController.enabled = false;
-        myTransform.position = point.position;
-        myTransform.rotation = point.rotation;
+        myTransform.SetPositionAndRotation(point.position, point.rotation);
         charController.enabled = true;
     }
 
@@ -224,7 +222,7 @@ public class PlayerLocomotion : MonoBehaviour
         moveVector = moveVector.normalized * speed;
         moveVector.y = deltaY * speed;
         moveVector *= Time.deltaTime;
-        charController.Move(moveVector + Vector3.up * vertSpeed * Time.deltaTime);
+        charController.Move(moveVector + Time.deltaTime * vertSpeed * Vector3.up);
     }
     private void FallInTheWater()
     {
@@ -267,12 +265,10 @@ public class PlayerLocomotion : MonoBehaviour
         while (t < 1)
         {
             t += Time.deltaTime * 2;
-            transform.position = Vector3.Lerp(startPos, point.position, t);
-            transform.rotation = Quaternion.Lerp(startRot, point.rotation, t);
+            transform.SetPositionAndRotation(Vector3.Lerp(startPos, point.position, t), Quaternion.Lerp(startRot, point.rotation, t));
             yield return null;
         }
-        transform.position = point.position;
-        transform.rotation = point.rotation;
+        transform.SetPositionAndRotation(point.position, point.rotation);
     }
 
     private void OnTriggerEnter(Collider other)

@@ -73,14 +73,12 @@ public class PlayerLook : MonoBehaviour
 
             t += Time.deltaTime;
 
-            cam.position = Vector3.Lerp(startPos, target.position, t);
-            cam.rotation = Quaternion.Lerp(startRot, target.rotation, t);
+            cam.SetPositionAndRotation(Vector3.Lerp(startPos, target.position, t), Quaternion.Lerp(startRot, target.rotation, t));
         }
 
         yield return null;
 
-        cam.position = target.position;
-        cam.rotation = target.rotation;
+        cam.SetPositionAndRotation(target.position, target.rotation);
     }
     private IEnumerator SetOpportunityToViewAfterDelay(float delayTime, bool state)
     {
