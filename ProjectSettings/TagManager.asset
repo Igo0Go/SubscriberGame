@@ -10,6 +10,7 @@ TagManager:
   - Interactable
   - Air
   - Water
+  - DeadZone
   layers:
   - Default
   - TransparentFX

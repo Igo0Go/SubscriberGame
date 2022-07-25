@@ -72,6 +72,7 @@ public class ChatSystem : MonoBehaviour
 [System.Serializable]
 public class ChatMessageInfo
 {
+    public string authorName;
     public string messageText;
     public Color authorColor;
 }

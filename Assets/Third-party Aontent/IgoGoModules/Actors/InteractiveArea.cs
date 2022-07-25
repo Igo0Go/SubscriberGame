@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 /// <summary>
 /// Зона, при входе в которую LogicModuleReactor будет запускать импульс
@@ -22,14 +23,7 @@ public class InteractiveArea : LogicActor
     [ContextMenu("Активировать модуль")]
     public override void ActivateModule()
     {
-        ActivateAllNextModules();
-        used = !used;
-        if (once)
-        {
-            DeleteMeFromActors();
-            Destroy(gameObject, Time.deltaTime * 2);
-//            gameObject.SetActive(false);
-        }
+        StartCoroutine(ActivateAll());
     }
 
     public override void ReturnToDefaultState()
@@ -37,7 +31,20 @@ public class InteractiveArea : LogicActor
         used = false;
         foreach (var item in nextModules)
         {
-            item?.ReturnToDefaultState();
+            item.ReturnToDefaultState();
+        }
+    }
+
+    private IEnumerator ActivateAll()
+    {
+        ActivateAllNextModules();
+        used = !used;
+        yield return null;
+
+        if (once)
+        {
+            DeleteMeFromActors();
+            gameObject.SetActive(false);
         }
     }
 

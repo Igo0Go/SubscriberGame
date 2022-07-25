@@ -76,7 +76,7 @@ public class TransformModule : LogicModule
     {
         if (activate)
         {
-            time = time + (direction * Time.deltaTime / duration);
+            time += (direction * Time.deltaTime / duration);
             switch (loopType)
             {
                 case LoopType.Once:
@@ -121,26 +121,15 @@ public class TransformModule : LogicModule
         }
     }
 
-    private void OnDrawGizmos()
-    {
-        if(debug)
-        {
-            Gizmos.color = Color.cyan;
-            Vector3 targetPos = transform.position + transform.forward * target.z + transform.right * target.x + transform.up * target.y;
-            Gizmos.DrawWireCube(targetPos, transform.localScale);
-            Gizmos.DrawLine(transform.position, targetPos);
-        }
-    }
-
     private IEnumerator ReturnToDefaultStateCoroutine()
     {
         activate = false;
         direction = -1;
-        while(time > 1)
+        while (time > 1)
         {
             time--;
         }
-        while(time >= 0)
+        while (time >= 0)
         {
             time += direction * Time.deltaTime / duration;
             position = Mathf.Clamp01(time);
@@ -150,5 +139,94 @@ public class TransformModule : LogicModule
         position = time = 0;
         direction = 1;
         activate = false;
+    }
+
+    private void OnDrawGizmos()
+    {
+        if(debug)
+        {
+            GizmosExtention.DrawWireCubeByTransformWithOffset(transform, target);
+        }
+    }
+}
+
+public static class GizmosExtention
+{
+    public static void DrawWireCubeByTransformWithOffset(Transform origin, Vector3 target)
+    {
+        Gizmos.color = Color.cyan;
+
+        Vector3 targetPos = origin.position + origin.forward * target.z + origin.right * target.x + origin.up * target.y;
+        Vector3 bufer1 = targetPos + origin.forward * origin.localScale.z / 2 +
+            origin.right * origin.localScale.x / 2 + origin.up * origin.localScale.y / 2;
+        Vector3 bufer2 = targetPos - origin.forward * origin.localScale.z / 2 +
+            origin.right * origin.localScale.x / 2 + origin.up * origin.localScale.y / 2;
+
+        Debug.DrawLine(bufer2, bufer1, Color.cyan);
+
+        bufer2 = targetPos + origin.forward * origin.localScale.z / 2 -
+            origin.right * origin.localScale.x / 2 + origin.up * origin.localScale.y / 2;
+
+        Debug.DrawLine(bufer2, bufer1, Color.cyan);
+
+        bufer2 = targetPos + origin.forward * origin.localScale.z / 2 +
+            origin.right * origin.localScale.x / 2 - origin.up * origin.localScale.y / 2;
+
+        Debug.DrawLine(bufer2, bufer1, Color.cyan);
+
+        bufer1 = bufer2;
+
+        bufer2 = targetPos + origin.forward * origin.localScale.z / 2 -
+            origin.right * origin.localScale.x / 2 - origin.up * origin.localScale.y / 2;
+
+        Debug.DrawLine(bufer2, bufer1, Color.cyan);
+
+        bufer2 = targetPos - origin.forward * origin.localScale.z / 2 +
+            origin.right * origin.localScale.x / 2 - origin.up * origin.localScale.y / 2;
+
+        Debug.DrawLine(bufer2, bufer1, Color.cyan);
+
+        bufer1 = bufer2;
+
+        bufer2 = targetPos - origin.forward * origin.localScale.z / 2 -
+            origin.right * origin.localScale.x / 2 - origin.up * origin.localScale.y / 2;
+
+        Debug.DrawLine(bufer2, bufer1, Color.cyan);
+
+        bufer2 = targetPos - origin.forward * origin.localScale.z / 2 +
+            origin.right * origin.localScale.x / 2 + origin.up * origin.localScale.y / 2;
+
+        Debug.DrawLine(bufer2, bufer1, Color.cyan);
+
+        bufer1 = bufer2;
+
+        bufer2 = targetPos - origin.forward * origin.localScale.z / 2 -
+            origin.right * origin.localScale.x / 2 + origin.up * origin.localScale.y / 2;
+
+        Debug.DrawLine(bufer2, bufer1, Color.cyan);
+
+        bufer1 = bufer2;
+
+        bufer2 = targetPos + origin.forward * origin.localScale.z / 2 -
+            origin.right * origin.localScale.x / 2 + origin.up * origin.localScale.y / 2;
+
+        Debug.DrawLine(bufer2, bufer1, Color.cyan);
+
+        bufer2 = targetPos - origin.forward * origin.localScale.z / 2 -
+            origin.right * origin.localScale.x / 2 - origin.up * origin.localScale.y / 2;
+
+        Debug.DrawLine(bufer2, bufer1, Color.cyan);
+
+        bufer1 = targetPos + origin.forward * origin.localScale.z / 2 -
+            origin.right * origin.localScale.x / 2 - origin.up * origin.localScale.y / 2;
+
+        Debug.DrawLine(bufer2, bufer1, Color.cyan);
+
+        bufer2 = targetPos + origin.forward * origin.localScale.z / 2 -
+            origin.right * origin.localScale.x / 2 + origin.up * origin.localScale.y / 2;
+
+        Debug.DrawLine(bufer2, bufer1, Color.cyan);
+
+        Gizmos.DrawLine(origin.position, targetPos);
     }
 }

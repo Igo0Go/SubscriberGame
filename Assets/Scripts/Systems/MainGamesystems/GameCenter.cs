@@ -1,5 +1,10 @@
+using UnityEngine;
+
 public static class GameCenter
 {
+    public static Transform SavePoint { get; set; }
+    public static PlayerLocomotion PlayerLocomotion { get; set; }
+
     public static bool GlobalPause => MenuPause || ConsolePause;
 
     public static bool ConsolePause

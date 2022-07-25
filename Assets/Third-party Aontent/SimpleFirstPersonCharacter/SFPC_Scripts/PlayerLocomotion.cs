@@ -20,7 +20,6 @@ public class PlayerLocomotion : MonoBehaviour
     [SerializeField]
     private UnityEvent useSound;
 
-
     private LocomotionType locomotionType;
     private CharacterController charController;
     private Vector3 moveVector;
@@ -36,6 +35,11 @@ public class PlayerLocomotion : MonoBehaviour
 
     private Transform myTransform;
     private Collider transformFixator;
+
+    private void Awake()
+    {
+        GameCenter.PlayerLocomotion = this;
+    }
 
     private void Start()
     {

@@ -28,7 +28,7 @@ public class MultiplierModule : LogicModule
         {
             var obj = Instantiate(
                 originalObject,
-                transform.position + transform.forward * originalObject.transform.localScale.z * (i + 1),
+                transform.position + (i + 1) * originalObject.transform.localScale.z * transform.forward,
                 transform.rotation);
             obj.transform.parent = transform;
             yield return new WaitForSeconds(copyDelay);
@@ -58,7 +58,7 @@ public class MultiplierModule : LogicModule
             Gizmos.color = Color.yellow;
             for (int i = 0; i < copyCount; i++)
             {
-                pos = transform.position + transform.forward * originalObject.transform.localScale.z * (i + 1);
+                pos = transform.position + (i + 1) * originalObject.transform.localScale.z * transform.forward;
                 Gizmos.DrawLine(oldPos, pos);
                 Gizmos.DrawSphere(pos, 0.1f);
                 oldPos = pos;

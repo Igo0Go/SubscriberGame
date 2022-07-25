@@ -10,7 +10,7 @@ public class LogicModuleReactor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag.Equals(interactiveTag))
+        if(other.CompareTag(interactiveTag))
         {
             if(other.TryGetComponent(out InteractiveArea loc))
             {
@@ -20,7 +20,7 @@ public class LogicModuleReactor : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag.Equals(interactiveTag))
+        if (other.CompareTag(interactiveTag))
         {
             if (other.TryGetComponent(out InteractiveArea loc))
             {
