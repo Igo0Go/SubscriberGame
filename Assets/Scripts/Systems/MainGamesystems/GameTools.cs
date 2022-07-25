@@ -3,8 +3,6 @@ using UnityEngine.Events;
 
 public static class GameTools
 {
-    public static bool OpportunityToView { get; set; }
-
     public static bool DrawSubs
     {
         get
@@ -32,7 +30,7 @@ public static class GameTools
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
-        else if (OpportunityToView)
+        else if (GameCenter.OpportunityToView)
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;

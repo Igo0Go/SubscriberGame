@@ -72,7 +72,8 @@ public class HarpoonThrower : MonoBehaviour
 
     void Update()
     {
-        shootInput?.Invoke();
+        if(!GameCenter.GlobalPause)
+            shootInput?.Invoke();
     }
 
     public void ReloadHarpoon()
@@ -169,11 +170,11 @@ public class HarpoonThrower : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
-            playerLocomotion.SetLocomotionOpportunity(false);
+            GameCenter.OpportunityToMove = false;
         }
         else if (Input.GetMouseButtonUp(1))
         {
-            playerLocomotion.SetLocomotionOpportunity(true);
+            GameCenter.OpportunityToMove = true;
         }
 
         if (Input.GetMouseButton(1))

@@ -31,11 +31,10 @@ public class Submarine : AliveController
 
     void Start()
     {
-
         shieldSlider.maxValue = shieldSlider.value = Health;
         myTransform = transform;
         rb = GetComponent<Rigidbody>();
-        GameTools.OpportunityToView = true;
+        GameCenter.OpportunityToView = true;
         GameTools.SetCursorVisible(false);
     }
     void Update()

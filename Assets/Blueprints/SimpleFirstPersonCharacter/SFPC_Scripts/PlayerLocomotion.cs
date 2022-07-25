@@ -27,7 +27,6 @@ public class PlayerLocomotion : MonoBehaviour
     private float vertSpeed;
     private bool fall;
     private float fallTimer;
-    private bool opportunityToMove;
     private readonly float minFall = -1.5f;
 
     /// <summary>
@@ -41,15 +40,16 @@ public class PlayerLocomotion : MonoBehaviour
     private void Start()
     {
         myTransform = transform;
-        opportunityToMove = true;
+        GameCenter.OpportunityToMove = true;
         vertSpeed = minFall;
         charController = GetComponent<CharacterController>();
         fall = true;
         locomotionType = LocomotionType.Default;
+        ConsoleEventCenter.Teleport.Execute.AddListener(FastTeleportToPoint);
     }
     private void Update()
     {
-        if(opportunityToMove)
+        if (GameCenter.OpportunityToMove)
         {
             switch (locomotionType)
             {
@@ -76,14 +76,8 @@ public class PlayerLocomotion : MonoBehaviour
     /// </summary>
     public void SetLocomotionOpportunityAndCharacterController(bool value)
     {
-        opportunityToMove = charController.enabled = value;
+        GameCenter.OpportunityToMove = charController.enabled = value;
     }
-
-    /// <summary>
-    /// Задать значение для блокировки перемещения
-    /// </summary>
-    /// <param name="opportunity">значение - возможность двигаться</param>
-    public void SetLocomotionOpportunity(bool opportunity) => opportunityToMove = opportunity;
 
     /// <summary>
     /// Плавно переместить игрока в точку (предварительно нужно заблокировать)
@@ -129,6 +123,12 @@ public class PlayerLocomotion : MonoBehaviour
     {
         charController.enabled = false;
         myTransform.SetPositionAndRotation(point.position, point.rotation);
+        charController.enabled = true;
+    }
+    public void FastTeleportToPoint(int x, int y, int z)
+    {
+        charController.enabled = false;
+        myTransform.position = new Vector3(x, y, z);
         charController.enabled = true;
     }
 

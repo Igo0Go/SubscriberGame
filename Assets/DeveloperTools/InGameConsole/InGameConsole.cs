@@ -1,10 +1,10 @@
 using UnityEngine;
-using System.Collections.Generic;
 
 public class InGameConsole : MonoBehaviour
 {
     private string input = string.Empty;
     private bool showHelpWindow;
+    private bool showConsole;
     private Vector2 scroll = Vector2.zero;
 
     private void Awake()
@@ -21,7 +21,7 @@ public class InGameConsole : MonoBehaviour
 
     private void OnGUI()
     {
-        if (!ConsoleEventCenter.ShowConsole)
+        if (!showConsole)
             return;
 
         float y = 0;    
@@ -66,8 +66,9 @@ public class InGameConsole : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Tilde) || Input.GetKeyDown(KeyCode.BackQuote))
         {
-            ConsoleEventCenter.ShowConsole = !ConsoleEventCenter.ShowConsole;
-            if(!ConsoleEventCenter.ShowConsole)
+            showConsole = !showConsole;
+            GameCenter.ConsolePause = showConsole;
+            if(!showConsole)
             {
                 showHelpWindow = false;
             }

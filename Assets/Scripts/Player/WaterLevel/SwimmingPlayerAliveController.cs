@@ -10,7 +10,7 @@ public class SwimmingPlayerAliveController : AliveController
 
     public override void GetDamage(int damage)
     {
-        playerLocomotion.SetLocomotionOpportunity(false);
+        GameCenter.OpportunityToMove = false;
         playerLocomotion.FastTeleportToPoint(savePoint);
         playerLocomotion.SetLocomotionType(LocomotionType.Default);
         OnDead?.Invoke();
