@@ -188,7 +188,7 @@ public class HarpoonThrower : MonoBehaviour
 
             if (direction.magnitude <= 1.5f)
             {
-                playerLocomotion.SetLocomotionOpportunityAndCharacterController(true);
+                GameCenter.OpportunityToMove = false;
                 anim.SetBool("IsUsed", false);
                 harpoon.position = harpoonPoint.position;
                 harpoon.forward = harpoonPoint.forward;

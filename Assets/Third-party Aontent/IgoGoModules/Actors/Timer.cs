@@ -21,8 +21,8 @@ public class Timer : LogicActor
     private bool useTimerUI;
 
 
-    private event Action<string> timerChanged;
-    private event Action stopTimerEvent;
+    private event Action<string> TimerChanged;
+    private event Action StopTimerEvent;
 
     private float currentTime;
     private string lastTimerString = string.Empty;
@@ -33,8 +33,8 @@ public class Timer : LogicActor
         {
             TimerUI timerUI = FindObjectOfType<TimerUI>();
 
-            timerChanged += timerUI.DrawTimerValue;
-            stopTimerEvent += timerUI.CloseTimer;
+            TimerChanged += timerUI.DrawTimerValue;
+            StopTimerEvent += timerUI.CloseTimer;
         }
 
         if(activeOnStart)
@@ -59,7 +59,7 @@ public class Timer : LogicActor
                 ActivateAllNextModules();
                 currentTime = 0;
                 if(useTimerUI)
-                    stopTimerEvent?.Invoke();
+                    StopTimerEvent?.Invoke();
                 ReturnToDefaultState();
             }
         }
@@ -107,7 +107,7 @@ public class Timer : LogicActor
         if(!currentTimerString.Equals(lastTimerString))
         {
             lastTimerString = currentTimerString;
-            timerChanged?.Invoke(lastTimerString);
+            TimerChanged?.Invoke(lastTimerString);
         }
     }
 }

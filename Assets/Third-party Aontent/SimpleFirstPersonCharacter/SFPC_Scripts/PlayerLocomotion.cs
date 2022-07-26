@@ -5,7 +5,8 @@ using UnityEngine.Events;
 /// <summary>
 /// —крипт перемещени€
 /// </summary>
-[RequireComponent(typeof(CharacterController))]
+[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Collider))]
 [HelpURL("https://docs.google.com/document/d/1llgWK3zJK7km7DMyi_GHh63LZUJngJppIuZIfccWwtc/edit?usp=sharing")]
 public class PlayerLocomotion : MonoBehaviour
 {
@@ -16,12 +17,14 @@ public class PlayerLocomotion : MonoBehaviour
         "падающий с большой высоты не проникал сквозь текстуры.")]
     private float terminalVelocity = -10.0f;
     [SerializeField, Range(0.1f, 5), Tooltip("—ила прит€жени€. g=1 - земна€ гравитаци€")] private float gravity = 1f;
+    [SerializeField] private Transform jumpCheck;
+    [SerializeField] private LayerMask ignoreMask;
 
     [SerializeField]
     private UnityEvent useSound;
 
     private LocomotionType locomotionType;
-    private CharacterController charController;
+    private Rigidbody rb;
     private Vector3 moveVector;
     private float vertSpeed;
     private bool fall;
@@ -46,7 +49,7 @@ public class PlayerLocomotion : MonoBehaviour
         myTransform = transform;
         GameCenter.OpportunityToMove = true;
         vertSpeed = minFall;
-        charController = GetComponent<CharacterController>();
+        rb = GetComponent<Rigidbody>();
         fall = true;
         locomotionType = LocomotionType.Default;
         ConsoleEventCenter.Teleport.Execute.AddListener(FastTeleportToPoint);
@@ -76,14 +79,6 @@ public class PlayerLocomotion : MonoBehaviour
     #region Ѕлокировка и телепортаци€
 
     /// <summary>
-    /// «апретить игроку перемещатьс€
-    /// </summary>
-    public void SetLocomotionOpportunityAndCharacterController(bool value)
-    {
-        GameCenter.OpportunityToMove = charController.enabled = value;
-    }
-
-    /// <summary>
     /// ѕлавно переместить игрока в точку (предварительно нужно заблокировать)
     /// </summary>
     /// <param name="point">“очка, куда нужно переместить и по которой нужно повернуть персонажа</param>
@@ -98,16 +93,7 @@ public class PlayerLocomotion : MonoBehaviour
     /// <param name="direction">направление движение</param>
     public void SmoothMoveByDirection(Vector3 direction)
     {
-        charController.Move(direction);
-    }
-
-    /// <summary>
-    /// «адаЄт значение enabled дл€ characterController (требуетс€ дл€ телепортации)
-    /// </summary>
-    /// <param name="value">целевое состо€ние</param>
-    public void SetBlockValueToPlayer(bool value)
-    {
-        charController.enabled = !value;
+        rb.MovePosition(direction);
     }
 
     /// <summary>
@@ -125,15 +111,11 @@ public class PlayerLocomotion : MonoBehaviour
     /// <param name="point"></param>
     public void FastTeleportToPoint(Transform point)
     {
-        charController.enabled = false;
         myTransform.SetPositionAndRotation(point.position, point.rotation);
-        charController.enabled = true;
     }
     public void FastTeleportToPoint(int x, int y, int z)
     {
-        charController.enabled = false;
         myTransform.position = new Vector3(x, y, z);
-        charController.enabled = true;
     }
 
     public void SetLocomotionType(LocomotionType locType)
@@ -159,7 +141,7 @@ public class PlayerLocomotion : MonoBehaviour
 
     private void Jump()
     {
-        if (charController.isGrounded)
+        if (IsGrounded())
         {
             fallTimer = 0;
             fall = true;
@@ -169,7 +151,7 @@ public class PlayerLocomotion : MonoBehaviour
             }
             else
             {
-                vertSpeed = minFall;
+                vertSpeed = 0;
             }
         }
         else
@@ -204,7 +186,7 @@ public class PlayerLocomotion : MonoBehaviour
         moveVector = moveVector.normalized * speed;
         moveVector.y = vertSpeed;
         moveVector *= Time.deltaTime;
-        charController.Move(moveVector);
+        myTransform.position += moveVector;
     }
     private void PlayerSwim()
     {
@@ -226,7 +208,7 @@ public class PlayerLocomotion : MonoBehaviour
         moveVector = moveVector.normalized * speed;
         moveVector.y = deltaY * speed;
         moveVector *= Time.deltaTime;
-        charController.Move(moveVector + Time.deltaTime * vertSpeed * Vector3.up);
+        myTransform.position += moveVector + Time.deltaTime * vertSpeed * Vector3.up;
     }
     private void FallInTheWater()
     {
@@ -238,6 +220,16 @@ public class PlayerLocomotion : MonoBehaviour
         {
             vertSpeed = SmoothChangeToTarget(vertSpeed, 0);
         }
+    }
+
+    private bool IsGrounded()
+    {
+        Collider[] bufer = Physics.OverlapBox(jumpCheck.position, jumpCheck.localScale, Quaternion.identity, ~ignoreMask);
+
+        if (bufer != null && bufer.Length > 0)
+            return true;
+        else
+            return false;
     }
 
     private float SmoothChangeToTarget(float value, float target)
@@ -269,10 +261,10 @@ public class PlayerLocomotion : MonoBehaviour
         while (t < 1)
         {
             t += Time.deltaTime * 2;
-            transform.SetPositionAndRotation(Vector3.Lerp(startPos, point.position, t), Quaternion.Lerp(startRot, point.rotation, t));
+            myTransform.SetPositionAndRotation(Vector3.Lerp(startPos, point.position, t), Quaternion.Lerp(startRot, point.rotation, t));
             yield return null;
         }
-        transform.SetPositionAndRotation(point.position, point.rotation);
+        myTransform.SetPositionAndRotation(point.position, point.rotation);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -285,7 +277,7 @@ public class PlayerLocomotion : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        if(other == transformFixator)
+        if (other == transformFixator)
         {
             myTransform.parent = null;
         }

@@ -76,7 +76,7 @@ public class TransformModule : LogicModule
     {
         if (activate)
         {
-            time += (direction * Time.deltaTime / duration);
+            time += direction * Time.deltaTime / duration;
             switch (loopType)
             {
                 case LoopType.Once:

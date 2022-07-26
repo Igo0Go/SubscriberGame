@@ -102,7 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 847572569358147719}
-  - component: {fileID: 847572569358147768}
+  - component: {fileID: 1340456631886263579}
   m_Layer: 0
   m_Name: BigLamp
   m_TagString: Untagged
@@ -126,7 +126,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &847572569358147768
+--- !u!114 &1340456631886263579
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 847572569358147718}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a636b70e0c60ee744958f8ef8a99499d, type: 3}
+  m_Script: {fileID: 11500000, guid: e112d97ca257f634299aef64b4bb84de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   debug: 0
@@ -143,7 +143,9 @@ MonoBehaviour:
   nextModules:
   - {fileID: 847572569585559540}
   - {fileID: 847572569486143234}
-  UseOnStart: 0
+  time: 0
+  activeOnStart: 0
+  useTimerUI: 0
 --- !u!1 &847572569486143232
 GameObject:
   m_ObjectHideFlags: 0
