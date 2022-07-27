@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using TMPro;
+using UnityEngine.UI;
 
 public class ReplicSystem : MonoBehaviour
 {
@@ -18,6 +18,12 @@ public class ReplicSystem : MonoBehaviour
         useMain = false;
         replicaPacks = new List<ReplicaPack>();
         GameTools.SetUpReplicsystem(OnDrawSubsChanged);
+        subsPanel.ClosePanel();
+    }
+
+    private void Start()
+    {
+        GameCenter.PauseValueChanged.AddListener(OnChangePause);
     }
 
     private void Update()
@@ -62,6 +68,18 @@ public class ReplicSystem : MonoBehaviour
         }
     }
 
+    public void OnChangePause(bool value)
+    {
+        if(value)
+        {
+            voiceAudioSource.Pause();
+        }
+        else
+        {
+            voiceAudioSource.UnPause();
+        }
+    }
+
     private void Skip()
     {
         if(useMain)
@@ -93,6 +111,7 @@ public class ReplicSystem : MonoBehaviour
                 subsPanel.SetSubs(item.CharacterName, item.characterText, item.characterColor);
             }
             item.onReplicaStart?.Invoke();
+
             yield return new WaitForSeconds(item.characterVoice.length);
             replicaPacks[0].mainList.RemoveAt(0);
             item.onReplicaEnd?.Invoke();
@@ -188,9 +207,9 @@ public class ReplicaItem
 public class SubsPanel
 {
     public GameObject panelObject;
-    public TMP_Text characterName;
-    public TMP_Text characterText;
-    public TMP_Text skipTip;
+    public Text characterName;
+    public Text characterText;
+    public Text skipTip;
 
     public void SetSubs(string name, string text, Color color)
     {

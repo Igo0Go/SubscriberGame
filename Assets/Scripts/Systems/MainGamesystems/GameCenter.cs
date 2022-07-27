@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public static class GameCenter
 {
@@ -16,8 +17,7 @@ public static class GameCenter
         set
         {
             _consolePause = value;
-
-            GameTools.SetCursorVisible(GlobalPause);
+            CheckPause();
         }
     }
     private static bool _consolePause;
@@ -31,8 +31,7 @@ public static class GameCenter
         set
         {
             _menuPause = value;
-
-            GameTools.SetCursorVisible(GlobalPause);
+            CheckPause();
         }
     }
     private static bool _menuPause;
@@ -63,8 +62,19 @@ public static class GameCenter
     }
     private static bool _opportunityToMove;
 
+    private static void CheckPause()
+    {
+        GameTools.SetCursorVisible(GlobalPause);
+        Time.timeScale = GlobalPause ? 0 : 1;
+        PauseValueChanged.Invoke(GlobalPause);
+    }
+
+    public static UnityEvent<bool> PauseValueChanged;
+
     public static void SetUp()
     {
+        PauseValueChanged = new UnityEvent<bool>();
+
         ConsolePause = MenuPause = false;
         OpportunityToMove = OpportunityToView = true;
     }
