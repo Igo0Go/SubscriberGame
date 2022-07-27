@@ -15,4 +15,12 @@ public class GameStarter : MonoBehaviour
     {
         onStartEvents.Invoke();
     }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            Application.Quit();
+        }
+    }
 }

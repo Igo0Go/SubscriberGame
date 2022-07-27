@@ -29,6 +29,8 @@ public class MusicMixer : LogicModule
         if (hardChange)
         {
             ChangeClip();
+            DeleteMeFromActors();
+            Destroy(gameObject);
         }
         else
         {
@@ -51,6 +53,8 @@ public class MusicMixer : LogicModule
             yield return null;
         }
         source.volume = 1;
+        DeleteMeFromActors();
+        Destroy(gameObject);
     }
     private void ChangeClip()
     {

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 
 /// <summary>
 /// Используется для физических объектов, которые упали в запрещённую зону. По умолчанию, такая зана помечается
@@ -8,6 +9,9 @@
 [HelpURL("https://docs.google.com/document/d/1AvLXucyEeiVbQzsc6hsnHIO1Z_iVZgJ92suJRtlhpbs/edit?usp=sharing")]
 public class ReturnTransformModule : MonoBehaviour
 {
+    [SerializeField]
+    private List<string> targetTags;
+
     private Rigidbody rb;
     private Vector3 startPos;
 
@@ -19,10 +23,15 @@ public class ReturnTransformModule : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag.Equals("Finish"))
+        foreach (var tag in targetTags)
         {
-            rb.velocity = Vector3.zero;
-            transform.position = startPos;
+            if (other.CompareTag(tag))
+            {
+                rb.velocity = Vector3.zero;
+                transform.position = startPos;
+                return;
+            }
         }
+
     }
 }
