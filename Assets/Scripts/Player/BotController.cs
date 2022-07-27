@@ -49,6 +49,16 @@ public class BotController : MonoBehaviour
         anim.SetBool(talk, true);
         StartCoroutine(DelayedChangeTalkTimeCoroutine((int)AnimType.No));
     }
+    public void Talk_Tired()
+    {
+        anim.SetBool(talk, true);
+        StartCoroutine(DelayedChangeTalkTimeCoroutine((int)AnimType.Tired));
+    }
+    public void Talk_Force()
+    {
+        anim.SetBool(talk, true);
+        StartCoroutine(DelayedChangeTalkTimeCoroutine((int)AnimType.Force));
+    }
     public void StopTalk()
     {
         anim.SetBool(talk, false);
@@ -71,5 +81,7 @@ public enum AnimType
     JustThink = 4,
     FindDecision = 5,
     Yes = 6,
-    No = 7
+    No = 7,
+    Tired = 8,
+    Force = 9
 }
