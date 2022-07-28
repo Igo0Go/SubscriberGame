@@ -11,4 +11,10 @@ public class ChatModule : MonoBehaviour
         chatSystem.AddNewItem(messages);
         Destroy(gameObject);
     }
+
+    public void AddAllMessagesAsNew()
+    {
+        chatSystem.AddNewItemWithRemoving(messages);
+        Destroy(gameObject);
+    }
 }

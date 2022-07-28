@@ -10,6 +10,10 @@ public class ChatItem : MonoBehaviour
     public void SetUP(ChatMessageInfo info)
     {
         author.text = info.authorName;
+        if(info.useColor)
+        {
+            author.color = info.authorColor;
+        }
         messageText.text = info.messageText;
         image.color = info.authorColor;
     }

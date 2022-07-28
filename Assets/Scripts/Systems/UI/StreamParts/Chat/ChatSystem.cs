@@ -15,7 +15,6 @@ public class ChatSystem : MonoBehaviour
 
     private List<ChatMessageInfo> globalQueue;
     private List<ChatItem> chatItems;
-    private int currentItemNumber;
 
     private void Awake()
     {
@@ -25,15 +24,9 @@ public class ChatSystem : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(DelayCoroutine(delay));
-    }
+        maxItemsCount = (int)container.GetComponent<RectTransform>().rect.height / 50 - 1;
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Tab))
-        {
-            container.gameObject.SetActive(!container.gameObject.activeSelf);
-        }
+        StartCoroutine(DelayCoroutine(delay));
     }
 
     private IEnumerator DelayCoroutine(float delay)
@@ -47,24 +40,29 @@ public class ChatSystem : MonoBehaviour
 
     private void CheckItems()
     {
-        if(globalQueue.Count > currentItemNumber)
+        if(globalQueue.Count > 0)
         {
             ChatItem item = Instantiate(chatItemPrefab, container).GetComponent<ChatItem>();
-            item.SetUP(globalQueue[currentItemNumber]);
+            item.SetUP(globalQueue[0]);
             chatItems.Add(item);
-            currentItemNumber++;
-            if(currentItemNumber > maxItemsCount)
+            globalQueue.RemoveAt(0);
+
+            if (container.childCount > maxItemsCount)
             {
                 Destroy(chatItems[0].gameObject, 0.05f);
                 chatItems.RemoveAt(0);
-                globalQueue.RemoveAt(0);
-                currentItemNumber--;
+
             }
         }
     }
 
     public void AddNewItem(List<ChatMessageInfo> info)
     {
+        globalQueue.AddRange(info);
+    }
+    public void AddNewItemWithRemoving(List<ChatMessageInfo> info)
+    {
+        globalQueue.Clear();
         globalQueue.AddRange(info);
     }
 }
@@ -75,4 +73,5 @@ public class ChatMessageInfo
     public string authorName;
     public string messageText;
     public Color authorColor;
+    public bool useColor = false;
 }
