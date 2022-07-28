@@ -473,6 +473,7 @@ GameObject:
   - component: {fileID: 5355675338546150768}
   - component: {fileID: 7270473799354090820}
   - component: {fileID: 1925501629}
+  - component: {fileID: 7264680237343581928}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -595,6 +596,19 @@ MonoBehaviour:
   delay: 1
   maxItemsCount: 10
   chatItemPrefab: {fileID: 4693378850642632080, guid: 3ecb179875be4eb4aafe3b2596ce6b56, type: 3}
+--- !u!114 &7264680237343581928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5355675338546150770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d53bae5f1ad4c42abb203cf8ffdd07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  subscriberCountText: {fileID: 6772656598418071142}
 --- !u!1 &5355675338961542314
 GameObject:
   m_ObjectHideFlags: 0

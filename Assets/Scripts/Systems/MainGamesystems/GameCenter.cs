@@ -96,3 +96,8 @@ public static class Settings
 {
     public static bool UseSubs = true;
 }
+
+public static class StatsHolder
+{
+    public static int subscribers = 0;
+}
