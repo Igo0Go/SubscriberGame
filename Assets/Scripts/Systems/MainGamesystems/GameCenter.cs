@@ -5,6 +5,7 @@ public static class GameCenter
 {
     public static Transform SavePoint { get; set; }
     public static PlayerLocomotion PlayerLocomotion { get; set; }
+    public static BotController Bot { get; set; }
 
     public static bool GlobalPause => MenuPause || ConsolePause;
 
@@ -78,4 +79,20 @@ public static class GameCenter
         ConsolePause = MenuPause = false;
         OpportunityToMove = OpportunityToView = true;
     }
+}
+
+public static class TagHolder
+{
+    public static string TransfromFixator = "TransformFixator";
+    public static string Explosion = "Explosion";
+    public static string Enemy = "Enemy";
+    public static string Interactable = "Interactable";
+    public static string Air = "Air";
+    public static string DeadZone = "DeadZone";
+    public static string Darkness = "Darkness";
+}
+
+public static class Settings
+{
+    public static bool UseSubs = true;
 }

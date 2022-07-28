@@ -269,7 +269,7 @@ public class PlayerLocomotion : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("TransformFixator"))
+        if(other.CompareTag(TagHolder.TransfromFixator))
         {
             transformFixator = other;
             myTransform.parent = other.transform;

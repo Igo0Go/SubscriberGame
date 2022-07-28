@@ -9,8 +9,8 @@ TagManager:
   - Enemy
   - Interactable
   - Air
-  - Water
   - DeadZone
+  - Darkness
   layers:
   - Default
   - TransparentFX

@@ -9,16 +9,19 @@ public class ReplicSystem : MonoBehaviour
     [SerializeField] private AudioSource voiceAudioSource;
     [SerializeField] private SubsPanel subsPanel;
     [SerializeField] private KeyCode skipButton;
+    [SerializeField, Space(10)] Toggle drawSubsToggle;
 
     private List<ReplicaPack> replicaPacks;
-    private bool useMain;
+    private bool useMainReplicPack;
 
     private void Awake()
     {
-        useMain = false;
+        useMainReplicPack = false;
         replicaPacks = new List<ReplicaPack>();
-        GameTools.SetUpReplicsystem(OnDrawSubsChanged);
         subsPanel.ClosePanel();
+        drawSubsToggle.isOn = Settings.UseSubs;
+        drawSubsToggle.onValueChanged = new Toggle.ToggleEvent();
+        drawSubsToggle.onValueChanged.AddListener(OnDrawSubsChanged);
     }
 
     private void Start()
@@ -50,7 +53,7 @@ public class ReplicSystem : MonoBehaviour
             if(replicaPacks.Count > 0)
             {
                 ReplicaItem item = replicaPacks[0].skipList[0];
-                if (useMain)
+                if (useMainReplicPack)
                 {
                     subsPanel.SetSkipTip(skipButton);
                     item = replicaPacks[0].mainList[0];
@@ -66,6 +69,8 @@ public class ReplicSystem : MonoBehaviour
         {
             subsPanel.ClosePanel();
         }
+
+        Settings.UseSubs = value;
     }
 
     public void OnChangePause(bool value)
@@ -82,7 +87,7 @@ public class ReplicSystem : MonoBehaviour
 
     private void Skip()
     {
-        if(useMain)
+        if(useMainReplicPack)
         {
             StopAllCoroutines();
 
@@ -99,14 +104,15 @@ public class ReplicSystem : MonoBehaviour
 
     private IEnumerator TallMainReplicasCoroutine()
     {
-        subsPanel.SetSkipTip(skipButton);
-        useMain = true;
+        if(Settings.UseSubs)
+            subsPanel.SetSkipTip(skipButton);
+        useMainReplicPack = true;
         while (replicaPacks[0].mainList.Count > 0)
         {
             ReplicaItem item = replicaPacks[0].mainList[0];
             voiceAudioSource.PlayOneShot(item.characterVoice);
 
-            if(GameTools.DrawSubs)
+            if(Settings.UseSubs)
             {
                 subsPanel.SetSubs(item.CharacterName, item.characterText, item.characterColor);
             }
@@ -128,7 +134,7 @@ public class ReplicSystem : MonoBehaviour
         }
         else
         {
-            useMain = false;
+            useMainReplicPack = false;
             subsPanel.ClosePanel();
         }
     }
@@ -136,7 +142,7 @@ public class ReplicSystem : MonoBehaviour
     private IEnumerator TallSkipReplicasCoroutine()
     {
         subsPanel.HideSkipTip();
-        useMain = false;
+        useMainReplicPack = false;
 
         yield return new WaitForSeconds(2);
 
@@ -145,7 +151,7 @@ public class ReplicSystem : MonoBehaviour
             ReplicaItem item = replicaPacks[0].skipList[0];
             voiceAudioSource.PlayOneShot(item.characterVoice);
 
-            if (GameTools.DrawSubs)
+            if (Settings.UseSubs)
             {
                 subsPanel.SetSubs(item.CharacterName, item.characterText, item.characterColor);
             }
@@ -169,19 +175,6 @@ public class ReplicSystem : MonoBehaviour
             subsPanel.ClosePanel();
         }
     }
-
-#if UNITY_EDITOR
-    [ContextMenu("Отрисовывать субтитры")]
-    public void DrawSubs()
-    {
-        GameTools.DrawSubs = true;
-    }
-    [ContextMenu("НЕ Отрисовывать субтитры")]
-    public void NoDrawSubs()
-    {
-        GameTools.DrawSubs = false;
-    }
-#endif
 }
 
 [System.Serializable]

@@ -3,22 +3,6 @@ using UnityEngine.Events;
 
 public static class GameTools
 {
-    public static bool DrawSubs
-    {
-        get
-        {
-            return _drawSubs;
-        }
-        set
-        {
-            _drawSubs = value;
-            DrawSubsChanged?.Invoke(value);
-        }
-    }
-    private static bool _drawSubs = true;
-
-    private static UnityEvent<bool> DrawSubsChanged;
-
     /// <summary>
     /// Задать видимость курсора
     /// </summary>
@@ -35,12 +19,6 @@ public static class GameTools
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
-    }
-
-    public static void SetUpReplicsystem(UnityAction<bool> action)
-    {
-        DrawSubsChanged = new UnityEvent<bool>();
-        DrawSubsChanged.AddListener(action);
     }
 }
 
