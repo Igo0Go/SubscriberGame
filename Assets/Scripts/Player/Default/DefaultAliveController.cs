@@ -12,6 +12,11 @@ public class DefaultAliveController : AliveController
         {
             GameCenter.Bot.LightOn();
         }
+        else if (other.CompareTag(TagHolder.SavePoint))
+        {
+            GameCenter.SavePoint = other.transform;
+            Destroy(other);
+        }
     }
 
     private void OnTriggerExit(Collider other)

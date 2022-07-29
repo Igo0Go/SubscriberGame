@@ -11,6 +11,7 @@ TagManager:
   - Air
   - DeadZone
   - Darkness
+  - SavePoint
   layers:
   - Default
   - TransparentFX

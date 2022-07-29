@@ -13,6 +13,7 @@ public class SubscribersCounter : MonoBehaviour
     public void AddSubscribers(int count)
     {
         StatsHolder.subscribers += count;
+        GameCenter.CheckSubscribersSumByDonate(StatsHolder.subscribers);
         subscriberCountText.text = StatsHolder.subscribers.ToString();
     }
 }
