@@ -27,6 +27,9 @@ public class TransformModule : LogicModule
     [SerializeField, Tooltip("Сколько будет длиться перемещение (с)"), Min(0)]
     private float duration = 1;
 
+    [SerializeField, Tooltip("Задержка перед срабатыванием (с)"), Min(0)]
+    private float delay = 0;
+
     [SerializeField, Tooltip("График изменения скорости")]
     private AnimationCurve accelCurve;
 
@@ -35,15 +38,15 @@ public class TransformModule : LogicModule
     private bool activate = false;
     private float time = 0f;
     private float position = 0f;
-    private float direction = 1f;
+    private float direction = -1f;
 
     private void Awake()
     {
+        direction = loopType == LoopType.Once ? -1 : 1;
+        activate = false;
+        time = position = 0;
         localStart = transform.localPosition;
-        localTarget = localStart +
-                            transform.forward * target.z +
-                            transform.right * target.x +
-                            transform.up * target.y;
+        localTarget = localStart + new Vector3(target.x, target.y, target.z);
     }
 
     /// <summary>
@@ -53,6 +56,39 @@ public class TransformModule : LogicModule
     [ContextMenu("Активировать модуль")]
     public override void ActivateModule()
     {
+        switch (loopType)
+        {
+            case LoopType.Once:
+                direction *= -1;
+                StopAllCoroutines();
+                StartCoroutine(MoveOnce());
+                break;
+            case LoopType.PingPong:
+                if(activate)
+                {
+                    ReturnToDefaultState();
+                }
+                else
+                {
+                    StopAllCoroutines();
+                    StartCoroutine(MovePingPong());
+                }
+                break;
+            case LoopType.Repeat:
+                if (activate)
+                {
+                    StopAllCoroutines();
+                }
+                else
+                {
+                    StartCoroutine(MoveRepeat());
+                }
+                break;
+            default:
+                break;
+        }
+
+
         if (loopType == LoopType.Once)
         {
             activate = true;
@@ -69,28 +105,8 @@ public class TransformModule : LogicModule
     [ContextMenu("Возврат в исходное состояние")]
     public override void ReturnToDefaultState()
     {
+        StopAllCoroutines();
         StartCoroutine(ReturnToDefaultStateCoroutine());
-    }
-
-    private void Update()
-    {
-        if (activate)
-        {
-            time += direction * Time.deltaTime / duration;
-            switch (loopType)
-            {
-                case LoopType.Once:
-                    LoopOnce();
-                    break;
-                case LoopType.PingPong:
-                    LoopPingPong();
-                    break;
-                case LoopType.Repeat:
-                    LoopRepeat();
-                    break;
-            }
-            PerformTransform(position);
-        }
     }
 
     private void PerformTransform(float position)
@@ -100,35 +116,66 @@ public class TransformModule : LogicModule
         transform.localPosition = pos;
     }
 
-    void LoopPingPong()
+    private IEnumerator MoveOnce()
     {
-        position = Mathf.PingPong(time, 1f);
-    }
-
-    void LoopRepeat()
-    {
-        position = Mathf.Repeat(time, 1f);
-    }
-
-    void LoopOnce()
-    {
-        position = Mathf.Clamp01(time);
-        if (position <= 0 || position >= 1)
+        yield return new WaitForSeconds(delay);
+        while (true)
         {
-            time = position;
-            activate = false;
-            direction *= -1;
+            time += direction * Time.deltaTime / duration;
+            position = Mathf.Clamp01(time);
+            PerformTransform(time);
+            if (position <= 0)
+            {
+                time = position = 0;
+                break;
+            }
+            if (position >= 1)
+            {
+                time = position = 1;
+                break;
+            }
+            yield return null;
+        }
+        PerformTransform(time);
+    }
+
+    private IEnumerator MovePingPong()
+    {
+        yield return new WaitForSeconds(delay);
+        activate = true;
+        while (true)
+        {
+            time += direction * Time.deltaTime / duration;
+            position = Mathf.PingPong(time, 1f);
+            PerformTransform(position);
+            yield return null;
+        }
+    }
+
+    private IEnumerator MoveRepeat()
+    {
+        yield return new WaitForSeconds(delay);
+        activate = true;
+        while (true)
+        {
+            time += direction * Time.deltaTime / duration;
+            position = Mathf.Repeat(time, 1f);
+            PerformTransform(position);
+            yield return null;
         }
     }
 
     private IEnumerator ReturnToDefaultStateCoroutine()
     {
+        yield return new WaitForSeconds(delay);
         activate = false;
         direction = -1;
+
         while (time > 1)
         {
             time--;
         }
+
         while (time >= 0)
         {
             time += direction * Time.deltaTime / duration;
@@ -138,7 +185,6 @@ public class TransformModule : LogicModule
         }
         position = time = 0;
         direction = 1;
-        activate = false;
     }
 
     private void OnDrawGizmos()
