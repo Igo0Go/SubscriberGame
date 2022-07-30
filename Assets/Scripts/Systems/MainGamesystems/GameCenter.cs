@@ -7,6 +7,8 @@ public static class GameCenter
     public static PlayerLocomotion PlayerLocomotion { get; set; }
     public static BotController Bot { get; set; }
     public static DonateSystem DonateSystem { get; set; }
+    public static CoinsCounter CoinsCounter { get; set; }
+    public static LevelProgressPanel LevelProgressPanel { get; set; }
 
     public static bool GlobalPause => MenuPause || ConsolePause;
 
@@ -120,6 +122,7 @@ public static class Settings
 
 public static class StatsHolder
 {
+    public static int coins = 0;
     public static int subscribers = 0;
     public static int currentTargetDonateIndex = 0;
 }
