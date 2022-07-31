@@ -15,9 +15,14 @@ public class CoinsCounter : MonoBehaviour
 
     public void AddCoins(int count, AudioClip clip)
     {
-        StatsHolder.coins += count;
-        counterText.text = StatsHolder.coins.ToString();
+        LevelProggress.currentLevelCoinsCount += count;
         uiSoundSource.PlayOneShot(clip);
+        UpdateCoinsCounter();
+    }
+
+    public void UpdateCoinsCounter()
+    {
+        counterText.text = (LevelProggress.currentLevelCoinsCount + LevelProggress.currentExtraCoinsCount).ToString();
         GameCenter.LevelProgressPanel.UpdateCoins();
     }
 }

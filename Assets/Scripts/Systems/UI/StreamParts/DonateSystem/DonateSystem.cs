@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class DonateSystem : MonoBehaviour
 {
@@ -59,12 +60,16 @@ public class DonateSystem : MonoBehaviour
 
     private float ShowDonate(DonateItem donate)
     {
+        LevelProggress.currentExtraCoinsCount += donate.sum;
+        GameCenter.LevelProgressPanel.UpdateCoins();
+        GameCenter.CoinsCounter.UpdateCoinsCounter();
         donateVigetContainer.SetActive(true);
         int castomizeIndex = FindCastomizeIndexBySum(donate.sum);
         donateSoundSource.PlayOneShot(donateDatabase.castomizeItems[castomizeIndex].sound);
         donateHeader.text = donate.donateName + " " + 
             donateDatabase.castomizeItems[castomizeIndex].headerText + " " + donate.sum;
         donateText.text = donate.donateText;
+        donate.donateAction.Invoke();
         return donateDatabase.castomizeItems[castomizeIndex].sound.length;
     }
 
@@ -89,4 +94,5 @@ public class DonateItem
     [TextArea(0,2)]
     public string donateText;
     public int sum;
+    public UnityEvent donateAction;
 }

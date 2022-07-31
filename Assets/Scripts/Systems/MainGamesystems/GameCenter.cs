@@ -8,6 +8,7 @@ public static class GameCenter
     public static BotController Bot { get; set; }
     public static DonateSystem DonateSystem { get; set; }
     public static CoinsCounter CoinsCounter { get; set; }
+    public static SubscribersCounter SubscribersCounter { get; set; }
     public static LevelProgressPanel LevelProgressPanel { get; set; }
 
     public static bool GlobalPause => MenuPause || ConsolePause;
@@ -86,6 +87,8 @@ public static class GameCenter
         {
             if (DonateSystem.donateDatabase.donateTargets[i].targetSubscriberSumm <= currentSubscribersCount)
             {
+                LevelProggress.currentExtraDonateCount++;
+                LevelProgressPanel.UpdateDonates();
                 DonateSystem.NewDonate(DonateSystem.donateDatabase.donateTargets[i].donate);
                 StatsHolder.currentTargetDonateIndex = i+1;
             }

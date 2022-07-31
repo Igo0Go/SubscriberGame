@@ -26,6 +26,7 @@ public class PausePanel : MonoBehaviour
     }
     public void Restart()
     {
+        LevelProggress.Reset();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void ExitGame()

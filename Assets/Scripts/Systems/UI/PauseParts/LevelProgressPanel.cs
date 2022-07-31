@@ -13,25 +13,88 @@ public class LevelProgressPanel : MonoBehaviour
     [SerializeField]
     private AudioClip coinsCompleteSound;
 
+    [Space(10)]
+    [SerializeField]
+    private Text donateInfoText;
+    [SerializeField]
+    private GameObject donateCompleteIcon;
+    [SerializeField]
+    private AudioClip donateCompleteSound;
+
+    [Space(10)]
+    [SerializeField]
+    private Text subscribersInfoText;
+    [SerializeField]
+    private GameObject subscribersCompleteIcon;
+    [SerializeField]
+    private AudioClip subscribersCompleteSound;
 
     private void Awake()
     {
         GameCenter.LevelProgressPanel = this;
         coinsCompleteIcon.SetActive(false);
+        donateCompleteIcon.SetActive(false);
+        subscribersCompleteIcon.SetActive(false);
     }
 
     public void UpdateCoins()
     {
-        coinsInfoText.text = StatsHolder.coins.ToString() + "/" + LevelProggress.maxCoinsOnLevel.ToString();
-        if(StatsHolder.coins >= LevelProggress.maxCoinsOnLevel)
+        coinsInfoText.text = LevelProggress.currentLevelCoinsCount.ToString() +
+            "<color=red> + " + LevelProggress.currentExtraCoinsCount.ToString() + "</color>" +
+            "/" + LevelProggress.maxCoinsOnLevel.ToString();
+        if (LevelProggress.currentLevelCoinsCount >= LevelProggress.maxCoinsOnLevel)
         {
             coinsCompleteIcon.SetActive(true);
             uiSoundsSource.PlayOneShot(coinsCompleteSound);
+        }
+    }
+
+    public void UpdateDonates()
+    {
+        donateInfoText.text = LevelProggress.currentLevelDonateCount.ToString() +
+            "<color=red> + " + LevelProggress.currentExtraDonateCount.ToString() + "</color>" +
+            "/" + LevelProggress.maxDonateOnLevel.ToString();
+        if(LevelProggress.currentLevelDonateCount >= LevelProggress.maxDonateOnLevel)
+        {
+            donateCompleteIcon.SetActive(true);
+            uiSoundsSource.PlayOneShot(donateCompleteSound);
+        }
+    }
+
+    public void UpdateSubscribers()
+    {
+        subscribersInfoText.text = LevelProggress.currentLevelSubscribersCount.ToString()+
+            "/" + LevelProggress.maxSubscribersOnLevel.ToString();
+        if (LevelProggress.currentLevelSubscribersCount >= LevelProggress.maxSubscribersOnLevel)
+        {
+            subscribersCompleteIcon.SetActive(true);
+            uiSoundsSource.PlayOneShot(subscribersCompleteSound);
         }
     }
 }
 
 public static class LevelProggress
 {
+    public static int currentLevelCoinsCount = 0;
+    public static int currentLevelDonateCount = 0;
+    public static int currentLevelSubscribersCount = 0;
+
+    public static int currentExtraCoinsCount = 0;
+    public static int currentExtraDonateCount = 0;
+
     public static int maxCoinsOnLevel = 0;
+    public static int maxDonateOnLevel = 0;
+    public static int maxSubscribersOnLevel = 0;
+
+    public static void Reset()
+    {
+        currentLevelCoinsCount = 0;
+        currentLevelDonateCount = 0;
+        currentLevelSubscribersCount = 0;
+        currentExtraCoinsCount = 0;
+        currentExtraDonateCount = 0;
+        maxCoinsOnLevel = 0;
+        maxDonateOnLevel = 0;
+        maxSubscribersOnLevel = 0;
+    }
 }
