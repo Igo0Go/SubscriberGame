@@ -29,12 +29,21 @@ public class LevelProgressPanel : MonoBehaviour
     [SerializeField]
     private AudioClip subscribersCompleteSound;
 
+    [Space(10)]
+    [SerializeField]
+    private Text easterEggsInfoText;
+    [SerializeField]
+    private GameObject easterEggsCompleteIcon;
+    [SerializeField]
+    private AudioClip easterEggsCompleteSound;
+
     private void Awake()
     {
         GameCenter.LevelProgressPanel = this;
         coinsCompleteIcon.SetActive(false);
         donateCompleteIcon.SetActive(false);
         subscribersCompleteIcon.SetActive(false);
+        easterEggsCompleteIcon.SetActive(false);
     }
 
     public void UpdateCoins()
@@ -71,6 +80,17 @@ public class LevelProgressPanel : MonoBehaviour
             uiSoundsSource.PlayOneShot(subscribersCompleteSound);
         }
     }
+
+    public void UpdateEasterEggs()
+    {
+        easterEggsInfoText.text = LevelProggress.currentLevelEasterEggsCount.ToString() +
+            "/" + LevelProggress.maxEasterEggsCount.ToString();
+        if (LevelProggress.currentLevelEasterEggsCount >= LevelProggress.maxEasterEggsCount)
+        {
+            easterEggsCompleteIcon.SetActive(true);
+            uiSoundsSource.PlayOneShot(easterEggsCompleteSound);
+        }
+    }
 }
 
 public static class LevelProggress
@@ -78,6 +98,7 @@ public static class LevelProggress
     public static int currentLevelCoinsCount = 0;
     public static int currentLevelDonateCount = 0;
     public static int currentLevelSubscribersCount = 0;
+    public static int currentLevelEasterEggsCount = 0;
 
     public static int currentExtraCoinsCount = 0;
     public static int currentExtraDonateCount = 0;
@@ -85,16 +106,21 @@ public static class LevelProggress
     public static int maxCoinsOnLevel = 0;
     public static int maxDonateOnLevel = 0;
     public static int maxSubscribersOnLevel = 0;
+    public static int maxEasterEggsCount = 0;
 
     public static void Reset()
     {
         currentLevelCoinsCount = 0;
         currentLevelDonateCount = 0;
         currentLevelSubscribersCount = 0;
+        currentLevelEasterEggsCount = 0;
+
         currentExtraCoinsCount = 0;
         currentExtraDonateCount = 0;
+
         maxCoinsOnLevel = 0;
         maxDonateOnLevel = 0;
         maxSubscribersOnLevel = 0;
+        maxEasterEggsCount = 0;
     }
 }

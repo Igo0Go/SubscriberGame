@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using System.Collections.Generic;
 
 public static class GameCenter
 {
@@ -10,6 +11,8 @@ public static class GameCenter
     public static CoinsCounter CoinsCounter { get; set; }
     public static SubscribersCounter SubscribersCounter { get; set; }
     public static LevelProgressPanel LevelProgressPanel { get; set; }
+    public static EasterEggSystem EasterEggSystem { get; set; }
+    public static NotificationPanel NotificationPanel { get; set; }
 
     public static bool GlobalPause => MenuPause || ConsolePause;
 
@@ -128,4 +131,5 @@ public static class StatsHolder
     public static int coins = 0;
     public static int subscribers = 0;
     public static int currentTargetDonateIndex = 0;
+    public static List<int> unblockedEasterEggsIds = new List<int>();
 }
