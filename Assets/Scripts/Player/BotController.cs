@@ -10,10 +10,18 @@ public class BotController : MonoBehaviour
     [SerializeField, Min(0), Space(10)]
     private float moveSpeed;
     [SerializeField]
-    private Vector3 specPointOffset;
+    private Transform gameplayPoint;
+    [SerializeField]
+    private Light lamp;
+    [SerializeField]
+    private Transform botLampPoint;
+    [SerializeField]
+    private Transform playerLampPoint;
 
     private Transform myTransform;
     private bool gameplayPosUsed;
+
+    private (float range, float intensity) savedLightSettings;
 
     private const string talk = "Talk";
     private const string talkType = "TalkType";
@@ -24,6 +32,12 @@ public class BotController : MonoBehaviour
         GameCenter.Bot = this;
         myTransform = transform;
         gameplayPosUsed = false;
+
+        savedLightSettings.intensity = lamp.intensity;
+        savedLightSettings.range = lamp.range;
+
+        lamp.range = lamp.intensity = 0;
+        lamp.enabled = false;
     }
 
     public void Talk_Stay()
@@ -84,34 +98,73 @@ public class BotController : MonoBehaviour
     public void LightOn()
     {
         lightAnim.SetBool(lightActive, true);
-        if(!gameplayPosUsed)
+        StartCoroutine(MoveLightToPlayerCoroutine());
+        if (!gameplayPosUsed)
         {
             StopCoroutine(MoveToTargetCoroutine(Vector3.zero));
-            StartCoroutine(MoveToTargetCoroutine(specPointOffset));
+            StartCoroutine(MoveToTargetCoroutine(gameplayPoint.localPosition));
         }
     }
     public void LightOff()
     {
-        lightAnim.SetBool(lightActive, false);
-        if (!gameplayPosUsed)
-        {
-            StopCoroutine(MoveToTargetCoroutine(specPointOffset));
-            StartCoroutine(MoveToTargetCoroutine(Vector3.zero));
-        }
+        StartCoroutine(MoveLightToBotCoroutine());
     }
     public void ToSpecPoint()
     {
         StopCoroutine(MoveToTargetCoroutine(Vector3.zero));
-        StartCoroutine(MoveToTargetCoroutine(specPointOffset));
+        StartCoroutine(MoveToTargetCoroutine(gameplayPoint.localPosition));
         gameplayPosUsed = true;
     }
     public void ToDefaultPoint()
     {
-        StopCoroutine(MoveToTargetCoroutine(specPointOffset));
+        StopCoroutine(MoveToTargetCoroutine(gameplayPoint.localPosition));
         StartCoroutine(MoveToTargetCoroutine(Vector3.zero));
         gameplayPosUsed = false;
     }
 
+    private IEnumerator MoveLightToPlayerCoroutine()
+    {
+        yield return new WaitForSeconds(1);
+        lamp.enabled = true;
+        Transform lampTransform = lamp.transform;
+        lampTransform.parent = playerLampPoint;
+        float t = 0;
+        Vector3 start = lampTransform.position;
+
+        while (t < 1)
+        {
+            t += Time.deltaTime;
+            lampTransform.position = Vector3.Lerp(start, playerLampPoint.position, t);
+            lamp.intensity = Mathf.Lerp(0, savedLightSettings.intensity, t);
+            lamp.range = Mathf.Lerp(0, savedLightSettings.range, t);
+            yield return null;
+        }
+        lampTransform.position = Vector3.Lerp(start, playerLampPoint.position, 1);
+    }
+    private IEnumerator MoveLightToBotCoroutine()
+    {
+        Transform lampTransform = lamp.transform;
+        lampTransform.parent = botLampPoint;
+        float t = 0;
+        Vector3 start = lampTransform.position;
+
+        while (t < 1)
+        {
+            t += Time.deltaTime;
+            lampTransform.position = Vector3.Lerp(start, botLampPoint.position, t);
+            lamp.intensity = Mathf.Lerp(0, savedLightSettings.intensity, t);
+            lamp.range = Mathf.Lerp(0, savedLightSettings.range, t);
+            yield return null;
+        }
+        lampTransform.position = Vector3.Lerp(start, botLampPoint.position, 1);
+        lamp.enabled = false;
+        lightAnim.SetBool(lightActive, false);
+        if (!gameplayPosUsed)
+        {
+            StopCoroutine(MoveToTargetCoroutine(gameplayPoint.localPosition));
+            StartCoroutine(MoveToTargetCoroutine(Vector3.zero));
+        }
+    }
     private IEnumerator MoveToTargetCoroutine(Vector3 targetLocalPosition)
     {
         while (true)

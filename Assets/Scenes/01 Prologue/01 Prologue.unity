@@ -16767,9 +16767,9 @@ MonoBehaviour:
       onReplicaStart:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 2017908044}
+          - m_Target: {fileID: 1392884653}
             m_TargetAssemblyTypeName: BotController, Assembly-CSharp
-            m_MethodName: Talk_Yes
+            m_MethodName: Talk_Default
             m_Mode: 1
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
@@ -16814,9 +16814,9 @@ MonoBehaviour:
       onReplicaStart:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 2017908044}
+          - m_Target: {fileID: 1392884653}
             m_TargetAssemblyTypeName: BotController, Assembly-CSharp
-            m_MethodName: Talk_Sad
+            m_MethodName: Talk_Yes
             m_Mode: 1
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
@@ -16864,7 +16864,7 @@ MonoBehaviour:
       onReplicaStart:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 2017908044}
+          - m_Target: {fileID: 1392884653}
             m_TargetAssemblyTypeName: BotController, Assembly-CSharp
             m_MethodName: Talk_Tired
             m_Mode: 1
@@ -16917,9 +16917,9 @@ MonoBehaviour:
       onReplicaStart:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 2017908044}
+          - m_Target: {fileID: 1392884653}
             m_TargetAssemblyTypeName: BotController, Assembly-CSharp
-            m_MethodName: Talk_Sad
+            m_MethodName: Talk_Joy
             m_Mode: 1
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
@@ -16981,7 +16981,7 @@ MonoBehaviour:
       onReplicaStart:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 2017908044}
+          - m_Target: {fileID: 1392884653}
             m_TargetAssemblyTypeName: BotController, Assembly-CSharp
             m_MethodName: Talk_No
             m_Mode: 1
@@ -17016,7 +17016,7 @@ MonoBehaviour:
       onReplicaStart:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 2017908044}
+          - m_Target: {fileID: 1392884653}
             m_TargetAssemblyTypeName: BotController, Assembly-CSharp
             m_MethodName: Talk_Decision
             m_Mode: 1
@@ -17056,9 +17056,9 @@ MonoBehaviour:
       onReplicaEnd:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 2017908044}
+          - m_Target: {fileID: 1392884653}
             m_TargetAssemblyTypeName: BotController, Assembly-CSharp
-            m_MethodName: Talk_Joy
+            m_MethodName: StopTalk
             m_Mode: 1
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
@@ -17102,18 +17102,6 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
-          - m_Target: {fileID: 2017908044}
-            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
-            m_MethodName: StopTalk
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
     skipList:
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
@@ -17125,7 +17113,7 @@ MonoBehaviour:
       onReplicaStart:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 2017908044}
+          - m_Target: {fileID: 1392884653}
             m_TargetAssemblyTypeName: BotController, Assembly-CSharp
             m_MethodName: Talk_Sad
             m_Mode: 1
@@ -17185,7 +17173,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
-          - m_Target: {fileID: 2017908044}
+          - m_Target: {fileID: 1392884653}
             m_TargetAssemblyTypeName: BotController, Assembly-CSharp
             m_MethodName: StopTalk
             m_Mode: 1
@@ -19184,6 +19172,17 @@ MonoBehaviour:
     donateAction:
       m_PersistentCalls:
         m_Calls: []
+--- !u!114 &1392884653 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 266073814, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
+  m_PrefabInstance: {fileID: 2017908042}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46e95ea38c15dd2439e4228929e81ab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1393377145
 GameObject:
   m_ObjectHideFlags: 0
@@ -26251,6 +26250,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 693799075}
     m_Modifications:
+    - target: {fileID: 1694412709632340575, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
+      propertyPath: m_Range
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694412709632340575, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
+      propertyPath: m_Intensity
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694412709632340575, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694412709632340575, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
+      propertyPath: m_Shadows.m_Strength
+      value: 0.793
+      objectReference: {fileID: 0}
     - target: {fileID: 5254427883222694709, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
       propertyPath: m_Drag
       value: 0
@@ -26311,6 +26326,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6357569960898678105, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357569960898678105, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2499
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357569960898678105, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.2928
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201855472775495837, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.407
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201855472775495837, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.268
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
 --- !u!4 &2017908043 stripped
@@ -26318,17 +26353,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6078940420239584931, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
   m_PrefabInstance: {fileID: 2017908042}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2017908044 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1381769492, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
-  m_PrefabInstance: {fileID: 2017908042}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46e95ea38c15dd2439e4228929e81ab2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2030077132
 GameObject:
   m_ObjectHideFlags: 0
@@ -26728,7 +26752,7 @@ MonoBehaviour:
   logicEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2017908044}
+      - m_Target: {fileID: 1392884653}
         m_TargetAssemblyTypeName: BotController, Assembly-CSharp
         m_MethodName: ToSpecPoint
         m_Mode: 1

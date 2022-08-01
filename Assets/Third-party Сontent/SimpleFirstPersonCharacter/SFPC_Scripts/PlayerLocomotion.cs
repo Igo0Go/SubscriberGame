@@ -97,25 +97,18 @@ public class PlayerLocomotion : MonoBehaviour
     }
 
     /// <summary>
-    /// “елепортировать игрока в точку (предварительно нужно заблокировать)
-    /// </summary>
-    /// <param name="point">÷елевое положение</param>
-    public void TeleportToPoint(Transform point)
-    {
-        myTransform.SetPositionAndRotation(point.position, point.rotation);
-    }
-
-    /// <summary>
     /// Ѕыстра€ телепортаци€ (без необходимости блокировать)
     /// </summary>
     /// <param name="point"></param>
     public void FastTeleportToPoint(Transform point)
     {
         myTransform.SetPositionAndRotation(point.position, point.rotation);
+        rb.velocity = Vector3.zero;
     }
     public void FastTeleportToPoint(int x, int y, int z)
     {
         myTransform.position = new Vector3(x, y, z);
+        rb.velocity = Vector3.zero;
     }
 
     public void SetLocomotionType(LocomotionType locType)
