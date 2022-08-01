@@ -178,8 +178,8 @@ public class PlayerLocomotion : MonoBehaviour
     }
     private void PlayerMove()
     {
-        float deltaX = Input.GetAxis("Horizontal");
-        float deltaZ = Input.GetAxis("Vertical");
+        float deltaX = Input.GetAxisRaw("Horizontal");
+        float deltaZ = Input.GetAxisRaw("Vertical");
 
         moveVector = myTransform.forward * deltaZ + myTransform.right * deltaX;
         moveVector.y = 0;
