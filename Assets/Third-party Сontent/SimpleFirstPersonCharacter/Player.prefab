@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jumpForce: 10
+  jumpForce: 15
   terminalVelocity: -40
   gravity: 1
   jumpCheck: {fileID: 1900927130}
@@ -502,14 +502,6 @@ PrefabInstance:
     - target: {fileID: 3073919161677752794, guid: e585aacb0bf3bf247ad42e235f2dbc28, type: 3}
       propertyPath: m_Name
       value: Bot
-      objectReference: {fileID: 0}
-    - target: {fileID: 9201855474042099551, guid: e585aacb0bf3bf247ad42e235f2dbc28, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.416
-      objectReference: {fileID: 0}
-    - target: {fileID: 9201855474042099551, guid: e585aacb0bf3bf247ad42e235f2dbc28, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.147
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e585aacb0bf3bf247ad42e235f2dbc28, type: 3}
