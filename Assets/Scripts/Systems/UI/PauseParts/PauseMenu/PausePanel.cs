@@ -6,13 +6,13 @@ public class PausePanel : MonoBehaviour
     [SerializeField] private GameObject bacground;
     [SerializeField] private GameObject pausePanel;
     [SerializeField] private GameObject easterEggsPanel;
+    [SerializeField] private GameObject donatesPanel;
 
     private void Start()
     {
         GameCenter.MenuPause = false;
         bacground.SetActive(false);
-        pausePanel.SetActive(false);
-        easterEggsPanel.SetActive(false);
+        SetActiveForPanels(false);
     }
 
     private void Update()
@@ -33,6 +33,17 @@ public class PausePanel : MonoBehaviour
             GetComponent<EasterEggSystem>().ShowAllItemButtons();
         }
     }
+    public void DonatesPanelToggle()
+    {
+        donatesPanel.SetActive(!donatesPanel.activeSelf);
+        pausePanel.SetActive(!donatesPanel.activeSelf);
+
+        if (donatesPanel.activeSelf)
+        {
+            GetComponent<DonateHolderSystem>().ShowAllItemButtons();
+        }
+    }
+
     public void PausePanelToggle()
     {
         GameCenter.MenuPause = !GameCenter.MenuPause;
@@ -42,6 +53,7 @@ public class PausePanel : MonoBehaviour
         if(!GameCenter.MenuPause)
         {
             easterEggsPanel.SetActive(false);
+            donatesPanel.SetActive(false);
         }
     }
     public void Restart()
@@ -52,5 +64,13 @@ public class PausePanel : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+
+    private void SetActiveForPanels(bool value)
+    {
+        pausePanel.SetActive(value);
+        easterEggsPanel.SetActive(value);
+        donatesPanel.SetActive(value);
     }
 }
