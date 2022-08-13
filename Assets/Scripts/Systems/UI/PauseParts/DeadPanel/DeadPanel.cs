@@ -1,17 +1,18 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 using UnityEngine.Events;
 
 public class DeadPanel : MonoBehaviour
 {
     [SerializeField]
+    private DeadReasonHolder holder;
+
+    [SerializeField]
     private Image deadPanel;
 
     [SerializeField]
-    private TMP_Text deadReasonTip;
+    private Text deadReasonTip;
 
     [SerializeField]
     private GameObject reasonPanel;
@@ -20,23 +21,32 @@ public class DeadPanel : MonoBehaviour
     private Image deadReasonImage;
 
     [SerializeField]
+    private AudioClip deadClip;
+
+    [SerializeField]
+    private AudioSource uiAudioSource;
+
+    [SerializeField]
     [Min(0)]
     private float deadDelay;
 
     [SerializeField]
     private UnityEvent onEndOfDelay;
 
-    [SerializeField]
-    private List<DeadReasonItem> deadReasonItems;
-
-    public void SetReasonByNumber(int number)
+    public void SetReasonByType(DeadReason type)
     {
         StartCoroutine(DeadPanelCorroutine());
         reasonPanel.SetActive(true);
-        DeadReasonItem item = deadReasonItems[number];
+        uiAudioSource.PlayOneShot(deadClip);
+        DeadReasonItem item = holder.FindReasonItemByType(type);
+
+        if(item == null)
+        {
+            return;
+        }
 
         deadReasonImage.sprite = item.icon;
-        deadReasonTip.text = item.reasonText;
+        deadReasonTip.text = item.reasonTexts[Random.Range(0, item.reasonTexts.Count)];
     }
 
     private Color activePanelColor;
@@ -44,6 +54,7 @@ public class DeadPanel : MonoBehaviour
 
     private void Awake()
     {
+        GameCenter.DeadPanel = this;
         reasonPanel.SetActive(false);
         activePanelColor = deadPanel.color;
         disactivePanelColor = new Color(activePanelColor.r, activePanelColor.g, activePanelColor.b, 0);
@@ -52,7 +63,6 @@ public class DeadPanel : MonoBehaviour
 
     private IEnumerator DeadPanelCorroutine()
     {
-
         deadPanel.color = activePanelColor;
 
         yield return new WaitForSeconds(deadDelay);
@@ -67,12 +77,4 @@ public class DeadPanel : MonoBehaviour
         }
 
     }
-}
-
-[System.Serializable]
-public class DeadReasonItem
-{
-    public Sprite icon;
-    [TextArea]
-    public string reasonText;
 }

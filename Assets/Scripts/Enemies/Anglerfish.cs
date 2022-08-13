@@ -183,7 +183,7 @@ public class Anglerfish : Enemy
             {
                 rotateT = Mathf.Clamp01(rotateT + Time.deltaTime * rotateSpeedMultiplicator);
                 myTransform.forward = Vector3.Lerp(myTransform.forward, direction.normalized, rotateT);
-                myTransform.position += direction.normalized * moveSpeed * Time.deltaTime;
+                myTransform.position += moveSpeed * Time.deltaTime * direction.normalized;
             }
             else
             {
@@ -283,7 +283,7 @@ public class Anglerfish : Enemy
         while (t < 1)
         {
             t += Time.deltaTime;
-            myTransform.position -= myTransform.forward * moveSpeed * Time.deltaTime;
+            myTransform.position -= moveSpeed * Time.deltaTime * myTransform.forward;
             yield return null;
         }
 
@@ -295,7 +295,7 @@ public class Anglerfish : Enemy
 
         while (true)
         {
-            myTransform.position += myTransform.forward * moveSpeed * attackSpeedMultiplicator * Time.deltaTime;
+            myTransform.position += attackSpeedMultiplicator * moveSpeed * Time.deltaTime * myTransform.forward;
             if (Physics.SphereCast(myTransform.position, 3, myTransform.forward, out RaycastHit hit,
                 stopAttackDistance, ~ignoreMask))
             {
@@ -315,7 +315,7 @@ public class Anglerfish : Enemy
         while (t < 1)
         {
             t += Time.deltaTime;
-            myTransform.position -= myTransform.forward * moveSpeed * Time.deltaTime;
+            myTransform.position -= moveSpeed * Time.deltaTime * myTransform.forward;
             yield return null;
         }
 

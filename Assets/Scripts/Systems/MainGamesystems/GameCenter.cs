@@ -13,6 +13,7 @@ public static class GameCenter
     public static LevelProgressPanel LevelProgressPanel { get; set; }
     public static EasterEggSystem EasterEggSystem { get; set; }
     public static NotificationPanel NotificationPanel { get; set; }
+    public static DeadPanel DeadPanel { get; set; }
 
     public static bool GlobalPause => MenuPause || ConsolePause;
 

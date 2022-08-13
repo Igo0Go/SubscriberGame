@@ -6,6 +6,7 @@ public class DefaultAliveController : AliveController
     {
         if (other.CompareTag(TagHolder.DeadZone))
         {
+            GameCenter.DeadPanel.SetReasonByType(other.GetComponent<DeadReasonPoint>().deadReason);
             GameCenter.PlayerLocomotion.FastTeleportToPoint(GameCenter.SavePoint);
         }
         else if(other.CompareTag(TagHolder.Darkness))
