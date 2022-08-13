@@ -49,8 +49,8 @@ public class LevelProgressPanel : MonoBehaviour
     public void UpdateCoins()
     {
         coinsInfoText.text = LevelProggress.currentLevelCoinsCount.ToString() +
-            "<color=red> + " + LevelProggress.currentExtraCoinsCount.ToString() + "</color>" +
-            "/" + LevelProggress.maxCoinsOnLevel.ToString();
+            "/" + LevelProggress.maxCoinsOnLevel.ToString() +
+            "<color=red> + " + LevelProggress.currentExtraCoinsCount.ToString() + "</color>";
         if (LevelProggress.currentLevelCoinsCount >= LevelProggress.maxCoinsOnLevel)
         {
             coinsCompleteIcon.SetActive(true);
@@ -61,8 +61,8 @@ public class LevelProgressPanel : MonoBehaviour
     public void UpdateDonates()
     {
         donateInfoText.text = LevelProggress.currentLevelDonateCount.ToString() +
-            "<color=red> + " + LevelProggress.currentExtraDonateCount.ToString() + "</color>" +
-            "/" + LevelProggress.maxDonateOnLevel.ToString();
+            "/" + LevelProggress.maxDonateOnLevel.ToString() +
+            "<color=red> + " + LevelProggress.currentExtraDonateCount.ToString() + "</color>";
         if(LevelProggress.currentLevelDonateCount >= LevelProggress.maxDonateOnLevel)
         {
             donateCompleteIcon.SetActive(true);
