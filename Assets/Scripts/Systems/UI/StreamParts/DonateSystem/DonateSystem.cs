@@ -35,13 +35,20 @@ public class DonateSystem : MonoBehaviour
         donateItems.Add(donate);
     }
 
+    public void ShowDonateFromHolderByIndex(int index)
+    {
+        DonateItem donate = DonatesHolder.donates[index];
+        int counter = FindCastomizeIndexBySum(donate.sum);
+        ShowDonate(donate, counter);
+    }
+
     private IEnumerator CheckDonateCoroutine()
     {
         while (true)
         {
             if (donateItems.Count > currentDonate)
             {
-                float delay = ShowDonate(donateItems[currentDonate]);
+                float delay = UseDonate(donateItems[currentDonate]);
                 if(delay < donateDelay)
                 {
                     delay = donateDelay;
@@ -53,23 +60,33 @@ public class DonateSystem : MonoBehaviour
             }
             else
             {
+                donateVigetContainer.SetActive(false);
                 yield return new WaitForSeconds(donateDelay);
             }
         }
     }
 
-    private float ShowDonate(DonateItem donate)
+    private void ShowDonate(DonateItem donate, int castomizeIndex)
+    {
+        donateVigetContainer.SetActive(true);
+
+        donateSoundSource.PlayOneShot(donateDatabase.castomizeItems[castomizeIndex].sound);
+        donateHeader.text = donate.donateName + " " +
+            donateDatabase.castomizeItems[castomizeIndex].headerText + " " + donate.sum;
+        donateText.text = donate.donateText;
+    }
+    private float UseDonate(DonateItem donate)
     {
         LevelProggress.currentExtraCoinsCount += donate.sum;
         GameCenter.LevelProgressPanel.UpdateCoins();
         GameCenter.CoinsCounter.UpdateCoinsCounter();
-        donateVigetContainer.SetActive(true);
         int castomizeIndex = FindCastomizeIndexBySum(donate.sum);
-        donateSoundSource.PlayOneShot(donateDatabase.castomizeItems[castomizeIndex].sound);
-        donateHeader.text = donate.donateName + " " + 
-            donateDatabase.castomizeItems[castomizeIndex].headerText + " " + donate.sum;
-        donateText.text = donate.donateText;
+        ShowDonate(donate, castomizeIndex);
+
         donate.donateAction.Invoke();
+
+        DonatesHolder.donates.Add(donate);
+
         return donateDatabase.castomizeItems[castomizeIndex].sound.length;
     }
 

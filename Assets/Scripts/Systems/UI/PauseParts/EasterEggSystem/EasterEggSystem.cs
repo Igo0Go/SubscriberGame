@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -32,11 +30,6 @@ public class EasterEggSystem : MonoBehaviour
         ShowItemWithId(-1);
         GameCenter.EasterEggSystem = this;
         easterEggDatabase.RefreshIds();
-    }
-
-    private void OnEnable()
-    {
-        ShowAllItemButtons();
     }
 
     public void UnblockEasterEggWithId(int id)
