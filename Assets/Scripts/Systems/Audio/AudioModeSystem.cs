@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Audio;
 
-public class AudioSystem : MonoBehaviour
+
+public class AudioModeSystem : MonoBehaviour
 {
     [SerializeField]
-    private List<AudioMode> audioModes;
+    private AudioSystemDatabase audioSystemDatabase;
 
     [SerializeField]
     private AudioModeType startType = AudioModeType.Standard;
@@ -40,7 +38,7 @@ public class AudioSystem : MonoBehaviour
     }
     private AudioMode FindAudioModeOfType(AudioModeType type)
     {
-        foreach (var item in audioModes)
+        foreach (var item in audioSystemDatabase.audioModes)
         {
             if(item.modeType == type)
             {
@@ -49,17 +47,4 @@ public class AudioSystem : MonoBehaviour
         }
         return null;
     }
-}
-
-[System.Serializable]
-public class AudioMode
-{
-    public AudioModeType modeType;
-    public AudioMixerGroup mixer;
-}
-
-public enum AudioModeType
-{
-    Standard,
-    Water
 }

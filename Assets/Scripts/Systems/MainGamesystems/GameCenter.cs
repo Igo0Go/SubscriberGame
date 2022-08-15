@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.Events;
 using System.Collections.Generic;
 
+#region GameParts
+
 public static class GameCenter
 {
     public static bool GlobalPause => MenuPause || ConsolePause;
@@ -125,11 +127,10 @@ public static class StreamerPack
 
 public static class AudioPack
 {
-    public static AudioSystem AudioSystem { get; set; }
+    public static AudioModeSystem AudioSystem { get; set; }
     public static EffectsAudioSystem EffectsAudioSystem { get; set; }
     public static MusicSystem MusicSystem { get; set; }
 }
-
 
 public static class TagHolder
 {
@@ -143,9 +144,60 @@ public static class TagHolder
     public static string SavePoint = "SavePoint";
 }
 
+#endregion
+
+#region dataForSaving
+
 public static class Settings
 {
-    public static bool UseSubs = true;
+    public static bool UseSubs { get; set; } = true;
+
+    public static float VoiceVolume
+    {
+        get
+        {
+            return _voiceVolume;
+        }
+
+        set
+        {
+            _voiceVolume = value;
+            VoiceVolumeChanged.Invoke(_voiceVolume);
+        }
+    }
+    private static float _voiceVolume = 1;
+
+    public static float SoundsVolume
+    {
+        get
+        {
+            return _soundsVolume;
+        }
+        set
+        {
+            _soundsVolume = value;
+            SoundsVolumeChanged.Invoke(_soundsVolume);
+        }
+    }
+    private static float _soundsVolume = 1;
+
+    public static float MusicVolume
+    {
+        get
+        {
+            return _musicVolume;
+        }
+        set
+        {
+            _musicVolume = value;
+            MusicVolumeChanged.Invoke(_musicVolume);
+        }
+    }
+    private static float _musicVolume = 1;
+
+    public static UnityEvent<float> VoiceVolumeChanged { get; set; }
+    public static UnityEvent<float> SoundsVolumeChanged { get; set; }
+    public static UnityEvent<float> MusicVolumeChanged { get; set; }
 }
 
 public static class StatsHolder
@@ -155,3 +207,5 @@ public static class StatsHolder
     public static int currentTargetDonateIndex = 0;
     public static List<int> unblockedEasterEggsIds = new List<int>();
 }
+
+#endregion
