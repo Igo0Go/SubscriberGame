@@ -4,7 +4,12 @@ public class MusicStarter : MonoBehaviour
 {
     [SerializeField] private AudioClip clipToPlay;
     [SerializeField] private AudioStarterMode mode;
+    [Space(10)]
+
+    [Header("Для линий")]
     [SerializeField, Range(1, 8)] private int targetLine;
+    [SerializeField] private bool withMix;
+    [SerializeField] private bool once;
 
     public void StartClip()
     {
@@ -17,7 +22,8 @@ public class MusicStarter : MonoBehaviour
                 AudioPack.MusicSystem.SetShotOnStartLoop(clipToPlay);
                 break;
             case AudioStarterMode.AddInLine:
-                AudioPack.MusicSystem.AddAudioLineItem(new AudioLineItem() { clip = clipToPlay, lineNumber = targetLine });
+                AudioPack.MusicSystem.AddAudioLineItem(new AudioLineItem() { clip = clipToPlay,
+                                                            lineNumber = targetLine, mix = withMix });
                 break;
             case AudioStarterMode.StopLine:
                 AudioPack.MusicSystem.StopLine(targetLine);
@@ -26,7 +32,9 @@ public class MusicStarter : MonoBehaviour
                 AudioPack.MusicSystem.SetShotNow(clipToPlay);
                 break;
         }
-        Destroy(gameObject);
+
+        if(once)
+            Destroy(gameObject);
     }
 }
 

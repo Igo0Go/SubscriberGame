@@ -5,6 +5,7 @@ public class MusicMixer : MonoBehaviour
     [SerializeField] private AudioClip newMusic;
     [SerializeField] private bool useMetronome = false;
     [SerializeField] private bool hardChange = false;
+    [SerializeField] private bool once;
 
     public void MixMusic()
     {
@@ -16,5 +17,8 @@ public class MusicMixer : MonoBehaviour
         {
             AudioPack.MusicSystem.MixMainClip(newMusic, useMetronome);
         }
+
+        if (once)
+            Destroy(gameObject);
     }
 }

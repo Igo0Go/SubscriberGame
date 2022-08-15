@@ -11,10 +11,18 @@ public class MusicSystem : MonoBehaviour
     private readonly List<AudioClip> shotQueue = new List<AudioClip>();
     private readonly List<AudioLineItem> loopQueue = new List<AudioLineItem>();
 
+    private const float changeVolumeMultiplicator = 0.5f;
+
     private void Awake()
     {
+
         AudioPack.MusicSystem = this;
         SetVolumeForAll(Settings.MusicVolume);
+        mainLoopAudioSource.loop = true;
+        foreach (var item in musicLines)
+        {
+            item.loop = true;
+        }
     }
 
     private IEnumerator Start()
@@ -34,14 +42,31 @@ public class MusicSystem : MonoBehaviour
                 {
                     oneShotSource.PlayOneShot(clip);
                 }
+                shotQueue.Clear();
 
+                bool restart = false;
                 foreach (var item in loopQueue)
                 {
+                    restart = true;
+                    mainLoopAudioSource.Stop();
                     bufer = musicLines[item.lineNumber - 1];
                     bufer.clip = item.clip;
-                    bufer.loop = true;
+                    if(item.mix)
+                    {
+                        bufer.volume = 0;
+                        StartCoroutine(SlowGrowVolumeCoroutine(bufer));
+                    }
+                    else
+                    {
+                        bufer.volume = Settings.MusicVolume;
+                    }
                     bufer.Play();
                 }
+
+                loopQueue.Clear();
+
+                if(restart)
+                    mainLoopAudioSource.Play();
             }
             yield return new WaitForSeconds(mainLoopAudioSource.clip.length);
         }
@@ -51,7 +76,7 @@ public class MusicSystem : MonoBehaviour
     {
         while (mainLoopAudioSource.volume > 0)
         {
-            mainLoopAudioSource.volume -= Time.deltaTime / 5;
+            mainLoopAudioSource.volume -= Time.deltaTime * changeVolumeMultiplicator;
             SetVolumeForAll(mainLoopAudioSource.volume);
             yield return null;
         }
@@ -65,8 +90,17 @@ public class MusicSystem : MonoBehaviour
         }
         while (mainLoopAudioSource.volume < Settings.MusicVolume)
         {
-            mainLoopAudioSource.volume += Time.deltaTime / 5;
+            mainLoopAudioSource.volume += Time.deltaTime * changeVolumeMultiplicator;
             SetVolumeForAll(mainLoopAudioSource.volume);
+            yield return null;
+        }
+    }
+
+    private IEnumerator SlowGrowVolumeCoroutine(AudioSource source)
+    {
+        while (source.volume < Settings.MusicVolume)
+        {
+            source.volume += Time.deltaTime * changeVolumeMultiplicator;
             yield return null;
         }
     }
@@ -83,7 +117,8 @@ public class MusicSystem : MonoBehaviour
     }
     public void SetMainClipAsMetronome(AudioClip clip)
     {
-        SetMainClip(clip);
+        mainLoopAudioSource.clip = clip;
+        mainLoopAudioSource.Play();
         StartCoroutine(MetronomeCoroutine());
     }
     public void SetMainClip(AudioClip clip)
@@ -115,9 +150,7 @@ public class MusicSystem : MonoBehaviour
     {
         musicLines[number - 1].Stop();
     }
-
-
-    private void SetPauseForAll(bool value)
+    public void SetPauseForAll(bool value)
     {
         if(value)
         {
@@ -136,6 +169,7 @@ public class MusicSystem : MonoBehaviour
             }
         }
     }
+
     private void SetVolumeForAll(float volume)
     {
         mainLoopAudioSource.volume = volume;
@@ -152,5 +186,6 @@ public class AudioLineItem
 {
     [Range(1,8)]
     public int lineNumber = 1;
+    public bool mix = false;
     public AudioClip clip;
 }
