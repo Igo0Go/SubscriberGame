@@ -112,7 +112,7 @@ MonoBehaviour:
   used: 0
   nextModules:
   - {fileID: 6982668598219854169}
-  - {fileID: 5614309834528080840}
+  - {fileID: 7820670632926660288}
   enterOnly: 1
   once: 1
 --- !u!1 &5285976094261415110
@@ -125,7 +125,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5784893073697657320}
   - component: {fileID: 4929582373067952123}
-  - component: {fileID: 5614309834528080840}
+  - component: {fileID: 7820670632926660288}
+  - component: {fileID: 5397190283233935726}
   m_Layer: 0
   m_Name: Audio Source
   m_TagString: Untagged
@@ -243,7 +244,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5614309834528080840
+--- !u!114 &7820670632926660288
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -257,6 +258,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   debug: 0
   used: 0
+--- !u!114 &5397190283233935726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5285976094261415110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fe7a14d4c2973140a83d320b0790d6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6982668598039587907
 GameObject:
   m_ObjectHideFlags: 0
