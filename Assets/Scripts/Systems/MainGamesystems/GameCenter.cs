@@ -4,17 +4,6 @@ using System.Collections.Generic;
 
 public static class GameCenter
 {
-    public static Transform SavePoint { get; set; }
-    public static PlayerLocomotion PlayerLocomotion { get; set; }
-    public static BotController Bot { get; set; }
-    public static DonateSystem DonateSystem { get; set; }
-    public static CoinsCounter CoinsCounter { get; set; }
-    public static SubscribersCounter SubscribersCounter { get; set; }
-    public static LevelProgressPanel LevelProgressPanel { get; set; }
-    public static EasterEggSystem EasterEggSystem { get; set; }
-    public static NotificationPanel NotificationPanel { get; set; }
-    public static DeadPanel DeadPanel { get; set; }
-
     public static bool GlobalPause => MenuPause || ConsolePause;
 
     public static bool ConsolePause
@@ -71,11 +60,6 @@ public static class GameCenter
     }
     private static bool _opportunityToMove;
 
-    public static void SendDonate(DonateItem donate)
-    {
-        DonateSystem.NewDonate(donate);
-    }
-
     private static void CheckPause()
     {
         GameTools.SetCursorVisible(GlobalPause);
@@ -83,21 +67,7 @@ public static class GameCenter
         PauseValueChanged.Invoke(GlobalPause);
     }
 
-    public static void CheckSubscribersSumByDonate(int currentSubscribersCount)
-    {
-        for (int i = StatsHolder.currentTargetDonateIndex; 
-            i < DonateSystem.donateDatabase.donateTargets.Count; 
-            i++)
-        {
-            if (DonateSystem.donateDatabase.donateTargets[i].targetSubscriberSumm <= currentSubscribersCount)
-            {
-                LevelProggress.currentExtraDonateCount++;
-                LevelProgressPanel.UpdateDonates();
-                DonateSystem.NewDonate(DonateSystem.donateDatabase.donateTargets[i].donate);
-                StatsHolder.currentTargetDonateIndex = i+1;
-            }
-        }
-    }
+
 
     public static UnityEvent<bool> PauseValueChanged;
 
@@ -109,6 +79,57 @@ public static class GameCenter
         OpportunityToMove = OpportunityToView = true;
     }
 }
+
+public static class PlayerPack
+{
+    public static Transform SavePoint { get; set; }
+    public static PlayerLocomotion PlayerLocomotion { get; set; }
+    public static BotController Bot { get; set; }
+}
+
+public static class UIPack
+{
+    public static LevelProgressPanel LevelProgressPanel { get; set; }
+    public static EasterEggSystem EasterEggSystem { get; set; }
+    public static NotificationPanel NotificationPanel { get; set; }
+    public static DeadPanel DeadPanel { get; set; }
+}
+
+public static class StreamerPack
+{
+    public static DonateSystem DonateSystem { get; set; }
+    public static CoinsCounter CoinsCounter { get; set; }
+    public static SubscribersCounter SubscribersCounter { get; set; }
+
+    public static void CheckSubscribersSumByDonate(int currentSubscribersCount)
+    {
+        for (int i = StatsHolder.currentTargetDonateIndex;
+            i < DonateSystem.donateDatabase.donateTargets.Count;
+            i++)
+        {
+            if (DonateSystem.donateDatabase.donateTargets[i].targetSubscriberSumm <= currentSubscribersCount)
+            {
+                LevelProggress.currentExtraDonateCount++;
+                UIPack.LevelProgressPanel.UpdateDonates();
+                DonateSystem.NewDonate(DonateSystem.donateDatabase.donateTargets[i].donate);
+                StatsHolder.currentTargetDonateIndex = i + 1;
+            }
+        }
+    }
+
+    public static void SendDonate(DonateItem donate)
+    {
+        DonateSystem.NewDonate(donate);
+    }
+}
+
+public static class AudioPack
+{
+    public static AudioSystem AudioSystem { get; set; }
+    public static EffectsAudioSystem EffectsAudioSystem { get; set; }
+    public static MusicSystem MusicSystem { get; set; }
+}
+
 
 public static class TagHolder
 {

@@ -54,7 +54,7 @@ public class DeadPanel : MonoBehaviour
 
     private void Awake()
     {
-        GameCenter.DeadPanel = this;
+        UIPack.DeadPanel = this;
         reasonPanel.SetActive(false);
         activePanelColor = deadPanel.color;
         disactivePanelColor = new Color(activePanelColor.r, activePanelColor.g, activePanelColor.b, 0);

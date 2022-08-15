@@ -41,7 +41,7 @@ public class PlayerLocomotion : MonoBehaviour
 
     private void Awake()
     {
-        GameCenter.PlayerLocomotion = this;
+        PlayerPack.PlayerLocomotion = this;
     }
 
     private void Start()

@@ -28,16 +28,16 @@ public class EasterEggSystem : MonoBehaviour
     private void Awake()
     {
         ShowItemWithId(-1);
-        GameCenter.EasterEggSystem = this;
+        UIPack.EasterEggSystem = this;
         easterEggDatabase.RefreshIds();
     }
 
     public void UnblockEasterEggWithId(int id)
     {
         LevelProggress.currentLevelEasterEggsCount++;
-        GameCenter.LevelProgressPanel.UpdateEasterEggs();
+        UIPack.LevelProgressPanel.UpdateEasterEggs();
         StatsHolder.unblockedEasterEggsIds.Add(id);
-        GameCenter.NotificationPanel.ShowNotification("Найдена пасхалка!\r\n" +
+        UIPack.NotificationPanel.ShowNotification("Найдена пасхалка!\r\n" +
             easterEggDatabase.EasterEggItems[id].name +
             "\r\n Откройте меню пасхалок, чтобы узнать больше");
     }

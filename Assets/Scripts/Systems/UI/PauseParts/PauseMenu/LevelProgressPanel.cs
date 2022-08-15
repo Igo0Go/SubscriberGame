@@ -39,7 +39,7 @@ public class LevelProgressPanel : MonoBehaviour
 
     private void Awake()
     {
-        GameCenter.LevelProgressPanel = this;
+        UIPack.LevelProgressPanel = this;
         coinsCompleteIcon.SetActive(false);
         donateCompleteIcon.SetActive(false);
         subscribersCompleteIcon.SetActive(false);

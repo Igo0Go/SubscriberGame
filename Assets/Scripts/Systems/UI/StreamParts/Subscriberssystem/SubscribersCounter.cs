@@ -7,7 +7,7 @@ public class SubscribersCounter : MonoBehaviour
 
     private void Awake()
     {
-        GameCenter.SubscribersCounter = this;
+        StreamerPack.SubscribersCounter = this;
     }
 
     private void Start()
@@ -18,8 +18,8 @@ public class SubscribersCounter : MonoBehaviour
     public void AddSubscribers(int count)
     {
         LevelProggress.currentLevelSubscribersCount += count;
-        GameCenter.LevelProgressPanel.UpdateSubscribers();
-        GameCenter.CheckSubscribersSumByDonate(LevelProggress.currentLevelSubscribersCount);
+        UIPack.LevelProgressPanel.UpdateSubscribers();
+        StreamerPack.CheckSubscribersSumByDonate(LevelProggress.currentLevelSubscribersCount);
         subscriberCountText.text = LevelProggress.currentLevelSubscribersCount.ToString();
     }
 }

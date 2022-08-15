@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EffectsAudioSystem : MonoBehaviour
@@ -8,18 +7,13 @@ public class EffectsAudioSystem : MonoBehaviour
     [SerializeField]
     private AudioSource loopSource;
 
-    [SerializeField]
-    private List<AudioEffectItem> audioEffectItems;
-
-    public void UseItemWithIndex(int index)
+    private void Start()
     {
-        if(audioEffectItems[index] == null)
-        {
-            return;
-        }
+        AudioPack.EffectsAudioSystem = this;
+    }
 
-        AudioEffectItem item = audioEffectItems[index];
-
+    public void UseItem(AudioEffectItem item)
+    {
         switch (item.effectType)
         {
             case AudioEffectType.playOneShot:

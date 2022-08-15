@@ -9,7 +9,7 @@ public class DonatePoint : MonoBehaviour
     private void Start()
     {
         LevelProggress.maxDonateOnLevel += donates.Count;
-        GameCenter.LevelProgressPanel.UpdateDonates();
+        UIPack.LevelProgressPanel.UpdateDonates();
     }
 
     public void SendAllDonates()
@@ -17,8 +17,8 @@ public class DonatePoint : MonoBehaviour
         foreach (var donate in donates)
         {
             LevelProggress.currentLevelDonateCount++;
-            GameCenter.LevelProgressPanel.UpdateDonates();
-            GameCenter.DonateSystem.NewDonate(donate);
+            UIPack.LevelProgressPanel.UpdateDonates();
+            StreamerPack.DonateSystem.NewDonate(donate);
         }
         Destroy(gameObject);
     }

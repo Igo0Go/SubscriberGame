@@ -17,6 +17,7 @@ public class AudioSystem : MonoBehaviour
     {
         sources = FindObjectsOfType<AudioSource>();
         SetModeForAllSources(FindAudioModeOfType(startType));
+        AudioPack.AudioSystem = this;
     }
 
     public void SetWaterAudioMode()

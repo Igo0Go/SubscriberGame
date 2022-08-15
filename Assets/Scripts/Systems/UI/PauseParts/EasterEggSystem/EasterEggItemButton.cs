@@ -16,6 +16,6 @@ public class EasterEggItemButton : MonoBehaviour
 
     public void OnClick()
     {
-        GameCenter.EasterEggSystem.ShowItemWithId(id);
+        UIPack.EasterEggSystem.ShowItemWithId(id);
     }
 }

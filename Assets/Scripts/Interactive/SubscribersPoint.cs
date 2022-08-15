@@ -12,7 +12,7 @@ public class SubscribersPoint : MonoBehaviour
 
     public void AddSubscribers()
     {
-        GameCenter.SubscribersCounter.AddSubscribers(subscribersCount);
+        StreamerPack.SubscribersCounter.AddSubscribers(subscribersCount);
         Destroy(gameObject);
     }
 }

@@ -19,6 +19,6 @@ public class DonateHolderButton : MonoBehaviour
 
     public void OnClick()
     {
-        GameCenter.DonateSystem.ShowDonateFromHolderByIndex(id);
+        StreamerPack.DonateSystem.ShowDonateFromHolderByIndex(id);
     }
 }

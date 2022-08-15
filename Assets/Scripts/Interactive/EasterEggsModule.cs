@@ -12,7 +12,7 @@ public class EasterEggsModule : MonoBehaviour
 
     public void UnblockEasterEgg()
     {
-        GameCenter.EasterEggSystem.UnblockEasterEggWithId(easterEggsId);
+        UIPack.EasterEggSystem.UnblockEasterEggWithId(easterEggsId);
         Destroy(gameObject);
     }
 }

@@ -25,7 +25,7 @@ public class Coin : MonoBehaviour
         else
         {
             LevelProggress.maxCoinsOnLevel += price;
-            GameCenter.LevelProgressPanel.UpdateCoins();
+            UIPack.LevelProgressPanel.UpdateCoins();
         }
         StartCoroutine(RotateCoroutine());
     }
@@ -55,11 +55,11 @@ public class Coin : MonoBehaviour
     {
         while (Direction.magnitude > 0.1f)
         {
-            myTransform.position += Direction.normalized * speed * Time.deltaTime;
+            myTransform.position += speed * Time.deltaTime * Direction.normalized;
             yield return null;
         }
 
-        GameCenter.CoinsCounter.AddCoins(price, itemClip);
+        StreamerPack.CoinsCounter.AddCoins(price, itemClip);
         Destroy(gameObject);
     }
 }

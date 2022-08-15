@@ -10,7 +10,7 @@ public class CoinsCounter : MonoBehaviour
 
     private void Awake()
     {
-        GameCenter.CoinsCounter = this;
+        StreamerPack.CoinsCounter = this;
     }
 
     public void AddCoins(int count, AudioClip clip)
@@ -23,6 +23,6 @@ public class CoinsCounter : MonoBehaviour
     public void UpdateCoinsCounter()
     {
         counterText.text = (LevelProggress.currentLevelCoinsCount + LevelProggress.currentExtraCoinsCount).ToString();
-        GameCenter.LevelProgressPanel.UpdateCoins();
+        UIPack.LevelProgressPanel.UpdateCoins();
     }
 }

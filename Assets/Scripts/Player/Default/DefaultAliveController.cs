@@ -6,16 +6,16 @@ public class DefaultAliveController : AliveController
     {
         if (other.CompareTag(TagHolder.DeadZone))
         {
-            GameCenter.DeadPanel.SetReasonByType(other.GetComponent<DeadReasonPoint>().deadReason);
-            GameCenter.PlayerLocomotion.FastTeleportToPoint(GameCenter.SavePoint);
+            UIPack.DeadPanel.SetReasonByType(other.GetComponent<DeadReasonPoint>().deadReason);
+            PlayerPack.PlayerLocomotion.FastTeleportToPoint(PlayerPack.SavePoint);
         }
         else if(other.CompareTag(TagHolder.Darkness))
         {
-            GameCenter.Bot.LightOn();
+            PlayerPack.Bot.LightOn();
         }
         else if (other.CompareTag(TagHolder.SavePoint))
         {
-            GameCenter.SavePoint = other.transform;
+            PlayerPack.SavePoint = other.transform;
             Destroy(other);
         }
         else if (other.TryGetComponent(out Coin coin))
@@ -28,7 +28,7 @@ public class DefaultAliveController : AliveController
     {
         if (other.CompareTag(TagHolder.Darkness))
         {
-            GameCenter.Bot.LightOff();
+            PlayerPack.Bot.LightOff();
         }
     }
 }

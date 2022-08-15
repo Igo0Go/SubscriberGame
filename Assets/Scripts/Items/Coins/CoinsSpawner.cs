@@ -8,7 +8,7 @@ public class CoinsSpawner : MonoBehaviour
     private void Start()
     {
         LevelProggress.maxCoinsOnLevel += coinsInside;
-        GameCenter.LevelProgressPanel.UpdateCoins();
+        UIPack.LevelProgressPanel.UpdateCoins();
     }
 
     public void SpawnCoins()

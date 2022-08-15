@@ -29,7 +29,7 @@ public class BotController : MonoBehaviour
 
     private void Start()
     {
-        GameCenter.Bot = this;
+        PlayerPack.Bot = this;
         myTransform = transform;
         gameplayPosUsed = false;
 

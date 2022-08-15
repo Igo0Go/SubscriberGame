@@ -16,7 +16,7 @@ public class NotificationPanel : MonoBehaviour
 
     private void Awake()
     {
-        GameCenter.NotificationPanel = this;
+        UIPack.NotificationPanel = this;
         notificationQueue = new List<string>();
         backgroundPanel.SetActive(false);
     }

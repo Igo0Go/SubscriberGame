@@ -19,7 +19,7 @@ public class DonateSystem : MonoBehaviour
 
     private void Awake()
     {
-        GameCenter.DonateSystem = this;
+        StreamerPack.DonateSystem = this;
     }
 
     private void Start()
@@ -78,8 +78,8 @@ public class DonateSystem : MonoBehaviour
     private float UseDonate(DonateItem donate)
     {
         LevelProggress.currentExtraCoinsCount += donate.sum;
-        GameCenter.LevelProgressPanel.UpdateCoins();
-        GameCenter.CoinsCounter.UpdateCoinsCounter();
+        UIPack.LevelProgressPanel.UpdateCoins();
+        StreamerPack.CoinsCounter.UpdateCoinsCounter();
         int castomizeIndex = FindCastomizeIndexBySum(donate.sum);
         ShowDonate(donate, castomizeIndex);
 
