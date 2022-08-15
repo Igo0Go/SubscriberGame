@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 835a724fbe7efb148ae15b0a4a1a328a, type: 3}
   m_Name: AudioSystemData
   m_EditorClassIdentifier: 
-  audioModes: []
+  audioModes:
+  - modeType: 0
+    mixer: {fileID: 24300002, guid: ec0a913e64abd554981b1d10524a03bb, type: 2}
+  - modeType: 1
+    mixer: {fileID: 24300002, guid: d9e9879efe488d44f84973ff261e6dbb, type: 2}

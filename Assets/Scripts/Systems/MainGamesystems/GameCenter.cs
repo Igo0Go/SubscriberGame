@@ -69,13 +69,12 @@ public static class GameCenter
         PauseValueChanged.Invoke(GlobalPause);
     }
 
-
-
     public static UnityEvent<bool> PauseValueChanged;
 
     public static void SetUp()
     {
         PauseValueChanged = new UnityEvent<bool>();
+        Settings.Refresh();
 
         ConsolePause = MenuPause = false;
         OpportunityToMove = OpportunityToView = true;
@@ -87,6 +86,7 @@ public static class PlayerPack
     public static Transform SavePoint { get; set; }
     public static PlayerLocomotion PlayerLocomotion { get; set; }
     public static BotController Bot { get; set; }
+    public static ReplicSystem ReplicSystem { get; set; }
 }
 
 public static class UIPack
@@ -146,7 +146,7 @@ public static class TagHolder
 
 #endregion
 
-#region dataForSaving
+#region DataForSaving
 
 public static class Settings
 {
@@ -198,6 +198,13 @@ public static class Settings
     public static UnityEvent<float> VoiceVolumeChanged { get; set; }
     public static UnityEvent<float> SoundsVolumeChanged { get; set; }
     public static UnityEvent<float> MusicVolumeChanged { get; set; }
+
+    public static void Refresh()
+    {
+        VoiceVolumeChanged = new UnityEvent<float>();
+        SoundsVolumeChanged = new UnityEvent<float>();
+        MusicVolumeChanged = new UnityEvent<float>();
+    }
 }
 
 public static class StatsHolder

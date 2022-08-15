@@ -9,24 +9,22 @@ public class ReplicSystem : MonoBehaviour
     [SerializeField] private AudioSource voiceAudioSource;
     [SerializeField] private SubsPanel subsPanel;
     [SerializeField] private KeyCode skipButton;
-    [SerializeField, Space(10)] Toggle drawSubsToggle;
 
     private List<ReplicaPack> replicaPacks;
     private bool useMainReplicPack;
 
     private void Awake()
     {
+        PlayerPack.ReplicSystem = this;
         useMainReplicPack = false;
         replicaPacks = new List<ReplicaPack>();
         subsPanel.ClosePanel();
-        drawSubsToggle.isOn = Settings.UseSubs;
-        drawSubsToggle.onValueChanged = new Toggle.ToggleEvent();
-        drawSubsToggle.onValueChanged.AddListener(OnDrawSubsChanged);
     }
 
     private void Start()
     {
         GameCenter.PauseValueChanged.AddListener(OnChangePause);
+        Settings.VoiceVolumeChanged.AddListener(OnChangeVolume);
     }
 
     private void Update()
@@ -83,6 +81,11 @@ public class ReplicSystem : MonoBehaviour
         {
             voiceAudioSource.UnPause();
         }
+    }
+
+    private void OnChangeVolume(float newVolume)
+    {
+        voiceAudioSource.volume = newVolume;
     }
 
     private void Skip()

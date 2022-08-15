@@ -7,6 +7,7 @@ public class PausePanel : MonoBehaviour
     [SerializeField] private GameObject pausePanel;
     [SerializeField] private GameObject easterEggsPanel;
     [SerializeField] private GameObject donatesPanel;
+    [SerializeField] private GameObject settingsPanel;
 
     private void Start()
     {
@@ -23,12 +24,35 @@ public class PausePanel : MonoBehaviour
         }
     }
 
+    public void PausePanelToggle()
+    {
+        GameCenter.MenuPause = !GameCenter.MenuPause;
+        bacground.SetActive(GameCenter.MenuPause);
+        pausePanel.SetActive(GameCenter.MenuPause);
+
+        if (!GameCenter.MenuPause)
+        {
+            easterEggsPanel.SetActive(false);
+            donatesPanel.SetActive(false);
+            settingsPanel.SetActive(false);
+        }
+    }
+    public void Restart()
+    {
+        LevelProggress.Reset();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
     public void EasterEggsPanelToggle()
     {
         easterEggsPanel.SetActive(!easterEggsPanel.activeSelf);
         pausePanel.SetActive(!easterEggsPanel.activeSelf);
 
-        if(easterEggsPanel.activeSelf)
+        if (easterEggsPanel.activeSelf)
         {
             GetComponent<EasterEggSystem>().ShowAllItemButtons();
         }
@@ -43,34 +67,17 @@ public class PausePanel : MonoBehaviour
             GetComponent<DonateHolderSystem>().ShowAllItemButtons();
         }
     }
-
-    public void PausePanelToggle()
+    public void SettingsPanelToggle()
     {
-        GameCenter.MenuPause = !GameCenter.MenuPause;
-        bacground.SetActive(GameCenter.MenuPause);
-        pausePanel.SetActive(GameCenter.MenuPause);
-
-        if(!GameCenter.MenuPause)
-        {
-            easterEggsPanel.SetActive(false);
-            donatesPanel.SetActive(false);
-        }
+        settingsPanel.SetActive(!settingsPanel.activeSelf);
+        pausePanel.SetActive(!settingsPanel.activeSelf);
     }
-    public void Restart()
-    {
-        LevelProggress.Reset();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-    public void ExitGame()
-    {
-        Application.Quit();
-    }
-
 
     private void SetActiveForPanels(bool value)
     {
         pausePanel.SetActive(value);
         easterEggsPanel.SetActive(value);
         donatesPanel.SetActive(value);
+        settingsPanel.SetActive(value);
     }
 }
