@@ -78,6 +78,7 @@ public class DonateSystem : MonoBehaviour
     private float UseDonate(DonateItem donate)
     {
         LevelProggress.currentExtraCoinsCount += donate.sum;
+        StatsHolder.coins += donate.sum;
         UIPack.LevelProgressPanel.UpdateCoins();
         StreamerPack.CoinsCounter.UpdateCoinsCounter();
         int castomizeIndex = FindCastomizeIndexBySum(donate.sum);

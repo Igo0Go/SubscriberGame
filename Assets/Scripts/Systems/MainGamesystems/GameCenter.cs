@@ -209,10 +209,13 @@ public static class Settings
 
 public static class StatsHolder
 {
+    public static int slotNumber;
+    public static int sceneForLoading = 1;
     public static int coins = 0;
     public static int subscribers = 0;
     public static int currentTargetDonateIndex = 0;
     public static List<int> unblockedEasterEggsIds = new List<int>();
+    public static string recentEvents = "ѕока ничего не случилось. Ёто только первый стрим!";
 }
 
 #endregion

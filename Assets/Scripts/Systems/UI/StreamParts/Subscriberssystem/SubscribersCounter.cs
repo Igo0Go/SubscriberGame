@@ -18,8 +18,21 @@ public class SubscribersCounter : MonoBehaviour
     public void AddSubscribers(int count)
     {
         LevelProggress.currentLevelSubscribersCount += count;
+        UpdateSubscribers(count);
+
+    }
+
+    public void AddExtraSubscribers(int count)
+    {
+        LevelProggress.currentExtraSubscribersCount += count;
+        UpdateSubscribers(count);
+    }
+
+    private void UpdateSubscribers(int count)
+    {
+        StatsHolder.subscribers += count;
         UIPack.LevelProgressPanel.UpdateSubscribers();
-        StreamerPack.CheckSubscribersSumByDonate(LevelProggress.currentLevelSubscribersCount);
-        subscriberCountText.text = LevelProggress.currentLevelSubscribersCount.ToString();
+        StreamerPack.CheckSubscribersSumByDonate(StatsHolder.subscribers);
+        subscriberCountText.text = StatsHolder.subscribers.ToString();
     }
 }

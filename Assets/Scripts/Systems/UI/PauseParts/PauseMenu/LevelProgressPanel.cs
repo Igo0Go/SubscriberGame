@@ -37,6 +37,11 @@ public class LevelProgressPanel : MonoBehaviour
     [SerializeField]
     private AudioClip easterEggsCompleteSound;
 
+    private bool coinsBonus;
+    private bool subscribersBonus;
+    private bool donatesBonus;
+    private bool easterEggsBonus;
+
     private void Awake()
     {
         UIPack.LevelProgressPanel = this;
@@ -51,9 +56,11 @@ public class LevelProgressPanel : MonoBehaviour
         coinsInfoText.text = LevelProggress.currentLevelCoinsCount.ToString() +
             "/" + LevelProggress.maxCoinsOnLevel.ToString() +
             "<color=red> + " + LevelProggress.currentExtraCoinsCount.ToString() + "</color>";
-        if (LevelProggress.currentLevelCoinsCount >= LevelProggress.maxCoinsOnLevel)
+        if (!coinsBonus && LevelProggress.currentLevelCoinsCount >= LevelProggress.maxCoinsOnLevel)
         {
+            coinsBonus = true;
             coinsCompleteIcon.SetActive(true);
+            StreamerPack.SubscribersCounter.AddExtraSubscribers(1);
             uiSoundsSource.PlayOneShot(coinsCompleteSound);
         }
     }
@@ -63,9 +70,11 @@ public class LevelProgressPanel : MonoBehaviour
         donateInfoText.text = LevelProggress.currentLevelDonateCount.ToString() +
             "/" + LevelProggress.maxDonateOnLevel.ToString() +
             "<color=red> + " + LevelProggress.currentExtraDonateCount.ToString() + "</color>";
-        if(LevelProggress.currentLevelDonateCount >= LevelProggress.maxDonateOnLevel)
+        if(!donatesBonus && LevelProggress.currentLevelDonateCount >= LevelProggress.maxDonateOnLevel)
         {
+            donatesBonus = true;
             donateCompleteIcon.SetActive(true);
+            StreamerPack.SubscribersCounter.AddExtraSubscribers(2);
             uiSoundsSource.PlayOneShot(donateCompleteSound);
         }
     }
@@ -73,10 +82,13 @@ public class LevelProgressPanel : MonoBehaviour
     public void UpdateSubscribers()
     {
         subscribersInfoText.text = LevelProggress.currentLevelSubscribersCount.ToString()+
-            "/" + LevelProggress.maxSubscribersOnLevel.ToString();
-        if (LevelProggress.currentLevelSubscribersCount >= LevelProggress.maxSubscribersOnLevel)
+            "/" + LevelProggress.maxSubscribersOnLevel.ToString() +
+            "<color=red> + " + LevelProggress.currentExtraSubscribersCount.ToString() + "</color>";
+        if (!subscribersBonus && LevelProggress.currentLevelSubscribersCount >= LevelProggress.maxSubscribersOnLevel)
         {
+            subscribersBonus = true;
             subscribersCompleteIcon.SetActive(true);
+            StreamerPack.SubscribersCounter.AddExtraSubscribers(4);
             uiSoundsSource.PlayOneShot(subscribersCompleteSound);
         }
     }
@@ -85,9 +97,11 @@ public class LevelProgressPanel : MonoBehaviour
     {
         easterEggsInfoText.text = LevelProggress.currentLevelEasterEggsCount.ToString() +
             "/" + LevelProggress.maxEasterEggsCount.ToString();
-        if (LevelProggress.currentLevelEasterEggsCount >= LevelProggress.maxEasterEggsCount)
+        if (!easterEggsBonus && LevelProggress.currentLevelEasterEggsCount >= LevelProggress.maxEasterEggsCount)
         {
+            easterEggsBonus = true;
             easterEggsCompleteIcon.SetActive(true);
+            StreamerPack.SubscribersCounter.AddExtraSubscribers(3);
             uiSoundsSource.PlayOneShot(easterEggsCompleteSound);
         }
     }
@@ -102,6 +116,7 @@ public static class LevelProggress
 
     public static int currentExtraCoinsCount = 0;
     public static int currentExtraDonateCount = 0;
+    public static int currentExtraSubscribersCount = 0;
 
     public static int maxCoinsOnLevel = 0;
     public static int maxDonateOnLevel = 0;
