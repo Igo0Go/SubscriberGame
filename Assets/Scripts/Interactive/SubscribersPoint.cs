@@ -8,6 +8,7 @@ public class SubscribersPoint : MonoBehaviour
     private void Start()
     {
         LevelProggress.maxSubscribersOnLevel += subscribersCount;
+        UIPack.LevelProgressPanel.UpdateSubscribers();
     }
 
     public void AddSubscribers()
