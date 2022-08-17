@@ -287,77 +287,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
---- !u!1 &59566358
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 59566359}
-  - component: {fileID: 59566360}
-  m_Layer: 0
-  m_Name: FakeFinal
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &59566359
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59566358}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 626313451}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &59566360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59566358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1778665365}
-  messages:
-  - authorName: Cuwor
-    messageText: "\u0427\u0435\u0433\u043E?!"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - authorName: Menem
-    messageText: Nani?!
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - authorName: x-Teeth-x
-    messageText: "\u0430\u0445\u0430\u0430\u0445\u0430\u0445\u0430"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - authorName: DeusDes
-    messageText: "\u0427\u0435\u0433\u043E? \u0418\u0433\u043E\u0440\u044C?! \u042D\u0442\u043E
-      \u0432\u0441\u0451?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: moliren
-    messageText: "\u0411\u043E\u043B\u044C\u0448\u0435 \u043D\u0435\u0447\u0435\u0433\u043E
-      \u0442\u0435\u0441\u0442\u0438\u0442\u044C?"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u0416\u0434\u0438..."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
 --- !u!1 &103751948
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,85 +479,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 121853613}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &121879259
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 121879260}
-  - component: {fileID: 121879261}
-  m_Layer: 0
-  m_Name: Stage2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &121879260
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 121879259}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 626313451}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &121879261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 121879259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1778665365}
-  messages:
-  - authorName: DeusDes
-    messageText: "\u0412\u043E\u0443"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: x-Teeth-x
-    messageText: "\u042F \u043F\u043E\u0434\u0430\u0432\u0438\u043B\u0430\u0441\u044C
-      \u043F\u0435\u043B\u044C\u043C\u0435\u0448\u043A\u043E\u0439"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u0414\u0435\u043D\u0438\u0441?.."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: DeusDes
-    messageText: "\u0422\u0443\u0442 \u0435\u0441\u0442\u044C \u0432\u0440\u0430\u0433\u0438?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u041D\u0435 \u0437\u0434\u0435\u0441\u044C"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: Cuwor
-    messageText: "\u041D\u0430\u0441\u043A\u043E\u043B\u044C\u043A\u043E \u0440\u0430\u0437\u043D\u044B\u0435
-      \u0436\u0430\u043D\u0440\u044B \u0442\u0443\u0442?"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u0423\u0432\u0438\u0434\u0438\u0442\u0435..."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
 --- !u!1 &130906749
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,81 +778,6 @@ Transform:
   m_Father: {fileID: 1391489783}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &222511167
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 222511168}
-  - component: {fileID: 222511169}
-  m_Layer: 0
-  m_Name: Gate
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &222511168
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 222511167}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 626313451}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &222511169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 222511167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1778665365}
-  messages:
-  - authorName: Menem
-    messageText: "\u041F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u0443 \u043F\u043E\u0434\u0441\u0432\u0442\u0438\u043B\u0438"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - authorName: x-Teeth-x
-    messageText: "\u0421\u043F\u0430\u0441\u0438\u0431\u043E, \u043A\u044D\u043F)))"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?..."
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u0414\u0435\u043D\u0438\u0441?.."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: DeusDes
-    messageText: "\u0422\u0443\u0442 \u0435\u0441\u0442\u044C \u0438\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F
-      \u0433\u0435\u043D\u0435\u0440\u0430\u0446\u0438\u044F"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u041D\u0435\u0442... \u0414\u0435\u043D\u0438\u0441..."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: x-Teeth-x
-    messageText: "\u041A\u0442\u043E-\u0442\u043E \u043F\u043E\u0434\u0433\u0430\u0440\u0430\u0435\u0442
-      (\uFFE2_\uFFE2)"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
 --- !u!1 &281778611
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,45 +823,280 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chatSystem: {fileID: 1778665365}
   messages:
-  - authorName: Cuwor
-    messageText: "\u042D\u0442\u043E \u0442\u043E\u0442 \u0441\u0430\u043C\u044B\u0439
-      \u0438\u0433\u043E\u0440\u0435\u0432\u0441\u043A\u0438\u0439 \u0430\u043A\u0446\u0435\u043D\u0442?"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - authorName: Menem
-    messageText: "\u0414\u0430"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u0414\u0430..."
+  - subscribersCountToActivate: 0
+    authorName: IgoGo
+    messageText: "\u041D\u0443 \u0447\u0442\u043E, \u043F\u043E\u0440\u0430? \u0412\u043A\u043B\u044E\u0447\u0430\u0439."
     authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
     useColor: 1
-  - authorName: x-Teeth-x
-    messageText: "\u041F\u0440\u0438\u043A\u043E\u043B\u044C\u043D\u043E"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - authorName: moliren
-    messageText: "\u0410 \u0447\u0442\u043E \u0442\u0435\u0441\u0442\u0438\u0442\u044C-\u0442\u043E?"
+  - subscribersCountToActivate: 0
+    authorName: moliren
+    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442, \u043F\u0440\u0438\u0432\u0435\u0442)"
     authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
     useColor: 0
-  - authorName: DeusDes
-    messageText: "\u0410\u043D\u0436\u0435\u043B\u0438\u043A\u0430. \u0423\u0431\u0435\u0439
-      \u0435\u0433\u043E! \u0423\u0431\u0435\u0439!"
+  - subscribersCountToActivate: 0
+    authorName: moliren
+    messageText: "\u0414\u0430, \u0443\u0436\u0435 \u043F\u043E\u0440\u0430."
+    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 3
+    authorName: IgoGo
+    messageText: "\u0417\u0434\u0440\u0430\u0441\u0442\u0435, \u0432\u0441\u0435."
+    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
+    useColor: 1
+  - subscribersCountToActivate: 3
+    authorName: x-Teeth-x
+    messageText: "\u0420\u0430\u0434\u0430 \u0432\u0441\u0435\u0445 \u0432\u0438\u0434\u0435\u0442\u044C!
+      \u041F\u0440\u0438\u044F\u0442\u043D\u043E\u0433\u043E \u0441\u0442\u0440\u0438\u043C\u0430!\n\u30FD(\u30FB\u2200\u30FB)\uFF89"
+    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 4
+    authorName: DeusDes
+    messageText: "\u041A\u0443-\u043A\u0443!\n\u0412\u0441\u0435\u043C \u0437\u0434\u0440\u0430\u0441\u0442\u0435. "
     authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
     useColor: 0
-  - authorName: Cuwor
-    messageText: "\u0421\u043B\u0443\u0448\u0430\u0439, \u0437\u0430\u0442\u043A\u043D\u0438
-      \u0435\u0433\u043E, \u043E\u043D \u0437\u0430\u0434\u043E\u043B\u0431\u0430\u043B."
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - authorName: Menem
+  - subscribersCountToActivate: 5
+    authorName: Menem
     messageText: "\u041B\u044F\u0433\u0443\u0448\u043A\u0430"
     authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
     useColor: 0
-  - authorName: IgoGo
-    messageText: "\u0410\u043D\u0436\u0435\u043B\u0438\u043A\u0430, \u043F\u043E\u0433\u043E\u0434\u0438
-      \u0447\u0443\u0442\u043A\u0430. \u0414\u043E\u043B\u0436\u043D\u0430 \u0434\u0432\u0435\u0440\u044C
-      \u043E\u0442\u043A\u0440\u044B\u0442\u044C\u0441\u044F..."
+  - subscribersCountToActivate: 6
+    authorName: Cuwor
+    messageText: "\u0417\u0434\u043E\u0440\u043E\u0432\u0430"
+    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 5
+    authorName: Menem
+    messageText: "\u0414\u0430\u0432\u0430\u0439, \u043D\u0435 \u0442\u043E\u043C\u0438."
+    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 7
+    authorName: "\u041C\u0430\u0440\u0438\u044F\u0423\u0436\u0435\u041D\u0435\u0415\u043B\u0438\u0441\u0435\u0435\u0432\u0430"
+    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442!)))\n\u2570(\u2594\u2200\u2594)\u256F"
+    authorColor: {r: 0.735849, g: 0.5518868, b: 0.7140483, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 6
+    authorName: Cuwor
+    messageText: "\u0411\u043E\u0442\u0430 \u0434\u0430\u0432\u0430\u0439 \u0437\u0430\u0442\u044B\u043A\u0430\u0442\u044C
+      \u0431\u0443\u0434\u0435\u043C?"
+    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 8
+    authorName: "\u0421\u0435\u0440\u0433\u0435\u0439 \u0417\u0432\u044F\u0433\u0438\u043D"
+    messageText: "\u0414\u0430-\u0434\u0430. \u042F \u0441 \u043D\u0435\u0439)))"
+    authorColor: {r: 0.5529412, g: 0.60215104, b: 0.7372549, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 9
+    authorName: "\u0412\u043B\u0430\u0434 \u0421\u0432\u0438\u043D"
+    messageText: "\u042F \u0437\u0430\u043F\u0430\u0441\u0441\u044F \u0435\u0434\u043E\u0439!
+      \u0411\u043E\u043B\u044C\u0448\u0435 \u043D\u0438\u043A\u043E\u0433\u043E \u043D\u0435
+      \u0436\u0434\u0451\u043C. \u0421\u0442\u0430\u0440\u0442\u0443\u0439!"
+    authorColor: {r: 0.8959275, g: 0.6427109, b: 0.9528302, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 4
+    authorName: DeusDes
+    messageText: "\u0414\u0430\u0432\u0430\u0439. \u0423\u0431\u0435\u0439 \u0432\u0441\u0435\u0445!
+      \u0423\u0431\u0435\u0439!"
+    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 11
+    authorName: "\u0414\u0435\u043D\u0438\u0441 \u0427\u0443\u0434\u043D\u043E\u0432"
+    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442. )))"
+    authorColor: {r: 0.3254902, g: 0.37353635, b: 0.7529412, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 11
+    authorName: "\u041A\u0441\u0435\u043D\u0438\u044F \u0422\u0443\u0440\u0443\u0441\u043E\u0432\u0430"
+    messageText: "\u0410\u0443. \u041C\u044B \u0441 \u0432\u0430\u043C\u0438))"
+    authorColor: {r: 0.7529412, g: 0.4603129, b: 0.3254902, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 12
+    authorName: "\u041A\u0438\u0440\u0438\u043B\u043B \u0414\u043E\u043B\u0433\u0438\u0445"
+    messageText: "\u0412\u0441\u0435\u043C \u043F\u0440\u0438\u0432\u0435\u0442"
+    authorColor: {r: 0.84057707, g: 0.8862745, b: 0.41568628, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 12
+    authorName: moliren
+    messageText: "\u041E\u0433\u043E, \u043A\u0430\u043A\u0438\u0435 \u043B\u044E\u0434\u0438)))"
+    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 13
+    authorName: "\u0412\u0438\u043A\u0430 \u0410\u043D\u0446\u0438\u0444\u0435\u0440\u043E\u0432\u0430"
+    messageText: "\u0417\u0434\u0440\u0430\u0441\u0442\u0435. \u0417\u0434\u0440\u0430\u0441\u0442\u0435.
+      \u041A\u0430\u043A \u0432\u044B \u0442\u0443\u0442."
+    authorColor: {r: 0.8396226, g: 0.48687044, b: 0.10693307, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 13
+    authorName: x-Teeth-x
+    messageText: "\u0415\u0434\u0438\u043C)))\n\u0418 \u0436\u0434\u0451\u043C \u0441\u0442\u0440\u0438\u043C\u0430)\n(\xB4\uFF65\u1D17\uFF65
+      )"
+    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 15
+    authorName: "\u041C\u0430\u0440\u0438\u044F \u041E\u0442\u043E\u0447\u0438\u043D\u0430"
+    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442 \u0432\u0441\u0435\u043C \u043D\u0430
+      \u0441\u0442\u0440\u0438\u043C\u0435.\n\u0418\u0433\u043E\u0440\u0451\u0445\u0430,
+      \u043F\u0440\u0438\u0432\u0435\u0442)))"
+    authorColor: {r: 0.42729217, g: 0.1254902, b: 0.6901961, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 15
+    authorName: "\u0410\u043D\u0442\u043E\u043D \u041A\u0430\u0437\u0430\u043A\u043E\u0432"
+    messageText: "\u0412\u0441\u0435\u043C \u0437\u0434\u0440\u0430\u0441\u0442\u0435.\n\u0418\u0433\u043E\u0440\u044C,
+      \u0437\u0434\u043E\u0440\u043E\u0432\u0430)"
+    authorColor: {r: 0.6901961, g: 0.22927496, b: 0.1254902, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 15
+    authorName: IgoGo
+    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442, \u0432\u0430\u043C. \u041F\u0440\u0438\u0432\u0435\u0442."
+    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
+    useColor: 1
+  - subscribersCountToActivate: 16
+    authorName: "\u0421\u043E\u0432\u0451\u043D\u043E\u043A"
+    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442, \u0418\u0433\u043E\u0440\u044C.
+      \u041F\u0440\u0438\u0432\u0435\u0442, \u041D\u0430\u0441\u0442\u044F. \u041F\u0440\u0438\u0432\u0435\u0442,
+      \u0412\u043B\u0430\u0434. \u041F\u0440\u0438\u0432\u0435\u0442, \u041C\u0430\u0448\u0430,
+      \u041F\u0440\u0438\u0432\u0435\u0442, \u0410\u043D\u0442\u043E\u043D.\n\u041E\u0441\u0442\u0430\u043B\u044C\u043D\u044B\u0445
+      \u044F \u043D\u0435 \u0437\u043D\u0430\u044E, \u043D\u043E \u043F\u0440\u0438\u0432\u0435\u0442."
+    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 16
+    authorName: IgoGo
+    messageText: "\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439, \u0421\u043E\u0444\u044C\u044F"
+    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
+    useColor: 1
+  - subscribersCountToActivate: 16
+    authorName: x-Teeth-x
+    messageText: "\u0421\u043E\u043D\u0435\u0447\u043A\u0430, \u041F\u0440\u0432\u0435\u0442!\n\u2570(*\xB4\uFE36*)\u256F\u2661"
+    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 17
+    authorName: "\u0412\u0435\u0440\u0430 \u0410\u043D\u0434\u0440\u0435\u0435\u0432\u0430"
+    messageText: "\u0417\u0434\u0440\u0430\u0441\u0442\u0435. \u0420\u0435\u0448\u0438\u043B\u0430
+      \u0437\u0430\u0433\u043B\u044F\u043D\u0443\u0442\u044C \u043A \u0432\u0430\u043C
+      \u043D\u0430 \u0441\u0442\u0440\u0438\u043C. \u0412\u0441\u0435\u043C \u043F\u0440\u0438\u0432\u0435\u0442."
+    authorColor: {r: 0.1254902, g: 0.53704697, b: 0.6901961, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 18
+    authorName: "\u0414\u043C\u0438\u0442\u0440\u0438\u0439 \u0421\u0443\u0447\u043A\u043E\u0432"
+    messageText: "\u0417\u0434\u0430\u0440\u043E\u0432\u0430!"
+    authorColor: {r: 0.1254902, g: 0.6901961, b: 0.3992209, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 19
+    authorName: "\u0410\u043D\u043D\u0430 \u0421\u0430\u0432\u0438\u0446\u043A\u0430\u044F"
+    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442 \u0432\u0441\u0435\u043C."
+    authorColor: {r: 0.7923428, g: 0.6383055, b: 0.8301887, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 19
+    authorName: cuwor
+    messageText: "\u041D\u0438\u0447\u0435\u0433\u043E \u0441\u0435\u0431\u0435.
+      \u041A\u0430\u043A\u0438\u0435 \u043B\u044E\u0434\u0438 \u043F\u043E\u0436\u0430\u043B\u043E\u0432\u0430\u043B\u0438!"
+    authorColor: {r: 0.8396226, g: 0.48687044, b: 0.10693307, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 19
+    authorName: x-Teeth-x
+    messageText: "\u0410\u043D\u044F, \u043F\u0440\u0438\u0432\u0435\u0442!"
+    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 20
+    authorName: "\u041C\u0438\u0445\u0430\u0438\u043B \u0411\u0443\u0445\u0442\u043E\u044F\u0440\u043E\u0432"
+    messageText: "\u0412\u0441\u0435\u0445 \u043F\u0440\u0438\u0432\u0435\u0442\u0441\u0442\u0443\u044E."
+    authorColor: {r: 0.735849, g: 0.72421414, b: 0.5588287, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 20
+    authorName: Menem
+    messageText: "\u041E\u0433\u043E! \u0417\u0434\u0440\u0430\u0441\u0442\u0435."
+    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 20
+    authorName: IgoGo
+    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u0435\u043C."
+    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
+    useColor: 1
+  - subscribersCountToActivate: 21
+    authorName: Anonim777
+    messageText: "\u0412\u044B \u0432\u0441\u0435 \u0434\u043E\u043B\u0436\u043D\u044B
+      \u0433\u043E\u0440\u0435\u0442\u044C \u0432 \u0430\u0434\u0443!"
+    authorColor: {r: 0.6901961, g: 0.1254902, b: 0.29624897, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 21
+    authorName: Anonim777
+    messageText: "\u0418\u0437-\u0437\u0430 \u0432\u0430\u0448\u0438\u0445 \u0438\u0433\u0440
+      \u0434\u0435\u0442\u0438 \u043D\u0430 \u0443\u043B\u0438\u0446\u0443 \u043D\u0435
+      \u0432\u044B\u0445\u043E\u0434\u044F\u0442!"
+    authorColor: {r: 0.6901961, g: 0.1254902, b: 0.29624897, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 21
+    authorName: Anonim777
+    messageText: "\u0411\u0410\u0419\u041A\u041E\u0422!"
+    authorColor: {r: 0.6901961, g: 0.1254902, b: 0.29624897, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 21
+    authorName: Anonim777
+    messageText: "\u0411\u0410\u0419\u041A\u041E\u0422!"
+    authorColor: {r: 0.6901961, g: 0.1254902, b: 0.29624897, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 21
+    authorName: Anonim777
+    messageText: "\u0411\u0410\u0419\u041A\u041E\u0422!"
+    authorColor: {r: 0.6901961, g: 0.1254902, b: 0.29624897, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 21
+    authorName: IgoGo
+    messageText: "\u0411\u0430\u0439... \u0411\u0430\u043D..."
+    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
+    useColor: 1
+  - subscribersCountToActivate: 22
+    authorName: SimpleMen
+    messageText: "\u0425\u0430\u0439 \u043F\u0438\u043F\u043B\u044B!"
+    authorColor: {r: 0.6509434, g: 0.41451585, b: 0.4766735, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 22
+    authorName: DeusDes
+    messageText: "\u0422\u044B \u043A\u0442\u043E?! \u0418\u0433\u043E\u0440\u044C,
+      \u044D\u0442\u043E \u043A\u0442\u043E?!"
+    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 22
+    authorName: IgoGo
+    messageText: "\u042F \u043D\u0435 \u0437\u043D\u0430\u044E."
+    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
+    useColor: 1
+  - subscribersCountToActivate: 22
+    authorName: SimpleMen
+    messageText: "\u0414\u0430 \u044F \u043F\u0440\u043E\u0441\u0442\u043E \u043D\u0430
+      \u0441\u0442\u0440\u0438\u043C \u0432\u0430\u0448 \u043D\u0430\u0440\u0432\u0430\u043B\u0441\u044F.
+      \u041F\u043E\u043D\u0440\u0430\u0432\u0438\u043B\u043E\u0441\u044C. \u0420\u0435\u0448\u0438\u043B
+      \u043F\u043E\u0434\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F."
+    authorColor: {r: 0.6509434, g: 0.41451585, b: 0.4766735, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 22
+    authorName: IgoGo
+    messageText: "\u041D\u0443, \u043C\u0438\u043B\u043E\u0441\u0442\u0438 \u043F\u0440\u043E\u0441\u0438\u043C
+      \u0432 \u043D\u0430\u0448\u0443 \u043E\u0442\u0432\u044F\u0437\u043D\u0443\u044E,
+      \u043D\u0435\u043C\u043D\u043E\u0433\u043E \u0448\u0438\u0437\u043E\u043D\u0443\u0442\u0443\u044E,
+      \u043D\u043E \u0432\u0441\u0435\u0433\u0434\u0430 \u0434\u043E\u0431\u0440\u0443\u044E
+      \u043A\u043E\u043C\u043F\u0430\u0448\u043A\u0443)))"
+    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
+    useColor: 1
+  - subscribersCountToActivate: 23
+    authorName: "\u0414\u0430\u0440\u044C\u044F \u0418\u0432\u0430\u043D\u043E\u0432\u0430"
+    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442)"
+    authorColor: {r: 0.3563546, g: 0.4682321, b: 0.8301887, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 23
+    authorName: Cuwor
+    messageText: "\u041E\u0433\u043E. \u041F\u0440\u0438\u0432\u0435\u0442) \u041A\u0430\u043A
+      \u0442\u044B \u0442\u0430\u043C?"
+    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 23
+    authorName: "\u0414\u0430\u0440\u044C\u044F \u0418\u0432\u0430\u043D\u043E\u0432\u0430"
+    messageText: "\u0414\u0430 \u043D\u043E\u0440\u043C\u0430\u043B\u044C\u043D\u043E.
+      \u0412\u043E\u0442, \u0443\u0437\u043D\u0430\u043B\u0430 \u043F\u043E \u0432\u0430\u0448
+      \u0441\u0442\u0440\u0438\u043C. \u041F\u0440\u0438\u0448\u043B\u0430."
+    authorColor: {r: 0.3563546, g: 0.4682321, b: 0.8301887, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 23
+    authorName: IgoGo
+    messageText: "\u042F \u0431\u044B \u0441\u043A\u0430\u0437\u0430\u043B, \u0432\u0435\u0440\u043D\u0443\u043B\u0430\u0441\u044C)))"
     authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
     useColor: 1
 --- !u!1 &285092344
@@ -1401,91 +1411,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &397164542
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 397164543}
-  - component: {fileID: 397164544}
-  m_Layer: 0
-  m_Name: Conveyor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &397164543
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 397164542}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 626313451}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &397164544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 397164542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1778665365}
-  messages:
-  - authorName: IgoGo
-    messageText: "\u0412\u043E\u0442 \u043D\u0430 \u0441\u0447\u0451\u0442 \u043A\u043E\u043D\u0432\u0435\u0439\u0435\u0440\u043E\u0432
-      \u044F \u043D\u0435 \u0443\u0432\u0435\u0440\u0435\u043D. \u041C\u043E\u0436\u0435\u0442,
-      \u043D\u0435 \u0441\u0442\u043E\u0438\u0442 \u0438\u0445 \u0432 \u0438\u0433\u0440\u0435
-      \u0434\u0435\u043B\u0430\u0442\u044C..."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: Menem
-    messageText: "\u041F\u043E\u0447\u0435\u043C\u0443?"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u0422\u0430\u043C \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0441\u044F
-      transform \u0434\u043B\u044F \u0442\u043E\u0433\u043E, \u0447\u0442\u043E\u0431
-      \u0438\u0433\u0440\u043E\u043A\u0430 \u0442\u044F\u0433\u0430\u0442\u044C \u0437\u0430
-      \u0441\u043E\u0431\u043E\u0439."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?..."
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u0414\u0435\u043D\u0438\u0441?.."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: DeusDes
-    messageText: "\u041F\u043E\u043F\u0440\u043E\u0431\u0443\u0439 \u0434\u0432\u0438\u0433\u0430\u0442\u044C
-      \u0435\u0433\u043E \u043F\u043E \u0444\u0438\u0437\u0438\u043A\u0435"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: x-Teeth-x
-    messageText: "\u0414\u0435\u043D\u0438\u0441 \u0432\u0441\u0435\u0433\u0434\u0430
-      \u0441\u043E\u0432\u0435\u0442\u043E\u043C \u043F\u043E\u043C\u043E\u0436\u0435\u0442)))"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u041F\u0440\u043E\u0431\u043E\u0432\u0430\u043B..."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
 --- !u!1 &403557893
 GameObject:
   m_ObjectHideFlags: 0
@@ -2024,101 +1949,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &486205426
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 486205427}
-  - component: {fileID: 486205428}
-  m_Layer: 0
-  m_Name: TheEnd
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &486205427
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 486205426}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 626313451}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &486205428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 486205426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1778665365}
-  messages:
-  - authorName: moliren
-    messageText: "\u0427\u0442\u043E \u0434\u0430\u043B\u044C\u0448\u0435 \u0442\u043E\u0433\u0434\u0430?"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u041C\u043E\u0436\u0435\u0448\u044C \u0432 \u043C\u0435\u043D\u044E
-      \u043F\u0430\u0443\u0437\u044B \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
-      \u0441\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0443. \u0412\u0441\u0451
-      \u043B\u0438 \u0441\u043E\u0431\u0440\u0430\u043B\u0430 \u0438 \u0442.\u0434."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: x-Teeth-x
-    messageText: "\u0410 \u0431\u043E\u043D\u0443\u0441\u044B \u0437\u0430 \u044D\u0442\u043E
-      \u0434\u0430\u044E\u0442?"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u041F\u043E\u043A\u0430 \u0435\u0449\u0451 \u043D\u0435\u0442,
-      \u043D\u043E \u043F\u043E\u0442\u043E\u043C \u0445\u043E\u0447\u0443 \u0441\u0434\u0435\u043B\u0430\u0442\u044C,
-      \u0447\u0442\u043E \u0437\u0430 \u043A\u0430\u0436\u0434\u0443\u044E \u043C\u0435\u0434\u0430\u043B\u044C\u043A\u0443
-      \u0442\u0435\u0431\u0435 \u043E\u0442\u0441\u044B\u043F\u0430\u044E\u0442 \u0434\u0435\u043D\u0435\u0433"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?..."
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u0414\u0435\u043D\u0438\u0441?.."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: DeusDes
-    messageText: "\u0422\u0443\u0442 \u0431\u0443\u0434\u0443\u0442 \u0430\u0447\u0438\u0432\u043A\u0438"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: Cuwor
-    messageText: "\u041A \u0441\u043B\u043E\u0432\u0443, \u0431\u044B\u043B\u043E
-      \u0431\u044B \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E."
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - authorName: Menem
-    messageText: "\u0410\u0433\u0430. \u041F\u0440\u043E\u0439\u0434\u0438 \u0443\u0440\u043E\u0432\u0435\u043D\u044C
-      \u043F\u043E\u0434 \u0431\u043E\u043C\u0431\u0451\u0436 \u0410\u0440\u0442\u0451\u043C\u0430
-      \u0438 \u043D\u0438 \u0440\u0430\u0437\u0443 \u043D\u0435 \u0443\u043C\u0435\u0440\u0435\u0442\u044C)"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - authorName: x-Teeth-x
-    messageText: "\u0445\u0434"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
 --- !u!1 &492605348
 GameObject:
   m_ObjectHideFlags: 0
@@ -2534,23 +2364,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 281778612}
-  - {fileID: 1884701854}
-  - {fileID: 1399179932}
-  - {fileID: 1566122283}
-  - {fileID: 59566359}
-  - {fileID: 1726985342}
-  - {fileID: 786659366}
-  - {fileID: 1068058938}
-  - {fileID: 121879260}
-  - {fileID: 1143874707}
-  - {fileID: 1466941496}
-  - {fileID: 222511168}
-  - {fileID: 1154991426}
-  - {fileID: 1945776083}
-  - {fileID: 397164543}
-  - {fileID: 2089913039}
-  - {fileID: 838626891}
-  - {fileID: 486205427}
   m_Father: {fileID: 1737047515}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2593,166 +2406,6 @@ Transform:
   m_Father: {fileID: 1715181125}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &786659365
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 786659366}
-  - component: {fileID: 786659367}
-  m_Layer: 0
-  m_Name: DarknessAgain
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &786659366
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 786659365}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 626313451}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &786659367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 786659365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1778665365}
-  messages:
-  - authorName: moliren
-    messageText: "\u041A\u0430\u043A \u043D\u0435 \u0443\u043F\u0430\u0441\u0442\u044C?"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?..."
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u0414\u0430?"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: DeusDes
-    messageText: "\u0422\u0443\u0442 \u0435\u0441\u0442\u044C \u043F\u0430\u0440\u043A\u0443\u0440?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u041D\u0435\u0442"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: Cuwor
-    messageText: "\u0422\u0443\u0442 \u0432\u043E\u043E\u0431\u0449\u0435 \u043F\u0440\u044B\u0436\u043E\u043A
-      \u043A\u0430\u043A\u043E\u0439-\u0442\u043E \u043E\u0441\u0442\u043E\u0439\u043D\u044B\u0439"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - authorName: x-Teeth-x
-    messageText: "\u041F\u043E\u0439\u0434\u0443 \u0444\u043E\u0440\u0442\u043E\u0447\u043A\u0443
-      \u043E\u0442\u043A\u0440\u043E\u044E"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - authorName: Menem
-    messageText: "\u041A\u0443\u043F\u043B\u044E \u0433\u0430\u0440\u0430\u0436"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
---- !u!1 &838626890
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 838626891}
-  - component: {fileID: 838626892}
-  m_Layer: 0
-  m_Name: Final
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &838626891
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 838626890}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 626313451}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &838626892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 838626890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1778665365}
-  messages:
-  - authorName: x-Teeth-x
-    messageText: "\u042D\u043C..."
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - authorName: moliren
-    messageText: "\u0427\u0442\u043E \u0434\u0430\u043B\u044C\u0448\u0435"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?..."
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u0414\u0435\u043D\u0438\u0441?.."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: DeusDes
-    messageText: "\u041A\u0443\u0434\u0430 \u0434\u0430\u043B\u044C\u0448\u0435"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u041D\u0435 \u0437\u043D\u0430\u044E"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: Cuwor
-    messageText: "\u0412 \u0441\u043C\u044B\u0441\u043B\u0435?"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u042F \u0435\u0449\u0451 \u043D\u0435 \u0434\u043E\u0434\u0435\u043B\u0430\u043B"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: Menem
-    messageText: Nani?!
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
 --- !u!1 &839510502
 GameObject:
   m_ObjectHideFlags: 0
@@ -3445,92 +3098,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &1068058937
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1068058938}
-  - component: {fileID: 1068058939}
-  m_Layer: 0
-  m_Name: Secret
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1068058938
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068058937}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 626313451}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1068058939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068058937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1778665365}
-  messages:
-  - authorName: x-Teeth-x
-    messageText: "\u0423\u0438\u0438\u0438!"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - authorName: moliren
-    messageText: "\u0423\u0440\u0430! \u041C\u044B \u043D\u0430\u0448\u043B\u0438
-      \u0441\u0435\u043A\u0440\u0435\u0442\u0438\u043A"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?..."
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u0414\u0435\u043D\u0438\u0441?.."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: DeusDes
-    messageText: "\u041D\u0430\u043C \u0432\u044B\u0434\u0430\u0434\u0443\u0442 \u043E\u0440\u0443\u0436\u0438\u0435"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u041D\u0435 \u0437\u0434\u0435\u0441\u044C"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: Cuwor
-    messageText: "\u0422\u043E \u0435\u0441\u0442\u044C, \u0433\u0435\u0439\u043C\u043F\u043B\u0435\u0439
-      \u043F\u043E\u043C\u0435\u043D\u044F\u0435\u0442\u0441\u044F \u0435\u0449\u0451?"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u041D\u0443 \u0434\u0430. \u0422\u0443\u0442 \u043A\u0430\u0436\u0434\u044B\u0439
-      \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u043F\u043E\u0447\u0442\u0438 \u0441
-      \u043D\u043E\u0432\u043E\u0439 \u043C\u0435\u0445\u0430\u043D\u0438\u043A\u043E\u0439
-      \u0431\u0443\u0434\u0435\u0442."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: Menem
-    messageText: "\u041D\u0435 \u0441\u043F\u043E\u0439\u043B\u0435\u0440\u0438!"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
 --- !u!1 &1117992773
 GameObject:
   m_ObjectHideFlags: 0
@@ -3843,180 +3410,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82e1bf9289c08104e8b36aac8410ce82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1143874706
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1143874707}
-  - component: {fileID: 1143874708}
-  m_Layer: 0
-  m_Name: Stage2 Continue
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1143874707
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143874706}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 626313451}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1143874708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143874706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1778665365}
-  messages:
-  - authorName: DeusDes
-    messageText: "\u041D\u0430\u0441\u0442\u044C?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: DeusDes
-    messageText: "\u041A\u0430\u043A\u0438\u0435 \u0443 \u0442\u0435\u0431\u044F
-      \u043F\u0435\u043B\u044C\u043C\u0435\u0448\u043A\u0438?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: x-Teeth-x
-    messageText: "\u0412\u043A\u0443\u0441\u043D\u044B\u0435."
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430, \u0445\u0432\u0430\u0442\u0438\u0442.
-      \u0425\u043E\u0447\u0435\u0442\u0441\u044F \u0435\u0441\u0442\u044C."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: DeusDes
-    messageText: "\u0415\u0441\u043B\u0438 \u0442\u044B \u0433\u043E\u043B\u043E\u0434\u0430\u0435\u0448\u044C,
-      \u044D\u0442\u043E \u043D\u0435 \u0437\u043D\u0430\u0447\u0438\u0442, \u0447\u0442\u043E
-      \u043C\u044B \u0442\u043E\u0436\u0435."
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: Cuwor
-    messageText: "\u041F\u043E\u0433\u043E\u0434\u0438, \u0442\u044B \u0436 \u043D\u0435
-      \u0435\u0448\u044C \u043F\u0435\u043B\u044C\u043C\u0435\u043D\u0438"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u042D\u0442\u043E \u043D\u0435 \u0437\u043D\u0430\u0447\u0438\u0442,
-      \u0447\u0442\u043E \u044F \u0432 \u043F\u0440\u0438\u043D\u0446\u0438\u043F\u0435
-      \u043D\u0435 \u043B\u044E\u0431\u043B\u044E \u0435\u0441\u0442\u044C...)"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: x-Teeth-x
-    messageText: "\u0414\u0430?"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - authorName: DeusDes
-    messageText: "\u0414\u0430?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u0425\u0432\u0430\u0442\u0438\u0442..."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
---- !u!1 &1154991425
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1154991426}
-  - component: {fileID: 1154991427}
-  m_Layer: 0
-  m_Name: Secret3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1154991426
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1154991425}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 626313451}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1154991427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1154991425}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1778665365}
-  messages:
-  - authorName: x-Teeth-x
-    messageText: "\u0430\u0445\u0430\u0445\u0430\u0445\u0430\u0445"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - authorName: moliren
-    messageText: "\u042D\u0442\u043E \u0447\u0442\u043E?"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?..."
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u0414\u0435\u043D\u0438\u0441?..)))"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: DeusDes
-    messageText: "\u042D\u0442\u043E \u0442\u043E, \u043E \u0447\u0451\u043C \u044F
-      \u0434\u0443\u043C\u0430\u044E?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u0414\u0430)))"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: Cuwor
-    messageText: )))
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - authorName: x-Teeth-x
-    messageText: "\u041F\u0430\u0441\u0445\u0430\u043B\u043E\u0447\u043A\u0430"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - authorName: Menem
-    messageText: "\u0414\u0415\u041D\u0418\u0421!"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
 --- !u!1 &1172400572
 GameObject:
   m_ObjectHideFlags: 0
@@ -4658,75 +4051,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSystemDatabase: {fileID: 11400000, guid: 766a23cd4891e884c938585b03f294ff, type: 2}
   startType: 0
---- !u!1 &1399179931
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1399179932}
-  - component: {fileID: 1399179933}
-  m_Layer: 0
-  m_Name: Beginning_Skip
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1399179932
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1399179931}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 626313451}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1399179933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1399179931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1778665365}
-  messages:
-  - authorName: x-Teeth-x
-    messageText: "\u0410\u0445\u0430\u0445\u0430\u0445\u0430"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - authorName: Cuwor
-    messageText: "\u0414\u0430 \u0431\u043B\u0438\u043D"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - authorName: Menem
-    messageText: "\u0445\u044B)"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: ...)
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: moliren
-    messageText: "\u041F\u0440\u0438\u043A\u043E\u043B\u044C\u043D\u043E"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
 --- !u!1 &1409473745
 GameObject:
   m_ObjectHideFlags: 0
@@ -4962,92 +4286,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 10, z: 10}
   m_Center: {x: 0, y: 5, z: 0}
---- !u!1 &1466941495
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1466941496}
-  - component: {fileID: 1466941497}
-  m_Layer: 0
-  m_Name: Secret2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1466941496
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1466941495}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 626313451}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1466941497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1466941495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1778665365}
-  messages:
-  - authorName: x-Teeth-x
-    messageText: "\u0423\u0438\u0438\u0438!"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - authorName: moliren
-    messageText: "\u0415\u0449\u0451 \u0441\u0435\u043A\u0440\u0435\u0442\u0438\u043A!"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?..."
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u0414\u0435\u043D\u0438\u0441?.."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: DeusDes
-    messageText: "\u041A\u0443\u0434\u0430 \u0434\u0430\u043B\u044C\u0448\u0435"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u041D\u0430\u0437\u0430\u0434 \u043D\u0435\u043C\u043D\u043E\u0433\u043E
-      \u0432\u0435\u0440\u043D\u0443\u0442\u044C\u0441\u044F, \u044D\u0442\u043E
-      \u043E\u0442\u0432\u0435\u0442\u0432\u043B\u0435\u043D\u0438\u0435."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: Cuwor
-    messageText: "\u0410 \u0438\u0433\u0440\u0430 \u043B\u0438\u043D\u0435\u0439\u043D\u0430\u044F
-      \u0432 \u0446\u0435\u043B\u043E\u043C"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u0414\u0430"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: Menem
-    messageText: "\u041D\u0443, \u043F\u043E \u043A\u0440\u0430\u0439\u043D\u0435\u0439
-      \u043C\u0435\u0440\u0435, \u043C\u043E\u0436\u043D\u043E \u0437\u0430\u0442\u043A\u043D\u0443\u0442\u044C
-      \u0431\u043E\u0442\u0430."
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
 --- !u!1001 &1523084451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5260,73 +4498,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536718428}
   m_CullTransparentMesh: 1
---- !u!1 &1566122282
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1566122283}
-  - component: {fileID: 1566122284}
-  m_Layer: 0
-  m_Name: Darkness
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1566122283
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1566122282}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 626313451}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1566122284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1566122282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1778665365}
-  messages:
-  - authorName: DeusDes
-    messageText: "\u042D\u0442\u043E \u0445\u043E\u0440\u0440\u043E\u0440 \u043F\u043E\u0448\u0451\u043B?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: x-Teeth-x
-    messageText: "\u0429\u0430\u0441 \u0431\u0443\u0434\u0435\u0442 \u0441\u043A\u0440\u0438\u043C\u0435\u0440
-      \u0445\u0434"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - authorName: Cuwor
-    messageText: "\u0423 \u0442\u0435\u0431\u044F \u0442\u0435\u043C\u043D\u043E\u0442\u0430
-      \u043D\u043E\u0440\u043C\u0430\u043B\u044C\u043D\u0430\u044F \u043D\u0435 \u043F\u043E\u043B\u0443\u0447\u0438\u043B\u0430\u0441\u044C"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - authorName: Menem
-    messageText: "\u0410 \u0444\u043E\u043D\u0430\u0440\u0438\u043A \u0435\u0441\u0442\u044C?"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - authorName: Menem
-    messageText: "\u0410, \u0434\u0430."
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
 --- !u!1 &1571450212
 GameObject:
   m_ObjectHideFlags: 0
@@ -5791,88 +4962,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1718353101}
   m_CullTransparentMesh: 1
---- !u!1 &1726985341
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1726985342}
-  - component: {fileID: 1726985343}
-  m_Layer: 0
-  m_Name: ContinueGame
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1726985342
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726985341}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 626313451}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1726985343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726985341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1778665365}
-  messages:
-  - authorName: DeusDes
-    messageText: "\u042D\u043A\u0448\u043E\u043D \u043F\u043E\u0448\u0451\u043B!"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: x-Teeth-x
-    messageText: "\u0410 \u0442\u0430\u043C \u0441\u0435\u0439\u0447\u0430\u0441
-      \u0434\u0440\u0430\u043A\u043E\u043D"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u041D\u0430\u0441\u0442\u044F, \u044D\u0442\u043E \u043D\u0435
-      \u0434\u043D\u0434"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: Menem
-    messageText: "\u041D\u0430\u0441\u0442\u044F, \u044D\u0442\u043E \u043D\u0435
-      \u0434\u043D\u0434"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - authorName: Cuwor
-    messageText: "\u041D\u0430\u0441\u0442\u044F, \u044D\u0442\u043E \u043D\u0435
-      \u0434\u043D\u0434"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - authorName: moliren
-    messageText: ")) \u041C\u043D\u0435 \u0441 \u0444\u043E\u043D\u0430\u0440\u0438\u043A\u043E\u043C
-      \u0445\u043E\u0434\u0438\u0442\u044C?"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - authorName: DeusDes
-    messageText: "\u0422\u0443\u0442 \u0431\u0443\u0434\u0443\u0442 \u043A\u043E\u0441\u0442\u0440\u044B?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u043D\u0435\u0442, \u0414\u0435\u043D\u0438\u0441..."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
 --- !u!1 &1737047514
 GameObject:
   m_ObjectHideFlags: 0
@@ -5966,7 +5055,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onStartEvents:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 281778613}
+        m_TargetAssemblyTypeName: ChatModule, Assembly-CSharp
+        m_MethodName: AddAllMessages
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1814548764
 GameObject:
   m_ObjectHideFlags: 0
@@ -6183,77 +5284,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82e1bf9289c08104e8b36aac8410ce82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1884701853
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1884701854}
-  - component: {fileID: 1884701855}
-  m_Layer: 0
-  m_Name: Begginning_Full
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1884701854
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1884701853}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 626313451}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1884701855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1884701853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1778665365}
-  messages:
-  - authorName: Cuwor
-    messageText: "\u041A\u0430\u043A\u043E\u0439 \u0436\u0435 \u043E\u043D \u0434\u0443\u0448\u043D\u044B\u0439"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: ...
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: x-Teeth-x
-    messageText: "\u0410 \u043E\u043D \u043B\u0438? \u0445\u0434"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - authorName: Cuwor
-    messageText: "\u041D\u0443 \u0440\u0435\u0430\u043B\u044C\u043D\u043E. \u0417\u0430\u0447\u0435\u043C
-      \u044D\u0442\u043E?"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - authorName: Menem
-    messageText: "\u041B\u044F\u0433\u0443\u0448\u043A\u0430"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u0412\u044B \u043C\u043E\u0433\u043B\u0438 \u0435\u0433\u043E
-      \u0437\u0430\u0442\u043A\u043D\u0443\u0442\u044C..."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
 --- !u!1001 &1922337715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6496,93 +5526,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939608652}
   m_CullTransparentMesh: 1
---- !u!1 &1945776082
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1945776083}
-  - component: {fileID: 1945776084}
-  m_Layer: 0
-  m_Name: Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1945776083
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1945776082}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 626313451}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1945776084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1945776082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1778665365}
-  messages:
-  - authorName: Cuwor
-    messageText: "\u042D\u0442\u043E \u0432\u0441\u0451 \u0438\u0437 \u043C\u043E\u0434\u0443\u043B\u0435\u0439
-      \u0442\u0432\u043E\u0438\u0445 \u0441\u043E\u0431\u0440\u0430\u043D\u043E?"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u0414\u0430. \u041D\u0443, \u044D\u0442\u043E \u0442\u0435\u0441\u0442\u043E\u0432\u0430\u044F
-      \u043B\u043E\u043A\u0430\u0446\u0438\u044F, \u043D\u0430\u0434\u043E \u043F\u043E\u043D\u0438\u043C\u0430\u0442\u044C"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: x-Teeth-x
-    messageText: "\u0414\u0430 \u0432\u0441\u0451 \u0440\u0430\u0432\u043D\u043E
-      \u043F\u0440\u0438\u043A\u043E\u043B\u044C\u043D\u043E, \u043F\u043E-\u043C\u043E\u0435\u043C\u0443."
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - authorName: moliren
-    messageText: "\u0422\u044B \u043F\u043E\u043F\u0440\u043E\u0431\u0443\u0439 \u043F\u043E\u043F\u0440\u044B\u0433\u0430\u0442\u044C
-      \u0442\u0443\u0442!"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?..."
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u0414\u0435\u043D\u0438\u0441?.."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: DeusDes
-    messageText: "\u0422\u044B \u0442\u0430\u043A \u0438 \u043D\u0435 \u043D\u0430\u0443\u0447\u0438\u043B\u0441\u044F
-      \u0434\u0435\u043B\u0430\u0442\u044C \u043D\u043E\u0440\u043C\u0430\u043B\u044C\u043D\u044B\u0439
-      \u043F\u0440\u044B\u0436\u043E\u043A?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u0410 \u0442\u044B?"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: Menem
-    messageText: "\u041F\u043E \u0444\u0430\u043A\u0442\u0443))))"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
 --- !u!1 &1996739194
 GameObject:
   m_ObjectHideFlags: 0
@@ -7110,112 +6053,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2080778809}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &2089913038
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2089913039}
-  - component: {fileID: 2089913040}
-  m_Layer: 0
-  m_Name: SpeedBridge
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2089913039
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2089913038}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 626313451}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2089913040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2089913038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1778665365}
-  messages:
-  - authorName: moliren
-    messageText: "\u042D\u0442\u043E \u043C\u043D\u0435 \u0442\u0438\u043F\u0430
-      \u0443\u0441\u043F\u0435\u0442\u044C \u043D\u0430\u0434\u043E?"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - authorName: x-Teeth-x
-    messageText: "\u0410\u0433\u0430 \u0445\u0434"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?..."
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u0414\u0430... \u0414\u0435\u043D\u0438\u0441..."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: DeusDes
-    messageText: "\u0414\u0430\u0432\u0430\u0439 \u0441\u0434\u0435\u043B\u0430\u0439
-      \u0442\u0435\u0431\u0435 \u043F\u043E\u0434\u0432\u0435\u0441\u043E\u0439 \u043C\u043E\u0441\u0442"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u041F\u043E\u043A\u0430 \u043E\u043D \u043D\u0435 \u043D\u0443\u0436\u0435\u043D"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: Cuwor
-    messageText: "\u0412 \u0441\u043C\u044B\u0441\u043B\u0435? \u041F\u043E\u0434\u0432\u0435\u0441\u043D\u043E\u0439
-      \u043C\u043E\u0441\u0442 \u044D\u0442\u043E \u043A\u0440\u0443\u0442\u043E!
-      \u0425\u043E\u0447\u0443 \u043C\u043E\u0441\u0442!"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u041F\u043E\u0441\u043C\u043E\u0442\u0440\u0438\u043C"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - authorName: Cuwor
-    messageText: "\u0410 \u0435\u0449\u0451 \u0445\u043E\u0447\u0443 \u0442\u043E\u0440\u0442\u0438\u043A"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - authorName: Menem
-    messageText: "\u0422\u043E\u0440\u0442\u0438\u043A"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - authorName: Cuwor
-    messageText: "\u0422\u043E\u0440\u0442\u0438\u043A"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - authorName: Cuwor
-    messageText: "\u0422\u043E\u0440\u0442\u0438\u043A"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - authorName: Cuwor
-    messageText: "\u0422\u043E\u0440\u0442\u0438\u043A"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - authorName: IgoGo
-    messageText: "\u0422\u0451\u043C\u0430, \u044F \u0442\u0435\u0431\u044F \u0449\u0430\u0441
-      \u0437\u0430\u0431\u0430\u043D\u044E..."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
 --- !u!1 &2103664240
 GameObject:
   m_ObjectHideFlags: 0

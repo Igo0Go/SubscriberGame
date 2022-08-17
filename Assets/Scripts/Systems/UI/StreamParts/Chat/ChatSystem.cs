@@ -42,17 +42,20 @@ public class ChatSystem : MonoBehaviour
     {
         if(globalQueue.Count > 0)
         {
-            ChatItem item = Instantiate(chatItemPrefab, container).GetComponent<ChatItem>();
-            item.SetUP(globalQueue[0]);
-            chatItems.Add(item);
-            globalQueue.RemoveAt(0);
-
-            if (container.childCount > maxItemsCount)
+            if(StatsHolder.subscribers >= globalQueue[0].subscribersCountToActivate)
             {
-                Destroy(chatItems[0].gameObject, 0.05f);
-                chatItems.RemoveAt(0);
+                ChatItem item = Instantiate(chatItemPrefab, container).GetComponent<ChatItem>();
+                item.SetUP(globalQueue[0]);
+                chatItems.Add(item);
 
+                if (container.childCount > maxItemsCount)
+                {
+                    Destroy(chatItems[0].gameObject, 0.05f);
+                    chatItems.RemoveAt(0);
+                }
             }
+
+            globalQueue.RemoveAt(0);
         }
     }
 
@@ -70,7 +73,9 @@ public class ChatSystem : MonoBehaviour
 [System.Serializable]
 public class ChatMessageInfo
 {
+    public int subscribersCountToActivate = 0;
     public string authorName;
+    [TextArea(2,2)]
     public string messageText;
     public Color authorColor;
     public bool useColor = false;
