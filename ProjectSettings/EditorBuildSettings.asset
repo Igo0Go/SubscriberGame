@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Test/MusicSystemTest.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Hub.unity
+    guid: 8ae23247117a5fe4f9c3f08ff0173394
   m_configObjects: {}

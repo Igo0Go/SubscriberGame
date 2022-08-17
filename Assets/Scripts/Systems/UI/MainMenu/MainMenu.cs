@@ -13,8 +13,24 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private List<LoadSlot> newGameSlots;
     [SerializeField] private List<LoadSlot> loadGameSlots;
 
+    private const string defaultSlot = "LastUsingSlot";
+
     private void Awake()
     {
+        if (PlayerPrefs.HasKey(defaultSlot))
+        {
+            StatsHolder.slotNumber = PlayerPrefs.GetInt(defaultSlot);
+
+            if (!SaveLoadSystem.IsEmptySlot(StatsHolder.slotNumber))
+            {
+                SaveLoadSystem.ApplyDataToCurrent(SaveLoadSystem.LoadFromSlot(StatsHolder.slotNumber));
+            }
+        }
+        else
+        {
+            PlayerPrefs.SetInt(defaultSlot, StatsHolder.slotNumber);
+        }
+
         GameCenter.MenuPause = GameCenter.ConsolePause = false;
         GameTools.SetCursorVisible(true);
     }
@@ -84,6 +100,7 @@ public class MainMenu : MonoBehaviour
     }
     public void ExitGame()
     {
+        PlayerPrefs.SetInt(defaultSlot, StatsHolder.slotNumber);
         Application.Quit();
     }
 }

@@ -8,6 +8,7 @@ public class EasterEggsModule : MonoBehaviour
     void Start()
     {
         LevelProggress.maxEasterEggsCount++;
+        UIPack.LevelProgressPanel.UpdateEasterEggs();
     }
 
     public void UnblockEasterEgg()

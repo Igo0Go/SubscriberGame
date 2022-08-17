@@ -44,6 +44,7 @@ public class LevelProgressPanel : MonoBehaviour
 
     private void Awake()
     {
+        LevelProggress.Reset();
         UIPack.LevelProgressPanel = this;
         coinsCompleteIcon.SetActive(false);
         donateCompleteIcon.SetActive(false);
@@ -88,7 +89,7 @@ public class LevelProgressPanel : MonoBehaviour
         {
             subscribersBonus = true;
             subscribersCompleteIcon.SetActive(true);
-            StreamerPack.SubscribersCounter.AddExtraSubscribers(4);
+            StreamerPack.SubscribersCounter.AddExtraSubscribers(3);
             uiSoundsSource.PlayOneShot(subscribersCompleteSound);
         }
     }
@@ -101,7 +102,7 @@ public class LevelProgressPanel : MonoBehaviour
         {
             easterEggsBonus = true;
             easterEggsCompleteIcon.SetActive(true);
-            StreamerPack.SubscribersCounter.AddExtraSubscribers(3);
+            StreamerPack.SubscribersCounter.AddExtraSubscribers(2);
             uiSoundsSource.PlayOneShot(easterEggsCompleteSound);
         }
     }

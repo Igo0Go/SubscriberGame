@@ -209,7 +209,7 @@ public static class Settings
 
 public static class StatsHolder
 {
-    public static int slotNumber;
+    public static int slotNumber = 1;
     public static int sceneForLoading = 1;
     public static int coins = 0;
     public static int subscribers = 0;
