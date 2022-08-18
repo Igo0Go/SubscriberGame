@@ -68,8 +68,6 @@ public class ReplicSystem : MonoBehaviour, IGameSystem
         {
             subsPanel.ClosePanel();
         }
-
-        Settings.UseSubs = value;
     }
 
     public void OnChangePause(bool value)
