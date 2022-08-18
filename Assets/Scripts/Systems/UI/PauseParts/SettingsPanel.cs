@@ -30,7 +30,7 @@ public class SettingsPanel : MonoBehaviour
 
     private void OnDrawSubsChanged(bool value)
     {
-        PlayerPack.ReplicSystem.OnDrawSubsChanged(value);
+        Settings.UseSubs = value;
     }
 
     private void OnChangeVoice(float value)

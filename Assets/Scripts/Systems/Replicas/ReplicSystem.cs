@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class ReplicSystem : MonoBehaviour
+public class ReplicSystem : MonoBehaviour, IGameSystem
 {
     [SerializeField] private AudioSource voiceAudioSource;
     [SerializeField] private SubsPanel subsPanel;
@@ -21,10 +21,11 @@ public class ReplicSystem : MonoBehaviour
         subsPanel.ClosePanel();
     }
 
-    private void Start()
+    public void SetUp()
     {
         GameCenter.PauseValueChanged.AddListener(OnChangePause);
         Settings.VoiceVolumeChanged.AddListener(OnChangeVolume);
+        Settings.UseSubsChanged.AddListener(OnDrawSubsChanged);
     }
 
     private void Update()

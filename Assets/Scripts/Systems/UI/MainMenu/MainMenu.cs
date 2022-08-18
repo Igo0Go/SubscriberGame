@@ -25,10 +25,14 @@ public class MainMenu : MonoBehaviour
             {
                 SaveLoadSystem.ApplyDataToCurrent(SaveLoadSystem.LoadFromSlot(StatsHolder.slotNumber));
             }
+            else
+            {
+                SaveLoadSystem.ApplyDataToCurrent(SaveLoadSystem.GetDefaultData());
+            }
         }
         else
         {
-            PlayerPrefs.SetInt(defaultSlot, StatsHolder.slotNumber);
+            SaveLoadSystem.ApplyDataToCurrent(SaveLoadSystem.GetDefaultData());
         }
 
         GameCenter.MenuPause = GameCenter.ConsolePause = false;
@@ -86,6 +90,11 @@ public class MainMenu : MonoBehaviour
     {
         settingsPanel.SetActive(!settingsPanel.activeSelf);
         mainButtons.SetActive(!settingsPanel.activeSelf);
+
+        if (!settingsPanel.activeSelf && StatsHolder.slotNumber > 0)
+        {
+            SaveLoadSystem.SaveSettingsOnly(StatsHolder.slotNumber);
+        }
     }
     public void ClearAll()
     {
@@ -95,7 +104,6 @@ public class MainMenu : MonoBehaviour
     public void ExitGame()
     {
         PlayerPrefs.SetInt(defaultSlot, StatsHolder.slotNumber);
-        SaveLoadSystem.SaveToSlot(StatsHolder.slotNumber, SaveLoadSystem.GetDataFromCurrent());
         Application.Quit();
     }
 

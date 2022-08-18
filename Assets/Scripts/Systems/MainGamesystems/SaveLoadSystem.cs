@@ -92,6 +92,17 @@ public static class SaveLoadSystem
 
         File.WriteAllText(SavePath, dataString);
     }
+    public static void SaveSettingsOnly(int slotIndex)
+    {
+        SavedData data = LoadFromSlot(slotIndex);
+
+        data.voices = Settings.VoiceVolume;
+        data.sounds = Settings.SoundsVolume;
+        data.music = Settings.MusicVolume;
+        data.useSubtitles = Settings.UseSubs;
+
+        SaveToSlot(slotIndex, data);
+    }
 
     public static SavedData LoadFromSlot(int slotIndex)
     {
@@ -109,6 +120,7 @@ public static class SaveLoadSystem
             ClearSlot(i);
         }
         PlayerPrefs.DeleteKey("LastUsingSlot");
+        StatsHolder.slotNumber = 0;
     }
 
     public static void ClearSlot(int number)

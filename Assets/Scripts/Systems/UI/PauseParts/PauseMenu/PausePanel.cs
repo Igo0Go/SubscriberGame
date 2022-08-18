@@ -35,6 +35,7 @@ public class PausePanel : MonoBehaviour
             easterEggsPanel.SetActive(false);
             donatesPanel.SetActive(false);
             settingsPanel.SetActive(false);
+            SaveLoadSystem.SaveSettingsOnly(StatsHolder.slotNumber);
         }
     }
     public void Restart()
@@ -71,6 +72,11 @@ public class PausePanel : MonoBehaviour
     {
         settingsPanel.SetActive(!settingsPanel.activeSelf);
         pausePanel.SetActive(!settingsPanel.activeSelf);
+
+        if(!settingsPanel.activeSelf)
+        {
+            SaveLoadSystem.SaveSettingsOnly(StatsHolder.slotNumber);
+        }
     }
 
     private void SetActiveForPanels(bool value)

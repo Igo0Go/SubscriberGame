@@ -135,6 +135,11 @@ public static class GameCenter
         {
             AudioPack.MusicSystem.SetUp();
         }
+
+        if (PlayerPack.ReplicSystem!= null)
+        {
+            PlayerPack.ReplicSystem.SetUp();
+        }
     }
 }
 
@@ -208,7 +213,20 @@ public static class TagHolder
 
 public static class Settings
 {
-    public static bool UseSubs { get; set; } = true;
+    public static bool UseSubs
+    {
+        get
+        {
+            return _useSubs;
+        }
+
+        set
+        {
+            _useSubs = value;
+            UseSubsChanged.Invoke(_useSubs);
+        }
+    }
+    private static bool _useSubs = true;
 
     public static float VoiceVolume
     {
@@ -256,12 +274,14 @@ public static class Settings
     public static UnityEvent<float> VoiceVolumeChanged { get; set; }
     public static UnityEvent<float> SoundsVolumeChanged { get; set; }
     public static UnityEvent<float> MusicVolumeChanged { get; set; }
+    public static UnityEvent<bool> UseSubsChanged { get; set; }
 
-    public static void Refresh()
+    public static void InitEvents()
     {
         VoiceVolumeChanged = new UnityEvent<float>();
         SoundsVolumeChanged = new UnityEvent<float>();
         MusicVolumeChanged = new UnityEvent<float>();
+        UseSubsChanged = new UnityEvent<bool>();
     }
 
     public static void SendEvents()
@@ -269,12 +289,13 @@ public static class Settings
         VoiceVolumeChanged.Invoke(_voiceVolume);
         SoundsVolumeChanged.Invoke(_soundsVolume);
         MusicVolumeChanged.Invoke(_musicVolume);
+        UseSubsChanged.Invoke(_useSubs);
     }
 }
 
 public static class StatsHolder
 {
-    public static int slotNumber = 1;
+    public static int slotNumber = 0;
     public static int sceneForLoading = 1;
     public static int coins = 0;
     public static int subscribers = 0;

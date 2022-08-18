@@ -8,7 +8,7 @@ public class GameStarter : MonoBehaviour
 
     private void Awake()
     {
-        Settings.Refresh();
+        Settings.InitEvents();
         GameCenter.Refresh();
         PlayerPack.SavePoint = transform;
     }
