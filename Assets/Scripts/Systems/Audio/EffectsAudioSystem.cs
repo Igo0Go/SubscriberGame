@@ -1,15 +1,20 @@
 using UnityEngine;
 
-public class EffectsAudioSystem : MonoBehaviour
+public class EffectsAudioSystem : MonoBehaviour, IGameSystem
 {
     [SerializeField]
     private AudioSource shotSource;
     [SerializeField]
     private AudioSource loopSource;
 
-    private void Start()
+    private void Awake()
     {
         AudioPack.EffectsAudioSystem = this;
+    }
+
+    public void SetUp()
+    {
+
     }
 
     public void UseItem(AudioEffectItem item)

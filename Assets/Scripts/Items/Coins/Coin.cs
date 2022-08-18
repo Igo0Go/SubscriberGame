@@ -14,7 +14,7 @@ public class Coin : MonoBehaviour
     private Transform myTransform;
     private Transform target;
 
-    private void Start()
+    private IEnumerator Start()
     {
         myTransform = transform;
         myTransform.parent = null;
@@ -24,6 +24,7 @@ public class Coin : MonoBehaviour
         }
         else
         {
+            yield return new WaitForSeconds(0.5f); //Требуется задержка, чтобы LevelProggressPanel подготовилась
             LevelProggress.maxCoinsOnLevel += price;
             UIPack.LevelProgressPanel.UpdateCoins();
         }

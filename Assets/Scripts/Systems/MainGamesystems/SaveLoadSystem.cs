@@ -46,6 +46,24 @@ public static class SaveLoadSystem
         };
     }
 
+    public static SavedData GetDefaultData()
+    {
+        return new SavedData()
+        {
+            sceneForLoading = 1,
+            coins = 0,
+            subscribers = 0,
+            currentTargetDonateIndex = 0,
+            unblockedEasterEggsIds = new List<int>(),
+            recentEvets = "ѕока ничего не случилось. Ёто только первый стрим!",
+
+            voices = 1,
+            sounds = 0.75f,
+            music = 0.5f,
+            useSubtitles = true
+        };
+    }
+
     public static void ApplyDataToCurrent(SavedData data)
     {
         StatsHolder.sceneForLoading = data.sceneForLoading;

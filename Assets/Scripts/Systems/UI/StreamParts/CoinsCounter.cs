@@ -1,8 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 
-public class CoinsCounter : MonoBehaviour
+public class CoinsCounter : MonoBehaviour, IGameSystem
 {
     [SerializeField]
     private Text counterText;
@@ -14,9 +13,8 @@ public class CoinsCounter : MonoBehaviour
         StreamerPack.CoinsCounter = this;
     }
 
-    private IEnumerator Start()
+    public void SetUp()
     {
-        yield return new WaitForSeconds(1);
         counterText.text = StatsHolder.coins.ToString();
     }
 

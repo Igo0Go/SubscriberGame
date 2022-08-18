@@ -1,12 +1,14 @@
 using UnityEngine;
+using System.Collections;
 
 public class CoinsSpawner : MonoBehaviour
 {
     [SerializeField] private int coinsInside;
     [SerializeField] private ItemsDatabase itemsDatabase;
 
-    private void Start()
+    private IEnumerator Start()
     {
+        yield return new WaitForSeconds(0.5f); //Требуется задержка, чтобы LevelProggressPanel подготовилась
         LevelProggress.maxCoinsOnLevel += coinsInside;
         UIPack.LevelProgressPanel.UpdateCoins();
     }

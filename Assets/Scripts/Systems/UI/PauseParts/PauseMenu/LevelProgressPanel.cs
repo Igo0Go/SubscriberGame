@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LevelProgressPanel : MonoBehaviour
+public class LevelProgressPanel : MonoBehaviour, IGameSystem
 {
     [SerializeField]
     private AudioSource uiSoundsSource;
@@ -44,8 +44,12 @@ public class LevelProgressPanel : MonoBehaviour
 
     private void Awake()
     {
-        LevelProggress.Reset();
         UIPack.LevelProgressPanel = this;
+    }
+
+    public void SetUp()
+    {
+        LevelProggress.Reset();
         coinsCompleteIcon.SetActive(false);
         donateCompleteIcon.SetActive(false);
         subscribersCompleteIcon.SetActive(false);

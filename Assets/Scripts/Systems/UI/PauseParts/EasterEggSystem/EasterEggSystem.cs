@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EasterEggSystem : MonoBehaviour
+public class EasterEggSystem : MonoBehaviour, IGameSystem
 {
     [SerializeField]
     private EasterEggDatabase easterEggDatabase;
@@ -27,8 +27,12 @@ public class EasterEggSystem : MonoBehaviour
 
     private void Awake()
     {
-        ShowItemWithId(-1);
         UIPack.EasterEggSystem = this;
+    }
+
+    public void SetUp()
+    {
+        ShowItemWithId(-1);
         easterEggDatabase.RefreshIds();
     }
 

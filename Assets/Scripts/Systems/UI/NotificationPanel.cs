@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NotificationPanel : MonoBehaviour
+public class NotificationPanel : MonoBehaviour, IGameSystem
 {
     [SerializeField]
     private GameObject backgroundPanel;
@@ -17,12 +17,12 @@ public class NotificationPanel : MonoBehaviour
     private void Awake()
     {
         UIPack.NotificationPanel = this;
-        notificationQueue = new List<string>();
-        backgroundPanel.SetActive(false);
     }
 
-    private void Start()
+    public void SetUp()
     {
+        notificationQueue = new List<string>();
+        backgroundPanel.SetActive(false);
         StartCoroutine(CheckNotificationCoroutine());
     }
 

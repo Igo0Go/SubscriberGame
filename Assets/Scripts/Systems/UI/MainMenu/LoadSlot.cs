@@ -19,7 +19,7 @@ public class LoadSlot : MonoBehaviour
         slotIndex = slot;
         if(SaveLoadSystem.IsEmptySlot(slot))
         {
-            savedData = SaveLoadSystem.GetDataFromCurrent();
+            savedData = SaveLoadSystem.GetDefaultData();
         }
         else
         {
@@ -42,6 +42,7 @@ public class LoadSlot : MonoBehaviour
 
     public void UseSlotAsNew()
     {
+        savedData = SaveLoadSystem.GetDefaultData();
         StatsHolder.recentEvents = "Вы очень удачно стали подписчиком одного канала." +
             " Мы уже выслали к вам бота, который расскажет правила и научит всему самому важному. Удачи!";
         savedData = SaveLoadSystem.GetDataFromCurrent();
@@ -52,6 +53,7 @@ public class LoadSlot : MonoBehaviour
     public void UseSlotForLoading()
     {
         StatsHolder.slotNumber = slotIndex;
+        PlayerPrefs.SetInt("LastUsingSlot", StatsHolder.slotNumber);
         SaveLoadSystem.ApplyDataToCurrent(savedData);
         SceneManager.LoadScene(StatsHolder.sceneForLoading);
     }

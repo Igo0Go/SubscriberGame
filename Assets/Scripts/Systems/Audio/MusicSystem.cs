@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 
-public class MusicSystem : MonoBehaviour
+public class MusicSystem : MonoBehaviour, IGameSystem
 {
     [SerializeField] private AudioSource mainLoopAudioSource;
     [SerializeField] private AudioSource oneShotSource;
@@ -15,19 +15,17 @@ public class MusicSystem : MonoBehaviour
 
     private void Awake()
     {
-
         AudioPack.MusicSystem = this;
+    }
+
+    public void SetUp()
+    {
         SetVolumeForAll(Settings.MusicVolume);
         mainLoopAudioSource.loop = true;
         foreach (var item in musicLines)
         {
             item.loop = true;
         }
-    }
-
-    private IEnumerator Start()
-    {
-        yield return null;
         Settings.MusicVolumeChanged.AddListener(SetVolumeForAll);
     }
 

@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.Audio;
 
-public class AudioModeSystem : MonoBehaviour
+public class AudioModeSystem : MonoBehaviour, IGameSystem
 {
     [SerializeField]
     private AudioSystemDatabase audioSystemDatabase;
@@ -14,11 +14,15 @@ public class AudioModeSystem : MonoBehaviour
 
     private AudioMixerGroup mixerGroupBufer;
 
-    private void Start()
+    private void Awake()
+    {
+        AudioPack.AudioSystem = this;
+    }
+
+    public void SetUp()
     {
         sources = new List<AudioSource>(FindObjectsOfType<AudioSource>());
         SetModeForAllSources(FindAudioModeOfType(startType));
-        AudioPack.AudioSystem = this;
     }
 
     public void SetWaterAudioMode()

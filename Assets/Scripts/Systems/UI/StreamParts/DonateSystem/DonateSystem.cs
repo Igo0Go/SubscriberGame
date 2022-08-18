@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 
-public class DonateSystem : MonoBehaviour
+public class DonateSystem : MonoBehaviour, IGameSystem
 {
     public DonateDatabase donateDatabase;
 
@@ -22,7 +22,7 @@ public class DonateSystem : MonoBehaviour
         StreamerPack.DonateSystem = this;
     }
 
-    private void Start()
+    public void SetUp()
     {
         donateItems = new List<DonateItem>();
         currentDonate = 0;

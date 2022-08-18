@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using System.Collections;
 
 public class GameStarter : MonoBehaviour
 {
@@ -7,12 +8,15 @@ public class GameStarter : MonoBehaviour
 
     private void Awake()
     {
-        GameCenter.SetUp();
+        Settings.Refresh();
+        GameCenter.Refresh();
         PlayerPack.SavePoint = transform;
     }
 
-    private void Start()
+    private IEnumerator Start()
     {
+        yield return null;
+        GameCenter.SetUpSystems();
         onStartEvents.Invoke();
     }
 }

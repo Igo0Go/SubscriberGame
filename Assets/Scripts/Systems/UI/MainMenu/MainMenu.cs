@@ -15,7 +15,7 @@ public class MainMenu : MonoBehaviour
 
     private const string defaultSlot = "LastUsingSlot";
 
-    private void Awake()
+    private void Start()
     {
         if (PlayerPrefs.HasKey(defaultSlot))
         {
@@ -101,6 +101,7 @@ public class MainMenu : MonoBehaviour
     public void ExitGame()
     {
         PlayerPrefs.SetInt(defaultSlot, StatsHolder.slotNumber);
+        SaveLoadSystem.SaveToSlot(StatsHolder.slotNumber, SaveLoadSystem.GetDataFromCurrent());
         Application.Quit();
     }
 }

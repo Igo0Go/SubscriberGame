@@ -4,6 +4,11 @@ using System.Collections.Generic;
 
 #region GameParts
 
+public interface IGameSystem
+{
+    void SetUp();
+}
+
 public static class GameCenter
 {
     public static bool GlobalPause => MenuPause || ConsolePause;
@@ -71,13 +76,65 @@ public static class GameCenter
 
     public static UnityEvent<bool> PauseValueChanged;
 
-    public static void SetUp()
+    public static void Refresh()
     {
         PauseValueChanged = new UnityEvent<bool>();
-        Settings.Refresh();
 
         ConsolePause = MenuPause = false;
         OpportunityToMove = OpportunityToView = true;
+    }
+
+    public static void SetUpSystems()
+    {
+        //В сцене можеть не быть какой-то из систем
+
+        if (UIPack.LevelProgressPanel != null)
+        {
+            UIPack.LevelProgressPanel.SetUp();
+        }
+        if (UIPack.EasterEggSystem != null)
+        {
+            UIPack.EasterEggSystem.SetUp();
+        }
+        if (UIPack.NotificationPanel != null)
+        {
+            UIPack.NotificationPanel.SetUp();
+        }
+        if (UIPack.DeadPanel != null)
+        {
+            UIPack.DeadPanel.SetUp();
+        }
+        if (UIPack.SettingsPanel != null)
+        {
+            UIPack.SettingsPanel.SetUp();
+        }
+
+        if (StreamerPack.DonateSystem != null)
+        {
+            StreamerPack.DonateSystem.SetUp();
+        }
+        if (StreamerPack.CoinsCounter != null)
+        {
+            StreamerPack.CoinsCounter.SetUp();
+        }
+        if (StreamerPack.SubscribersCounter != null)
+        {
+            StreamerPack.SubscribersCounter.SetUp();
+        }
+
+        //Звук только после настройки Settings
+        if (AudioPack.AudioSystem != null)
+        {
+            AudioPack.AudioSystem.SetUp();
+        }
+        if (AudioPack.EffectsAudioSystem != null)
+        {
+            AudioPack.EffectsAudioSystem.SetUp();
+        }
+        if (AudioPack.MusicSystem != null)
+        {
+            AudioPack.MusicSystem.SetUp();
+        }
     }
 }
 
@@ -95,6 +152,7 @@ public static class UIPack
     public static EasterEggSystem EasterEggSystem { get; set; }
     public static NotificationPanel NotificationPanel { get; set; }
     public static DeadPanel DeadPanel { get; set; }
+    public static SettingsPanel SettingsPanel { get; set; }
 }
 
 public static class StreamerPack
@@ -205,6 +263,13 @@ public static class Settings
         SoundsVolumeChanged = new UnityEvent<float>();
         MusicVolumeChanged = new UnityEvent<float>();
     }
+
+    public static void SendEvents()
+    {
+        VoiceVolumeChanged.Invoke(_voiceVolume);
+        SoundsVolumeChanged.Invoke(_soundsVolume);
+        MusicVolumeChanged.Invoke(_musicVolume);
+    }
 }
 
 public static class StatsHolder
@@ -217,5 +282,4 @@ public static class StatsHolder
     public static List<int> unblockedEasterEggsIds = new List<int>();
     public static string recentEvents = "Пока ничего не случилось. Это только первый стрим!";
 }
-
 #endregion

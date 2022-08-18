@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 
-public class DeadPanel : MonoBehaviour
+public class DeadPanel : MonoBehaviour, IGameSystem
 {
     [SerializeField]
     private DeadReasonHolder holder;
@@ -55,6 +55,10 @@ public class DeadPanel : MonoBehaviour
     private void Awake()
     {
         UIPack.DeadPanel = this;
+    }
+
+    public void SetUp()
+    {
         deadPanel.gameObject.SetActive(true);
         reasonPanel.SetActive(false);
         activePanelColor = deadPanel.color;

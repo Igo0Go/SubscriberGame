@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SubscribersCounter : MonoBehaviour
+public class SubscribersCounter : MonoBehaviour, IGameSystem
 {
     [SerializeField] private Text subscriberCountText;
 
@@ -10,7 +10,7 @@ public class SubscribersCounter : MonoBehaviour
         StreamerPack.SubscribersCounter = this;
     }
 
-    private void Start()
+    public void SetUp()
     {
         subscriberCountText.text = StatsHolder.subscribers.ToString();
     }
