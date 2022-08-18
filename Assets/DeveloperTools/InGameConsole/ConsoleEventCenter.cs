@@ -9,7 +9,7 @@ public static class ConsoleEventCenter
         Help = new DebugCommand("help", "показывает список доступных команд", "help");
         Teleport = new DebugCommand<int, int, int>("tp", "телепортироваться к точке", "tp X Y Z");
         ClearSlot = new DebugCommand<int>("clearSaveSlot", "очищает все файлы сохранений", "clearSaveSlot [Slot Number]");
-        ClearSlot.Execute.AddListener(SaveLoadSystem.ClearSlots);
+        ClearSlot.Execute.AddListener(SaveLoadSystem.ClearSlot);
 
         commandList.Add(Help);
         commandList.Add(Teleport);

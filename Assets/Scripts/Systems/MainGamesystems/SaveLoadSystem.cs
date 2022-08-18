@@ -102,7 +102,16 @@ public static class SaveLoadSystem
         return JsonUtility.FromJson<SavedData>(json);
     }
 
-    public static void ClearSlots(int number)
+    public static void ClearAll()
+    {
+        for (int i = 1; i < 4; i++)
+        {
+            ClearSlot(i);
+        }
+        PlayerPrefs.DeleteKey("LastUsingSlot");
+    }
+
+    public static void ClearSlot(int number)
     {
         if (number < 1 || number > 3)
             return;

@@ -59,18 +59,7 @@ public class MainMenu : MonoBehaviour
 
         if (loadPanel.activeSelf)
         {
-            for (int i = 0; i < loadGameSlots.Count; i++)
-            {
-                if(SaveLoadSystem.IsEmptySlot(i+1))
-                {
-                    loadGameSlots[i].gameObject.SetActive(false);
-                }
-                else
-                {
-                    loadGameSlots[i].gameObject.SetActive(true);
-                    loadGameSlots[i].Init(i + 1, false);
-                }
-            }
+            RedrawLoadSlots();
         }
     }
     public void EasterEggsPanelToggle()
@@ -98,10 +87,31 @@ public class MainMenu : MonoBehaviour
         settingsPanel.SetActive(!settingsPanel.activeSelf);
         mainButtons.SetActive(!settingsPanel.activeSelf);
     }
+    public void ClearAll()
+    {
+        SaveLoadSystem.ClearAll();
+        RedrawLoadSlots();
+    }
     public void ExitGame()
     {
         PlayerPrefs.SetInt(defaultSlot, StatsHolder.slotNumber);
         SaveLoadSystem.SaveToSlot(StatsHolder.slotNumber, SaveLoadSystem.GetDataFromCurrent());
         Application.Quit();
+    }
+
+    private void RedrawLoadSlots()
+    {
+        for (int i = 0; i < loadGameSlots.Count; i++)
+        {
+            if (SaveLoadSystem.IsEmptySlot(i + 1))
+            {
+                loadGameSlots[i].gameObject.SetActive(false);
+            }
+            else
+            {
+                loadGameSlots[i].gameObject.SetActive(true);
+                loadGameSlots[i].Init(i + 1, false);
+            }
+        }
     }
 }
