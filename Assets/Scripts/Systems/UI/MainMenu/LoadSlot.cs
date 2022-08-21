@@ -45,7 +45,7 @@ public class LoadSlot : MonoBehaviour
         savedData = SaveLoadSystem.GetDefaultData();
         StatsHolder.recentEvents = "Вы очень удачно стали подписчиком одного канала." +
             " Мы уже выслали к вам бота, который расскажет правила и научит всему самому важному. Удачи!";
-        savedData = SaveLoadSystem.GetDataFromCurrent();
+        savedData = SaveLoadSystem.GetDefaultData();
         SaveLoadSystem.SaveToSlot(slotIndex, savedData);
         UseSlotForLoading();
     }
