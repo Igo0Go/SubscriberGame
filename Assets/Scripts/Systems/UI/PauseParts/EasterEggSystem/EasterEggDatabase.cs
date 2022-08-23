@@ -21,7 +21,7 @@ public class EasterEggItem
     public int Id { get; set; }
 
     public string name;
-    [TextArea()]
+    [TextArea(3, 7)]
     public string description;
     public string url;
     public Sprite icon;
