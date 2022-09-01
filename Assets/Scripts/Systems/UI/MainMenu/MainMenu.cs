@@ -1,9 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] private GameObject mainButtons;
+    [SerializeField] private GameObject buttonFromBot;
     [SerializeField] private GameObject easterEggsPanel;
     [SerializeField] private GameObject donatesPanel;
     [SerializeField] private GameObject settingsPanel;
@@ -34,7 +36,7 @@ public class MainMenu : MonoBehaviour
         {
             SaveLoadSystem.ApplyDataToCurrent(SaveLoadSystem.GetDefaultData());
         }
-
+        buttonFromBot.SetActive(StatsHolder.sceneForLoading == 2);
         GameCenter.MenuPause = GameCenter.ConsolePause = false;
         GameTools.SetCursorVisible(true);
     }
@@ -51,6 +53,13 @@ public class MainMenu : MonoBehaviour
                 newGameSlots[i].Init(i + 1, true);
             }
         }
+    }
+    public void NewGameMore()
+    {
+        StatsHolder.recentEvents = "Вероятно, кнопка была нажата верно. Игра продолжилась и вы можете воссоединиться с ботом! " +
+            "К сожалению.";
+        SaveLoadSystem.SaveToSlot(StatsHolder.slotNumber, SaveLoadSystem.GetDataFromCurrent());
+        SceneManager.LoadScene(StatsHolder.sceneForLoading);
     }
     public void MoreNewGame()
     {

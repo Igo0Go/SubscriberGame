@@ -11,7 +11,15 @@ public class MusicMixer : MonoBehaviour
     {
         if (hardChange)
         {
-            AudioPack.MusicSystem.SetMainClip(newMusic);
+            if(useMetronome)
+            {
+                AudioPack.MusicSystem.SetMainClipAsMetronome(newMusic);
+            }
+            else
+            {
+                AudioPack.MusicSystem.SetMainClip(newMusic);
+            }
+
         }
         else
         {

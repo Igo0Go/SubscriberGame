@@ -6,6 +6,7 @@ public class SceneLoaderPoint : MonoBehaviour
     [SerializeField] private int sceneForLoading;
     [SerializeField, TextArea] private string newRecentEvent;
     [SerializeField] private bool withNumberSaving;
+    [SerializeField] private bool withSceneLoading;
 
     public void LoadScene()
     {
@@ -17,6 +18,9 @@ public class SceneLoaderPoint : MonoBehaviour
 
         SaveLoadSystem.SaveToSlot(StatsHolder.slotNumber, SaveLoadSystem.GetDataFromCurrent());
 
-        SceneManager.LoadScene(sceneForLoading);
+        if(withSceneLoading)
+        {
+            SceneManager.LoadScene(sceneForLoading);
+        }
     }
 }

@@ -758,7 +758,7 @@ GameObject:
   - component: {fileID: 281778612}
   - component: {fileID: 281778613}
   m_Layer: 0
-  m_Name: Beginning
+  m_Name: Beginning_TheGideonGames
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -793,280 +793,10 @@ MonoBehaviour:
   chatSystem: {fileID: 1778665365}
   messages:
   - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u041D\u0443 \u0447\u0442\u043E, \u043F\u043E\u0440\u0430? \u0412\u043A\u043B\u044E\u0447\u0430\u0439."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: moliren
-    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442, \u043F\u0440\u0438\u0432\u0435\u0442)"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: moliren
-    messageText: "\u0414\u0430, \u0443\u0436\u0435 \u043F\u043E\u0440\u0430."
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 3
-    authorName: IgoGo
-    messageText: "\u0417\u0434\u0440\u0430\u0441\u0442\u0435, \u0432\u0441\u0435."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 3
-    authorName: x-Teeth-x
-    messageText: "\u0420\u0430\u0434\u0430 \u0432\u0441\u0435\u0445 \u0432\u0438\u0434\u0435\u0442\u044C!
-      \u041F\u0440\u0438\u044F\u0442\u043D\u043E\u0433\u043E \u0441\u0442\u0440\u0438\u043C\u0430!\n\u30FD(\u30FB\u2200\u30FB)\uFF89"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 4
-    authorName: DeusDes
-    messageText: "\u041A\u0443-\u043A\u0443!\n\u0412\u0441\u0435\u043C \u0437\u0434\u0440\u0430\u0441\u0442\u0435. "
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 5
-    authorName: Menem
-    messageText: "\u041B\u044F\u0433\u0443\u0448\u043A\u0430"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 6
-    authorName: Cuwor
-    messageText: "\u0417\u0434\u043E\u0440\u043E\u0432\u0430"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 5
-    authorName: Menem
-    messageText: "\u0414\u0430\u0432\u0430\u0439, \u043D\u0435 \u0442\u043E\u043C\u0438."
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 7
-    authorName: "\u041C\u0430\u0440\u0438\u044F\u0423\u0436\u0435\u041D\u0435\u0415\u043B\u0438\u0441\u0435\u0435\u0432\u0430"
-    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442!)))\n\u2570(\u2594\u2200\u2594)\u256F"
-    authorColor: {r: 0.735849, g: 0.5518868, b: 0.7140483, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 6
-    authorName: Cuwor
-    messageText: "\u0411\u043E\u0442\u0430 \u0434\u0430\u0432\u0430\u0439 \u0437\u0430\u0442\u044B\u043A\u0430\u0442\u044C
-      \u0431\u0443\u0434\u0435\u043C?"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 8
-    authorName: "\u0421\u0435\u0440\u0433\u0435\u0439 \u0417\u0432\u044F\u0433\u0438\u043D"
-    messageText: "\u0414\u0430-\u0434\u0430. \u042F \u0441 \u043D\u0435\u0439)))"
-    authorColor: {r: 0.5529412, g: 0.60215104, b: 0.7372549, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 9
-    authorName: "\u0412\u043B\u0430\u0434 \u0421\u0432\u0438\u043D"
-    messageText: "\u042F \u0437\u0430\u043F\u0430\u0441\u0441\u044F \u0435\u0434\u043E\u0439!
-      \u0411\u043E\u043B\u044C\u0448\u0435 \u043D\u0438\u043A\u043E\u0433\u043E \u043D\u0435
-      \u0436\u0434\u0451\u043C. \u0421\u0442\u0430\u0440\u0442\u0443\u0439!"
-    authorColor: {r: 0.8959275, g: 0.6427109, b: 0.9528302, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 4
-    authorName: DeusDes
-    messageText: "\u0414\u0430\u0432\u0430\u0439. \u0423\u0431\u0435\u0439 \u0432\u0441\u0435\u0445!
-      \u0423\u0431\u0435\u0439!"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 11
-    authorName: "\u0414\u0435\u043D\u0438\u0441 \u0427\u0443\u0434\u043D\u043E\u0432"
-    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442. )))"
-    authorColor: {r: 0.3254902, g: 0.37353635, b: 0.7529412, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 11
-    authorName: "\u041A\u0441\u0435\u043D\u0438\u044F \u0422\u0443\u0440\u0443\u0441\u043E\u0432\u0430"
-    messageText: "\u0410\u0443. \u041C\u044B \u0441 \u0432\u0430\u043C\u0438))"
-    authorColor: {r: 0.7529412, g: 0.4603129, b: 0.3254902, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 12
-    authorName: "\u041A\u0438\u0440\u0438\u043B\u043B \u0414\u043E\u043B\u0433\u0438\u0445"
-    messageText: "\u0412\u0441\u0435\u043C \u043F\u0440\u0438\u0432\u0435\u0442"
-    authorColor: {r: 0.84057707, g: 0.8862745, b: 0.41568628, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 12
-    authorName: moliren
-    messageText: "\u041E\u0433\u043E, \u043A\u0430\u043A\u0438\u0435 \u043B\u044E\u0434\u0438)))"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 13
-    authorName: "\u0412\u0438\u043A\u0430 \u0410\u043D\u0446\u0438\u0444\u0435\u0440\u043E\u0432\u0430"
-    messageText: "\u0417\u0434\u0440\u0430\u0441\u0442\u0435. \u0417\u0434\u0440\u0430\u0441\u0442\u0435.
-      \u041A\u0430\u043A \u0432\u044B \u0442\u0443\u0442."
-    authorColor: {r: 0.8396226, g: 0.48687044, b: 0.10693307, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 13
-    authorName: x-Teeth-x
-    messageText: "\u0415\u0434\u0438\u043C)))\n\u0418 \u0436\u0434\u0451\u043C \u0441\u0442\u0440\u0438\u043C\u0430)\n(\xB4\uFF65\u1D17\uFF65
-      )"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 15
-    authorName: "\u041C\u0430\u0440\u0438\u044F \u041E\u0442\u043E\u0447\u0438\u043D\u0430"
-    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442 \u0432\u0441\u0435\u043C \u043D\u0430
-      \u0441\u0442\u0440\u0438\u043C\u0435.\n\u0418\u0433\u043E\u0440\u0451\u0445\u0430,
-      \u043F\u0440\u0438\u0432\u0435\u0442)))"
-    authorColor: {r: 0.42729217, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 15
-    authorName: "\u0410\u043D\u0442\u043E\u043D \u041A\u0430\u0437\u0430\u043A\u043E\u0432"
-    messageText: "\u0412\u0441\u0435\u043C \u0437\u0434\u0440\u0430\u0441\u0442\u0435.\n\u0418\u0433\u043E\u0440\u044C,
-      \u0437\u0434\u043E\u0440\u043E\u0432\u0430)"
-    authorColor: {r: 0.6901961, g: 0.22927496, b: 0.1254902, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 15
-    authorName: IgoGo
-    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442, \u0432\u0430\u043C. \u041F\u0440\u0438\u0432\u0435\u0442."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 16
-    authorName: "\u0421\u043E\u0432\u0451\u043D\u043E\u043A"
-    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442, \u0418\u0433\u043E\u0440\u044C.
-      \u041F\u0440\u0438\u0432\u0435\u0442, \u041D\u0430\u0441\u0442\u044F. \u041F\u0440\u0438\u0432\u0435\u0442,
-      \u0412\u043B\u0430\u0434. \u041F\u0440\u0438\u0432\u0435\u0442, \u041C\u0430\u0448\u0430,
-      \u041F\u0440\u0438\u0432\u0435\u0442, \u0410\u043D\u0442\u043E\u043D.\n\u041E\u0441\u0442\u0430\u043B\u044C\u043D\u044B\u0445
-      \u044F \u043D\u0435 \u0437\u043D\u0430\u044E, \u043D\u043E \u043F\u0440\u0438\u0432\u0435\u0442."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 16
-    authorName: IgoGo
-    messageText: "\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439, \u0421\u043E\u0444\u044C\u044F"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 16
-    authorName: x-Teeth-x
-    messageText: "\u0421\u043E\u043D\u0435\u0447\u043A\u0430, \u041F\u0440\u0432\u0435\u0442!\n\u2570(*\xB4\uFE36*)\u256F\u2661"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 17
-    authorName: "\u0412\u0435\u0440\u0430 \u0410\u043D\u0434\u0440\u0435\u0435\u0432\u0430"
-    messageText: "\u0417\u0434\u0440\u0430\u0441\u0442\u0435. \u0420\u0435\u0448\u0438\u043B\u0430
-      \u0437\u0430\u0433\u043B\u044F\u043D\u0443\u0442\u044C \u043A \u0432\u0430\u043C
-      \u043D\u0430 \u0441\u0442\u0440\u0438\u043C. \u0412\u0441\u0435\u043C \u043F\u0440\u0438\u0432\u0435\u0442."
-    authorColor: {r: 0.1254902, g: 0.53704697, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 18
-    authorName: "\u0414\u043C\u0438\u0442\u0440\u0438\u0439 \u0421\u0443\u0447\u043A\u043E\u0432"
-    messageText: "\u0417\u0434\u0430\u0440\u043E\u0432\u0430!"
-    authorColor: {r: 0.1254902, g: 0.6901961, b: 0.3992209, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 19
-    authorName: "\u0410\u043D\u043D\u0430 \u0421\u0430\u0432\u0438\u0446\u043A\u0430\u044F"
-    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442 \u0432\u0441\u0435\u043C."
-    authorColor: {r: 0.7923428, g: 0.6383055, b: 0.8301887, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 19
-    authorName: cuwor
-    messageText: "\u041D\u0438\u0447\u0435\u0433\u043E \u0441\u0435\u0431\u0435.
-      \u041A\u0430\u043A\u0438\u0435 \u043B\u044E\u0434\u0438 \u043F\u043E\u0436\u0430\u043B\u043E\u0432\u0430\u043B\u0438!"
-    authorColor: {r: 0.8396226, g: 0.48687044, b: 0.10693307, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 19
-    authorName: x-Teeth-x
-    messageText: "\u0410\u043D\u044F, \u043F\u0440\u0438\u0432\u0435\u0442!"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 20
-    authorName: "\u041C\u0438\u0445\u0430\u0438\u043B \u0411\u0443\u0445\u0442\u043E\u044F\u0440\u043E\u0432"
-    messageText: "\u0412\u0441\u0435\u0445 \u043F\u0440\u0438\u0432\u0435\u0442\u0441\u0442\u0443\u044E."
-    authorColor: {r: 0.735849, g: 0.72421414, b: 0.5588287, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 20
-    authorName: Menem
-    messageText: "\u041E\u0433\u043E! \u0417\u0434\u0440\u0430\u0441\u0442\u0435."
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 20
-    authorName: IgoGo
-    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u0435\u043C."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 21
-    authorName: Anonim777
-    messageText: "\u0412\u044B \u0432\u0441\u0435 \u0434\u043E\u043B\u0436\u043D\u044B
-      \u0433\u043E\u0440\u0435\u0442\u044C \u0432 \u0430\u0434\u0443!"
-    authorColor: {r: 0.6901961, g: 0.1254902, b: 0.29624897, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 21
-    authorName: Anonim777
-    messageText: "\u0418\u0437-\u0437\u0430 \u0432\u0430\u0448\u0438\u0445 \u0438\u0433\u0440
-      \u0434\u0435\u0442\u0438 \u043D\u0430 \u0443\u043B\u0438\u0446\u0443 \u043D\u0435
-      \u0432\u044B\u0445\u043E\u0434\u044F\u0442!"
-    authorColor: {r: 0.6901961, g: 0.1254902, b: 0.29624897, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 21
-    authorName: Anonim777
-    messageText: "\u0411\u0410\u0419\u041A\u041E\u0422!"
-    authorColor: {r: 0.6901961, g: 0.1254902, b: 0.29624897, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 21
-    authorName: Anonim777
-    messageText: "\u0411\u0410\u0419\u041A\u041E\u0422!"
-    authorColor: {r: 0.6901961, g: 0.1254902, b: 0.29624897, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 21
-    authorName: Anonim777
-    messageText: "\u0411\u0410\u0419\u041A\u041E\u0422!"
-    authorColor: {r: 0.6901961, g: 0.1254902, b: 0.29624897, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 21
-    authorName: IgoGo
-    messageText: "\u0411\u0430\u0439... \u0411\u0430\u043D..."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 22
-    authorName: SimpleMen
-    messageText: "\u0425\u0430\u0439 \u043F\u0438\u043F\u043B\u044B!"
-    authorColor: {r: 0.6509434, g: 0.41451585, b: 0.4766735, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 22
-    authorName: DeusDes
-    messageText: "\u0422\u044B \u043A\u0442\u043E?! \u0418\u0433\u043E\u0440\u044C,
-      \u044D\u0442\u043E \u043A\u0442\u043E?!"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 22
-    authorName: IgoGo
-    messageText: "\u042F \u043D\u0435 \u0437\u043D\u0430\u044E."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 22
-    authorName: SimpleMen
-    messageText: "\u0414\u0430 \u044F \u043F\u0440\u043E\u0441\u0442\u043E \u043D\u0430
-      \u0441\u0442\u0440\u0438\u043C \u0432\u0430\u0448 \u043D\u0430\u0440\u0432\u0430\u043B\u0441\u044F.
-      \u041F\u043E\u043D\u0440\u0430\u0432\u0438\u043B\u043E\u0441\u044C. \u0420\u0435\u0448\u0438\u043B
-      \u043F\u043E\u0434\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F."
-    authorColor: {r: 0.6509434, g: 0.41451585, b: 0.4766735, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 22
-    authorName: IgoGo
-    messageText: "\u041D\u0443, \u043C\u0438\u043B\u043E\u0441\u0442\u0438 \u043F\u0440\u043E\u0441\u0438\u043C
-      \u0432 \u043D\u0430\u0448\u0443 \u043E\u0442\u0432\u044F\u0437\u043D\u0443\u044E,
-      \u043D\u0435\u043C\u043D\u043E\u0433\u043E \u0448\u0438\u0437\u043E\u043D\u0443\u0442\u0443\u044E,
-      \u043D\u043E \u0432\u0441\u0435\u0433\u0434\u0430 \u0434\u043E\u0431\u0440\u0443\u044E
-      \u043A\u043E\u043C\u043F\u0430\u0448\u043A\u0443)))"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 23
-    authorName: "\u0414\u0430\u0440\u044C\u044F \u0418\u0432\u0430\u043D\u043E\u0432\u0430"
-    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442)"
-    authorColor: {r: 0.3563546, g: 0.4682321, b: 0.8301887, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 23
-    authorName: Cuwor
-    messageText: "\u041E\u0433\u043E. \u041F\u0440\u0438\u0432\u0435\u0442) \u041A\u0430\u043A
-      \u0442\u044B \u0442\u0430\u043C?"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 23
-    authorName: "\u0414\u0430\u0440\u044C\u044F \u0418\u0432\u0430\u043D\u043E\u0432\u0430"
-    messageText: "\u0414\u0430 \u043D\u043E\u0440\u043C\u0430\u043B\u044C\u043D\u043E.
-      \u0412\u043E\u0442, \u0443\u0437\u043D\u0430\u043B\u0430 \u043F\u043E \u0432\u0430\u0448
-      \u0441\u0442\u0440\u0438\u043C. \u041F\u0440\u0438\u0448\u043B\u0430."
-    authorColor: {r: 0.3563546, g: 0.4682321, b: 0.8301887, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 23
-    authorName: IgoGo
-    messageText: "\u042F \u0431\u044B \u0441\u043A\u0430\u0437\u0430\u043B, \u0432\u0435\u0440\u043D\u0443\u043B\u0430\u0441\u044C)))"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
+    authorName: Silentian
+    messageText: "\u041F\u0440\u0438\u0448\u043B\u043E \u0432\u0440\u0435\u043C\u044F
+      \u043D\u0430\u0447\u0430\u0442\u044C \u0438\u0433\u0440\u0443. \u0414\u0430\u0432\u0430\u0439."
+    authorColor: {r: 1, g: 1, b: 1, a: 1}
     useColor: 1
 --- !u!1 &285092344
 GameObject:
@@ -1312,7 +1042,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &333672192
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1328,10 +1058,10 @@ RectTransform:
   m_Father: {fileID: 769518360872211783}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 131.83601, y: -99.2583}
-  m_SizeDelta: {x: 223.67203, y: 52.838867}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &333672193
 MonoBehaviour:
@@ -1399,7 +1129,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5355675337409112415}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: NewGameToggle
+        m_MethodName: NewGameMore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2430,6 +2160,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 281778612}
+  - {fileID: 728878158}
   m_Father: {fileID: 1737047515}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2471,6 +2202,327 @@ Transform:
   - {fileID: 403557894}
   m_Father: {fileID: 1715181125}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &728878156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 728878158}
+  - component: {fileID: 728878157}
+  m_Layer: 0
+  m_Name: Beginning_NighTales
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &728878157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728878156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chatSystem: {fileID: 1778665365}
+  messages:
+  - subscribersCountToActivate: 0
+    authorName: IgoGo
+    messageText: "\u041D\u0443 \u0447\u0442\u043E, \u043F\u043E\u0440\u0430? \u0412\u043A\u043B\u044E\u0447\u0430\u0439."
+    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
+    useColor: 1
+  - subscribersCountToActivate: 0
+    authorName: moliren
+    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442, \u043F\u0440\u0438\u0432\u0435\u0442)"
+    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 0
+    authorName: moliren
+    messageText: "\u0414\u0430, \u0443\u0436\u0435 \u043F\u043E\u0440\u0430."
+    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 3
+    authorName: IgoGo
+    messageText: "\u0417\u0434\u0440\u0430\u0441\u0442\u0435, \u0432\u0441\u0435."
+    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
+    useColor: 1
+  - subscribersCountToActivate: 3
+    authorName: x-Teeth-x
+    messageText: "\u0420\u0430\u0434\u0430 \u0432\u0441\u0435\u0445 \u0432\u0438\u0434\u0435\u0442\u044C!
+      \u041F\u0440\u0438\u044F\u0442\u043D\u043E\u0433\u043E \u0441\u0442\u0440\u0438\u043C\u0430!\n\u30FD(\u30FB\u2200\u30FB)\uFF89"
+    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 4
+    authorName: DeusDes
+    messageText: "\u041A\u0443-\u043A\u0443!\n\u0412\u0441\u0435\u043C \u0437\u0434\u0440\u0430\u0441\u0442\u0435. "
+    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 5
+    authorName: Menem
+    messageText: "\u041B\u044F\u0433\u0443\u0448\u043A\u0430"
+    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 6
+    authorName: Cuwor
+    messageText: "\u0417\u0434\u043E\u0440\u043E\u0432\u0430"
+    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 5
+    authorName: Menem
+    messageText: "\u0414\u0430\u0432\u0430\u0439, \u043D\u0435 \u0442\u043E\u043C\u0438."
+    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 7
+    authorName: "\u041C\u0430\u0440\u0438\u044F\u0423\u0436\u0435\u041D\u0435\u0415\u043B\u0438\u0441\u0435\u0435\u0432\u0430"
+    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442!)))\n\u2570(\u2594\u2200\u2594)\u256F"
+    authorColor: {r: 0.735849, g: 0.5518868, b: 0.7140483, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 6
+    authorName: Cuwor
+    messageText: "\u0411\u043E\u0442\u0430 \u0434\u0430\u0432\u0430\u0439 \u0437\u0430\u0442\u044B\u043A\u0430\u0442\u044C
+      \u0431\u0443\u0434\u0435\u043C?"
+    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 8
+    authorName: "\u0421\u0435\u0440\u0433\u0435\u0439 \u0417\u0432\u044F\u0433\u0438\u043D"
+    messageText: "\u0414\u0430-\u0434\u0430. \u042F \u0441 \u043D\u0435\u0439)))"
+    authorColor: {r: 0.5529412, g: 0.60215104, b: 0.7372549, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 9
+    authorName: "\u0412\u043B\u0430\u0434 \u0421\u0432\u0438\u043D"
+    messageText: "\u042F \u0437\u0430\u043F\u0430\u0441\u0441\u044F \u0435\u0434\u043E\u0439!
+      \u0411\u043E\u043B\u044C\u0448\u0435 \u043D\u0438\u043A\u043E\u0433\u043E \u043D\u0435
+      \u0436\u0434\u0451\u043C. \u0421\u0442\u0430\u0440\u0442\u0443\u0439!"
+    authorColor: {r: 0.8959275, g: 0.6427109, b: 0.9528302, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 4
+    authorName: DeusDes
+    messageText: "\u0414\u0430\u0432\u0430\u0439. \u0423\u0431\u0435\u0439 \u0432\u0441\u0435\u0445!
+      \u0423\u0431\u0435\u0439!"
+    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 11
+    authorName: "\u0414\u0435\u043D\u0438\u0441 \u0427\u0443\u0434\u043D\u043E\u0432"
+    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442. )))"
+    authorColor: {r: 0.3254902, g: 0.37353635, b: 0.7529412, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 11
+    authorName: "\u041A\u0441\u0435\u043D\u0438\u044F \u0422\u0443\u0440\u0443\u0441\u043E\u0432\u0430"
+    messageText: "\u0410\u0443. \u041C\u044B \u0441 \u0432\u0430\u043C\u0438))"
+    authorColor: {r: 0.7529412, g: 0.4603129, b: 0.3254902, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 12
+    authorName: "\u041A\u0438\u0440\u0438\u043B\u043B \u0414\u043E\u043B\u0433\u0438\u0445"
+    messageText: "\u0412\u0441\u0435\u043C \u043F\u0440\u0438\u0432\u0435\u0442"
+    authorColor: {r: 0.84057707, g: 0.8862745, b: 0.41568628, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 12
+    authorName: moliren
+    messageText: "\u041E\u0433\u043E, \u043A\u0430\u043A\u0438\u0435 \u043B\u044E\u0434\u0438)))"
+    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 13
+    authorName: "\u0412\u0438\u043A\u0430 \u0410\u043D\u0446\u0438\u0444\u0435\u0440\u043E\u0432\u0430"
+    messageText: "\u0417\u0434\u0440\u0430\u0441\u0442\u0435. \u0417\u0434\u0440\u0430\u0441\u0442\u0435.
+      \u041A\u0430\u043A \u0432\u044B \u0442\u0443\u0442."
+    authorColor: {r: 0.8396226, g: 0.48687044, b: 0.10693307, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 13
+    authorName: x-Teeth-x
+    messageText: "\u0415\u0434\u0438\u043C)))\n\u0418 \u0436\u0434\u0451\u043C \u0441\u0442\u0440\u0438\u043C\u0430)\n(\xB4\uFF65\u1D17\uFF65
+      )"
+    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 15
+    authorName: "\u041C\u0430\u0440\u0438\u044F \u041E\u0442\u043E\u0447\u0438\u043D\u0430"
+    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442 \u0432\u0441\u0435\u043C \u043D\u0430
+      \u0441\u0442\u0440\u0438\u043C\u0435.\n\u0418\u0433\u043E\u0440\u0451\u0445\u0430,
+      \u043F\u0440\u0438\u0432\u0435\u0442)))"
+    authorColor: {r: 0.42729217, g: 0.1254902, b: 0.6901961, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 15
+    authorName: "\u0410\u043D\u0442\u043E\u043D \u041A\u0430\u0437\u0430\u043A\u043E\u0432"
+    messageText: "\u0412\u0441\u0435\u043C \u0437\u0434\u0440\u0430\u0441\u0442\u0435.\n\u0418\u0433\u043E\u0440\u044C,
+      \u0437\u0434\u043E\u0440\u043E\u0432\u0430)"
+    authorColor: {r: 0.6901961, g: 0.22927496, b: 0.1254902, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 15
+    authorName: IgoGo
+    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442, \u0432\u0430\u043C. \u041F\u0440\u0438\u0432\u0435\u0442."
+    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
+    useColor: 1
+  - subscribersCountToActivate: 16
+    authorName: "\u0421\u043E\u0432\u0451\u043D\u043E\u043A"
+    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442, \u0418\u0433\u043E\u0440\u044C.
+      \u041F\u0440\u0438\u0432\u0435\u0442, \u041D\u0430\u0441\u0442\u044F. \u041F\u0440\u0438\u0432\u0435\u0442,
+      \u0412\u043B\u0430\u0434. \u041F\u0440\u0438\u0432\u0435\u0442, \u041C\u0430\u0448\u0430,
+      \u041F\u0440\u0438\u0432\u0435\u0442, \u0410\u043D\u0442\u043E\u043D.\n\u041E\u0441\u0442\u0430\u043B\u044C\u043D\u044B\u0445
+      \u044F \u043D\u0435 \u0437\u043D\u0430\u044E, \u043D\u043E \u043F\u0440\u0438\u0432\u0435\u0442."
+    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 16
+    authorName: IgoGo
+    messageText: "\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439, \u0421\u043E\u0444\u044C\u044F"
+    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
+    useColor: 1
+  - subscribersCountToActivate: 16
+    authorName: x-Teeth-x
+    messageText: "\u0421\u043E\u043D\u0435\u0447\u043A\u0430, \u041F\u0440\u0432\u0435\u0442!\n\u2570(*\xB4\uFE36*)\u256F\u2661"
+    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 17
+    authorName: "\u0412\u0435\u0440\u0430 \u0410\u043D\u0434\u0440\u0435\u0435\u0432\u0430"
+    messageText: "\u0417\u0434\u0440\u0430\u0441\u0442\u0435. \u0420\u0435\u0448\u0438\u043B\u0430
+      \u0437\u0430\u0433\u043B\u044F\u043D\u0443\u0442\u044C \u043A \u0432\u0430\u043C
+      \u043D\u0430 \u0441\u0442\u0440\u0438\u043C. \u0412\u0441\u0435\u043C \u043F\u0440\u0438\u0432\u0435\u0442."
+    authorColor: {r: 0.1254902, g: 0.53704697, b: 0.6901961, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 18
+    authorName: "\u0414\u043C\u0438\u0442\u0440\u0438\u0439 \u0421\u0443\u0447\u043A\u043E\u0432"
+    messageText: "\u0417\u0434\u0430\u0440\u043E\u0432\u0430!"
+    authorColor: {r: 0.1254902, g: 0.6901961, b: 0.3992209, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 19
+    authorName: "\u0410\u043D\u043D\u0430 \u0421\u0430\u0432\u0438\u0446\u043A\u0430\u044F"
+    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442 \u0432\u0441\u0435\u043C."
+    authorColor: {r: 0.7923428, g: 0.6383055, b: 0.8301887, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 19
+    authorName: cuwor
+    messageText: "\u041D\u0438\u0447\u0435\u0433\u043E \u0441\u0435\u0431\u0435.
+      \u041A\u0430\u043A\u0438\u0435 \u043B\u044E\u0434\u0438 \u043F\u043E\u0436\u0430\u043B\u043E\u0432\u0430\u043B\u0438!"
+    authorColor: {r: 0.8396226, g: 0.48687044, b: 0.10693307, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 19
+    authorName: x-Teeth-x
+    messageText: "\u0410\u043D\u044F, \u043F\u0440\u0438\u0432\u0435\u0442!"
+    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 20
+    authorName: "\u041C\u0438\u0445\u0430\u0438\u043B \u0411\u0443\u0445\u0442\u043E\u044F\u0440\u043E\u0432"
+    messageText: "\u0412\u0441\u0435\u0445 \u043F\u0440\u0438\u0432\u0435\u0442\u0441\u0442\u0443\u044E."
+    authorColor: {r: 0.735849, g: 0.72421414, b: 0.5588287, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 20
+    authorName: Menem
+    messageText: "\u041E\u0433\u043E! \u0417\u0434\u0440\u0430\u0441\u0442\u0435."
+    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 20
+    authorName: IgoGo
+    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u0435\u043C."
+    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
+    useColor: 1
+  - subscribersCountToActivate: 21
+    authorName: Anonim777
+    messageText: "\u0412\u044B \u0432\u0441\u0435 \u0434\u043E\u043B\u0436\u043D\u044B
+      \u0433\u043E\u0440\u0435\u0442\u044C \u0432 \u0430\u0434\u0443!"
+    authorColor: {r: 0.6901961, g: 0.1254902, b: 0.29624897, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 21
+    authorName: Anonim777
+    messageText: "\u0418\u0437-\u0437\u0430 \u0432\u0430\u0448\u0438\u0445 \u0438\u0433\u0440
+      \u0434\u0435\u0442\u0438 \u043D\u0430 \u0443\u043B\u0438\u0446\u0443 \u043D\u0435
+      \u0432\u044B\u0445\u043E\u0434\u044F\u0442!"
+    authorColor: {r: 0.6901961, g: 0.1254902, b: 0.29624897, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 21
+    authorName: Anonim777
+    messageText: "\u0411\u0410\u0419\u041A\u041E\u0422!"
+    authorColor: {r: 0.6901961, g: 0.1254902, b: 0.29624897, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 21
+    authorName: Anonim777
+    messageText: "\u0411\u0410\u0419\u041A\u041E\u0422!"
+    authorColor: {r: 0.6901961, g: 0.1254902, b: 0.29624897, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 21
+    authorName: Anonim777
+    messageText: "\u0411\u0410\u0419\u041A\u041E\u0422!"
+    authorColor: {r: 0.6901961, g: 0.1254902, b: 0.29624897, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 21
+    authorName: IgoGo
+    messageText: "\u0411\u0430\u0439... \u0411\u0430\u043D..."
+    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
+    useColor: 1
+  - subscribersCountToActivate: 22
+    authorName: SimpleMen
+    messageText: "\u0425\u0430\u0439 \u043F\u0438\u043F\u043B\u044B!"
+    authorColor: {r: 0.6509434, g: 0.41451585, b: 0.4766735, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 22
+    authorName: DeusDes
+    messageText: "\u0422\u044B \u043A\u0442\u043E?! \u0418\u0433\u043E\u0440\u044C,
+      \u044D\u0442\u043E \u043A\u0442\u043E?!"
+    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 22
+    authorName: IgoGo
+    messageText: "\u042F \u043D\u0435 \u0437\u043D\u0430\u044E."
+    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
+    useColor: 1
+  - subscribersCountToActivate: 22
+    authorName: SimpleMen
+    messageText: "\u0414\u0430 \u044F \u043F\u0440\u043E\u0441\u0442\u043E \u043D\u0430
+      \u0441\u0442\u0440\u0438\u043C \u0432\u0430\u0448 \u043D\u0430\u0440\u0432\u0430\u043B\u0441\u044F.
+      \u041F\u043E\u043D\u0440\u0430\u0432\u0438\u043B\u043E\u0441\u044C. \u0420\u0435\u0448\u0438\u043B
+      \u043F\u043E\u0434\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F."
+    authorColor: {r: 0.6509434, g: 0.41451585, b: 0.4766735, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 22
+    authorName: IgoGo
+    messageText: "\u041D\u0443, \u043C\u0438\u043B\u043E\u0441\u0442\u0438 \u043F\u0440\u043E\u0441\u0438\u043C
+      \u0432 \u043D\u0430\u0448\u0443 \u043E\u0442\u0432\u044F\u0437\u043D\u0443\u044E,
+      \u043D\u0435\u043C\u043D\u043E\u0433\u043E \u0448\u0438\u0437\u043E\u043D\u0443\u0442\u0443\u044E,
+      \u043D\u043E \u0432\u0441\u0435\u0433\u0434\u0430 \u0434\u043E\u0431\u0440\u0443\u044E
+      \u043A\u043E\u043C\u043F\u0430\u0448\u043A\u0443)))"
+    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
+    useColor: 1
+  - subscribersCountToActivate: 23
+    authorName: "\u0414\u0430\u0440\u044C\u044F \u0418\u0432\u0430\u043D\u043E\u0432\u0430"
+    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442)"
+    authorColor: {r: 0.3563546, g: 0.4682321, b: 0.8301887, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 23
+    authorName: Cuwor
+    messageText: "\u041E\u0433\u043E. \u041F\u0440\u0438\u0432\u0435\u0442) \u041A\u0430\u043A
+      \u0442\u044B \u0442\u0430\u043C?"
+    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 23
+    authorName: "\u0414\u0430\u0440\u044C\u044F \u0418\u0432\u0430\u043D\u043E\u0432\u0430"
+    messageText: "\u0414\u0430 \u043D\u043E\u0440\u043C\u0430\u043B\u044C\u043D\u043E.
+      \u0412\u043E\u0442, \u0443\u0437\u043D\u0430\u043B\u0430 \u043F\u043E \u0432\u0430\u0448
+      \u0441\u0442\u0440\u0438\u043C. \u041F\u0440\u0438\u0448\u043B\u0430."
+    authorColor: {r: 0.3563546, g: 0.4682321, b: 0.8301887, a: 1}
+    useColor: 0
+  - subscribersCountToActivate: 23
+    authorName: IgoGo
+    messageText: "\u042F \u0431\u044B \u0441\u043A\u0430\u0437\u0430\u043B, \u0432\u0435\u0440\u043D\u0443\u043B\u0430\u0441\u044C)))"
+    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
+    useColor: 1
+--- !u!4 &728878158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728878156}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 626313451}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &839510502
 GameObject:
@@ -5161,7 +5213,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 281778613}
         m_TargetAssemblyTypeName: ChatModule, Assembly-CSharp
-        m_MethodName: AddAllMessages
+        m_MethodName: AddAllMessagesAsNew
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10441,6 +10493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainButtons: {fileID: 1474047251176410690}
+  buttonFromBot: {fileID: 333672191}
   easterEggsPanel: {fileID: 4625923414072536147}
   donatesPanel: {fileID: 6005517313692603442}
   settingsPanel: {fileID: 6431144742925430654}

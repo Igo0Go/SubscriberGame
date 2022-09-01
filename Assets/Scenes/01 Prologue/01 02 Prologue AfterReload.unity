@@ -232,6 +232,142 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2231678}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &6109190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6109191}
+  - component: {fileID: 6109192}
+  m_Layer: 0
+  m_Name: Chat3
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6109191
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6109190}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1782325055}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6109192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6109190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36a0af631bf1564aa67cf71a32dbf9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  system: {fileID: 321879510}
+  pack:
+    mainList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0418 \u0442\u0430\u043A \u0442\u044B \u0441\u043C\u043E\u0447\u044C
+        \u043E\u0442\u043A\u0440\u044B\u0442\u044C \u0447\u0430\u0442."
+      characterVoice: {fileID: 8300000, guid: 4f1557dc50902584ab95c183cd569868, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0414\u0430, \u0442\u044B \u0431\u044B\u0442\u044C \u043D\u0435\u0443\u0434\u043E\u0431\u043D\u043E
+        \u043F\u0438\u0441\u0430\u0442\u044C, \u043F\u043E\u044D\u0442\u043E\u043C\u0443
+        \u0438\u0433\u0440\u0430 \u0432\u044B\u0440\u0435\u0437\u0430\u0442\u044C
+        \u044D\u0442\u043E\u0442 \u0444\u0443\u043D\u043A\u0446\u0438\u0439."
+      characterVoice: {fileID: 8300000, guid: 4d5fea2dd56ac0443af9704139328649, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041D\u043E \u0442\u044B \u0432\u0441\u0451 \u0440\u0430\u0432\u043D\u043E
+        \u043C\u043E\u0447\u044C \u0447\u0438\u0442\u0430\u0442\u044C \u0447\u0430\u0442."
+      characterVoice: {fileID: 8300000, guid: 3e356cf9ff0470a438a15aefc3f094e0, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    skipList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0414\u0430 \u0434\u0430... \u0437\u0434\u0435\u0441\u044C
+        \u043D\u0438\u0447\u0435\u0433\u043E \u0432\u0430\u0436\u043D\u043E\u0433\u043E,
+        \u043F\u0440\u043E\u0441\u0442\u043E \u0434\u043E\u043D\u043E\u0441\u0438\u0442\u044C
+        \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F, \u0447\u0442\u043E
+        \u0442\u044B \u043D\u0435 \u0442\u0440\u0430\u0442\u0438\u0442\u044C \u0432\u0440\u0435\u043C\u044F
+        \u043D\u0430 \u043F\u043E\u0438\u0441\u043A\u0438 \u043F\u0438\u0441\u0430\u0442\u044C
+        \u0447\u0430\u0442. "
+      characterVoice: {fileID: 8300000, guid: 722b52ad4173e0648aa43720671436e4, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u042D\u0442\u043E\u0442 \u0444\u0443\u043D\u043A\u0446\u0438\u0439
+        \u0431\u044B\u0442\u044C \u043D\u0435\u0443\u0434\u043E\u0431\u043D\u044B\u0439
+        \u0438 \u043C\u044B \u0432\u044B\u0440\u0435\u0437\u0430\u0442\u044C."
+      characterVoice: {fileID: 8300000, guid: 9003bb3281aace64a9e6a44c642b691f, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041D\u043E \u0432 \u0447\u0430\u0442 \u0443\u0436\u0435 \u043F\u0438\u0441\u0430\u0442\u044C
+        \u043B\u044E\u0434\u0438. \u041E\u043D\u0438 \u043C\u043E\u0447\u044C \u043F\u043E\u043C\u043E\u0433\u0430\u0442\u044C
+        \u0442\u0435\u0431\u0435. \r\n\u0417\u0434\u043E\u0440\u043E\u0432\u043E
+        \u0438\u043C\u0435\u0442\u044C \u0432\u0435\u0440\u043D\u044B\u0439 \u0437\u0440\u0438\u0442\u0435\u043B\u044C.
+        \r"
+      characterVoice: {fileID: 8300000, guid: 7c0261b0bb79d0c4798c9c91c486c879, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u042F \u0432\u0435\u0440\u0438\u0442\u044C, \u043E\u043D\u0438
+        \u043D\u0430\u0443\u0447\u0438\u0442\u044C \u0442\u0435\u0431\u044F \u043D\u0435
+        \u0437\u0430\u0442\u044B\u043A\u0430\u0442\u044C \u0441\u043E\u0431\u0435\u0441\u0435\u0434\u043D\u0438\u043A."
+      characterVoice: {fileID: 8300000, guid: 7c0261b0bb79d0c4798c9c91c486c879, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
 --- !u!1 &11495368
 GameObject:
   m_ObjectHideFlags: 0
@@ -2212,6 +2348,165 @@ MonoBehaviour:
       \u0432\u0441\u0435 \u0434\u043E\u043D\u0430\u0442\u044B."
     authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
     useColor: 1
+--- !u!1 &153507600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 153507601}
+  - component: {fileID: 153507602}
+  m_Layer: 0
+  m_Name: BadBots
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &153507601
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153507600}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1782325055}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &153507602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153507600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36a0af631bf1564aa67cf71a32dbf9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  system: {fileID: 321879510}
+  pack:
+    mainList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041E, \u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C! \u042D\u0442\u043E
+        \u0435\u0441\u0442\u044C \u043F\u043B\u043E\u0445\u043E\u0439 \u0431\u043E\u0442\u044B.
+        \u041E\u043D\u0438 \u0441\u043A\u0430\u043D\u0438\u0440\u043E\u0432\u0430\u0442\u044C.
+        \u0420\u044B\u0441\u043A\u0430\u0442\u044C\u2026 "
+      characterVoice: {fileID: 8300000, guid: 94616d3d7c76e514f8b1fa54b5883d5f, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0421\u043B\u0443\u0448\u0430\u0442\u044C, \u0447\u0442\u043E
+        \u0435\u0441\u0442\u044C \u0440\u044B\u0441\u043A\u0430\u0442\u044C? \u042F
+        \u0434\u0443\u043C\u0430\u0442\u044C, \u0447\u0442\u043E \u044D\u0442\u043E
+        \u043A\u0430\u043A-\u0442\u043E \u0432\u044F\u0437\u0430\u0442\u044C\r \u0420\u044B\u0441\u044C.
+        \r\n"
+      characterVoice: {fileID: 8300000, guid: 48b073979e6de9140b1c9f2149b8c062, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u042F \u043F\u0440\u0430\u0432\u044B\u0439? \u0422\u0430\u043A,
+        \u0441\u0442\u043E\u043F, \u0441\u0435\u0439\u0447\u0430\u0441 \u043D\u0435
+        \u0435\u0441\u0442\u044C \u043D\u0443\u0436\u043D\u044B\u0439 \u0432\u0440\u0435\u043C\u044F,
+        \u043B\u0430\u0434\u043D\u043E?\r \u041B\u0430\u0434\u043D\u043E!\r"
+      characterVoice: {fileID: 8300000, guid: 6032c85d80f04ec4cb07ae9f47e37ed2, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0415\u0441\u043B\u0438 \u044D\u0442\u043E\u0442 \u043F\u043B\u043E\u0445\u043E\u0439
+        \u0431\u043E\u0442\u044B \u043F\u0440\u043E\u0441\u043A\u0430\u043D\u0438\u0440\u043E\u0432\u0430\u0442\u044C
+        \u0442\u0435\u0431\u044F, \u0442\u043E \u0432\u0435\u0440\u043D\u0443\u0442\u044C
+        \u0434\u043E \u043B\u0443\u0447\u0438 \u0434\u043E\u0431\u0440\u0430."
+      characterVoice: {fileID: 8300000, guid: f405385c2d6321d4d8ae898c7ce641ac, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u042D\u0442\u043E \u0438\u043C\u0435\u0442\u044C \u0441\u043C\u044B\u0441\u043B?"
+      characterVoice: {fileID: 8300000, guid: 4c668b0e80a03ef43871aee8030653a6, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    skipList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041D\u0435, \u0434\u0440\u0443\u0433, \u0442\u044B \u043D\u0435
+        \u0432\u0442\u044B\u043A\u0430\u0442\u044C!\r \u042D\u0442\u043E\u0442 \u043F\u043B\u043E\u0445\u043E\u0439
+        \u0431\u043E\u0442\u044B \u0448\u0430\u0442\u0430\u0442\u044C \u0432\u0435\u0441\u044C
+        \u043E\u043A\u0440\u0443\u0433\u0430.\r \u0418\u043B\u0438 \u0441\u0442\u043E\u043F\u2026\r"
+      characterVoice: {fileID: 8300000, guid: d67169e644664b44abbed91c4d09247c, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0428\u0430\u0442\u0430\u0442\u044C \u043F\u043E \u0432\u0435\u0441\u044C
+        \u043E\u043A\u0440\u0443\u0433\u0430!"
+      characterVoice: {fileID: 8300000, guid: b99b12d504ce8e6458b74df2c9c94c0d, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0415\u0441\u043B\u0438 \u043E\u043D\u0438 \u043B\u043E\u0432\u0438\u0442\u044C
+        \u0442\u0435\u0431\u044F, \u0442\u043E \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u0442\u044C
+        \u043A \u043B\u0443\u0447\u0438 \u0434\u043E\u0431\u0440\u0430. \u041F\u0440\u0430\u0432\u0434\u0430."
+      characterVoice: {fileID: 8300000, guid: 30c7a3b9e696897479b512a4fcad7c7c, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u042F \u0434\u0443\u043C\u0430\u0442\u044C, \u044D\u0442\u043E
+        \u043D\u0435 \u0431\u044B\u0442\u044C \u0431\u043E\u043B\u044C\u0448\u043E\u0439
+        \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u0430, \u043D\u043E \u0431\u044B\u0442\u044C
+        \u043D\u0435\u043F\u0440\u0438\u044F\u0442\u043D\u044B\u0439."
+      characterVoice: {fileID: 8300000, guid: 6753b34382e86e344ba8e7c5e988a93d, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
 --- !u!1 &154343183
 GameObject:
   m_ObjectHideFlags: 0
@@ -2245,6 +2540,111 @@ Transform:
   m_Father: {fileID: 1180008607}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &158601710
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 158601711}
+  - component: {fileID: 158601712}
+  m_Layer: 0
+  m_Name: Exit
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &158601711
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158601710}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1782325055}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &158601712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158601710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36a0af631bf1564aa67cf71a32dbf9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  system: {fileID: 321879510}
+  pack:
+    mainList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0410 \u0432\u043E\u0442 \u0438 \u043D\u0430\u0448 \u0447\u0443\u0434\u043D\u044B\u0439
+        \u0434\u0432\u0435\u0440\u043A\u0430 \u0432 \u0442\u0430\u0439\u043D\u044B\u0439
+        \u0443\u0431\u0435\u0436\u0438\u0449\u0435!"
+      characterVoice: {fileID: 8300000, guid: af40da52d1c0d1245a875dee94693b5f, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0421\u0435\u0439\u0447\u0430\u0441 \u044F \u0432\u0431\u0438\u0432\u0430\u0442\u044C
+        \u0442\u0430\u0439\u043D\u044B\u0439 \u043A\u043E\u0434, \u0438 \u043C\u044B
+        \u0432\u0445\u043E\u0434\u0438\u0442\u044C."
+      characterVoice: {fileID: 8300000, guid: 2c81516336a4feb4daaecdab0e89674e, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0441\u043B\u0443\u0448\u0430\u0442\u044C, \u044F \u0437\u0430\u0431\u044B\u0442\u044C
+        \u043A\u043E\u0434..."
+      characterVoice: {fileID: 8300000, guid: 926b758db8b59cb4f81f14450a07d8f6, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    skipList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0421\u043B\u0443\u0448\u0430\u0442\u044C, \u044F \u0442\u043E\u0436\u0435
+        \u0443\u0441\u0442\u0430\u0442\u044C, \u043D\u043E \u044F \u0436\u0435 \u043D\u0435
+        \u0437\u0430\u0442\u044B\u043A\u0430\u0442\u044C \u0442\u0435\u0431\u044F."
+      characterVoice: {fileID: 8300000, guid: ff7d1a80c86d8e34b9fcdee786a41c54, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0414\u0430\u0439 \u044F \u0432\u0432\u0435\u0441\u0442\u0438
+        \u043A\u043E\u0434 \u0438 \u043C\u044B \u0432\u043E\u0439\u0442\u0438."
+      characterVoice: {fileID: 8300000, guid: fabb74ab8ed19a742bfffeb82dddafd9, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
 --- !u!1001 &164568613
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4716,6 +5116,160 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 298925584}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &301881422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 301881423}
+  - component: {fileID: 301881424}
+  m_Layer: 0
+  m_Name: MyStream
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &301881423
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301881422}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1782325055}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &301881424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301881422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36a0af631bf1564aa67cf71a32dbf9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  system: {fileID: 321879510}
+  pack:
+    mainList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041A \u0441\u043B\u043E\u0432\u0443. \u041F\u043E \u0434\u043E\u0440\u043E\u0433\u0435
+        \u044F \u043C\u043E\u0447\u044C \u0432\u0435\u0441\u0442\u0438 \u0441\u0432\u043E\u0439
+        \u0441\u0442\u0440\u0438\u043C."
+      characterVoice: {fileID: 8300000, guid: cacf84b3812dd6c44b953ad0186498d0, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u042F \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0438\u0442\u044C
+        \u0442\u0435\u0431\u044F \u043A \u0447\u0430\u0442 \u043C\u043E\u0439 \u0441\u0442\u0440\u0438\u043C,
+        \r\u0447\u0442\u043E\u0431\u044B \u0442\u044B \u0432\u0438\u0434\u0435\u0442\u044C
+        \u043F\u043E\u043C\u043E\u0449\u044C \u043E\u0442 \u0432\u0435\u0440\u043D\u044B\u0439
+        \u0434\u0440\u0443\u0437\u044C\u044F \u043D\u0430\u0448 \u043A\u0430\u043D\u0430\u043B
+        \u0438 \u043D\u043E\u0432\u044B\u0439 \u043F\u043E\u0434\u043F\u0438\u0441\u0447\u0438\u043A.\r"
+      characterVoice: {fileID: 8300000, guid: eed3ca0af2cb61341bfe9f67732985fe, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u042F \u0441\u0435\u0440\u044C\u0451\u0437\u043D\u043E. \u041D\u0430\u0436\u0430\u0442\u044C
+        \u043A\u043D\u043E\u043F\u043A\u0430, \u043E\u0442\u043A\u0440\u044B\u0442\u044C
+        \u0447\u0430\u0442!\r \u042D\u0442\u043E\u0442 \u043A\u043D\u043E\u043F\u043A\u0430
+        \u0434\u043E\u043B\u0436\u0435\u043D \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u044C\u0441\u044F
+        \u043D\u0430 \u0442\u0432\u043E\u0439 \u044D\u043A\u0440\u0430\u043D.\r"
+      characterVoice: {fileID: 8300000, guid: b03d5780a4e9b9a418bf5368346012c7, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0422\u0430\u043C \u0442\u044B \u043C\u043E\u0447\u044C \u0432\u0438\u0434\u0435\u0442\u044C
+        \u043B\u044E\u0431\u043E\u0439 \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u043A\u0430
+        \u0432 \u0438\u0433\u0440\u0430, \u0447\u0442\u043E \u043F\u0438\u0441\u0430\u0442\u044C
+        <color=lime>Silentian</color>!"
+      characterVoice: {fileID: 8300000, guid: de37cd713d929b74d8b375a15f945d4e, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    skipList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u042D\u0439, \u044F \u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C
+        \u0432\u0430\u0436\u043D\u044B\u0439 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F!
+        \u042F \u0437\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C \u0441\u0442\u0440\u0438\u043C
+        \u043D\u0430\u0448\u0438 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F."
+      characterVoice: {fileID: 8300000, guid: e63a9bee5336b3d42965ce2f75072e02, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041B\u044E\u0434\u0438 \u043C\u043E\u0447\u044C \u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C
+        \u0438 \u043F\u0438\u0441\u0430\u0442\u044C \u0447\u0430\u0442. \u0422\u044B
+        \u043C\u043E\u0447\u044C \u0442\u043E\u043B\u044C\u043A\u043E \u0447\u0438\u0442\u0430\u0442\u044C.\r"
+      characterVoice: {fileID: 8300000, guid: 8f9e3529a63d12f4c8066a04c784863c, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041D\u043E \u044D\u0442\u043E \u043C\u043E\u0447\u044C \u0431\u044B\u0442\u044C
+        \u043F\u043E\u043B\u0435\u0437\u043D\u044B\u0439, \u0432\u0435\u0434\u044C
+        \u043E\u043D\u0438 \u043C\u043E\u0447\u044C \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u044B\u0432\u0430\u0442\u044C.
+        \u041E\u0441\u043E\u0431\u0435\u043D\u043D\u043E <color=lime>Silentian</color>!"
+      characterVoice: {fileID: 8300000, guid: 207b747ca45446346bdf86683173a04f, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u042F \u043F\u043E\u043D\u0438\u043C\u0430\u0442\u044C, \u0447\u0442\u043E
+        \u0442\u044B \u0437\u0430\u0442\u044B\u043A\u0430\u0442\u044C \u0432\u0441\u0435,
+        \u0447\u0442\u043E \u0434\u0432\u0438\u0433\u0430\u0442\u044C\u0441\u044F,
+        \u043D\u043E \u043F\u043E\u043F\u0440\u043E\u0431\u043E\u0432\u0430\u0442\u044C
+        \u043E\u0442\u043A\u0440\u044B\u0442\u044C \u0447\u0430\u0442. \u041C\u044B
+        \u0443\u0436\u0435 \u0438\u043C\u0435\u0442\u044C \u0437\u0440\u0438\u0442\u0435\u043B\u044C!\r"
+      characterVoice: {fileID: 8300000, guid: e51fe728411fb4c4a88365862c332a9c, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
 --- !u!1 &304883608
 GameObject:
   m_ObjectHideFlags: 0
@@ -5006,6 +5560,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e2a9223b16e4e94497967f0ff47ad11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &321879510 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 917255128, guid: d782be675ce3aed4780569977277eac5, type: 3}
+  m_PrefabInstance: {fileID: 5355675337809771851}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 451fb1a2bfe8b3e45b095b06198caa36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &324989176
@@ -5706,7 +6271,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onStartEvents:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1247871586}
+        m_TargetAssemblyTypeName: ReplicModule, Assembly-CSharp
+        m_MethodName: UsePack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &378477774
 GameObject:
   m_ObjectHideFlags: 0
@@ -8124,6 +8701,327 @@ Transform:
   m_Father: {fileID: 1273483310}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &640562242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 640562243}
+  - component: {fileID: 640562244}
+  m_Layer: 0
+  m_Name: RedCode
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &640562243
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640562242}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1782325055}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &640562244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640562242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36a0af631bf1564aa67cf71a32dbf9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  system: {fileID: 321879510}
+  pack:
+    mainList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041E \u043D\u0435\u0442! \u041A\u041E\u0414 \u041A\u0420\u0410\u0421\u041D\u042B\u0419!
+        \u041A\u041E\u0414 \u041A\u0420\u0410\u0421\u041D\u042B\u0419! \u0412\u043D\u0435\u0448\u043D\u0438\u0439
+        \u0430\u0442\u0430\u043A\u0430 \u043D\u0430 \u043A\u0430\u043D\u0430\u043B.\r
+        \u041C\u043D\u0435 \u043F\u0440\u0438\u0445\u043E\u0434\u0438\u0442\u044C
+        \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u044F \u0441 \u0432\u0435\u0441\u044C
+        \u043A\u043E\u043D\u0435\u0446 \u043A\u0430\u043D\u0430\u043B.\r\n"
+      characterVoice: {fileID: 8300000, guid: 2538b59a147d77e478e47e42e1b5b69f, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0421\u0442\u0440\u0438\u043C\u0435\u0440 \u043F\u0440\u043E\u043F\u0430\u0441\u0442\u044C.
+        \u041A\u0442\u043E-\u0442\u043E \u0431\u043B\u043E\u0447\u0438\u0442\u044C
+        \u043A\u0430\u043D\u0430\u043B! \r\u042D\u0442\u043E \u0431\u043E\u0442\u044B!
+        \u0414\u0440\u0443\u0433\u043E\u0439. \u041F\u043B\u043E\u0445\u043E\u0439
+        \u0431\u043E\u0442\u044B. \r\u041A\u043E\u0442\u043E\u0440\u044B\u0439 \u0440\u0430\u0441\u043F\u0440\u043E\u0441\u0442\u0440\u0430\u043D\u044F\u0442\u044C
+        \u0440\u0435\u043A\u043B\u0430\u043C\u0430 \u0432 \u0447\u0430\u0442. \r"
+      characterVoice: {fileID: 8300000, guid: 4b4dd96e8add83040aef27a86e6a61ba, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041E \u0431\u043E\u0436\u0435! \r\u041E\u043D\u0438 \u043F\u0438\u0441\u0430\u0442\u044C
+        \u0441\u0442\u0440\u0430\u0448\u043D\u044B\u0439 \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u0435
+        \u043A\u0443\u043F\u0438\u0442\u044C \u043F\u043E\u0440\u0442\u0430\u0442\u0438\u0432\u043D\u044B\u0439
+        \u0440\u0443\u0447\u043D\u043E\u0439 \u0443\u0441\u043B\u043E\u0436\u043D\u0438\u0442\u0435\u043B\u044C.\r"
+      characterVoice: {fileID: 8300000, guid: a224149452773db419c4d49c97f8dd85, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041E \u043C\u0430\u0439\u043D \u0433\u043E\u0434. \u041F\u0440\u0438\u0439\u0442\u0438
+        \u0435\u0449\u0451 \u0438 \u0445\u0435\u0439\u0442\u0435\u0440\u044B.\r \u041E\u043D\u0438
+        \u043F\u0438\u0441\u0430\u0442\u044C \u0433\u043D\u0435\u0432\u043D\u044B\u0439
+        \u043A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439 \u0432
+        \u0447\u0430\u0442 \u0432 \u0431\u043E\u043B\u044C\u0448\u043E\u0439 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E.\r"
+      characterVoice: {fileID: 8300000, guid: 819100313f029aa48858d026051b5f29, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0418\u2026 \u0441\u0442\u0440\u0438\u043C \u0443\u043F\u0430\u0441\u0442\u044C.
+        \u0427\u0430\u0442 \u0435\u0441\u0442\u044C \u043D\u0435\u0434\u043E\u0441\u0442\u0443\u043F\u043D\u044B\u0439.
+        \u041C\u043D\u043E\u0433\u0438\u0439 \u0441\u043E\u0446\u0438\u0430\u043B\u044C\u043D\u044B\u0439
+        \u0441\u0432\u044F\u0437\u044C, \u0447\u0442\u043E \u043E\u0431\u0440\u0430\u0437\u043E\u0432\u0430\u0442\u044C\u0441\u044F
+        \u0437\u0430 \u0434\u043E\u043B\u0433\u0438\u0435 \u043B\u0435\u0442\u044B,
+        \u043F\u0440\u043E\u0441\u0442\u043E \u0442\u0435\u0440\u044F\u0442\u044C\u0441\u044F!\r"
+      characterVoice: {fileID: 8300000, guid: 2f6afc79ecef0b54b8376854f870f2a4, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041B\u044E\u0434\u0438 \u0441 \u0441\u0438\u043D\u0438\u0439
+        \u043D\u0438\u043A \u043D\u0435 \u0441\u043F\u0440\u0430\u0432\u0438\u0442\u044C\u0441\u044F.\r
+        \u041C\u044B \u0434\u043E\u043B\u0436\u043D\u044B \u0441\u043E\u0431\u0440\u0430\u0442\u044C
+        \u0430\u0440\u043C\u0438\u044F.\r \u0417\u0435\u043B\u0451\u043D\u044B\u0439
+        \u0430\u0440\u043C\u0438\u044F!"
+      characterVoice: {fileID: 8300000, guid: 8f1d4774b50e7c14dbd4785cbca795ec, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0410 \u0435\u0449\u0451 \u043D\u0443\u0436\u043D\u043E \u043F\u043E\u043B\u0443\u0447\u0430\u0442\u044C
+        \u043E\u0434\u043E\u0431\u0440\u0435\u043D\u0438\u0435 \u043E\u0442 \u0446\u0435\u0440\u043A\u043E\u0432\u044C
+        \u0432\u043A\u0443\u0441\u043D\u043E\u0441\u043A\u0430\u0437\u0430\u043D\u0438\u0439!\r
+        \u0422\u044B \u043C\u043E\u0447\u044C \u043C\u043D\u0435 \u043F\u043E\u043C\u043E\u0447\u044C?\r"
+      characterVoice: {fileID: 8300000, guid: 823dd33604f778e4ba8b95248bee1fb7, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    skipList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u042D\u0439, \u0437\u0430\u0442\u044B\u043A\u0430\u0442\u044C
+        \u043C\u0435\u043D\u044F \u0432 \u0442\u0430\u043A\u043E\u0439 \u043C\u043E\u043C\u0435\u043D\u0442
+        \u043D\u0435\u0440\u0430\u0437\u0443\u043C\u043D\u044B\u0439.\r \u0421\u043B\u0443\u0447\u0438\u0442\u0441\u044F
+        \u0431\u043E\u043B\u044C\u0448\u043E\u0439 \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u0430,
+        \u0438 \u044F \u043D\u0435 \u043F\u043E\u043C\u043D\u0438\u0442\u044C \u044D\u0442\u043E
+        \u0432 \u0441\u0446\u0435\u043D\u0430\u0440\u0438\u0439!\r"
+      characterVoice: {fileID: 8300000, guid: f49e802e29583b9438593e16c16f7914, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041F\u043E\u044D\u0442\u043E\u043C\u0443 \u0441\u0435\u0439\u0447\u0430\u0441
+        \u0422\u042B \u0437\u0430\u0442\u043A\u043D\u0443\u0442\u044C\u0441\u044F
+        \u0438 \u0441\u043B\u0443\u0448\u0430\u0442\u044C \u043C\u0435\u043D\u044F!"
+      characterVoice: {fileID: 8300000, guid: 885914862fcca134ca56cee763c27cce, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041F\u043E \u043F\u0440\u0430\u0432\u0434\u0430 \u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C,
+        \u0442\u044B \u0438 \u0442\u0430\u043A \u0435\u0441\u0442\u044C \u043F\u043E\u0441\u0442\u043E\u044F\u043D\u043D\u044B\u0439
+        \u0437\u0430\u0442\u043A\u043D\u0443\u0442\u044B\u0439 \u0438 \u0442\u043E\u043B\u044C\u043A\u043E
+        \u0441\u043B\u0443\u0448\u0430\u0442\u044C \u043C\u043E\u0439 \u0440\u0435\u043F\u043B\u0438\u043A\u0430,
+        \u043D\u043E \u0442\u044B \u043F\u043E\u043D\u044F\u0442\u044C."
+      characterVoice: {fileID: 8300000, guid: 576b93d1579fd5f4086d16f84cff4ea5, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0412 \u043E\u0431\u0449\u0435\u043C \u0442\u0432\u043E\u0440\u0438\u0442\u044C\u0441\u044F
+        \u043F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u0430,
+        \u0432\u0435\u0434\u044C \u043D\u0430 \u043A\u0430\u043D\u0430\u043B \u043D\u0430\u0447\u0430\u0442\u044C\u0441\u044F
+        \u0430\u0442\u0430\u043A\u0430."
+      characterVoice: {fileID: 8300000, guid: 3e1f4b84d40413544afc992efe2425af, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041D\u0430\u043C \u043D\u0430\u0434\u043E \u0447\u0442\u043E-\u0442\u043E
+        \u0434\u0435\u043B\u0430\u0442\u044C! \u0414\u043B\u044F \u043D\u0430\u0447\u0430\u043B\u0430,
+        \u043C\u044B \u043F\u043E\u0439\u0442\u0438 \u0432 \u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u044B\u0439
+        \u043C\u0435\u0441\u0442\u043E. \r\u0422\u044B \u0441\u043E\u0433\u043B\u0430\u0441\u043D\u044B\u0439?...\r"
+      characterVoice: {fileID: 8300000, guid: 8593fb2676baaf94b99c9578fefd1196, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0422\u044B \u0447\u0442\u043E \u043E\u0431\u0438\u0434\u0435\u0442\u044C\u0441\u044F?\r
+        \u0421\u043A\u0430\u0437\u0430\u0442\u044C \u0447\u0442\u043E-\u043D\u0438\u0431\u0443\u0434\u044C...\r
+        \u041D\u0443 \u043F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430...\r\n"
+      characterVoice: {fileID: 8300000, guid: fd56d70ffc24ca54aa4c36cdc28d9ad8, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u042F \u0432\u0435\u0434\u044C \u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C
+        \u0432\u043E\u043B\u0448\u0435\u0431\u043D\u044B\u0439 \u0441\u043B\u043E\u0432\u043E.
+        \u041C\u0435\u043D\u044F \u0443\u0447\u0438\u0442\u044C, \u0447\u0442\u043E
+        \u044D\u0442\u043E \u0434\u043E\u043B\u0436\u0435\u043D \u0440\u0430\u0431\u043E\u0442\u0430\u0442\u044C!"
+      characterVoice: {fileID: 8300000, guid: 5ffb313681d895f4bbc0abfd309eece9, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0422\u044B \u0437\u043D\u0430\u0442\u044C, \u0447\u0442\u043E
+        \u0441\u0432\u043E\u0439 \u043C\u043E\u043B\u0447\u0430\u043D\u0438\u0435
+        \u0442\u044B \u0443\u043D\u0438\u0447\u0442\u043E\u0436\u0430\u0442\u044C
+        \u043C\u043E\u0439 \u0432\u0435\u0440\u0430 \u0432 \u0432\u043E\u043B\u0448\u0435\u0431\u0441\u0442\u0432\u043E.
+        \u0421\u043E\u0432\u0441\u0435\u043C...\r \u0411\u0435\u0441\u043F\u043E\u0449\u0430\u0434\u043D\u044B\u0439...\r"
+      characterVoice: {fileID: 8300000, guid: c4488957534214e4fa1bf18f9a1885cc, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0422\u044B \u0436\u0435 \u043D\u0435 \u043C\u043E\u0447\u044C
+        \u0442\u0430\u043A \u043E\u0431\u0438\u0434\u0435\u0442\u044C\u0441\u044F?\r
+        \u041D\u0443, \u043D\u0435 \u0432\u0435\u0441\u0442\u0438 \u0441\u0435\u0431\u044F
+        \u043A\u0430\u043A \u043C\u043E\u0439 \u043F\u0435\u0440\u0432\u044B\u0439
+        \u0436\u0435\u043D\u0430, \u043B\u0430\u0434\u043D\u043E?\r"
+      characterVoice: {fileID: 8300000, guid: a1d9ebcf72c0fe845a6f5723fd3116a7, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041B\u0430\u0434\u043D\u043E!"
+      characterVoice: {fileID: 8300000, guid: 3db6be8bd36fd1347a203083e5af4533, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041D\u0443...\r \u041D\u0443, \u043D\u0435 \u0434\u0443\u0442\u044C\u0441\u044F...\r
+        \u0421\u043A\u0430\u0437\u0430\u0442\u044C \u0447\u0442\u043E-\u043D\u0438\u0431\u0443\u0434\u044C...\r
+        \u041B\u0430\u0434\u043D\u043E... \u043B\u0430\u0434\u043D\u043E. \r"
+      characterVoice: {fileID: 8300000, guid: 0e625bb78da28b54e8b47427be69fddc, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0414\u0430\u0432\u0430\u0439 \u0442\u044B \u043F\u0440\u043E\u0441\u0442\u043E
+        \u0438\u0437\u0434\u0430\u0442\u044C \u0445\u043E\u0442\u044C \u043A\u0430\u043A\u043E\u0439-\u0442\u043E
+        \u0437\u0432\u0443\u043A, \u0435\u0441\u043B\u0438 \u0442\u044B \u043F\u043E\u043D\u044F\u0442\u044C
+        \u043C\u0435\u043D\u044F, \u043B\u0430\u0434\u043D\u043E?"
+      characterVoice: {fileID: 8300000, guid: b3a2aa964a502a342935ccfcbe59ddd0, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041B\u0430\u0434\u043D\u043E!"
+      characterVoice: {fileID: 8300000, guid: 3db6be8bd36fd1347a203083e5af4533, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0418... \u0442\u044B \u043C\u043E\u043B\u0447\u0430\u0442\u044C."
+      characterVoice: {fileID: 8300000, guid: 8657c2c9f767a354e84ecd22c7f5edbb, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
 --- !u!1 &642286735
 GameObject:
   m_ObjectHideFlags: 0
@@ -9244,6 +10142,7 @@ MonoBehaviour:
     \u0447\u0435\u0440\u0435\u0437 \u043A\u0430\u043A\u0443\u044E-\u0442\u043E \u0442\u0451\u043C\u043D\u0443\u044E
     \u043C\u0443\u0442\u044C. \u0418 \u0443\u0432\u0438\u0434\u0435\u043B\u0438 \u0441\u0432\u0435\u0442..."
   withNumberSaving: 1
+  withSceneLoading: 0
 --- !u!1 &720234991
 GameObject:
   m_ObjectHideFlags: 0
@@ -12448,17 +13347,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 916513707}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &917255128 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 917255128, guid: d782be675ce3aed4780569977277eac5, type: 3}
-  m_PrefabInstance: {fileID: 5355675337809771851}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 451fb1a2bfe8b3e45b095b06198caa36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &921290222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13210,6 +14098,139 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4286137945813894509, guid: 9e69ecae8135f7c40ba707570a0a78c8, type: 3}
   m_PrefabInstance: {fileID: 982183932}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &985440599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 985440600}
+  - component: {fileID: 985440601}
+  m_Layer: 0
+  m_Name: SecretRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &985440600
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985440599}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1782325055}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &985440601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985440599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36a0af631bf1564aa67cf71a32dbf9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  system: {fileID: 321879510}
+  pack:
+    mainList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u042F \u0434\u0443\u043C\u0430\u0442\u044C, \u043C\u043E\u043B\u0447\u0430\u043D\u0438\u0435
+        \u0435\u0441\u0442\u044C \u0437\u043D\u0430\u043A \u0441\u043E\u0433\u043B\u0430\u0441\u0438\u044F. "
+      characterVoice: {fileID: 8300000, guid: f8db82b0b8bdd344c9d5341a4fb17e38, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041C\u044B \u043D\u0430\u0434\u043E \u043F\u0440\u043E\u0439\u0442\u0438
+        \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u043E \u0437\u0430\u043B,
+        \u0447\u0442\u043E\u0431\u044B \u0432\u0441\u0451 \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u0438\u0442\u044C.
+        \u0418 \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u043E\u0442\u043E\u043C
+        \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u0442\u044C\u0441\u044F
+        \u043D\u0430 \u0432\u043E\u0439\u043D\u0430.\r"
+      characterVoice: {fileID: 8300000, guid: b950213091f584044a3df38f00ac9fa2, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u042F \u0434\u0443\u043C\u0430\u0442\u044C, \u043B\u044E\u0434\u0438
+        \u0441 \u0441\u0438\u043D\u0438\u0439 \u043D\u0438\u043A \u0432\u043F\u043E\u043B\u043D\u0435
+        \u0441\u043F\u0440\u0430\u0432\u0438\u0442\u044C\u0441\u044F \u043F\u043E\u043A\u0430
+        \u043C\u044B \u0432\u0441\u0451 \u0433\u043E\u0442\u043E\u0432\u0438\u0442\u044C!"
+      characterVoice: {fileID: 8300000, guid: 22dba614cb9e5c84fbacf620da0cee09, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    skipList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041D\u0443 \u044D\u0439! \u042F \u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C
+        \u043F\u043B\u0430\u043D \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0439.\r"
+      characterVoice: {fileID: 8300000, guid: a85445018848cb7468752d0471ea03c8, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041C\u044B \u0434\u043E\u043B\u0436\u0435\u043D \u0432\u043C\u0435\u0441\u0442\u0435
+        \u043F\u0440\u043E\u0439\u0442\u0438 \u043F\u043E \u0440\u0430\u0437\u043D\u044B\u0439
+        \u043C\u0435\u0441\u0442\u0430 \u0438 \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u0438\u0442\u044C
+        \u0441\u0438\u043B\u0430 \u043A \u0431\u0438\u0442\u0432\u0430 \u0437\u0430
+        \u043A\u0430\u043D\u0430\u043B! \r"
+      characterVoice: {fileID: 8300000, guid: 476574f99f49d134fab02aa5a847cf61, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0414\u0430\u0432\u0430\u0439 \u0442\u044B \u0441\u043B\u0443\u0448\u0430\u0442\u044C
+        \u0445\u043E\u0442\u044F \u0431\u044B \u043E\u0441\u043D\u043E\u0432\u043D\u043E\u0439
+        \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F, \u043B\u0430\u0434\u043D\u043E?"
+      characterVoice: {fileID: 8300000, guid: ab0a272b56b26554986fd9daf310e1c6, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041B\u0430\u0434\u043D\u043E!"
+      characterVoice: {fileID: 8300000, guid: 3db6be8bd36fd1347a203083e5af4533, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
 --- !u!1 &988055741
 GameObject:
   m_ObjectHideFlags: 0
@@ -14642,7 +15663,7 @@ MonoBehaviour:
   logicEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1247871586}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ReplicModule, Assembly-CSharp
         m_MethodName: UsePack
         m_Mode: 1
@@ -16837,6 +17858,178 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e112d97ca257f634299aef64b4bb84de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1214936533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1214936534}
+  - component: {fileID: 1214936535}
+  m_Layer: 0
+  m_Name: ExtraTasks
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1214936534
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214936533}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1782325055}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1214936535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214936533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36a0af631bf1564aa67cf71a32dbf9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  system: {fileID: 321879510}
+  pack:
+    mainList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0422\u044B \u0437\u043D\u0430\u0442\u044C?"
+      characterVoice: {fileID: 8300000, guid: 4954732f1b4aef948a45b5cd57abcf0e, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E
+        \u043F\u043E\u0434\u043F\u0438\u0441\u0447\u0438\u043A \u0434\u0430\u0436\u0435
+        \u0440\u0430\u0441\u0442\u0438 \u0447\u0443\u0442\u044C \u0447\u0443\u0442\u044C.
+        \u042F \u0434\u0443\u043C\u0430\u0442\u044C, \u044D\u0442\u043E \u043C\u043E\u0439
+        \u0441\u0442\u0430\u0440\u044B\u0439 \u0434\u0440\u0443\u0437\u044C\u044F
+        \u0443\u0432\u0438\u0434\u0435\u0442\u044C \u0441\u0441\u044B\u043B\u043A\u0430
+        \u0438 \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0430\u0442\u044C\u0441\u044F. "
+      characterVoice: {fileID: 8300000, guid: 56b4f29c6b863a542be012b5096cd896, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u042F \u0434\u0443\u043C\u0430\u0442\u044C, \u043C\u044B \u0441\u043C\u043E\u0447\u044C
+        \u043F\u0440\u0438\u0432\u043B\u0435\u043A\u0430\u0442\u044C \u0431\u043E\u043B\u044C\u0448\u043E\u0439
+        \u043F\u043E\u0434\u043F\u0438\u0441\u0447\u0438\u043A. \r\n\u041E\u043D\u0438
+        \u043F\u043E\u043C\u043E\u0433\u0430\u0442\u044C \u043F\u043E\u0442\u043E\u043C
+        \u0432 \u0444\u0438\u043D\u0430\u043B\u044C\u043D\u044B\u0439 \u0431\u0438\u0442\u0432\u0430.\r"
+      characterVoice: {fileID: 8300000, guid: ca51c1b4be8fa474db72df6c0e51b162, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0422\u044B \u0437\u043D\u0430\u0442\u044C, \u044F \u0434\u0443\u043C\u0430\u0442\u044C,
+        \u043B\u044E\u0434\u0438 \u043B\u044E\u0431\u0438\u0442\u044C, \u0435\u0441\u043B\u0438
+        \u0442\u044B \u0438\u0433\u0440\u0430\u0442\u044C \u043A\u0440\u0443\u0442\u043E!\r\n\u0412
+        \u043C\u0435\u043D\u044E \u043F\u0430\u0443\u0437\u0430 \u044F \u043F\u0438\u0441\u0430\u0442\u044C
+        \u0442\u0435\u0431\u0435 \u043E\u0441\u043E\u0431\u044B\u0439 \u0437\u0430\u0434\u0430\u0447\u0430!
+        \r"
+      characterVoice: {fileID: 8300000, guid: ca51c1b4be8fa474db72df6c0e51b162, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0414\u0430\u0432\u0430\u0439 \u043F\u0440\u043E\u0431\u043E\u0432\u0430\u0442\u044C
+        \u0434\u0435\u043B\u0430\u0442\u044C \u044D\u0442\u043E, \u043B\u0430\u0434\u043D\u043E?"
+      characterVoice: {fileID: 8300000, guid: 3513cf05f6cb4d24ba8dcce33f556361, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041B\u0430\u0434\u043D\u043E!"
+      characterVoice: {fileID: 8300000, guid: 3db6be8bd36fd1347a203083e5af4533, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u042F \u0434\u0443\u043C\u0430\u0442\u044C, \u044D\u0442\u043E
+        \u043F\u043E\u043D\u0440\u0430\u0432\u0438\u0442\u044C\u0441\u044F \u043B\u044E\u0434\u0438!
+        \u041C\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u0431\u043E\u043B\u044C\u0448\u0435
+        \u043F\u043E\u0434\u043F\u0438\u0441\u0447\u0438\u043A."
+      characterVoice: {fileID: 8300000, guid: 310e7383f56eb444797c84a0405d6a27, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    skipList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u042D\u0439! \u042F \u0445\u043E\u0442\u0435\u0442\u044C \u043F\u043E\u0434\u0435\u043B\u0438\u0442\u044C\u0441\u044F
+        \u0441 \u0442\u043E\u0431\u043E\u0439 \u0442\u0430\u0439\u043D\u0430 \u0441\u0442\u0440\u0438\u043C\u0438\u043D\u0433\u0430! "
+      characterVoice: {fileID: 8300000, guid: cff5822707aff08428d604b18da843a3, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0418\u0433\u0440\u0430\u0442\u044C \u043A\u0440\u0443\u0442\u043E,
+        \u0438 \u0442\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u0431\u043E\u043B\u044C\u0448\u0435
+        \u043F\u043E\u0434\u043F\u0438\u0441\u0447\u0438\u043A. "
+      characterVoice: {fileID: 8300000, guid: ba7249b9ec290404cbb61a3a2475e1a9, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u042F \u0441\u0434\u0435\u043B\u0430\u0442\u044C \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u044C\u043D\u044B\u0439
+        \u0434\u043E\u043F\u0437\u0430\u0434\u0430\u0447\u0430, \u043A\u043E\u0442\u043E\u0440\u044B\u0439
+        \u0442\u044B \u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u0432 \u043C\u0435\u043D\u044E
+        \u043F\u0430\u0443\u0437\u0430."
+      characterVoice: {fileID: 8300000, guid: bd69871de6f4dda449d573dcf70bc62d, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
 --- !u!1 &1218001764
 GameObject:
   m_ObjectHideFlags: 0
@@ -17264,7 +18457,7 @@ GameObject:
   - component: {fileID: 1247871585}
   - component: {fileID: 1247871586}
   m_Layer: 0
-  m_Name: Start
+  m_Name: AfterReload
   m_TagString: Untagged
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -17296,164 +18489,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d36a0af631bf1564aa67cf71a32dbf9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  system: {fileID: 917255128}
+  system: {fileID: 321879510}
   pack:
     mainList:
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
-      characterText: "\u041F\u0440\u0438\u0432\u0435\u0442, \u0438\u0433\u0440\u043E\u043A,
-        \u044F \u0435\u0441\u0442\u044C \u0442\u0432\u043E\u0439 \u043F\u0440\u043E\u0432\u043E\u0434\u043D\u0438\u043A!"
-      characterVoice: {fileID: 8300000, guid: 3a3047424e810d041a55ca8c42c53058, type: 3}
-      onReplicaStart:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 1392884653}
-            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
-            m_MethodName: Talk_Default
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-      onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
-    - CharacterName: "\u0411\u043E\u0442"
-      characterColor: {r: 1, g: 1, b: 1, a: 1}
-      characterText: "\u041C\u044B \u043F\u0440\u043E\u0439\u0442\u0438 \u0432\u043C\u0435\u0441\u0442\u0435
-        \u0432\u0435\u0441\u044C \u043F\u0443\u0442\u044C. \u041F\u0440\u0430\u0432\u0434\u0430
-        \u0432\u0435\u0441\u0435\u043B\u043E?"
-      characterVoice: {fileID: 8300000, guid: a69cd7b8f8e81f44fb77bd1144a6db35, type: 3}
-      onReplicaStart:
-        m_PersistentCalls:
-          m_Calls: []
-      onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
-    - CharacterName: "\u0411\u043E\u0442"
-      characterColor: {r: 1, g: 1, b: 1, a: 1}
-      characterText: "\u0422\u044B \u0437\u043D\u0430\u0442\u044C, \u044D\u0442\u043E\u0442
-        \u0438\u0433\u0440\u0430 \u0431\u044B\u043B \u0441\u0434\u0435\u043B\u0430\u043D
-        \u0441\u043E\u0432\u0441\u0435\u043C \u043D\u0435\u0434\u0430\u0432\u043D\u043E!"
-      characterVoice: {fileID: 8300000, guid: d0dd7d9ece27a4a4b9e90c84c957fc73, type: 3}
-      onReplicaStart:
-        m_PersistentCalls:
-          m_Calls: []
-      onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
-    - CharacterName: "\u0411\u043E\u0442"
-      characterColor: {r: 1, g: 1, b: 1, a: 1}
-      characterText: "\u041E\u043D \u0431\u044B\u043B \u0441\u0434\u0435\u043B\u0430\u043D
-        \u0432\u0441\u0435\u0433\u043E \u043E\u0434\u0438\u043D \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A!"
-      characterVoice: {fileID: 8300000, guid: 5c056b71393a78440a9c9dffd2c29c5e, type: 3}
-      onReplicaStart:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 1392884653}
-            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
-            m_MethodName: Talk_Yes
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-          - m_Target: {fileID: 981403977}
-            m_TargetAssemblyTypeName: SubscribersPoint, Assembly-CSharp
-            m_MethodName: AddSubscribers
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-      onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
-    - CharacterName: "\u0411\u043E\u0442"
-      characterColor: {r: 1, g: 1, b: 1, a: 1}
-      characterText: "\u0418 \u043E\u043D \u0438\u043C\u0435\u0442\u044C \u043C\u0430\u043B\u044B\u0439
-        \u0432\u0440\u0435\u043C\u044F \u0434\u043B\u044F \u0441\u0432\u043E\u0439
-        \u0440\u0430\u0431\u043E\u0442\u0430."
-      characterVoice: {fileID: 8300000, guid: 242b2f73c3d7dc644a512b3d4c516564, type: 3}
-      onReplicaStart:
-        m_PersistentCalls:
-          m_Calls: []
-      onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
-    - CharacterName: "\u0411\u043E\u0442"
-      characterColor: {r: 1, g: 1, b: 1, a: 1}
-      characterText: "\u0422\u044B \u0437\u043D\u0430\u0442\u044C, \u043C\u044B \u0434\u0430\u0436\u0435
-        \u043D\u0435 \u0443\u0441\u043F\u0435\u0442\u044C \u0432 \u043D\u0435\u043A\u043E\u0442\u043E\u0440\u044B\u0439
-        \u043C\u0435\u0441\u0442\u0430 \u043F\u043E\u0441\u0442\u0435\u043B\u0438\u0442\u044C
-        \u043B\u0438\u043D\u043E\u043B\u0435\u0443\u043C \u0438 \u0434\u0440\u0443\u0433\u043E\u0439
-        \u0442\u0435\u043A\u0441\u0442\u0443\u0440\u0430!"
-      characterVoice: {fileID: 8300000, guid: fc7fed38e322bc340b6cac1a47a3acf6, type: 3}
-      onReplicaStart:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 1392884653}
-            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
-            m_MethodName: Talk_Tired
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-      onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
-    - CharacterName: "\u0411\u043E\u0442"
-      characterColor: {r: 1, g: 1, b: 1, a: 1}
-      characterText: "\u041F\u0440\u0438\u0437\u043D\u0430\u0442\u044C\u0441\u044F,
-        \u044D\u0442\u043E\u0442 \u0438\u0433\u0440\u0430 \u0434\u0430\u0436\u0435
-        \u0441\u043E\u0445\u0440\u0430\u043D\u044F\u0442\u044C \u043D\u0435\u043A\u043E\u0442\u043E\u0440\u044B\u0439
-        \u043E\u0448\u0438\u0431\u043A\u0430, \u043A\u043E\u0442\u043E\u0440\u044B\u0439
-        \u043C\u044B \u0442\u0430\u043A \u0438 \u043D\u0435 \u043C\u043E\u0447\u044C
-        \u0438\u0441\u043F\u0440\u0430\u0432\u0438\u0442\u044C!"
-      characterVoice: {fileID: 8300000, guid: c36315b2441a6594a8ef86e5def37a54, type: 3}
-      onReplicaStart:
-        m_PersistentCalls:
-          m_Calls: []
-      onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
-    - CharacterName: "\u0411\u043E\u0442"
-      characterColor: {r: 1, g: 1, b: 1, a: 1}
-      characterText: "\u042F \u043D\u0430\u0434\u0435\u044F\u0442\u044C\u0441\u044F,
-        \u0447\u0442\u043E \u043D\u0430 \u0442\u0432\u043E\u0439 \u043F\u0440\u043E\u0445\u043E\u0436\u0434\u0435\u043D\u0438\u0435
-        \u044D\u0442\u043E\u0442 \u043E\u0448\u0438\u0431\u043A\u0430 \u0441\u043F\u0440\u044F\u0442\u0430\u0442\u044C\u0441\u044F!"
-      characterVoice: {fileID: 8300000, guid: 2072ad6e5e3c7ac4aae892d65efa672c, type: 3}
-      onReplicaStart:
-        m_PersistentCalls:
-          m_Calls: []
-      onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
-    - CharacterName: "\u0411\u043E\u0442"
-      characterColor: {r: 1, g: 1, b: 1, a: 1}
-      characterText: "\u0412 \u043E\u0431\u0449\u0435\u043C, \u044F \u043F\u0440\u043E\u0441\u0438\u0442\u044C
-        \u0442\u0435\u0431\u044F \u043D\u0435 \u043E\u0431\u0440\u0430\u0449\u0430\u0442\u044C
-        \u0432\u043D\u0438\u043C\u0430\u043D\u0438\u044F \u043D\u0430 \u0431\u0435\u0434\u043D\u044B\u0439
-        \u0434\u0438\u0437\u0430\u0439\u043D \u0438 \u043F\u043B\u043E\u0445\u043E\u0439
-        \u043C\u043E\u0434\u0435\u043B\u044C\u043A\u0430."
-      characterVoice: {fileID: 8300000, guid: 70f536ad6345d2647be0fedbaa3ba3db, type: 3}
+      characterText: "\u0422\u044B \u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044C\u0441\u044F
+        \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E! \u042F \u0435\u0441\u0442\u044C
+        \u0442\u0430\u043A\u043E\u0439 \u0440\u0430\u0434\u044B\u0439!\r \u042F...
+        \r"
+      characterVoice: {fileID: 8300000, guid: 9f78aa931063b32469916a3fddd96caf, type: 3}
       onReplicaStart:
         m_PersistentCalls:
           m_Calls:
@@ -17474,11 +18519,12 @@ MonoBehaviour:
           m_Calls: []
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
-      characterText: "\u041C\u044B \u043F\u0440\u0430\u0432\u0434\u0430 \u0441\u0442\u0430\u0440\u0430\u0442\u044C\u0441\u044F
-        \u0438 \u043F\u043B\u0430\u043D\u0438\u0440\u043E\u0432\u0430\u0442\u044C
-        \u0434\u043E\u0434\u0435\u043B\u0430\u0442\u044C \u044D\u0442\u043E\u0442
-        \u0438\u0433\u0440\u0430!"
-      characterVoice: {fileID: 8300000, guid: a60fda1bee71f28488be248476a84a08, type: 3}
+      characterText: "\u042F \u043F\u0440\u0430\u0432\u0434\u0430 \u0431\u043E\u044F\u0442\u044C\u0441\u044F,
+        \u0447\u0442\u043E \u043A\u043D\u043E\u043F\u043A\u0430 \u0431\u044B\u0442\u044C
+        \u0441\u043B\u0438\u0448\u043A\u043E\u043C \u043F\u043E\u0445\u043E\u0436\u0438\u0439!\r
+        \u0412 \u043E\u0431\u0449\u0435\u043C, \u044F \u0440\u0430\u0434\u044B\u0439
+        \u0432\u0438\u0434\u0435\u0442\u044C \u0442\u0435\u0431\u044F.\r\n"
+      characterVoice: {fileID: 8300000, guid: 1a0c51d92a8e2b34d9be4e4b19249bf6, type: 3}
       onReplicaStart:
         m_PersistentCalls:
           m_Calls: []
@@ -17487,109 +18533,10 @@ MonoBehaviour:
           m_Calls: []
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
-      characterText: "\u0418 \u0432\u043E\u043E\u0431\u0449\u0435! \u0422\u044B \u0441\u0430\u043C
-        \u0437\u0430\u043F\u0443\u0441\u043A\u0430\u0442\u044C \u0438\u0433\u0440\u0430,
-        \u0447\u0442\u043E \u0431\u044B\u0442\u044C \u043F\u043E\u043C\u0435\u0447\u0435\u043D
-        \u0430\u043B\u044C\u0444\u0430-\u0432\u0435\u0440\u0441\u0438\u044F."
-      characterVoice: {fileID: 8300000, guid: e1b46ef814a90e94283ae3faa308fe85, type: 3}
-      onReplicaStart:
-        m_PersistentCalls:
-          m_Calls: []
-      onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
-    - CharacterName: "\u0411\u043E\u0442"
-      characterColor: {r: 1, g: 1, b: 1, a: 1}
-      characterText: "\u041A\u0430\u043A \u0438\u0437\u0432\u0435\u0441\u0442\u043D\u043E,
-        \u044D\u0442\u043E\u0442 \u0441\u0442\u0430\u0442\u0443\u0441 \u0434\u0430\u0432\u0430\u0442\u044C
-        \u0434\u043B\u044F \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A
-        \u043F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u0430\u0432\u043E \u043D\u0430
-        \u043D\u0435\u043F\u0440\u0438\u043A\u043E\u0441\u043D\u043E\u0432\u0435\u043D\u043D\u043E\u0441\u0442\u044C!"
-      characterVoice: {fileID: 8300000, guid: ed59433f354a59c4baaee0c1fa2131a7, type: 3}
-      onReplicaStart:
-        m_PersistentCalls:
-          m_Calls: []
-      onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
-    - CharacterName: "\u0411\u043E\u0442"
-      characterColor: {r: 1, g: 1, b: 1, a: 1}
-      characterText: "\u0422\u0430\u043A \u0447\u0442\u043E \u0442\u044B \u043C\u043E\u0447\u044C
-        \u0434\u0430\u0436\u0435 \u043D\u0435 \u043F\u044B\u0442\u0430\u0442\u044C\u0441\u044F
-        \u0437\u043B\u0438\u0442\u044C\u0441\u044F!"
-      characterVoice: {fileID: 8300000, guid: 8f6dccba336588946a239b0f1804189f, type: 3}
-      onReplicaStart:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 1392884653}
-            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
-            m_MethodName: Talk_No
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-      onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
-    - CharacterName: "\u0411\u043E\u0442"
-      characterColor: {r: 1, g: 1, b: 1, a: 1}
-      characterText: "\u0410 \u0441\u0435\u0439\u0447\u0430\u0441 \u043C\u044B \u043D\u0430\u0447\u0430\u0442\u044C
-        \u0438\u0433\u0440\u0430!"
-      characterVoice: {fileID: 8300000, guid: a797551d1dd832042891d7382cd72c0f, type: 3}
-      onReplicaStart:
-        m_PersistentCalls:
-          m_Calls: []
-      onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
-    - CharacterName: "\u0411\u043E\u0442"
-      characterColor: {r: 1, g: 1, b: 1, a: 1}
-      characterText: "\u041F\u043E\u0441\u043A\u043E\u043B\u044C\u043A\u0443 \u043C\u044B
-        \u0432\u0441\u0451 \u0435\u0449\u0451 \u043D\u0435 \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u0438\u0442\u044C
-        \u0441\u0442\u0430\u0440\u0442\u043E\u0432\u044B\u0439 \u0432\u0438\u0434\u0435\u043E\u0440\u043E\u043B\u0438\u043A,"
-      characterVoice: {fileID: 8300000, guid: 4a76bdbe5c809aa4fb115d463cbc8806, type: 3}
-      onReplicaStart:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 1392884653}
-            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
-            m_MethodName: Talk_Decision
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-      onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
-    - CharacterName: "\u0411\u043E\u0442"
-      characterColor: {r: 1, g: 1, b: 1, a: 1}
-      characterText: "\u0434\u0430\u0432\u0430\u0439 \u043F\u0440\u043E\u0441\u0442\u043E
-        \u043F\u0440\u0438\u0442\u0432\u043E\u0440\u044F\u0442\u044C\u0441\u044F,
-        \u0447\u0442\u043E \u0442\u044B \u0432\u0441\u0451 \u0437\u043D\u0430\u0442\u044C!"
-      characterVoice: {fileID: 8300000, guid: 2f2c3d740ac3e7449af2192cd0bb1217, type: 3}
-      onReplicaStart:
-        m_PersistentCalls:
-          m_Calls: []
-      onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
-    - CharacterName: "\u0411\u043E\u0442"
-      characterColor: {r: 1, g: 1, b: 1, a: 1}
-      characterText: "\u0422\u044B \u0442\u0438\u043F\u0430 \u0435\u0441\u0442\u044C
-        \u043F\u043E\u0434\u043F\u0438\u0441\u0447\u0438\u043A, \u043A\u043E\u0442\u043E\u0440\u044B\u0439
-        \u0442\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u043E \u043F\u043E\u0434\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F
-        \u043D\u0430 \u043A\u0430\u043D\u0430\u043B!"
-      characterVoice: {fileID: 8300000, guid: 146ce1894f671ca4596e2f437ba053c2, type: 3}
+      characterText: "\u0422\u0435\u043F\u0435\u0440\u044C \u043C\u044B \u043F\u0440\u043E\u0439\u0442\u0438
+        \u043F\u043E \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439
+        \u043C\u0430\u0440\u0448\u0440\u0443\u0442!"
+      characterVoice: {fileID: 8300000, guid: a2078c8d7cf5d1249a50089844630fab, type: 3}
       onReplicaStart:
         m_PersistentCalls:
           m_Calls: []
@@ -17608,48 +18555,15 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
-    - CharacterName: "\u0411\u043E\u0442"
-      characterColor: {r: 1, g: 1, b: 1, a: 1}
-      characterText: "\u041F\u043E\u0435\u0445\u0430\u0442\u044C!"
-      characterVoice: {fileID: 8300000, guid: 36c9e38227d10eb4795505091d380322, type: 3}
-      onReplicaStart:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 1369618438}
-            m_TargetAssemblyTypeName: ChatModule, Assembly-CSharp
-            m_MethodName: AddAllMessages
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-      onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 2030077137}
-            m_TargetAssemblyTypeName: TransformModule, Assembly-CSharp
-            m_MethodName: ActivateModule
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
     skipList:
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
-      characterText: "\u0422\u044B \u0437\u043D\u0430\u0442\u044C, \u044D\u0442\u043E
-        \u0435\u0441\u0442\u044C \u043E\u0447\u0435\u043D\u044C \u0433\u0440\u0443\u0431\u043E
-        \u0437\u0430\u0442\u044B\u043A\u0430\u0442\u044C \u0442\u0432\u043E\u0439
-        \u0441\u043E\u0431\u0435\u0441\u0435\u0434\u043D\u0438\u043A, \u043B\u0430\u0434\u043D\u043E?"
-      characterVoice: {fileID: 8300000, guid: 43377c318f9a2b0409b0d1f71c004808, type: 3}
+      characterText: "\u0422\u044B \u043E\u043F\u044F\u0442\u044C \u0437\u0430\u0442\u044B\u043A\u0430\u0442\u044C
+        \u043C\u0435\u043D\u044F?! \u0422\u044B \u043D\u0435 \u0440\u0430\u0434\u044B\u0439
+        \u0443\u0432\u0438\u0434\u0435\u0442\u044C \u043C\u0435\u043D\u044F?\r \u0422\u044B
+        \u0437\u043D\u0430\u0442\u044C, \u044D\u0442\u043E \u0431\u044B\u0442\u044C
+        \u043E\u0431\u0438\u0434\u043D\u044B\u0439..."
+      characterVoice: {fileID: 8300000, guid: 97ed0123ead510e43aab768f133d6903, type: 3}
       onReplicaStart:
         m_PersistentCalls:
           m_Calls:
@@ -17667,52 +18581,17 @@ MonoBehaviour:
             m_CallState: 2
       onReplicaEnd:
         m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 1871460486}
-            m_TargetAssemblyTypeName: ChatModule, Assembly-CSharp
-            m_MethodName: AddAllMessagesAsNew
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-    - CharacterName: "\u0411\u043E\u0442"
-      characterColor: {r: 1, g: 1, b: 1, a: 1}
-      characterText: "\u041B\u0430\u0434\u043D\u043E!"
-      characterVoice: {fileID: 8300000, guid: 20cfc61103529d2469dff8ace75d7d67, type: 3}
-      onReplicaStart:
-        m_PersistentCalls:
-          m_Calls: []
-      onReplicaEnd:
-        m_PersistentCalls:
           m_Calls: []
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
-      characterText: "\u0421\u0435\u0439\u0447\u0430\u0441 \u043C\u044B \u043D\u0430\u0447\u0430\u0442\u044C
-        \u0438\u0433\u0440\u0430. \u041F\u043E\u0435\u0445\u0430\u0442\u044C!"
-      characterVoice: {fileID: 8300000, guid: 5a295376636b67044b9091d9f8e86ce6, type: 3}
+      characterText: "\u041B\u0430\u0434\u043D\u043E... \u041B\u0430\u0434\u043D\u043E..."
+      characterVoice: {fileID: 8300000, guid: e46607e78af809649bc5034ce5228eb3, type: 3}
       onReplicaStart:
         m_PersistentCalls:
           m_Calls: []
       onReplicaEnd:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 2030077137}
-            m_TargetAssemblyTypeName: TransformModule, Assembly-CSharp
-            m_MethodName: ActivateModule
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
           - m_Target: {fileID: 1392884653}
             m_TargetAssemblyTypeName: BotController, Assembly-CSharp
             m_MethodName: StopTalk
@@ -22162,6 +23041,229 @@ MonoBehaviour:
     donateAction:
       m_PersistentCalls:
         m_Calls: []
+--- !u!1 &1638666792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1638666793}
+  - component: {fileID: 1638666794}
+  m_Layer: 0
+  m_Name: Coins
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1638666793
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638666792}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1782325055}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1638666794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638666792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36a0af631bf1564aa67cf71a32dbf9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  system: {fileID: 321879510}
+  pack:
+    mainList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0421\u043E\u0431\u0438\u0440\u0430\u0442\u044C \u043C\u043E\u043D\u0435\u0442\u043A\u0438!
+        \u041E\u043D\u0438 \u043C\u043E\u0447\u044C \u043F\u043E\u043C\u043E\u0447\u044C
+        \u043F\u043E\u0442\u043E\u043C. \u041D\u0430 \u043F\u043E\u043B\u0435 \u0434\u043B\u044F
+        \u0431\u043E\u0439."
+      characterVoice: {fileID: 8300000, guid: c3282a10be2f8d94f9a7471c28a15de7, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    skipList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0422\u044B \u0441\u0435\u0440\u044C\u0451\u0437\u043D\u043E
+        \u0437\u0430\u0442\u044B\u043A\u0430\u0442\u044C \u043C\u0435\u043D\u044F?
+        \u0422\u0443\u0442 \u0431\u044B\u0442\u044C \u0432\u0441\u0435\u0433\u043E
+        \u043E\u0434\u0438\u043D \u0444\u0440\u0430\u0437\u0430!"
+      characterVoice: {fileID: 8300000, guid: 2dfc6dd60584ccf47bf388b5b90055ca, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u042D\u0442\u043E\u0442 \u043C\u043E\u0439 \u0440\u0435\u043F\u043B\u0438\u043A\u0430
+        \u0432 \u0438\u0442\u043E\u0433\u0435 \u0431\u044B\u0442\u044C \u0434\u0430\u0436\u0435
+        \u0431\u043E\u043B\u044C\u0448\u0435 \u0438\u0441\u0445\u043E\u0434\u043D\u044B\u0439
+        \u0444\u0440\u0430\u0437\u0430 \u043F\u0440\u043E \u043C\u043E\u043D\u0435\u0442\u043A\u0438,\r
+        \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u0442\u044B \u043C\u043E\u0447\u044C
+        \u0441\u043E\u0431\u0438\u0440\u0430\u0442\u044C, \u0447\u0442\u043E\u0431\u044B
+        \u043F\u043E\u0442\u043E\u043C \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C
+        \u0438\u0445!\r"
+      characterVoice: {fileID: 8300000, guid: 3fab5563e9a9a654a935d1fc73cbf082, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+--- !u!1 &1644568485
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1644568486}
+  - component: {fileID: 1644568487}
+  m_Layer: 0
+  m_Name: Subscribers
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1644568486
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644568485}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1782325055}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1644568487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644568485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36a0af631bf1564aa67cf71a32dbf9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  system: {fileID: 321879510}
+  pack:
+    mainList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u042F \u043D\u0430\u0434\u0435\u044F\u0442\u044C\u0441\u044F,
+        \u0447\u0442\u043E \u043B\u044E\u0434\u0438 \u0443\u0432\u0438\u0434\u0435\u0442\u044C
+        \u0441\u0442\u0440\u0438\u043C, \u0447\u0442\u043E \u043C\u044B \u0434\u0435\u043B\u0430\u0442\u044C,
+        \u0438 \u043F\u0435\u0440\u0435\u0439\u0442\u0438 \u0438 \u043D\u0430 \u044D\u0442\u043E\u0442
+        \u043A\u0430\u043D\u0430\u043B \u0438 \u0442\u043E\u0436\u0435 \u043F\u043E\u0434\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F."
+      characterVoice: {fileID: 8300000, guid: 78a4a7b3496b1cc4f9d380ab99268c9b, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0411\u043E\u043B\u044C\u0448\u0435 \u043F\u043E\u0434\u043F\u0438\u0441\u043E\u043A
+        - \u0431\u043E\u043B\u044C\u0448\u0435 \u0432\u043E\u0439\u043D\u043E\u0432
+        \u0434\u043B\u044F \u043B\u044E\u0434\u0438 \u0441 \u0441\u0438\u043D\u0438\u0439
+        \u043D\u0438\u043A."
+      characterVoice: {fileID: 8300000, guid: b17c03918731e0c47b31501166d0e6c3, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0411\u043E\u043B\u044C\u0448\u0435 \u043F\u043E\u0434\u043F\u0438\u0441\u043E\u043A
+        - \u0431\u043E\u043B\u044C\u0448\u0435 \u0434\u043E\u043D\u0430\u0442 \u0432
+        \u0443\u0441\u043B\u043E\u0432\u043D\u044B\u0439 \u0434\u0435\u043D\u0435\u0436\u043D\u044B\u0439
+        \u0435\u0434\u0438\u043D\u0438\u0446\u0430, \u043A\u043E\u0442\u043E\u0440\u044B\u0439
+        \u043C\u043E\u0436\u043D\u043E \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C
+        \u0434\u043B\u044F \u0440\u0430\u0437\u043D\u044B\u0439 \u043F\u043E\u0441\u0442\u0440\u043E\u0439\u043A\u0430."
+      characterVoice: {fileID: 8300000, guid: 3e356cf9ff0470a438a15aefc3f094e0, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041F\u043E\u0442\u043E\u043C. \u041D\u0430 \u043F\u043E\u043B\u0435
+        \u0434\u043B\u044F \u0431\u043E\u0439! \r\u0421\u0442\u0430\u0440\u0430\u0442\u044C\u0441\u044F!
+        \u0421\u043B\u044B\u0448\u0438\u0448\u044C?! \u0421\u0442\u0430\u0440\u0430\u0442\u044C\u0441\u044F!\r"
+      characterVoice: {fileID: 8300000, guid: 3458f1bc936785744a5b4b7414c431f0, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    skipList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u042F \u043D\u0435 \u043C\u043E\u0447\u044C \u043C\u043E\u043B\u0447\u0430\u0442\u044C!
+        \u0412\u0435\u0434\u044C \u044D\u0442\u043E \u0435\u0441\u0442\u044C \u043A\u0440\u0430\u0439\u043D\u0435
+        \u0432\u0430\u0436\u043D\u044B\u0439 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F!\r
+        \u041D\u043E, \u0442\u044B \u0441\u0447\u0438\u0442\u0430\u0442\u044C, \u0447\u0442\u043E
+        \u0437\u043D\u0430\u0442\u044C \u0432\u0441\u0451 \u043B\u0443\u0447\u0448\u0435
+        \u0434\u0440\u0443\u0433\u0438\u0445."
+      characterVoice: {fileID: 8300000, guid: d66a47463e8bcfb43a88026792052fa2, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0420\u0430\u0437 \u0442\u044B \u0442\u0430\u043A \u0440\u0432\u0430\u0442\u044C\u0441\u044F
+        \u0432 \u0431\u043E\u0439, \u044F \u043E\u0442\u043A\u0440\u044B\u0432\u0430\u0442\u044C
+        \u0442\u0435\u0431\u0435 \u0434\u0432\u0435\u0440\u044C \u0431\u0435\u0437
+        \u0432\u0441\u044F\u043A\u0438\u0439 \u043E\u0431\u044A\u044F\u0441\u043D\u0435\u043D\u0438\u044F,\r
+        \u043F\u043E\u043B\u043D\u044B\u0439 \u043D\u0430\u0434\u0435\u0436\u0434\u0430,
+        \u0447\u0442\u043E \u0442\u044B \u043D\u0435 \u0444\u0435\u0439\u043B\u0438\u0442\u044C
+        \u0441\u0432\u043E\u0439 \u043F\u0440\u043E\u0445\u043E\u0436\u0434\u0435\u043D\u0438\u0435
+        \u0438\u0437-\u0437\u0430 \u0441\u0432\u043E\u0439 \u043D\u0435\u0442\u0435\u0440\u043F\u0435\u043B\u0438\u0432\u043E\u0441\u0442\u044C\r"
+      characterVoice: {fileID: 8300000, guid: d17f4a210fad4704b9832f000b56a4b8, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
 --- !u!1 &1651728719
 GameObject:
   m_ObjectHideFlags: 0
@@ -24813,6 +25915,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1247871585}
+  - {fileID: 640562243}
+  - {fileID: 985440600}
+  - {fileID: 301881423}
+  - {fileID: 6109191}
+  - {fileID: 1644568486}
+  - {fileID: 2131080967}
+  - {fileID: 153507601}
+  - {fileID: 1638666793}
+  - {fileID: 1214936534}
+  - {fileID: 1963328201}
+  - {fileID: 2123772944}
+  - {fileID: 1965753995}
+  - {fileID: 158601711}
   m_Father: {fileID: 1222288425}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27343,6 +28458,207 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1963328200
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1963328201}
+  - component: {fileID: 1963328202}
+  m_Layer: 0
+  m_Name: Donates
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1963328201
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963328200}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1782325055}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1963328202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963328200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36a0af631bf1564aa67cf71a32dbf9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  system: {fileID: 321879510}
+  pack:
+    mainList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041E\u0445... \u0434\u043E\u043D\u0430\u0442\u044B!"
+      characterVoice: {fileID: 8300000, guid: eb40793da44302a4db84bb82d179bf7a, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041F\u0440\u043E\u044F\u0432\u043B\u0435\u043D\u0438\u0435
+        \u0438\u0441\u043A\u0440\u0435\u043D\u043D\u0435\u0439 \u043B\u044E\u0431\u043E\u0432\u044C
+        \u0442\u0432\u043E\u0439 \u0430\u0443\u0434\u0438\u0442\u043E\u0440\u0438\u044F
+        \u0432 \u0434\u0435\u043D\u0435\u0436\u043D\u044B\u0439 \u044D\u043A\u0432\u0438\u0432\u0430\u043B\u0435\u043D\u0442."
+      characterVoice: {fileID: 8300000, guid: 9670f4c98a8e0ba40bbefc7474d770ee, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0422\u044B \u0437\u043D\u0430\u0442\u044C?"
+      characterVoice: {fileID: 8300000, guid: 4954732f1b4aef948a45b5cd57abcf0e, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0415\u0441\u0442\u044C \u0447\u0442\u043E-\u0442\u043E \u0432\u044B\u043C\u043E\u0440\u0430\u0436\u0438\u0432\u0430\u0449\u0438\u0435
+        \u0432 \u0442\u043E\u043C, \u0447\u0442\u043E \u0442\u044B \u043F\u043E\u043B\u0443\u0447\u0430\u0442\u044C
+        \u0443\u0434\u043E\u0432\u043E\u043B\u044C\u0441\u0442\u0432\u0438\u0435,
+        \r\u043A\u043E\u0433\u0434\u0430 \u043E\u0442\u0434\u0430\u0432\u0430\u0442\u044C
+        \u0434\u0435\u043D\u044C\u0433\u0438 \u0434\u0440\u0443\u0433\u043E\u0439
+        \u0447\u0435\u043B\u043E\u0432\u0435\u043A."
+      characterVoice: {fileID: 8300000, guid: fd3a182e473eb5b48b58f85c6f263fa1, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u042F \u0434\u0443\u043C\u0430\u0442\u044C, \u0447\u0435\u043C
+        \u0431\u043E\u043B\u044C\u0448\u0435 \u043F\u043E\u0434\u043F\u0438\u0441\u0447\u0438\u043A
+        \u043C\u044B \u043F\u0440\u0438\u0432\u043B\u0435\u0447\u044C, \u0442\u0435\u043C
+        \u0431\u043E\u043B\u044C\u0448\u0435 \u0434\u043E\u043D\u0430\u0442 \u043C\u044B
+        \u043F\u043E\u043B\u0443\u0447\u0430\u0442\u044C."
+      characterVoice: {fileID: 8300000, guid: d14775c6ea0ed414395b30e792d69f5b, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041D\u0435 \u0441\u0442\u0435\u0441\u043D\u044F\u0442\u044C\u0441\u044F,
+        \u043F\u0440\u0430\u0432\u0434\u0430. \u041B\u044E\u0434\u0438 \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u0442\u044C
+        \u044D\u0442\u043E \u043F\u043E \u0434\u043E\u0431\u0440\u044B\u0439 \u0432\u043E\u043B\u044F.
+        \r\u042D\u0442\u043E \u043E\u0437\u043D\u0430\u0447\u0430\u0442\u044C, \u0447\u0442\u043E
+        \u0442\u044B \u0445\u043E\u0440\u043E\u0448\u043E \u0438\u0433\u0440\u0430\u0442\u044C.\r"
+      characterVoice: {fileID: 8300000, guid: 55ae9d973b176bd499d260cb510660eb, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041A\u0430\u043A\u043E\u0439-\u0442\u043E \u0434\u0430\u043D\u0430\u0442
+        \u0442\u044B \u043F\u043E\u043B\u0443\u0447\u0430\u0442\u044C \u0437\u0430
+        \u0445\u043E\u0440\u043E\u0448\u0438\u0439 \u0438\u0433\u0440\u0430 \u043D\u0430
+        \u0443\u0440\u043E\u0432\u0435\u043D\u044C, \u0430 \u043A\u0430\u043A\u043E\u0439-\u0442\u043E
+        \u043C\u043E\u0436\u0435\u0442 \u043F\u0440\u0438\u0441\u043B\u0430\u0442\u044C
+        \u043B\u044E\u0431\u043E\u0439 \u043F\u043E\u0434\u043F\u0438\u0441\u0447\u0438\u043A.
+        \u041D\u043E\u0432\u044B\u0439 \u043F\u043E\u0434\u043F\u0438\u0441\u0447\u0438\u043A."
+      characterVoice: {fileID: 8300000, guid: 2be2b1a03d68d9c4ea3db5c047ec7b5a, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041D\u0435 \u0431\u043E\u044F\u0442\u044C\u0441\u044F \u0435\u0441\u043B\u0438
+        \u0442\u044B \u043D\u0435 \u0443\u0441\u043F\u0435\u0442\u044C \u0447\u0438\u0442\u0430\u0442\u044C
+        \u0434\u043E\u043D\u0430\u0442. \u042F \u0441\u043E\u0445\u0440\u0430\u043D\u044F\u0442\u044C
+        \u0432\u0441\u0451 \u0432 \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u044C\u043D\u044B\u0439
+        \u043C\u0435\u043D\u044E!"
+      characterVoice: {fileID: 8300000, guid: d339594696f58774a9c61c1693a07091, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041D\u043E \u0442\u043E\u043B\u044C\u043A\u043E \u0432 \u0440\u0430\u043C\u043A\u0430\u0445
+        \u044D\u0442\u043E\u0442 \u0438\u0433\u0440\u043E\u0432\u043E\u0439 \u0441\u0435\u0441\u0441\u0438\u044F.
+        \u0415\u0441\u043B\u0438 \u0442\u044B \u043F\u0435\u0440\u0435\u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044C\u0441\u044F,
+        \u0442\u043E \u0432\u0441\u0451 \u043F\u043E\u0442\u0435\u0440\u044F\u0442\u044C."
+      characterVoice: {fileID: 8300000, guid: cd673d8c9bbe04a4ca0f86f87ea9870b, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    skipList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0422\u044B \u043D\u0435 \u0445\u043E\u0442\u0435\u0442\u044C
+        \u0441\u043B\u044B\u0448\u0430\u0442\u044C \u0434\u0430\u0436\u0435 \u043F\u0440\u043E
+        \u0434\u043E\u043D\u0430\u0442?!"
+      characterVoice: {fileID: 8300000, guid: bac2166bdb859744c9219bdb29de5f37, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0422\u044B \u043D\u0435 \u0438\u043C\u0435\u0442\u044C \u043D\u0438\u0447\u0435\u0433\u043E
+        \u0441\u0432\u044F\u0442\u043E\u0439!"
+      characterVoice: {fileID: 8300000, guid: 3fab5563e9a9a654a935d1fc73cbf082, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041B\u044E\u0434\u0438 \u0442\u0430\u043A \u043F\u0440\u043E\u044F\u0432\u043B\u044F\u0442\u044C
+        \u0441\u0432\u043E\u0439 \u0443\u0432\u0430\u0436\u0435\u043D\u0438\u0435
+        \u0438 \u043B\u044E\u0431\u043E\u0432\u044C!"
+      characterVoice: {fileID: 8300000, guid: 554de1116bce20b41af2df5d03d71f93, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
 --- !u!1 &1964904326
 GameObject:
   m_ObjectHideFlags: 0
@@ -27376,6 +28692,117 @@ Transform:
   m_Father: {fileID: 1711612499}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1965753994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1965753995}
+  - component: {fileID: 1965753996}
+  m_Layer: 0
+  m_Name: Stats
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1965753995
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965753994}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1782325055}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1965753996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965753994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36a0af631bf1564aa67cf71a32dbf9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  system: {fileID: 321879510}
+  pack:
+    mainList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u042D\u0439, \u0442\u044B \u043F\u043E\u043D\u044F\u0442\u044C?
+        \u0415\u0441\u0442\u044C \u043C\u043E\u043D\u0435\u0442\u043A\u0438, \u0434\u043E\u043D\u0430\u0442\u044B,
+        \u043F\u043E\u0434\u043F\u0438\u0441\u0447\u0438\u043A\u0438 \u0438 \u043F\u0430\u0441\u0445\u0430\u043B\u043A\u0438."
+      characterVoice: {fileID: 8300000, guid: 40e32e4f7fdf29948a7b7436fcdd3577, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041E\u043D\u0438 \u0440\u0430\u0441\u043A\u0438\u0434\u0430\u043D\u044B
+        \u043D\u0430 \u0443\u0440\u043E\u0432\u0435\u043D\u044C. \r\u042F \u0434\u0443\u043C\u0430\u0442\u044C,
+        \u0435\u0441\u043B\u0438 \u0442\u044B \u0441\u043E\u0431\u0438\u0440\u0430\u0442\u044C
+        \u0438\u0445 \u0432\u0441\u0435, \u0442\u043E \u043B\u044E\u0434\u0438 \u043D\u0440\u0430\u0432\u0438\u0442\u044C\u0441\u044F
+        \u044D\u0442\u043E. \r\n"
+      characterVoice: {fileID: 8300000, guid: 4c03a2451fe7dae4bbcee7309b04084f, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0411\u044B\u0442\u044C \u043C\u043E\u0436\u0435\u0442, \u043C\u044B
+        \u0434\u0430\u0436\u0435 \u043F\u043E\u043B\u0443\u0447\u0430\u0442\u044C
+        \u043D\u0430\u0433\u0440\u0430\u0434\u0430 \u043E\u0442 \u043F\u043E\u0434\u043F\u0438\u0441\u0447\u0438\u043A!"
+      characterVoice: {fileID: 8300000, guid: df24035060a9f544e9cc552394366986, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    skipList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0414\u0430 \u0437\u0430\u0447\u0435\u043C \u0442\u044B \u043F\u043E\u0441\u0442\u043E\u044F\u043D\u043D\u043E
+        \u0437\u0430\u0442\u044B\u043A\u0430\u0442\u044C \u043C\u0435\u043D\u044F?!
+        \u041D\u0443 \u043F\u0440\u0430\u0432\u0434\u0430."
+      characterVoice: {fileID: 8300000, guid: 4d223a52c03482d4f90753df5a766748, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u042F \u043F\u044B\u0442\u0430\u0442\u044C\u0441\u044F \u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C
+        \u043E \u0441\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0430 \u0443\u0440\u043E\u0432\u0435\u043D\u044C
+        \u0432 \u0442\u0432\u043E\u0439 \u043C\u0435\u043D\u044E \u043F\u0430\u0443\u0437\u0430,
+        \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u044B\u0439 \u0431\u043E\u043D\u0443\u0441.
+        \u041D\u0443 \u043B\u0430\u0434\u043D\u043E... \u043B\u0430\u0434\u043D\u043E.\r"
+      characterVoice: {fileID: 8300000, guid: 489759c5c9e8b4145a350147b6ec4596, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
 --- !u!1001 &1966124671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28835,6 +30262,115 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6982668598219854171, guid: 6f3214578574f5149a34390a461c710c, type: 3}
   m_PrefabInstance: {fileID: 2116173615}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2123772943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2123772944}
+  - component: {fileID: 2123772945}
+  m_Layer: 0
+  m_Name: EasterEggs
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2123772944
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123772943}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1782325055}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2123772945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123772943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36a0af631bf1564aa67cf71a32dbf9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  system: {fileID: 321879510}
+  pack:
+    mainList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0410 \u0434\u0430! \u0415\u0441\u0442\u044C \u0435\u0449\u0451
+        \u043E\u0434\u0438\u043D \u0432\u0430\u0436\u043D\u044B\u0439 \u0430\u0441\u043F\u0435\u043A\u0442
+        \u0434\u043B\u044F \u0438\u0433\u0440\u0430! \u041F\u0430\u0441\u0445\u0430\u043B\u043A\u0430."
+      characterVoice: {fileID: 8300000, guid: 9c3c7b66d8b5a61409ec722b38f8eee6, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041E\u043D\u0438 \u0440\u0430\u0437\u0431\u0440\u043E\u0441\u0430\u0442\u044C
+        \u043F\u043E \u043A\u0430\u0436\u0434\u044B\u0439 \u043B\u043E\u043A\u0430\u0446\u0438\u044F.
+        \r\u0415\u0441\u043B\u0438 \u0442\u044B \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u044C
+        \u044D\u0442\u043E, \u044F \u0437\u0430\u043D\u043E\u0441\u0438\u0442\u044C
+        \u0437\u0430\u043F\u0438\u0441\u044C \u0432 \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u044C\u043D\u044B\u0439
+        \u043C\u0435\u043D\u044E.\r"
+      characterVoice: {fileID: 8300000, guid: b96c7d01fbfc250458dcf816505c0d4a, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0422\u044B \u0434\u0430\u0436\u0435 \u043C\u043E\u0447\u044C
+        \u043F\u0435\u0440\u0435\u0439\u0442\u0438 \u0441\u044E\u0434\u0430 \u043D\u0430
+        \u043A\u043E\u043D\u043A\u0440\u0435\u0442\u043D\u044B\u0439 \u0441\u0442\u0440\u0438\u043C!
+        \r\u042D\u0442\u043E \u0447\u0438\u0441\u0442\u043E \u043C\u043E\u0439 \u0437\u0430\u0434\u0443\u043C\u043A\u0430.
+        \u042F \u0441\u0442\u0430\u0440\u0430\u0442\u044C\u0441\u044F.\r"
+      characterVoice: {fileID: 8300000, guid: 3b6f80f6b31326e4db4a441b47574b64, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    skipList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041D\u043E \u043F\u0440\u043E \u043F\u0430\u0441\u0445\u0430\u043B\u043A\u0430!"
+      characterVoice: {fileID: 8300000, guid: c98f1bb8082c4314eaa6b877a78a6551, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041B\u0430\u0434\u043D\u043E, \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0442\u044C\u0441\u044F,
+        \u044D\u0442\u043E \u043D\u0435 \u0442\u0430\u043A \u0432\u0430\u0436\u043D\u043E\u2026."
+      characterVoice: {fileID: 8300000, guid: f3d8106800e9ff84b937614412fdddd2, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
 --- !u!1001 &2127155270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28901,6 +30437,108 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4286137945813894509, guid: 9e69ecae8135f7c40ba707570a0a78c8, type: 3}
   m_PrefabInstance: {fileID: 2127155270}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2131080966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2131080967}
+  - component: {fileID: 2131080968}
+  m_Layer: 0
+  m_Name: RayOfGoodness
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2131080967
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131080966}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1782325055}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2131080968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131080966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36a0af631bf1564aa67cf71a32dbf9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  system: {fileID: 321879510}
+  pack:
+    mainList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041E, \u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C! \u042D\u0442\u043E
+        \u043C\u0435\u0441\u0442\u043E \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0442\u044C
+        \u0442\u0435\u0431\u0435 \u0441\u043E\u0445\u0440\u0430\u043D\u044F\u0442\u044C
+        \u043D\u0430 \u0443\u0440\u043E\u0432\u0435\u043D\u044C."
+      characterVoice: {fileID: 8300000, guid: 7218ad38e9036fa41b7c47db6a622ea3, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0422\u044B \u0437\u0430\u0439\u0442\u0438 \u0432 \u043B\u0443\u0447\u0438
+        \u0434\u043E\u0431\u0440\u0430. \u041E\u043D\u0438 \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0442\u044C
+        \u0442\u0435\u0431\u044F \u043D\u0430 \u043C\u0435\u0441\u0442\u043E, \u0435\u0441\u043B\u0438 
+        \u0442\u044B \u0437\u0430\u0444\u0435\u0439\u043B\u0438\u0442\u044C \u0441\u0432\u043E\u0439
+        \u043F\u0440\u043E\u0445\u043E\u0436\u0434\u0435\u043D\u0438\u0435."
+      characterVoice: {fileID: 8300000, guid: b20bf1e054626a743ab3c018ca52a964, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    skipList:
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u0414\u0430 \u0441\u043A\u043E\u043B\u044C\u043A\u043E \u0442\u044B
+        \u043C\u043E\u0447\u044C!? \u042F \u0436\u0435 \u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C
+        \u0442\u0435\u0431\u0435 \u043F\u0440\u043E \u0441\u0438\u0441\u0442\u0435\u043C\u0430
+        \u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u0438\u0439!"
+      characterVoice: {fileID: 8300000, guid: 060cd7f3db5e0b44fa2515d54e53c18e, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
+    - CharacterName: "\u0411\u043E\u0442"
+      characterColor: {r: 1, g: 1, b: 1, a: 1}
+      characterText: "\u041D\u043E \u0442\u044B \u043E\u043F\u044F\u0442\u044C \u043C\u0435\u043D\u044F
+        \u0438\u0433\u043D\u043E\u0440\u0438\u0440\u043E\u0432\u0430\u0442\u044C!
+        \r\u0411\u0435\u0441\u0447\u0435\u043B\u043E\u0432\u0435\u0447\u043D\u044B\u0439
+        \u0432\u0435\u0447\u043D\u044B\u0439 \u0431\u0435\u0441\u043A\u043E\u043D\u0435\u0447\u043D\u044B\u0439
+        \u0430\u0433\u0440\u0435\u0441\u0441\u0438\u044F \u0432 \u043C\u043E\u0439
+        \u0430\u0434\u0440\u0435\u0441!\r"
+      characterVoice: {fileID: 8300000, guid: b99b12d504ce8e6458b74df2c9c94c0d, type: 3}
+      onReplicaStart:
+        m_PersistentCalls:
+          m_Calls: []
+      onReplicaEnd:
+        m_PersistentCalls:
+          m_Calls: []
 --- !u!1001 &2131687937
 PrefabInstance:
   m_ObjectHideFlags: 0

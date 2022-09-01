@@ -46,7 +46,7 @@ public class TransformModule : LogicModule
         activate = false;
         time = position = 0;
         localStart = transform.localPosition;
-        localTarget = localStart + new Vector3(target.x, target.y, target.z);
+        localTarget = localStart + transform.right * target.x + transform.up * target.y + transform.forward * target.z;
     }
 
     /// <summary>

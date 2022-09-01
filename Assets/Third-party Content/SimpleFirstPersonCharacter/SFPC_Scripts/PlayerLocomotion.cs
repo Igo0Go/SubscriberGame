@@ -20,8 +20,7 @@ public class PlayerLocomotion : MonoBehaviour
     [SerializeField] private Transform jumpCheck;
     [SerializeField] private LayerMask ignoreMask;
 
-    [SerializeField]
-    private UnityEvent useSound;
+    [SerializeField] private bool opportunityToMoveOnStart = true;
 
     private LocomotionType locomotionType;
     private Rigidbody rb;
@@ -53,6 +52,7 @@ public class PlayerLocomotion : MonoBehaviour
         fall = true;
         locomotionType = LocomotionType.Default;
         ConsoleEventCenter.Teleport.Execute.AddListener(FastTeleportToPoint);
+        GameCenter.OpportunityToMove = opportunityToMoveOnStart;
     }
     private void Update()
     {
@@ -77,6 +77,11 @@ public class PlayerLocomotion : MonoBehaviour
     }
 
     #region Ѕлокировка и телепортаци€
+
+    public void SetLocomotionOpportunity(bool value)
+    {
+        GameCenter.OpportunityToMove = value;
+    }
 
     /// <summary>
     /// ѕлавно переместить игрока в точку (предварительно нужно заблокировать)
@@ -189,7 +194,7 @@ public class PlayerLocomotion : MonoBehaviour
 
         if(Vector3.Magnitude(new Vector3(deltaX, deltaY, deltaZ)) > 0.3f)
         {
-            useSound?.Invoke();
+            //useSound?.Invoke();
         }
 
 
