@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 404274009005674533}
   - component: {fileID: 8522859900092942014}
   - component: {fileID: 2577141402727097788}
-  - component: {fileID: 1317947272612225661}
+  - component: {fileID: 8882626767908894619}
   m_Layer: 0
   m_Name: FlyingPlatform
   m_TagString: Untagged
@@ -129,8 +129,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1317947272612225661
-BoxCollider:
+--- !u!64 &8882626767908894619
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -139,6 +139,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.04, y: 0.008578602, z: 0.04}
-  m_Center: {x: 0, y: -0.00067049987, z: 0}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1510440718160312676, guid: 0411bfb4c7b51354ea90bf6dfec85519, type: 3}

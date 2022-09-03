@@ -12252,6 +12252,7 @@ MonoBehaviour:
   used: 0
   nextModules:
   - {fileID: 1711986563}
+  - {fileID: 1103116375}
   - {fileID: 1020687396}
   enterOnly: 1
   once: 1
@@ -24934,19 +24935,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.8, y: 0.34539974, z: 3.8}
   m_Center: {x: 0, y: 0.32730013, z: 2.1910074e-16}
---- !u!65 &3413428916373842817
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6937361408006871122}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.5, y: 0.8, z: 3.5}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &4073752831503997401
 Transform:
   m_ObjectHideFlags: 0
@@ -25486,6 +25474,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7270473799354090820, guid: d782be675ce3aed4780569977277eac5, type: 3}
+      propertyPath: blocked
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7959228158089244692, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0.36795807
@@ -25601,8 +25593,8 @@ GameObject:
   - component: {fileID: 4073752831503997401}
   - component: {fileID: 5427930878616227650}
   - component: {fileID: 2222383479457147968}
-  - component: {fileID: 3413428916373842817}
   - component: {fileID: 6937361408006871123}
+  - component: {fileID: 6937361408006871124}
   m_Layer: 0
   m_Name: FlyingPlatform
   m_TagString: Untagged
@@ -25670,6 +25662,20 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!64 &6937361408006871124
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6937361408006871122}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1510440718160312676, guid: 0411bfb4c7b51354ea90bf6dfec85519, type: 3}
 --- !u!1 &8288271401983614917
 GameObject:
   m_ObjectHideFlags: 0
