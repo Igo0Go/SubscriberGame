@@ -61,7 +61,7 @@ public class LevelProgressPanel : MonoBehaviour, IGameSystem
         coinsInfoText.text = LevelProggress.currentLevelCoinsCount.ToString() +
             "/" + LevelProggress.maxCoinsOnLevel.ToString() +
             "<color=red> + " + LevelProggress.currentExtraCoinsCount.ToString() + "</color>";
-        if (!coinsBonus && LevelProggress.currentLevelCoinsCount >= LevelProggress.maxCoinsOnLevel)
+        if (!coinsBonus && LevelProggress.maxCoinsOnLevel > 0 && LevelProggress.currentLevelCoinsCount >= LevelProggress.maxCoinsOnLevel)
         {
             coinsBonus = true;
             coinsCompleteIcon.SetActive(true);
@@ -75,7 +75,7 @@ public class LevelProgressPanel : MonoBehaviour, IGameSystem
         donateInfoText.text = LevelProggress.currentLevelDonateCount.ToString() +
             "/" + LevelProggress.maxDonateOnLevel.ToString() +
             "<color=red> + " + LevelProggress.currentExtraDonateCount.ToString() + "</color>";
-        if(!donatesBonus && LevelProggress.currentLevelDonateCount >= LevelProggress.maxDonateOnLevel)
+        if(!donatesBonus && LevelProggress.maxDonateOnLevel > 0 && LevelProggress.currentLevelDonateCount >= LevelProggress.maxDonateOnLevel)
         {
             donatesBonus = true;
             donateCompleteIcon.SetActive(true);
@@ -89,7 +89,8 @@ public class LevelProgressPanel : MonoBehaviour, IGameSystem
         subscribersInfoText.text = LevelProggress.currentLevelSubscribersCount.ToString()+
             "/" + LevelProggress.maxSubscribersOnLevel.ToString() +
             "<color=red> + " + LevelProggress.currentExtraSubscribersCount.ToString() + "</color>";
-        if (!subscribersBonus && LevelProggress.currentLevelSubscribersCount >= LevelProggress.maxSubscribersOnLevel)
+        if (!subscribersBonus && LevelProggress.maxSubscribersOnLevel > 0 &&
+            LevelProggress.currentLevelSubscribersCount >= LevelProggress.maxSubscribersOnLevel)
         {
             subscribersBonus = true;
             subscribersCompleteIcon.SetActive(true);
@@ -102,7 +103,8 @@ public class LevelProgressPanel : MonoBehaviour, IGameSystem
     {
         easterEggsInfoText.text = LevelProggress.currentLevelEasterEggsCount.ToString() +
             "/" + LevelProggress.maxEasterEggsCount.ToString();
-        if (!easterEggsBonus && LevelProggress.currentLevelEasterEggsCount >= LevelProggress.maxEasterEggsCount)
+        if (!easterEggsBonus && LevelProggress.maxEasterEggsCount > 0 &&
+            LevelProggress.currentLevelEasterEggsCount >= LevelProggress.maxEasterEggsCount)
         {
             easterEggsBonus = true;
             easterEggsCompleteIcon.SetActive(true);

@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/01 Prologue/01 01 Prologue.unity
     guid: 4ab24f2735688134f879b04f53a09181
   - enabled: 1
-    path: Assets/Scenes/Test/MusicSystemTest.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/01 Prologue/01 02 Prologue AfterReload.unity
+    guid: 73339874f87de864f86a08b1b8e29e76
   - enabled: 1
     path: Assets/Scenes/Hub.unity
     guid: 8ae23247117a5fe4f9c3f08ff0173394
