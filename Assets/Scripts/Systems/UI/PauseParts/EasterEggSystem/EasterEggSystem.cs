@@ -36,14 +36,18 @@ public class EasterEggSystem : MonoBehaviour, IGameSystem
         easterEggDatabase.RefreshIds();
     }
 
-    public void UnblockEasterEggWithId(int id)
+    public void UnblockEasterEggWithId_WithUIUpdate(int id)
     {
         LevelProggress.currentLevelEasterEggsCount++;
         UIPack.LevelProgressPanel.UpdateEasterEggs();
-        StatsHolder.unblockedEasterEggsIds.Add(id);
+        UnblockEasterEggWithId(id);
         UIPack.NotificationPanel.ShowNotification("Найдена пасхалка!\r\n" +
             easterEggDatabase.EasterEggItems[id].name +
             "\r\n Откройте меню пасхалок, чтобы узнать больше");
+    }
+    public void UnblockEasterEggWithId(int id)
+    {
+        StatsHolder.unblockedEasterEggsIds.Add(id);
     }
 
     public void ShowItemWithId(int id)

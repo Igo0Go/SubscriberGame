@@ -6,16 +6,29 @@ public class EasterEggsModule : MonoBehaviour
     [SerializeField, Min(0)]
     private int easterEggsId = 0;
 
+    [SerializeField]
+    private bool hiden = false;
+
     private IEnumerator Start()
     {
         yield return new WaitForSeconds(0.5f); //Требуется задержка, чтобы LevelProggressPanel подготовилась
-        LevelProggress.maxEasterEggsCount++;
-        UIPack.LevelProgressPanel.UpdateEasterEggs();
+        if(!hiden)
+        {
+            LevelProggress.maxEasterEggsCount++;
+            UIPack.LevelProgressPanel.UpdateEasterEggs();
+        }
     }
 
     public void UnblockEasterEgg()
     {
-        UIPack.EasterEggSystem.UnblockEasterEggWithId(easterEggsId);
+        if(hiden)
+        {
+            UIPack.EasterEggSystem.UnblockEasterEggWithId(easterEggsId);
+        }
+        else
+        {
+            UIPack.EasterEggSystem.UnblockEasterEggWithId_WithUIUpdate(easterEggsId);
+        }
         Destroy(gameObject);
     }
 }

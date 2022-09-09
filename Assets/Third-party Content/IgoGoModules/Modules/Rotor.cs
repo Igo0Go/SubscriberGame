@@ -33,14 +33,14 @@ public class Rotor : LogicModule
     private void Awake()
     {
         localStart = transform.localRotation;
-        localTarget = localStart * Quaternion.Euler(rotVector);
+        localTarget = Quaternion.Euler(localStart.eulerAngles + rotVector);
     }
 
     private void Update()
     {
         if (activate)
         {
-            time = time + (direction * Time.deltaTime / duration);
+            time += (direction * Time.deltaTime / duration);
             switch (loopType)
             {
                 case LoopType.Once:
@@ -128,32 +128,5 @@ public class Rotor : LogicModule
         angle = time = 0;
         direction = 1;
         activate = false;
-    }
-
-    private void OnDrawGizmos()
-    {
-        if(debug)
-        {
-            Gizmos.color = Color.cyan;
-            Quaternion Target = transform.localRotation * Quaternion.Euler(rotVector);
-            Vector3 start, end;
-            start = transform.position + transform.forward * 3;
-            float t = 0;
-            Gizmos.DrawLine(transform.position, start);
-            Gizmos.DrawSphere(start, 0.4f);
-            while (t < 1)
-            {
-                t += Time.fixedDeltaTime;
-                Quaternion currentTarget = Quaternion.Lerp(transform.localRotation, Target, t);
-                end = transform.position + (transform.localRotation * currentTarget * Vector3.forward * 3);
-                Gizmos.DrawLine(start, end);
-                Gizmos.color = Color.green;
-                Gizmos.DrawLine(end, end + transform.localRotation * currentTarget * Vector3.up * 1);
-                start = end;
-                Gizmos.color = Color.cyan;
-            }
-            end = transform.position + transform.localRotation * Target * Vector3.forward * 3;
-            Gizmos.DrawWireSphere(end, 0.4f);
-        }
     }
 }

@@ -1108,6 +1108,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 361751378}
+        m_TargetAssemblyTypeName: NotificationPanel, Assembly-CSharp
+        m_MethodName: ShowNotification
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "WASD - \u043F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u0435"
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &65097332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1188,101 +1200,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 65097329}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &65770207
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 65770209}
-  - component: {fileID: 65770208}
-  m_Layer: 0
-  m_Name: Secret
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &65770208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 65770207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1925501629}
-  messages:
-  - subscribersCountToActivate: 0
-    authorName: x-Teeth-x
-    messageText: "\u0423\u0438\u0438\u0438!"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: moliren
-    messageText: "\u0423\u0440\u0430! \u041C\u044B \u043D\u0430\u0448\u043B\u0438
-      \u0441\u0435\u043A\u0440\u0435\u0442\u0438\u043A"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?..."
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0414\u0435\u043D\u0438\u0441?.."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u041D\u0430\u043C \u0432\u044B\u0434\u0430\u0434\u0443\u0442 \u043E\u0440\u0443\u0436\u0438\u0435"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u041D\u0435 \u0437\u0434\u0435\u0441\u044C"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: Cuwor
-    messageText: "\u0422\u043E \u0435\u0441\u0442\u044C, \u0433\u0435\u0439\u043C\u043F\u043B\u0435\u0439
-      \u043F\u043E\u043C\u0435\u043D\u044F\u0435\u0442\u0441\u044F \u0435\u0449\u0451?"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u041D\u0443 \u0434\u0430. \u0422\u0443\u0442 \u043A\u0430\u0436\u0434\u044B\u0439
-      \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u043F\u043E\u0447\u0442\u0438 \u0441
-      \u043D\u043E\u0432\u043E\u0439 \u043C\u0435\u0445\u0430\u043D\u0438\u043A\u043E\u0439
-      \u0431\u0443\u0434\u0435\u0442."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: Menem
-    messageText: "\u041D\u0435 \u0441\u043F\u043E\u0439\u043B\u0435\u0440\u0438!"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
---- !u!4 &65770209
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 65770207}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 953178332}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &67908333
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2160,119 +2077,6 @@ Transform:
   m_Father: {fileID: 1711612499}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &145872035
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 145872036}
-  - component: {fileID: 145872037}
-  m_Layer: 0
-  m_Name: TheEnd
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &145872036
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145872035}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 953178332}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &145872037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145872035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1925501629}
-  messages:
-  - subscribersCountToActivate: 0
-    authorName: moliren
-    messageText: "\u0427\u0442\u043E \u0434\u0430\u043B\u044C\u0448\u0435 \u0442\u043E\u0433\u0434\u0430?"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u041C\u043E\u0436\u0435\u0448\u044C \u0432 \u043C\u0435\u043D\u044E
-      \u043F\u0430\u0443\u0437\u044B \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
-      \u0441\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0443. \u0412\u0441\u0451
-      \u043B\u0438 \u0441\u043E\u0431\u0440\u0430\u043B\u0430 \u0438 \u0442.\u0434. "
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: x-Teeth-x
-    messageText: "\u0410 \u0431\u043E\u043D\u0443\u0441\u044B \u0437\u0430 \u044D\u0442\u043E
-      \u0434\u0430\u044E\u0442?"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0414\u0430. \u0415\u0441\u043B\u0438 \u0441\u043E\u0431\u0440\u0430\u0442\u044C
-      \u0432\u0441\u0451 \u043D\u0430 \u0443\u0440\u043E\u0432\u043D\u0435, \u0442\u043E
-      \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u043E
-      \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0438."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?..."
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0414\u0435\u043D\u0438\u0441?.."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0422\u0443\u0442 \u0431\u0443\u0434\u0443\u0442 \u0430\u0447\u0438\u0432\u043A\u0438"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: Cuwor
-    messageText: "\u041A \u0441\u043B\u043E\u0432\u0443, \u0431\u044B\u043B\u043E
-      \u0431\u044B \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E."
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: Menem
-    messageText: "\u0410\u0433\u0430. \u041F\u0440\u043E\u0439\u0434\u0438 \u0443\u0440\u043E\u0432\u0435\u043D\u044C
-      \u043F\u043E\u0434 \u0431\u043E\u043C\u0431\u0451\u0436 \u0410\u0440\u0442\u0451\u043C\u0430
-      \u0438 \u043D\u0438 \u0440\u0430\u0437\u0443 \u043D\u0435 \u0443\u043C\u0435\u0440\u0435\u0442\u044C)"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: x-Teeth-x
-    messageText: "\u0445\u0434"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0418 \u0434\u0430, \u044F \u0434\u043E\u0434\u0435\u043B\u0430\u043B.
-      \u041E\u0442\u043A\u0440\u043E\u0435\u0442\u0441\u044F \u0434\u0432\u0435\u0440\u044C.
-      \u041D\u043E \u043B\u0443\u0447\u0448\u0435 \u0432\u044B\u0436\u0434\u0438
-      \u0432\u0441\u0435 \u0434\u043E\u043D\u0430\u0442\u044B."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
 --- !u!1 &155816883
 GameObject:
   m_ObjectHideFlags: 0
@@ -2413,96 +2217,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6049867174232773049, guid: 92fca8769dd3e0642b769c11dcf46826, type: 3}
   m_PrefabInstance: {fileID: 162952495}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &177110129
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 177110131}
-  - component: {fileID: 177110130}
-  m_Layer: 0
-  m_Name: Final
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &177110130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177110129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1925501629}
-  messages:
-  - subscribersCountToActivate: 0
-    authorName: x-Teeth-x
-    messageText: "\u042D\u043C..."
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: moliren
-    messageText: "\u0427\u0442\u043E \u0434\u0430\u043B\u044C\u0448\u0435"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?..."
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0414\u0435\u043D\u0438\u0441?.."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u041A\u0443\u0434\u0430 \u0434\u0430\u043B\u044C\u0448\u0435"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u041D\u0435 \u0437\u043D\u0430\u044E"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: Cuwor
-    messageText: "\u0412 \u0441\u043C\u044B\u0441\u043B\u0435?"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u042F \u0435\u0449\u0451 \u043D\u0435 \u0434\u043E\u0434\u0435\u043B\u0430\u043B"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: Menem
-    messageText: Nani?!
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
---- !u!4 &177110131
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177110129}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 953178332}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &181160402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3249,96 +2963,6 @@ MonoBehaviour:
   time: 0
   activeOnStart: 0
   useTimerUI: 0
---- !u!1 &285966578
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 285966580}
-  - component: {fileID: 285966579}
-  m_Layer: 0
-  m_Name: ContinueGame
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &285966579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 285966578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1925501629}
-  messages:
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u042D\u043A\u0448\u043E\u043D \u043F\u043E\u0448\u0451\u043B!"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: x-Teeth-x
-    messageText: "\u0410 \u0442\u0430\u043C \u0441\u0435\u0439\u0447\u0430\u0441
-      \u0434\u0440\u0430\u043A\u043E\u043D"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u041D\u0430\u0441\u0442\u044F, \u044D\u0442\u043E \u043D\u0435
-      \u0434\u043D\u0434"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: Menem
-    messageText: "\u041D\u0430\u0441\u0442\u044F, \u044D\u0442\u043E \u043D\u0435
-      \u0434\u043D\u0434"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: Cuwor
-    messageText: "\u041D\u0430\u0441\u0442\u044F, \u044D\u0442\u043E \u043D\u0435
-      \u0434\u043D\u0434"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: moliren
-    messageText: ")) \u041C\u043D\u0435 \u0441 \u0444\u043E\u043D\u0430\u0440\u0438\u043A\u043E\u043C
-      \u0445\u043E\u0434\u0438\u0442\u044C?"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0422\u0443\u0442 \u0431\u0443\u0434\u0443\u0442 \u043A\u043E\u0441\u0442\u0440\u044B?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u043D\u0435\u0442, \u0414\u0435\u043D\u0438\u0441..."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
---- !u!4 &285966580
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 285966578}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 953178332}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &289107193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4095,50 +3719,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 337731461}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &338250544
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 338250545}
-  - component: {fileID: 338250546}
-  m_Layer: 0
-  m_Name: Subscriber (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &338250545
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338250544}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1470136295}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &338250546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338250544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3908111d380d0549bd1520d38c592dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  subscribersCount: 1
 --- !u!1001 &356634621
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4201,6 +3781,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8748821765395650175, guid: 6ee2b021ac00f3f4596fff92deb0e27b, type: 3}
   m_PrefabInstance: {fileID: 356634621}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &361751378 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7831501394587782333, guid: d782be675ce3aed4780569977277eac5, type: 3}
+  m_PrefabInstance: {fileID: 5355675337809771851}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e65ae4a97617a44864f9baf0734059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &366488289 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6078940420239584933, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
@@ -4521,6 +4112,18 @@ MonoBehaviour:
           - m_Target: {fileID: 1392884653}
             m_TargetAssemblyTypeName: BotController, Assembly-CSharp
             m_MethodName: Talk_Default
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 956880527}
+            m_TargetAssemblyTypeName: EasterEggsModule, Assembly-CSharp
+            m_MethodName: UnblockEasterEgg
             m_Mode: 1
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
@@ -4922,46 +4525,18 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
---- !u!1 &387331869
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 387331870}
-  m_Layer: 0
-  m_Name: --Donates--
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &387331870
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 387331869}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1776257249}
-  - {fileID: 809853315}
-  - {fileID: 1299676648}
-  - {fileID: 1846825302}
-  - {fileID: 1281969004}
-  - {fileID: 737343909}
-  - {fileID: 510346837}
-  - {fileID: 754781138}
-  - {fileID: 1638221604}
-  - {fileID: 1380477409}
-  m_Father: {fileID: 1222288425}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+          - m_Target: {fileID: 0}
+            m_TargetAssemblyTypeName: Timer, Assembly-CSharp
+            m_MethodName: 
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
 --- !u!1001 &391536913
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5903,83 +5478,6 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
---- !u!1 &443086907
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 443086908}
-  - component: {fileID: 443086909}
-  m_Layer: 0
-  m_Name: FakeFinal
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &443086908
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443086907}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 953178332}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &443086909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443086907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1925501629}
-  messages:
-  - subscribersCountToActivate: 0
-    authorName: Cuwor
-    messageText: "\u0427\u0435\u0433\u043E?!"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: Menem
-    messageText: Nani?!
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: x-Teeth-x
-    messageText: "\u0430\u0445\u0430\u0430\u0445\u0430\u0445\u0430"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0427\u0435\u0433\u043E? \u0418\u0433\u043E\u0440\u044C?! \u042D\u0442\u043E
-      \u0432\u0441\u0451?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: moliren
-    messageText: "\u0411\u043E\u043B\u044C\u0448\u0435 \u043D\u0435\u0447\u0435\u0433\u043E
-      \u0442\u0435\u0441\u0442\u0438\u0442\u044C?"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0416\u0434\u0438..."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
 --- !u!1 &446688583
 GameObject:
   m_ObjectHideFlags: 0
@@ -6075,50 +5573,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446688583}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &446877119
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 446877120}
-  - component: {fileID: 446877121}
-  m_Layer: 0
-  m_Name: Subscriber (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &446877120
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 446877119}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1470136295}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &446877121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 446877119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3908111d380d0549bd1520d38c592dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  subscribersCount: 1
 --- !u!1001 &448622131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6251,97 +5705,6 @@ Transform:
   m_Father: {fileID: 1636439644}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &461265166
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 461265167}
-  - component: {fileID: 461265168}
-  m_Layer: 0
-  m_Name: Secret3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &461265167
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 461265166}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 953178332}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &461265168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 461265166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1925501629}
-  messages:
-  - subscribersCountToActivate: 0
-    authorName: x-Teeth-x
-    messageText: "\u0430\u0445\u0430\u0445\u0430\u0445\u0430\u0445"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: moliren
-    messageText: "\u042D\u0442\u043E \u0447\u0442\u043E?"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?..."
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0414\u0435\u043D\u0438\u0441?..)))"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u042D\u0442\u043E \u0442\u043E, \u043E \u0447\u0451\u043C \u044F
-      \u0434\u0443\u043C\u0430\u044E?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0414\u0430)))"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: Cuwor
-    messageText: )))
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: x-Teeth-x
-    messageText: "\u041F\u0430\u0441\u0445\u0430\u043B\u043E\u0447\u043A\u0430"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: Menem
-    messageText: "\u0414\u0415\u041D\u0418\u0421!"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
 --- !u!1001 &465415303
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6813,57 +6176,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1455969324683375380, guid: 1ed269c3b901cac4194d213c050f999d, type: 3}
   m_PrefabInstance: {fileID: 506364383}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &510346836
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 510346837}
-  - component: {fileID: 510346838}
-  m_Layer: 0
-  m_Name: Donate7
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &510346837
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 510346836}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -42.26504, y: -13.161074, z: -15.29158}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 387331870}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &510346838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 510346836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef242f010a6e3cf4f8c17b4774f1eea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  donates:
-  - donateName: Cuwor
-    donateText: "\u0421\u0435\u0433\u043E\u0434\u043D\u044F \u0434\u043E \u043A\u043E\u043D\u0446\u0430
-      \u0433\u043B\u0430\u0432\u044B \u043F\u0440\u043E\u0439\u0434\u0451\u043C?"
-    sum: 1000
-    donateAction:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!1001 &512837880
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7844,113 +7156,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &593032721
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 593032722}
-  - component: {fileID: 593032723}
-  m_Layer: 0
-  m_Name: Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &593032722
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 593032721}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 953178332}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &593032723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 593032721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1925501629}
-  messages:
-  - subscribersCountToActivate: 0
-    authorName: Cuwor
-    messageText: "\u042D\u0442\u043E \u0432\u0441\u0451 \u0438\u0437 \u043C\u043E\u0434\u0443\u043B\u0435\u0439
-      \u0442\u0432\u043E\u0438\u0445 \u0441\u043E\u0431\u0440\u0430\u043D\u043E?"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0414\u0430. \u041D\u0443, \u044D\u0442\u043E \u0442\u0435\u0441\u0442\u043E\u0432\u0430\u044F
-      \u043B\u043E\u043A\u0430\u0446\u0438\u044F, \u043D\u0430\u0434\u043E \u043F\u043E\u043D\u0438\u043C\u0430\u0442\u044C"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: x-Teeth-x
-    messageText: "\u0414\u0430 \u0432\u0441\u0451 \u0440\u0430\u0432\u043D\u043E
-      \u043F\u0440\u0438\u043A\u043E\u043B\u044C\u043D\u043E, \u043F\u043E-\u043C\u043E\u0435\u043C\u0443."
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: moliren
-    messageText: "\u0422\u044B \u043F\u043E\u043F\u0440\u043E\u0431\u0443\u0439 \u043F\u043E\u043F\u0440\u044B\u0433\u0430\u0442\u044C
-      \u0442\u0443\u0442!"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?..."
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0414\u0435\u043D\u0438\u0441?.."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0422\u044B \u0442\u0430\u043A \u0438 \u043D\u0435 \u043D\u0430\u0443\u0447\u0438\u043B\u0441\u044F
-      \u0434\u0435\u043B\u0430\u0442\u044C \u043D\u043E\u0440\u043C\u0430\u043B\u044C\u043D\u044B\u0439
-      \u043F\u0440\u044B\u0436\u043E\u043A?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0410 \u0442\u044B?"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: Menem
-    messageText: "\u041F\u043E \u0444\u0430\u043A\u0442\u0443))))"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 7
-    authorName: "\u041C\u0430\u0440\u0438\u044F\u0423\u0436\u0435\u041D\u0435\u0415\u043B\u0438\u0441\u0435\u0435\u0432\u0430"
-    messageText: "\u041F\u0440\u0438\u0432\u0435\u0442!)))\n\u2570(\u2594\u2200\u2594)\u256F\n\u0412\u044B
-      \u043C\u043E\u043B\u043E\u0434\u0446\u044B!"
-    authorColor: {r: 0.735849, g: 0.5518868, b: 0.7140483, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 7
-    authorName: IgoGo
-    messageText: "\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439, \u041C\u0430\u0440\u044C\u044F"
-    authorColor: {r: 0.5686275, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
 --- !u!1 &594711953
 GameObject:
   m_ObjectHideFlags: 0
@@ -8825,101 +8030,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1455969324683375380, guid: 1ed269c3b901cac4194d213c050f999d, type: 3}
   m_PrefabInstance: {fileID: 678953123}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &685049625
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 685049626}
-  - component: {fileID: 685049627}
-  m_Layer: 0
-  m_Name: Beginning
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &685049626
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 685049625}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 953178332}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &685049627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 685049625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1925501629}
-  messages:
-  - subscribersCountToActivate: 0
-    authorName: Cuwor
-    messageText: "\u042D\u0442\u043E \u0442\u043E\u0442 \u0441\u0430\u043C\u044B\u0439
-      \u0438\u0433\u043E\u0440\u0435\u0432\u0441\u043A\u0438\u0439 \u0430\u043A\u0446\u0435\u043D\u0442?"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: Menem
-    messageText: "\u0414\u0430"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0414\u0430..."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: x-Teeth-x
-    messageText: "\u041F\u0440\u0438\u043A\u043E\u043B\u044C\u043D\u043E"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: moliren
-    messageText: "\u0410 \u0447\u0442\u043E \u0442\u0435\u0441\u0442\u0438\u0442\u044C-\u0442\u043E?"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0410\u043D\u0436\u0435\u043B\u0438\u043A\u0430. \u0423\u0431\u0435\u0439
-      \u0435\u0433\u043E! \u0423\u0431\u0435\u0439!"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: Cuwor
-    messageText: "\u0421\u043B\u0443\u0448\u0430\u0439, \u0437\u0430\u0442\u043A\u043D\u0438
-      \u0435\u0433\u043E, \u043E\u043D \u0437\u0430\u0434\u043E\u043B\u0431\u0430\u043B."
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: Menem
-    messageText: "\u041B\u044F\u0433\u0443\u0448\u043A\u0430"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0410\u043D\u0436\u0435\u043B\u0438\u043A\u0430, \u043F\u043E\u0433\u043E\u0434\u0438
-      \u0447\u0443\u0442\u043A\u0430. \u0414\u043E\u043B\u0436\u043D\u0430 \u0434\u0432\u0435\u0440\u044C
-      \u043E\u0442\u043A\u0440\u044B\u0442\u044C\u0441\u044F..."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
 --- !u!1001 &686156564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9050,78 +8160,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &695360403
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 695360404}
-  - component: {fileID: 695360405}
-  m_Layer: 0
-  m_Name: Darkness
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &695360404
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 695360403}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 953178332}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &695360405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 695360403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1925501629}
-  messages:
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u042D\u0442\u043E \u0445\u043E\u0440\u0440\u043E\u0440 \u043F\u043E\u0448\u0451\u043B?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: x-Teeth-x
-    messageText: "\u0429\u0430\u0441 \u0431\u0443\u0434\u0435\u0442 \u0441\u043A\u0440\u0438\u043C\u0435\u0440
-      \u0445\u0434"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: Cuwor
-    messageText: "\u0423 \u0442\u0435\u0431\u044F \u0442\u0435\u043C\u043D\u043E\u0442\u0430
-      \u043D\u043E\u0440\u043C\u0430\u043B\u044C\u043D\u0430\u044F \u043D\u0435 \u043F\u043E\u043B\u0443\u0447\u0438\u043B\u0430\u0441\u044C"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: Menem
-    messageText: "\u0410 \u0444\u043E\u043D\u0430\u0440\u0438\u043A \u0435\u0441\u0442\u044C?"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: Menem
-    messageText: "\u0410, \u0434\u0430."
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
 --- !u!1 &697683704
 GameObject:
   m_ObjectHideFlags: 0
@@ -9513,59 +8551,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4286137945813894509, guid: 9e69ecae8135f7c40ba707570a0a78c8, type: 3}
   m_PrefabInstance: {fileID: 725524767}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &737343908
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 737343909}
-  - component: {fileID: 737343910}
-  m_Layer: 0
-  m_Name: Donate6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &737343909
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737343908}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -42.26504, y: -13.161074, z: -15.29158}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 387331870}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &737343910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737343908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef242f010a6e3cf4f8c17b4774f1eea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  donates:
-  - donateName: x-Teeth-x
-    donateText: "\u041A\u043B\u0451\u0432\u044B\u0435 \u0441\u0442\u0440\u0438\u043C\u0435\u0440\u044B,
-      \u043A\u043B\u0451\u0432\u044B\u0439 \u0447\u0430\u0442\u0438\u043A. \u0412\u0441\u0435\u0445
-      \u043B\u044E\u0431\u043B\u044E \n\u30FD(\u30FB\u2200\u30FB)\uFF89 \u0421\u043F\u0430\u0441\u0438\u0431\u043E
-      \u0437\u0430 \u0441\u0442\u0440\u0438\u043C\u044B!"
-    sum: 750
-    donateAction:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!1001 &742417841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9822,59 +8807,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1455969324683375380, guid: 1ed269c3b901cac4194d213c050f999d, type: 3}
   m_PrefabInstance: {fileID: 753107362}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &754781137
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 754781138}
-  - component: {fileID: 754781139}
-  m_Layer: 0
-  m_Name: Donate8
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &754781138
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 754781137}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -42.26504, y: -13.161074, z: -15.29158}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 387331870}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &754781139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 754781137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef242f010a6e3cf4f8c17b4774f1eea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  donates:
-  - donateName: menem
-    donateText: "\u042F \u0441\u043C\u043E\u0442\u0440\u0435\u043B \u043F\u0440\u043E\u0445\u043E\u0436\u0434\u0435\u043D\u0438\u0435
-      \u0443 \u0434\u0440\u043E\u0433\u043E \u0441\u0442\u0440\u0438\u043C\u0435\u0440\u0430.
-      \u0414\u0430\u043B\u044C\u0448\u0435 \u0431\u0443\u0434\u0435\u0442 \u0436\u0435\u0441\u0442\u044C.
-      \u0413\u043E\u0442\u043E\u0432\u044C\u0441\u044F."
-    sum: 500
-    donateAction:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!1001 &761884208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10266,132 +9198,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4286137945813894509, guid: 9e69ecae8135f7c40ba707570a0a78c8, type: 3}
   m_PrefabInstance: {fileID: 781247366}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &788463758
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 788463759}
-  - component: {fileID: 788463760}
-  m_Layer: 0
-  m_Name: Gate
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &788463759
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788463758}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 953178332}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &788463760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788463758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1925501629}
-  messages:
-  - subscribersCountToActivate: 0
-    authorName: Menem
-    messageText: "\u041F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u0443 \u043F\u043E\u0434\u0441\u0432\u0442\u0438\u043B\u0438"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: x-Teeth-x
-    messageText: "\u0421\u043F\u0430\u0441\u0438\u0431\u043E, \u043A\u044D\u043F)))"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?..."
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0414\u0435\u043D\u0438\u0441?.."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0422\u0443\u0442 \u0435\u0441\u0442\u044C \u0438\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F
-      \u0433\u0435\u043D\u0435\u0440\u0430\u0446\u0438\u044F"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u041D\u0435\u0442... \u0414\u0435\u043D\u0438\u0441..."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: x-Teeth-x
-    messageText: "\u041A\u0442\u043E-\u0442\u043E \u043F\u043E\u0434\u0433\u0430\u0440\u0430\u0435\u0442
-      (\uFFE2_\uFFE2)"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
---- !u!1 &789035102
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 789035103}
-  - component: {fileID: 789035104}
-  m_Layer: 0
-  m_Name: Subscriber (5, 6)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &789035103
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 789035102}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1470136295}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &789035104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 789035102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3908111d380d0549bd1520d38c592dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  subscribersCount: 2
 --- !u!1 &794728351
 GameObject:
   m_ObjectHideFlags: 0
@@ -10428,57 +9234,6 @@ Transform:
   m_Father: {fileID: 1687113996}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &809853314
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 809853315}
-  - component: {fileID: 809853316}
-  m_Layer: 0
-  m_Name: Donate2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &809853315
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 809853314}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -42.26504, y: -13.161074, z: -15.29158}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 387331870}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &809853316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 809853314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef242f010a6e3cf4f8c17b4774f1eea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  donates:
-  - donateName: menem
-    donateText: "\u041F\u0440\u043E\u0432\u0435\u0440\u044F\u0435\u043C \u043E\u0441\u043E\u0431\u044B\u0439
-      \u0434\u043E\u043D\u0430\u0442)))"
-    sum: 69
-    donateAction:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!1001 &820273004
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10901,7 +9656,7 @@ GameObject:
   - component: {fileID: 865933833}
   - component: {fileID: 865933834}
   m_Layer: 0
-  m_Name: Denis
+  m_Name: BluePeuple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10933,7 +9688,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10635dcf6de3f1148ae67bd45b13b587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  easterEggsId: 0
+  easterEggsId: 1
+  hiden: 1
 --- !u!1 &867041643
 GameObject:
   m_ObjectHideFlags: 0
@@ -11074,126 +9830,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe7a14d4c2973140a83d320b0790d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &886765162
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 886765163}
-  - component: {fileID: 886765164}
-  m_Layer: 0
-  m_Name: SpeedBridge
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &886765163
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 886765162}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 953178332}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &886765164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 886765162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1925501629}
-  messages:
-  - subscribersCountToActivate: 0
-    authorName: moliren
-    messageText: "\u042D\u0442\u043E \u043C\u043D\u0435 \u0442\u0438\u043F\u0430
-      \u0443\u0441\u043F\u0435\u0442\u044C \u043D\u0430\u0434\u043E?"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: x-Teeth-x
-    messageText: "\u0410\u0433\u0430 \u0445\u0434"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?..."
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0414\u0430... \u0414\u0435\u043D\u0438\u0441..."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0414\u0430\u0432\u0430\u0439 \u0441\u0434\u0435\u043B\u0430\u0439
-      \u0442\u0435\u0431\u0435 \u043F\u043E\u0434\u0432\u0435\u0441\u043E\u0439 \u043C\u043E\u0441\u0442"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u041F\u043E\u043A\u0430 \u043E\u043D \u043D\u0435 \u043D\u0443\u0436\u0435\u043D"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: Cuwor
-    messageText: "\u0412 \u0441\u043C\u044B\u0441\u043B\u0435? \u041F\u043E\u0434\u0432\u0435\u0441\u043D\u043E\u0439
-      \u043C\u043E\u0441\u0442 \u044D\u0442\u043E \u043A\u0440\u0443\u0442\u043E!
-      \u0425\u043E\u0447\u0443 \u043C\u043E\u0441\u0442!"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u041F\u043E\u0441\u043C\u043E\u0442\u0440\u0438\u043C"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: Cuwor
-    messageText: "\u0410 \u0435\u0449\u0451 \u0445\u043E\u0447\u0443 \u0442\u043E\u0440\u0442\u0438\u043A"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: Menem
-    messageText: "\u0422\u043E\u0440\u0442\u0438\u043A"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: Cuwor
-    messageText: "\u0422\u043E\u0440\u0442\u0438\u043A"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: Cuwor
-    messageText: "\u0422\u043E\u0440\u0442\u0438\u043A"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: Cuwor
-    messageText: "\u0422\u043E\u0440\u0442\u0438\u043A"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0422\u0451\u043C\u0430, \u044F \u0442\u0435\u0431\u044F \u0449\u0430\u0441
-      \u0437\u0430\u0431\u0430\u043D\u044E..."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
 --- !u!1001 &887870516
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11669,54 +10305,6 @@ Transform:
   m_Father: {fileID: 1273483310}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &953178331
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 953178332}
-  m_Layer: 0
-  m_Name: --ChatItems--
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &953178332
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 953178331}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -42.26504, y: -13.161074, z: -95.29158}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 685049626}
-  - {fileID: 1369618437}
-  - {fileID: 1871460485}
-  - {fileID: 695360404}
-  - {fileID: 443086908}
-  - {fileID: 285966580}
-  - {fileID: 1949024232}
-  - {fileID: 65770209}
-  - {fileID: 1374840232}
-  - {fileID: 1147932429}
-  - {fileID: 1142552562}
-  - {fileID: 788463759}
-  - {fileID: 461265167}
-  - {fileID: 593032722}
-  - {fileID: 1143127171}
-  - {fileID: 886765163}
-  - {fileID: 177110131}
-  - {fileID: 145872036}
-  m_Father: {fileID: 1222288425}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &956880525
 GameObject:
   m_ObjectHideFlags: 0
@@ -11728,7 +10316,7 @@ GameObject:
   - component: {fileID: 956880526}
   - component: {fileID: 956880527}
   m_Layer: 0
-  m_Name: DeveloperDiaries
+  m_Name: Bot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11760,7 +10348,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10635dcf6de3f1148ae67bd45b13b587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  easterEggsId: 1
+  easterEggsId: 0
+  hiden: 1
 --- !u!1001 &968830650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11827,50 +10416,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4286137945813894509, guid: 9e69ecae8135f7c40ba707570a0a78c8, type: 3}
   m_PrefabInstance: {fileID: 968830650}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &981403975
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 981403976}
-  - component: {fileID: 981403977}
-  m_Layer: 0
-  m_Name: Subscriber (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &981403976
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981403975}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1470136295}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &981403977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981403975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3908111d380d0549bd1520d38c592dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  subscribersCount: 1
 --- !u!1001 &982183932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12033,7 +10578,7 @@ Transform:
   - {fileID: 956880526}
   - {fileID: 865933833}
   m_Father: {fileID: 1222288425}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1003797870
 GameObject:
@@ -13916,194 +12461,6 @@ MonoBehaviour:
   time: 10
   activeOnStart: 0
   useTimerUI: 0
---- !u!1 &1142552561
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1142552562}
-  - component: {fileID: 1142552563}
-  m_Layer: 0
-  m_Name: Secret2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1142552562
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1142552561}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 953178332}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1142552563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1142552561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1925501629}
-  messages:
-  - subscribersCountToActivate: 0
-    authorName: x-Teeth-x
-    messageText: "\u0423\u0438\u0438\u0438!"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: moliren
-    messageText: "\u0415\u0449\u0451 \u0441\u0435\u043A\u0440\u0435\u0442\u0438\u043A!"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?..."
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0414\u0435\u043D\u0438\u0441?.."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u041A\u0443\u0434\u0430 \u0434\u0430\u043B\u044C\u0448\u0435"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u041D\u0430\u0437\u0430\u0434 \u043D\u0435\u043C\u043D\u043E\u0433\u043E
-      \u0432\u0435\u0440\u043D\u0443\u0442\u044C\u0441\u044F, \u044D\u0442\u043E
-      \u043E\u0442\u0432\u0435\u0442\u0432\u043B\u0435\u043D\u0438\u0435."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: Cuwor
-    messageText: "\u0410 \u0438\u0433\u0440\u0430 \u043B\u0438\u043D\u0435\u0439\u043D\u0430\u044F
-      \u0432 \u0446\u0435\u043B\u043E\u043C"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0414\u0430"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: Menem
-    messageText: "\u041D\u0443, \u043F\u043E \u043A\u0440\u0430\u0439\u043D\u0435\u0439
-      \u043C\u0435\u0440\u0435, \u043C\u043E\u0436\u043D\u043E \u0437\u0430\u0442\u043A\u043D\u0443\u0442\u044C
-      \u0431\u043E\u0442\u0430."
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
---- !u!1 &1143127170
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1143127171}
-  - component: {fileID: 1143127172}
-  m_Layer: 0
-  m_Name: Conveyor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1143127171
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143127170}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 953178332}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1143127172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143127170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1925501629}
-  messages:
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0412\u043E\u0442 \u043D\u0430 \u0441\u0447\u0451\u0442 \u043A\u043E\u043D\u0432\u0435\u0439\u0435\u0440\u043E\u0432
-      \u044F \u043D\u0435 \u0443\u0432\u0435\u0440\u0435\u043D. \u041C\u043E\u0436\u0435\u0442,
-      \u043D\u0435 \u0441\u0442\u043E\u0438\u0442 \u0438\u0445 \u0432 \u0438\u0433\u0440\u0435
-      \u0434\u0435\u043B\u0430\u0442\u044C..."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: Menem
-    messageText: "\u041F\u043E\u0447\u0435\u043C\u0443?"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0422\u0430\u043C \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0441\u044F
-      transform \u0434\u043B\u044F \u0442\u043E\u0433\u043E, \u0447\u0442\u043E\u0431
-      \u0438\u0433\u0440\u043E\u043A\u0430 \u0442\u044F\u0433\u0430\u0442\u044C \u0437\u0430
-      \u0441\u043E\u0431\u043E\u0439."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?..."
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0414\u0435\u043D\u0438\u0441?.."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u041F\u043E\u043F\u0440\u043E\u0431\u0443\u0439 \u0434\u0432\u0438\u0433\u0430\u0442\u044C
-      \u0435\u0433\u043E \u043F\u043E \u0444\u0438\u0437\u0438\u043A\u0435"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: x-Teeth-x
-    messageText: "\u0414\u0435\u043D\u0438\u0441 \u0432\u0441\u0435\u0433\u0434\u0430
-      \u0441\u043E\u0432\u0435\u0442\u043E\u043C \u043F\u043E\u043C\u043E\u0436\u0435\u0442)))"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u041F\u0440\u043E\u0431\u043E\u0432\u0430\u043B..."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
 --- !u!1001 &1144750521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14225,108 +12582,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &1147932428
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1147932429}
-  - component: {fileID: 1147932430}
-  m_Layer: 0
-  m_Name: Stage2 Continue
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1147932429
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1147932428}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 953178332}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1147932430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1147932428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1925501629}
-  messages:
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u041D\u0430\u0441\u0442\u044C?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u041A\u0430\u043A\u0438\u0435 \u0443 \u0442\u0435\u0431\u044F
-      \u043F\u0435\u043B\u044C\u043C\u0435\u0448\u043A\u0438?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: x-Teeth-x
-    messageText: "\u0412\u043A\u0443\u0441\u043D\u044B\u0435."
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430, \u0445\u0432\u0430\u0442\u0438\u0442.
-      \u0425\u043E\u0447\u0435\u0442\u0441\u044F \u0435\u0441\u0442\u044C."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0415\u0441\u043B\u0438 \u0442\u044B \u0433\u043E\u043B\u043E\u0434\u0430\u0435\u0448\u044C,
-      \u044D\u0442\u043E \u043D\u0435 \u0437\u043D\u0430\u0447\u0438\u0442, \u0447\u0442\u043E
-      \u043C\u044B \u0442\u043E\u0436\u0435."
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: Cuwor
-    messageText: "\u041F\u043E\u0433\u043E\u0434\u0438, \u0442\u044B \u0436 \u043D\u0435
-      \u0435\u0448\u044C \u043F\u0435\u043B\u044C\u043C\u0435\u043D\u0438"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u042D\u0442\u043E \u043D\u0435 \u0437\u043D\u0430\u0447\u0438\u0442,
-      \u0447\u0442\u043E \u044F \u0432 \u043F\u0440\u0438\u043D\u0446\u0438\u043F\u0435
-      \u043D\u0435 \u043B\u044E\u0431\u043B\u044E \u0435\u0441\u0442\u044C...)"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: x-Teeth-x
-    messageText: "\u0414\u0430?"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0414\u0430?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0425\u0432\u0430\u0442\u0438\u0442..."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
 --- !u!1001 &1164150018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14957,9 +13212,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1771591965}
-  - {fileID: 953178332}
-  - {fileID: 387331870}
-  - {fileID: 1470136295}
   - {fileID: 997944833}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -15337,57 +13589,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1281969003
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1281969004}
-  - component: {fileID: 1281969005}
-  m_Layer: 0
-  m_Name: Donate5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1281969004
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1281969003}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -42.26504, y: -13.161074, z: -15.29158}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 387331870}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1281969005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1281969003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef242f010a6e3cf4f8c17b4774f1eea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  donates:
-  - donateName: cuwor
-    donateText: "\u041D\u043E \u0431\u043E\u0442 \u044D\u0442\u043E\u0442 \u0440\u0435\u0430\u043B\u044C\u043D\u043E
-      \u0432\u044B\u0431\u0435\u0441\u0438\u043B"
-    sum: 450
-    donateAction:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!1 &1291845995
 GameObject:
   m_ObjectHideFlags: 0
@@ -15711,65 +13912,6 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
---- !u!1 &1299676647
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1299676648}
-  - component: {fileID: 1299676649}
-  m_Layer: 0
-  m_Name: Donate3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1299676648
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1299676647}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -42.26504, y: -13.161074, z: -15.29158}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 387331870}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1299676649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1299676647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef242f010a6e3cf4f8c17b4774f1eea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  donates:
-  - donateName: cuwor
-    donateText: "\u041E\u0442\u0431\u0438\u0442\u0430\u044F \u0438\u0433\u0440\u0430)))
-      \u041D\u043E \u043F\u0440\u0438\u043A\u043E\u043B\u044C\u043D\u043E"
-    sum: 75
-    donateAction:
-      m_PersistentCalls:
-        m_Calls: []
-  - donateName: IgoGo
-    donateText: "\u041D\u0430\u0440\u043E\u0434\u0443 \u0432 \u0447\u0430\u0442\u0435,
-      \u0432\u0440\u043E\u0434\u0435, \u0437\u0430\u0445\u043E\u0434\u0438\u0442)))
-      \u043C\u043E\u043B\u043E\u0434\u0435\u0446)"
-    sum: 250
-    donateAction:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!1001 &1300530869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16388,83 +14530,6 @@ Transform:
   m_Father: {fileID: 1273483310}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1369618436
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1369618437}
-  - component: {fileID: 1369618438}
-  m_Layer: 0
-  m_Name: Begginning_Full
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1369618437
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1369618436}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 953178332}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1369618438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1369618436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1925501629}
-  messages:
-  - subscribersCountToActivate: 0
-    authorName: Cuwor
-    messageText: "\u041A\u0430\u043A\u043E\u0439 \u0436\u0435 \u043E\u043D \u0434\u0443\u0448\u043D\u044B\u0439"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: ...
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: x-Teeth-x
-    messageText: "\u0410 \u043E\u043D \u043B\u0438? \u0445\u0434"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: Cuwor
-    messageText: "\u041D\u0443 \u0440\u0435\u0430\u043B\u044C\u043D\u043E. \u0417\u0430\u0447\u0435\u043C
-      \u044D\u0442\u043E?"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: Menem
-    messageText: "\u041B\u044F\u0433\u0443\u0448\u043A\u0430"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0412\u044B \u043C\u043E\u0433\u043B\u0438 \u0435\u0433\u043E
-      \u0437\u0430\u0442\u043A\u043D\u0443\u0442\u044C..."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
 --- !u!1001 &1372240178
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16589,93 +14654,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1930145054892237234, guid: f426cd28dbb38b14ead3aaba04b42580, type: 3}
   m_PrefabInstance: {fileID: 1372789145}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1374840231
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1374840232}
-  - component: {fileID: 1374840233}
-  m_Layer: 0
-  m_Name: Stage2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1374840232
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1374840231}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 953178332}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1374840233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1374840231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1925501629}
-  messages:
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0412\u043E\u0443"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: x-Teeth-x
-    messageText: "\u042F \u043F\u043E\u0434\u0430\u0432\u0438\u043B\u0430\u0441\u044C
-      \u043F\u0435\u043B\u044C\u043C\u0435\u0448\u043A\u043E\u0439"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0414\u0435\u043D\u0438\u0441?.."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0422\u0443\u0442 \u0435\u0441\u0442\u044C \u0432\u0440\u0430\u0433\u0438?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u041D\u0435 \u0437\u0434\u0435\u0441\u044C"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: Cuwor
-    messageText: "\u041D\u0430\u0441\u043A\u043E\u043B\u044C\u043A\u043E \u0440\u0430\u0437\u043D\u044B\u0435
-      \u0436\u0430\u043D\u0440\u044B \u0442\u0443\u0442?"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0423\u0432\u0438\u0434\u0438\u0442\u0435..."
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
 --- !u!1001 &1375244956
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16804,57 +14782,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8395566054844022828, guid: 4de43bc7fdec3fb48a63fd8b70a3d989, type: 3}
   m_PrefabInstance: {fileID: 1376522994}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1380477408
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1380477409}
-  - component: {fileID: 1380477410}
-  m_Layer: 0
-  m_Name: Donate10
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1380477409
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1380477408}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -42.26504, y: -13.161074, z: -15.29158}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 387331870}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1380477410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1380477408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef242f010a6e3cf4f8c17b4774f1eea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  donates:
-  - donateName: x-Teeth-x
-    donateText: "\u041A\u0430\u043A\u0438\u0435 \u0442\u0443\u0442 \u0441\u0432\u043E\u0435\u043E\u0431\u0440\u0430\u0437\u043D\u044B\u0435
-      \u0434\u043E\u043D\u0430\u0442\u044B... \n(#^_^#) \u043C\u043D\u0435 \u043D\u0440\u0430\u0432\u0438\u0442\u0441\u044F!"
-    sum: 5000
-    donateAction:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!1001 &1387493527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17177,6 +15104,18 @@ MonoBehaviour:
           - m_Target: {fileID: 1392884653}
             m_TargetAssemblyTypeName: BotController, Assembly-CSharp
             m_MethodName: Talk_Yes
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 865933834}
+            m_TargetAssemblyTypeName: EasterEggsModule, Assembly-CSharp
+            m_MethodName: UnblockEasterEgg
             m_Mode: 1
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
@@ -17597,50 +15536,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4286137945813894509, guid: 9e69ecae8135f7c40ba707570a0a78c8, type: 3}
   m_PrefabInstance: {fileID: 1417857843}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1430281752
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1430281753}
-  - component: {fileID: 1430281754}
-  m_Layer: 0
-  m_Name: Subscriber (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1430281753
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1430281752}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1470136295}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1430281754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1430281752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3908111d380d0549bd1520d38c592dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  subscribersCount: 1
 --- !u!1001 &1432560000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17912,41 +15807,6 @@ MonoBehaviour:
   time: 2
   activeOnStart: 1
   useTimerUI: 0
---- !u!1 &1470136294
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1470136295}
-  m_Layer: 0
-  m_Name: --Subscribers--
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1470136295
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1470136294}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 981403976}
-  - {fileID: 338250545}
-  - {fileID: 1430281753}
-  - {fileID: 446877120}
-  - {fileID: 789035103}
-  m_Father: {fileID: 1222288425}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1470684210
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19682,58 +17542,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3919781017044111971, guid: ab53f370f922cb64da4fae21a69d2192, type: 3}
   m_PrefabInstance: {fileID: 1638022496}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1638221603
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1638221604}
-  - component: {fileID: 1638221605}
-  m_Layer: 0
-  m_Name: Donate9
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1638221604
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1638221603}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -42.26504, y: -13.161074, z: -15.29158}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 387331870}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1638221605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1638221603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef242f010a6e3cf4f8c17b4774f1eea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  donates:
-  - donateName: DeusDes
-    donateText: "\u041C\u043D\u0435 \u0441\u043A\u0430\u0437\u0430\u043B\u0438, \u0442\u0443\u0442
-      \u0441\u0442\u0440\u0430\u0448\u043D\u044B\u0439 \u0434\u043E\u043D\u0430\u0442.
-      \u041D\u0430\u043F\u0443\u0433\u0430\u043B?"
-    sum: 666
-    donateAction:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!1 &1651728719
 GameObject:
   m_ObjectHideFlags: 0
@@ -21379,90 +19187,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1455969324683375380, guid: 1ed269c3b901cac4194d213c050f999d, type: 3}
   m_PrefabInstance: {fileID: 1776004547}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1776257248
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1776257249}
-  - component: {fileID: 1776257250}
-  m_Layer: 0
-  m_Name: Donate1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1776257249
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1776257248}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -42.26504, y: -13.161074, z: -15.29158}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 387331870}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1776257250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1776257248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef242f010a6e3cf4f8c17b4774f1eea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  donates:
-  - donateName: Cuwor
-    donateText: "\u041D\u0443 \u043B\u0430\u0434\u043D\u043E, \u043F\u0440\u0438\u0437\u043D\u0430\u044E,
-      \u044D\u0442\u043E \u043F\u0440\u0438\u043A\u043E\u043B\u044C\u043D\u043E.
-      \u041D\u0430 \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0435\u043D\u0438\u0435.
-      \u041D\u0430\u0447\u043D\u0451\u043C \u0441 \u043C\u0430\u043B\u043E\u0433\u043E."
-    sum: 35
-    donateAction:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 956880527}
-          m_TargetAssemblyTypeName: EasterEggsModule, Assembly-CSharp
-          m_MethodName: UnblockEasterEgg
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - donateName: IgoGo
-    donateText: "\u0410 \u0437\u0430\u043A\u0430\u0436\u0443-\u043A\u0430 \u044F
-      \u043C\u0443\u0437\u044B\u0447\u043A\u0443..."
-    sum: 50
-    donateAction:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1716378333}
-          m_TargetAssemblyTypeName: MusicMixer, Assembly-CSharp
-          m_MethodName: MixMusic
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &1804640394
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21964,77 +19688,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1455969324683375380, guid: 1ed269c3b901cac4194d213c050f999d, type: 3}
   m_PrefabInstance: {fileID: 1838519683}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1846825301
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1846825302}
-  - component: {fileID: 1846825303}
-  m_Layer: 0
-  m_Name: Donate4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1846825302
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1846825301}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -42.26504, y: -13.161074, z: -15.29158}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 387331870}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1846825303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1846825301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef242f010a6e3cf4f8c17b4774f1eea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  donates:
-  - donateName: "\u0410\u043D\u043E\u043D\u0438\u043C"
-    donateText: "\u041D\u0430 \u0443\u0434\u0430\u0447\u0443"
-    sum: 333
-    donateAction:
-      m_PersistentCalls:
-        m_Calls: []
-  - donateName: Cuwor
-    donateText: "\u041D\u0435 \u0442\u0443\u043F\u0438. \u0412\u043E\u043D \u0436\u0435
-      \u043F\u0440\u043E\u0445\u043E\u0434))) \u0417\u0430 \u043B\u0430\u043C\u043F\u043E\u0432\u044B\u0435
-      \u043F\u0440\u043E\u0445\u043E\u0436\u0434\u0435\u043D\u0438\u044F."
-    sum: 400
-    donateAction:
-      m_PersistentCalls:
-        m_Calls: []
-  - donateName: x-Teeth-x
-    donateText: "\u042F \u043D\u0435 \u043F\u043E\u043D\u044F\u043B\u0430, \u0430
-      \u0442\u044B \u0444\u043E\u043D\u0430\u0440\u0438\u043A \u0441\u0430\u043C\u0430
-      \u0432\u043A\u043B\u044E\u0447\u0430\u0435\u0448\u044C, \u0438\u043B\u0438
-      \u043E\u043D \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u043E\u043C \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442?
-      \u0422\u0435\u0431\u0435 \u043F\u043E\u0441\u0442\u043E\u044F\u043D\u043D\u043E
-      \u043F\u0440\u0438\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u0434\u0435\u0440\u0436\u0430\u0442\u044C
-      \u043A\u043D\u043E\u043F\u043A\u0443?) \u0421\u043F\u0430\u0441\u0438\u0431\u043E
-      \u0437\u0430 \u0434\u043E\u0431\u0440\u044B\u0435 \u043F\u0440\u043E\u0445\u043E\u0436\u0434\u0435\u043D\u0438\u044F."
-    sum: 404
-    donateAction:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!1001 &1854297095
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22406,81 +20059,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &1871460484
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1871460485}
-  - component: {fileID: 1871460486}
-  m_Layer: 0
-  m_Name: Beginning_Skip
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1871460485
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1871460484}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 953178332}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1871460486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1871460484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1925501629}
-  messages:
-  - subscribersCountToActivate: 0
-    authorName: x-Teeth-x
-    messageText: "\u0410\u0445\u0430\u0445\u0430\u0445\u0430"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: Cuwor
-    messageText: "\u0414\u0430 \u0431\u043B\u0438\u043D"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: Menem
-    messageText: "\u0445\u044B)"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: ...)
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: moliren
-    messageText: "\u041F\u0440\u0438\u043A\u043E\u043B\u044C\u043D\u043E"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
 --- !u!1001 &1877525504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22824,17 +20402,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1925501629 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1925501629, guid: d782be675ce3aed4780569977277eac5, type: 3}
-  m_PrefabInstance: {fileID: 5355675337809771851}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18a69e5ae0f8f5f44a11db0fddb14287, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1926276964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23161,93 +20728,6 @@ Transform:
   - {fileID: 1372789146}
   m_Father: {fileID: 613924865}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1949024230
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1949024232}
-  - component: {fileID: 1949024231}
-  m_Layer: 0
-  m_Name: DarknessAgain
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1949024231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1949024230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59f97868d981434f939e51975e0f9ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatSystem: {fileID: 1925501629}
-  messages:
-  - subscribersCountToActivate: 0
-    authorName: moliren
-    messageText: "\u041A\u0430\u043A \u043D\u0435 \u0443\u043F\u0430\u0441\u0442\u044C?"
-    authorColor: {r: 0.8867924, g: 0.4141153, b: 0.83813703, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0418\u0433\u043E\u0440\u044C?..."
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u0414\u0430?"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: DeusDes
-    messageText: "\u0422\u0443\u0442 \u0435\u0441\u0442\u044C \u043F\u0430\u0440\u043A\u0443\u0440?"
-    authorColor: {r: 0.1254902, g: 0.2948252, b: 0.6901961, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: IgoGo
-    messageText: "\u041D\u0435\u0442"
-    authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
-    useColor: 1
-  - subscribersCountToActivate: 0
-    authorName: Cuwor
-    messageText: "\u0422\u0443\u0442 \u0432\u043E\u043E\u0431\u0449\u0435 \u043F\u0440\u044B\u0436\u043E\u043A
-      \u043A\u0430\u043A\u043E\u0439-\u0442\u043E \u043E\u0441\u0442\u043E\u0439\u043D\u044B\u0439"
-    authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: x-Teeth-x
-    messageText: "\u041F\u043E\u0439\u0434\u0443 \u0444\u043E\u0440\u0442\u043E\u0447\u043A\u0443
-      \u043E\u0442\u043A\u0440\u043E\u044E"
-    authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
-    useColor: 0
-  - subscribersCountToActivate: 0
-    authorName: Menem
-    messageText: "\u041A\u0443\u043F\u043B\u044E \u0433\u0430\u0440\u0430\u0436"
-    authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    useColor: 0
---- !u!4 &1949024232
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1949024230}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 953178332}
-  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1961748352
 GameObject:
@@ -24986,13 +22466,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 902153621083374808, guid: d782be675ce3aed4780569977277eac5, type: 3}
+      propertyPath: easterEggDatabase
+      value: 
+      objectReference: {fileID: 11400000, guid: a1da0745d5b3ce244b92313d9602776f, type: 2}
     - target: {fileID: 1178973664065291702, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0.026794434
       objectReference: {fileID: 0}
     - target: {fileID: 1183645683901587157, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 33.624115
       objectReference: {fileID: 0}
     - target: {fileID: 1263896301064372796, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_AnchorMax.x
@@ -25012,7 +22496,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1310605615962032536, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 34.09518
       objectReference: {fileID: 0}
     - target: {fileID: 1569439321835564754, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_AnchorMax.x
@@ -25024,7 +22508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1735962666795380860, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 34.12072
       objectReference: {fileID: 0}
     - target: {fileID: 2165434632203443041, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_IsActive
@@ -25056,6 +22540,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2762679357760481936, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2785739862687361539, guid: d782be675ce3aed4780569977277eac5, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2957207925875733579, guid: d782be675ce3aed4780569977277eac5, type: 3}
@@ -25136,7 +22624,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3751093538781693832, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 34.12072
       objectReference: {fileID: 0}
     - target: {fileID: 3903724245182344652, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_AnchorMax.x
@@ -25208,7 +22696,7 @@ PrefabInstance:
       objectReference: {fileID: 867041645}
     - target: {fileID: 4380691064579519671, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 34.05249
       objectReference: {fileID: 0}
     - target: {fileID: 4539923004175763076, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_RootOrder
@@ -25232,15 +22720,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4730275246594903746, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 33.44551
       objectReference: {fileID: 0}
     - target: {fileID: 5003156215613610716, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 34.308296
       objectReference: {fileID: 0}
     - target: {fileID: 5032838573548288258, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 34.05249
       objectReference: {fileID: 0}
     - target: {fileID: 5355675337807608949, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_RootOrder
@@ -25408,7 +22896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6631052861871410579, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 33.78418
       objectReference: {fileID: 0}
     - target: {fileID: 6752681595467662641, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_AnchorMax.x
@@ -25432,7 +22920,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7075667568192150314, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 34.05249
       objectReference: {fileID: 0}
     - target: {fileID: 7183805850661436170, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_AnchorMax.y
@@ -25484,7 +22972,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7961278650341071197, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 34.09518
       objectReference: {fileID: 0}
     - target: {fileID: 8095112171631560850, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_AnchorMax.x
@@ -25548,7 +23036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9072281336243188535, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 34.308296
       objectReference: {fileID: 0}
     - target: {fileID: 9152481786922106811, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: m_AnchorMax.x
