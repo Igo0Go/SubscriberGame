@@ -23,7 +23,8 @@ public enum DeadReason
 {
     Fall,
     Fire,
-    Trap
+    Trap,
+    Patrol
 }
 
 [System.Serializable]
