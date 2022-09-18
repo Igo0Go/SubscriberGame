@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 4532793771588414960}
   - component: {fileID: 3260009972451373625}
   - component: {fileID: 4029107290820605531}
+  - component: {fileID: 1152625668624411447}
   m_Layer: 0
   m_Name: ChurchGate (2)
   m_TagString: Untagged
@@ -114,6 +115,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1152625668624411447
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6539932658775853905}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1801441502752516100, guid: b8a668ebf2ca83c48b321b9dd818f5bf, type: 3}
 --- !u!1 &7309584113047410403
 GameObject:
   m_ObjectHideFlags: 0
@@ -125,6 +140,7 @@ GameObject:
   - component: {fileID: 5030584296244941378}
   - component: {fileID: 132001956709166166}
   - component: {fileID: 7082311126555937256}
+  - component: {fileID: 1089862515087975841}
   m_Layer: 0
   m_Name: ChurchGate
   m_TagString: Untagged
@@ -196,3 +212,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1089862515087975841
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7309584113047410403}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1801441502752516100, guid: b8a668ebf2ca83c48b321b9dd818f5bf, type: 3}
