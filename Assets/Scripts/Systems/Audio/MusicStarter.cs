@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MusicStarter : MonoBehaviour
+public class MusicStarter : LogicModule
 {
     [SerializeField] private AudioClip clipToPlay;
     [SerializeField] private AudioStarterMode mode;
@@ -10,6 +10,11 @@ public class MusicStarter : MonoBehaviour
     [SerializeField, Range(1, 8)] private int targetLine;
     [SerializeField] private bool withMix;
     [SerializeField] private bool once;
+
+    public override void ActivateModule()
+    {
+        StartClip();
+    }
 
     public void StartClip()
     {

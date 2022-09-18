@@ -96,6 +96,7 @@ public class ReplicSystem : MonoBehaviour, IGameSystem
             if (voiceAudioSource.isPlaying)
                 voiceAudioSource.Stop();
             subsPanel.ClosePanel();
+            subsPanel.HideSkipTip();
 
             if (replicaPacks.Count > 0)
             {
@@ -106,8 +107,7 @@ public class ReplicSystem : MonoBehaviour, IGameSystem
 
     private IEnumerator TallMainReplicasCoroutine()
     {
-        if(Settings.UseSubs)
-            subsPanel.SetSkipTip(skipButton);
+        subsPanel.SetSkipTip(skipButton);
         useMainReplicPack = true;
         while (replicaPacks[0].mainList.Count > 0)
         {
@@ -138,6 +138,7 @@ public class ReplicSystem : MonoBehaviour, IGameSystem
         {
             useMainReplicPack = false;
             subsPanel.ClosePanel();
+            subsPanel.HideSkipTip();
         }
     }
 
@@ -175,6 +176,7 @@ public class ReplicSystem : MonoBehaviour, IGameSystem
         else
         {
             subsPanel.ClosePanel();
+            subsPanel.HideSkipTip();
         }
     }
 }
@@ -202,6 +204,7 @@ public class ReplicaItem
 public class SubsPanel
 {
     public GameObject panelObject;
+    public GameObject skipTipObject;
     public Text characterName;
     public Text characterText;
     public Text skipTip;
@@ -221,10 +224,11 @@ public class SubsPanel
     }
     public void SetSkipTip(KeyCode skipKey)
     {
+        skipTipObject.SetActive(true);
         skipTip.text = skipKey.ToString() + " - заткнуть собеседника";
     }
     public void HideSkipTip()
     {
-        skipTip.text = string.Empty;
+        skipTipObject.SetActive(false);
     }
 }

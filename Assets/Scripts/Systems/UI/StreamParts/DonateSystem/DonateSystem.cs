@@ -54,6 +54,7 @@ public class DonateSystem : MonoBehaviour, IGameSystem
                     delay = donateDelay;
                 }
                 yield return new WaitForSeconds(delay);
+                donateItems[currentDonate].onDonateEnd.Invoke();
                 currentDonate++;
                 donateVigetContainer.SetActive(false);
                 yield return new WaitForSeconds(1);
@@ -84,7 +85,7 @@ public class DonateSystem : MonoBehaviour, IGameSystem
         int castomizeIndex = FindCastomizeIndexBySum(donate.sum);
         ShowDonate(donate, castomizeIndex);
 
-        donate.donateAction.Invoke();
+        donate.onDonateStart.Invoke();
 
         DonatesHolder.donates.Add(donate);
 
@@ -112,5 +113,6 @@ public class DonateItem
     [TextArea(0,2)]
     public string donateText;
     public int sum;
-    public UnityEvent donateAction;
+    public UnityEvent onDonateStart;
+    public UnityEvent onDonateEnd;
 }

@@ -105,13 +105,11 @@ public class MusicSystem : MonoBehaviour, IGameSystem
 
     public void StopAll()
     {
-        StopAllCoroutines();
         for (int i = 1; i <= musicLines.Count; i++)
         {
             StopLine(i);
         }
         mainLoopAudioSource.Stop();
-
     }
     public void SetMainClipAsMetronome(AudioClip clip)
     {
