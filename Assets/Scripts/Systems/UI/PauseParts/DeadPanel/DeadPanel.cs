@@ -69,10 +69,11 @@ public class DeadPanel : MonoBehaviour, IGameSystem
     private IEnumerator DeadPanelCorroutine()
     {
         deadPanel.color = activePanelColor;
-
+        PlayerPack.PlayerLocomotion.SetLocomotionOpportunity(false);
         yield return new WaitForSeconds(deadDelay);
         reasonPanel.SetActive(false);
         onEndOfDelay?.Invoke();
+        PlayerPack.PlayerLocomotion.SetLocomotionOpportunity(true);
         float t = 1;
         while (t > 0)
         {
