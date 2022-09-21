@@ -2064,7 +2064,7 @@ GameObject:
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &173177287
 Transform:
   m_ObjectHideFlags: 0
@@ -2327,7 +2327,7 @@ Transform:
   m_LocalScale: {x: 4, y: 8, z: 4}
   m_Children: []
   m_Father: {fileID: 917453810}
-  m_RootOrder: 16
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &220187116
 BoxCollider:
@@ -2823,7 +2823,7 @@ Transform:
   m_LocalScale: {x: 4, y: 8, z: 4}
   m_Children: []
   m_Father: {fileID: 917453810}
-  m_RootOrder: 14
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &248610434
 BoxCollider:
@@ -4922,7 +4922,7 @@ Transform:
   m_LocalScale: {x: 4, y: 8, z: 4}
   m_Children: []
   m_Father: {fileID: 917453810}
-  m_RootOrder: 13
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &548715784
 BoxCollider:
@@ -7542,6 +7542,10 @@ PrefabInstance:
     - target: {fileID: 5569186324783396589, guid: 28b6c1bd9ff0ae7438ac5e1da29a5c4b, type: 3}
       propertyPath: m_Name
       value: Lamp (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5569186324783396589, guid: 28b6c1bd9ff0ae7438ac5e1da29a5c4b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28b6c1bd9ff0ae7438ac5e1da29a5c4b, type: 3}
@@ -10544,6 +10548,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp
       objectReference: {fileID: 0}
+    - target: {fileID: 5569186324783396589, guid: 28b6c1bd9ff0ae7438ac5e1da29a5c4b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28b6c1bd9ff0ae7438ac5e1da29a5c4b, type: 3}
 --- !u!4 &874882260 stripped
@@ -10672,7 +10680,7 @@ GameObject:
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &917453810
 Transform:
   m_ObjectHideFlags: 0
@@ -10684,6 +10692,11 @@ Transform:
   m_LocalPosition: {x: -30, y: 0, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 3849988265795806687}
+  - {fileID: 548715783}
+  - {fileID: 248610433}
+  - {fileID: 2055636959}
+  - {fileID: 220187115}
   - {fileID: 4358162865945291216}
   - {fileID: 2020363318}
   - {fileID: 782034799}
@@ -10692,15 +10705,10 @@ Transform:
   - {fileID: 999927958}
   - {fileID: 7432505032019448365}
   - {fileID: 543450651605579979}
-  - {fileID: 3849988265795806687}
   - {fileID: 688862563}
   - {fileID: 1745357174}
   - {fileID: 801915870}
   - {fileID: 1146071162}
-  - {fileID: 548715783}
-  - {fileID: 248610433}
-  - {fileID: 2055636959}
-  - {fileID: 220187115}
   - {fileID: 1414214639}
   - {fileID: 182449053}
   - {fileID: 674986865}
@@ -11045,6 +11053,10 @@ PrefabInstance:
     - target: {fileID: 5569186324783396589, guid: 28b6c1bd9ff0ae7438ac5e1da29a5c4b, type: 3}
       propertyPath: m_Name
       value: Lamp (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5569186324783396589, guid: 28b6c1bd9ff0ae7438ac5e1da29a5c4b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28b6c1bd9ff0ae7438ac5e1da29a5c4b, type: 3}
@@ -11499,7 +11511,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &962480979
 Transform:
   m_ObjectHideFlags: 0
@@ -12622,7 +12634,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1108038577
 Transform:
   m_ObjectHideFlags: 0
@@ -12946,7 +12958,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1181678878
 Transform:
   m_ObjectHideFlags: 0
@@ -18694,7 +18706,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1496248641
 Transform:
   m_ObjectHideFlags: 0
@@ -27625,7 +27637,7 @@ Transform:
   m_LocalScale: {x: 4, y: 8, z: 4}
   m_Children: []
   m_Father: {fileID: 917453810}
-  m_RootOrder: 15
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2055636960
 BoxCollider:
@@ -28526,7 +28538,7 @@ Transform:
   - {fileID: 769962245}
   - {fileID: 1981472320}
   m_Father: {fileID: 917453810}
-  m_RootOrder: 8
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -90}
 --- !u!1001 &4358162865945291215
 PrefabInstance:

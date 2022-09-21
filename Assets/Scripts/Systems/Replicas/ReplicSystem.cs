@@ -8,7 +8,8 @@ public class ReplicSystem : MonoBehaviour, IGameSystem
 {
     [SerializeField] private AudioSource voiceAudioSource;
     [SerializeField] private SubsPanel subsPanel;
-    [SerializeField] private KeyCode skipButton;
+    [SerializeField] private KeyCode skipButton = KeyCode.Q;
+    [SerializeField] private KeyCode skipAllButton = KeyCode.P;
 
     private List<ReplicaPack> replicaPacks;
     private bool useMainReplicPack;
@@ -33,6 +34,10 @@ public class ReplicSystem : MonoBehaviour, IGameSystem
         if(Input.GetKeyDown(skipButton))
         {
             Skip();
+        }
+        else if (Input.GetKeyDown(skipAllButton))
+        {
+            SkipAll();
         }
     }
 
@@ -105,6 +110,52 @@ public class ReplicSystem : MonoBehaviour, IGameSystem
         }
     }
 
+    private void SkipAll()
+    {
+        StopAllCoroutines();
+
+        if (voiceAudioSource.isPlaying)
+            voiceAudioSource.Stop();
+        subsPanel.ClosePanel();
+        subsPanel.HideSkipTip();
+
+        if (useMainReplicPack)
+        {
+            foreach (var item in replicaPacks[0].mainList)
+            {
+                if (!item.onReplicaStart.isDecorEvent)
+                {
+                    item.onReplicaStart.action.Invoke();
+                }
+                if (!item.onReplicaEnd.isDecorEvent)
+                {
+                    item.onReplicaEnd.action.Invoke();
+                }
+            }
+        }
+        else
+        {
+            foreach (var item in replicaPacks[0].skipList)
+            {
+                if (!item.onReplicaStart.isDecorEvent)
+                {
+                    item.onReplicaStart.action.Invoke();
+                }
+                if (!item.onReplicaEnd.isDecorEvent)
+                {
+                    item.onReplicaEnd.action.Invoke();
+                }
+            }
+        }
+
+        replicaPacks.RemoveAt(0);
+
+        if (replicaPacks.Count > 0)
+        {
+            StartCoroutine(TallMainReplicasCoroutine());
+        }
+    }
+
     private IEnumerator TallMainReplicasCoroutine()
     {
         subsPanel.SetSkipTip(skipButton);
@@ -118,11 +169,11 @@ public class ReplicSystem : MonoBehaviour, IGameSystem
             {
                 subsPanel.SetSubs(item.CharacterName, item.characterText, item.characterColor);
             }
-            item.onReplicaStart?.Invoke();
+            item.onReplicaStart.action.Invoke();
 
             yield return new WaitForSeconds(item.characterVoice.length);
             replicaPacks[0].mainList.RemoveAt(0);
-            item.onReplicaEnd?.Invoke();
+            item.onReplicaEnd.action.Invoke();
             yield return new WaitForSeconds(0.3f);
         }
 
@@ -158,10 +209,10 @@ public class ReplicSystem : MonoBehaviour, IGameSystem
             {
                 subsPanel.SetSubs(item.CharacterName, item.characterText, item.characterColor);
             }
-            item.onReplicaStart?.Invoke();
+            item.onReplicaStart.action.Invoke();
             yield return new WaitForSeconds(item.characterVoice.length);
             replicaPacks[0].skipList.RemoveAt(0);
-            item.onReplicaEnd?.Invoke();
+            item.onReplicaEnd.action.Invoke();
             yield return new WaitForSeconds(0.3f);
         }
 
@@ -196,8 +247,15 @@ public class ReplicaItem
     [TextArea]
     public string characterText;
     public AudioClip characterVoice;
-    public UnityEvent onReplicaStart;
-    public UnityEvent onReplicaEnd;
+    public UnityEventPack onReplicaStart;
+    public UnityEventPack onReplicaEnd;
+}
+
+[System.Serializable]
+public class UnityEventPack
+{
+    public bool isDecorEvent = false;
+    public UnityEvent action;
 }
 
 [System.Serializable]
