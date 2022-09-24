@@ -418,6 +418,9 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
+    onSkipAll:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &11495368
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,6 +538,12 @@ MonoBehaviour:
     targetState: 1
     defaultValue: 0
   - targetGO: {fileID: 1553556361}
+    targetState: 1
+    defaultValue: 0
+  - targetGO: {fileID: 1927850452}
+    targetState: 1
+    defaultValue: 0
+  - targetGO: {fileID: 1938200941}
     targetState: 1
     defaultValue: 0
 --- !u!1001 &17071345
@@ -2534,6 +2543,9 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
+    onSkipAll:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &158601710
 GameObject:
   m_ObjectHideFlags: 0
@@ -2731,6 +2743,9 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
+    onSkipAll:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1001 &171090771
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4497,6 +4512,9 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
+    onSkipAll:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1001 &309063473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10087,6 +10105,9 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
+    onSkipAll:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &650831018
 GameObject:
   m_ObjectHideFlags: 0
@@ -15809,6 +15830,9 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
+    onSkipAll:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &992110918
 GameObject:
   m_ObjectHideFlags: 0
@@ -19345,6 +19369,9 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
+    onSkipAll:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1222288424
 GameObject:
   m_ObjectHideFlags: 0
@@ -20029,6 +20056,9 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
+    onSkipAll:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!4 &1262328724 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3330245782588971780, guid: 61f926e934b4cba49b4888d6b8f79a46, type: 3}
@@ -26934,6 +26964,9 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
+    onSkipAll:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1642786439
 GameObject:
   m_ObjectHideFlags: 0
@@ -27256,6 +27289,9 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
+    onSkipAll:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1646073315
 GameObject:
   m_ObjectHideFlags: 0
@@ -31604,7 +31640,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1927850453
 Transform:
   m_ObjectHideFlags: 0
@@ -32095,7 +32131,7 @@ GameObject:
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1938200942
 Transform:
   m_ObjectHideFlags: 0
@@ -32861,6 +32897,9 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
+    onSkipAll:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1964904326
 GameObject:
   m_ObjectHideFlags: 0
@@ -33074,6 +33113,9 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
+    onSkipAll:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1001 &1966360177
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35363,6 +35405,9 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
+    onSkipAll:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1001 &2123827533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35705,6 +35750,9 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
+    onSkipAll:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1001 &2135133315
 PrefabInstance:
   m_ObjectHideFlags: 0
