@@ -48,6 +48,7 @@ public class EasterEggSystem : MonoBehaviour, IGameSystem
     public void UnblockEasterEggWithId(int id)
     {
         StatsHolder.unblockedEasterEggsIds.Add(id);
+        StatsHolder.unblockedEasterEggsIds.Sort();
     }
 
     public void ShowItemWithId(int id)

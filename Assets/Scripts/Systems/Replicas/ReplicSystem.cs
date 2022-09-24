@@ -112,6 +112,11 @@ public class ReplicSystem : MonoBehaviour, IGameSystem
 
     private void SkipAll()
     {
+        if(replicaPacks.Count <= 0)
+        {
+            return;
+        }
+
         StopAllCoroutines();
 
         if (voiceAudioSource.isPlaying)
@@ -147,6 +152,8 @@ public class ReplicSystem : MonoBehaviour, IGameSystem
                 }
             }
         }
+
+        replicaPacks[0].onSkipAll.Invoke();
 
         replicaPacks.RemoveAt(0);
 
@@ -237,6 +244,7 @@ public class ReplicaPack
 {
     public List<ReplicaItem> mainList;
     public List<ReplicaItem> skipList;
+    public UnityEvent onSkipAll;
 }
 
 [System.Serializable]
