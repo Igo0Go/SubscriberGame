@@ -4640,7 +4640,7 @@ GameObject:
   - component: {fileID: 442848064}
   - component: {fileID: 442848065}
   m_Layer: 0
-  m_Name: Let's to wait
+  m_Name: Stranger things
   m_TagString: Untagged
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -14747,13 +14747,13 @@ MonoBehaviour:
         \u0437\u0430\u043D\u044F\u0442\u0438\u0435."
       characterVoice: {fileID: 8300000, guid: fab8cad7a0247814faf42afb073d655d, type: 3}
       onReplicaStart:
-        isDecorEvent: 1
+        isDecorEvent: 0
         action:
           m_PersistentCalls:
             m_Calls:
-            - m_Target: {fileID: 1392884653}
-              m_TargetAssemblyTypeName: BotController, Assembly-CSharp
-              m_MethodName: Talk_Think
+            - m_Target: {fileID: 1355104958}
+              m_TargetAssemblyTypeName: SceneLoaderPoint, Assembly-CSharp
+              m_MethodName: LoadScene
               m_Mode: 1
               m_Arguments:
                 m_ObjectArgument: {fileID: 0}
@@ -14764,10 +14764,22 @@ MonoBehaviour:
                 m_BoolArgument: 0
               m_CallState: 2
       onReplicaEnd:
-        isDecorEvent: 0
+        isDecorEvent: 1
         action:
           m_PersistentCalls:
-            m_Calls: []
+            m_Calls:
+            - m_Target: {fileID: 1392884653}
+              m_TargetAssemblyTypeName: BotController, Assembly-CSharp
+              m_MethodName: Talk_Tired
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
       characterText: "\u0414\u0430\u0432\u0430\u0439 \u043C\u044B \u043F\u043E\u043F\u0440\u043E\u0431\u043E\u0432\u0430\u0442\u044C
@@ -15061,18 +15073,6 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
-            - m_Target: {fileID: 1355104958}
-              m_TargetAssemblyTypeName: SceneLoaderPoint, Assembly-CSharp
-              m_MethodName: LoadScene
-              m_Mode: 1
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 0
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 2
     skipList:
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
@@ -15189,18 +15189,6 @@ MonoBehaviour:
             - m_Target: {fileID: 1392884653}
               m_TargetAssemblyTypeName: BotController, Assembly-CSharp
               m_MethodName: StopTalk
-              m_Mode: 1
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 0
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 2
-            - m_Target: {fileID: 1355104958}
-              m_TargetAssemblyTypeName: SceneLoaderPoint, Assembly-CSharp
-              m_MethodName: LoadScene
               m_Mode: 1
               m_Arguments:
                 m_ObjectArgument: {fileID: 0}
@@ -18986,7 +18974,31 @@ MonoBehaviour:
               m_CallState: 2
     onSkipAll:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1136582898}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1563941056}
+          m_TargetAssemblyTypeName: ReplicModule, Assembly-CSharp
+          m_MethodName: UsePack
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1981815400
 PrefabInstance:
   m_ObjectHideFlags: 0
