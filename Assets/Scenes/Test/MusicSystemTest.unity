@@ -768,7 +768,7 @@ MonoBehaviour:
     m_RotationOrder: 4
 --- !u!95 &38896744
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -781,10 +781,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &39673303
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2121,6 +2123,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d81918638df29343b626ef20dda64c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: 0
+  used: 0
   newMusic: {fileID: 8300000, guid: 0f36419856d1d1e4aa9cfe746ef04236, type: 3}
   useMetronome: 0
   hardChange: 1
@@ -3353,6 +3357,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d2467c0221359649b0ed5b1b27768b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: 0
+  used: 0
   clipToPlay: {fileID: 8300000, guid: dbf53fbbaba93934f9b1696a9c18bc7a, type: 3}
   mode: 0
   targetLine: 2
@@ -4033,7 +4039,7 @@ MonoBehaviour:
     m_RotationOrder: 4
 --- !u!95 &296693130
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4046,10 +4052,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &302647168
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4286,7 +4294,7 @@ MonoBehaviour:
     m_RotationOrder: 4
 --- !u!95 &314552655
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4299,10 +4307,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &338144515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6884,7 +6894,7 @@ MonoBehaviour:
     m_RotationOrder: 4
 --- !u!95 &507702553
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -6897,10 +6907,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &516490074
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7887,6 +7899,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d2467c0221359649b0ed5b1b27768b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: 0
+  used: 0
   clipToPlay: {fileID: 8300000, guid: 3750a2fd2464cf740ba543376ead3457, type: 3}
   mode: 2
   targetLine: 1
@@ -8437,6 +8451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   easterEggsId: 2
+  hiden: 0
 --- !u!1001 &597298246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9111,6 +9126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d2467c0221359649b0ed5b1b27768b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: 0
+  used: 0
   clipToPlay: {fileID: 8300000, guid: cfdb693662bc8c749a60616af73f6427, type: 3}
   mode: 2
   targetLine: 1
@@ -10518,6 +10535,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d2467c0221359649b0ed5b1b27768b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: 0
+  used: 0
   clipToPlay: {fileID: 8300000, guid: 5e22d0bf54f09794d958db49d16d8afc, type: 3}
   mode: 2
   targetLine: 1
@@ -10770,7 +10789,7 @@ MonoBehaviour:
     authorColor: {r: 0.5672844, g: 0.1254902, b: 0.6901961, a: 1}
     useColor: 1
   - subscribersCountToActivate: 7
-    authorName: "\u041C\u0430\u0440\u0438\u044F\u0423\u0436\u0435\u041D\u0435\u0415\u043B\u0438\u0441\u0435\u0435\u0432\u0430"
+    authorName: "\u041C\u0430\u0440\u0438\u044F \u0411\u0430\u043B\u0430\u043A\u0438\u043D\u0430"
     messageText: "\u0425\u0435 \u0445\u0435"
     authorColor: {r: 0.735849, g: 0.5518868, b: 0.7140483, a: 1}
     useColor: 0
@@ -10780,7 +10799,7 @@ MonoBehaviour:
     authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
     useColor: 0
   - subscribersCountToActivate: 8
-    authorName: "\u0421\u0435\u0440\u0433\u0435\u0439 \u0417\u0432\u044F\u0433\u0438\u043D"
+    authorName: "\u0421\u0435\u0440\u0433\u0435\u0439 \u0411\u0430\u043B\u0430\u043A\u0438\u043D"
     messageText: "\u0416\u0451\u0441\u0442\u043A\u043E \u0432\u044B \u043A\u0430\u043A-\u0442\u043E)"
     authorColor: {r: 0.5529412, g: 0.60215104, b: 0.7372549, a: 1}
     useColor: 0
@@ -11374,22 +11393,22 @@ MonoBehaviour:
     authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
     useColor: 0
   - subscribersCountToActivate: 8
-    authorName: "\u0421\u0435\u0440\u0433\u0435\u0439 \u0417\u0432\u044F\u0433\u0438\u043D"
+    authorName: "\u0421\u0435\u0440\u0433\u0435\u0439 \u0411\u0430\u043B\u0430\u043A\u0438\u043D"
     messageText: "\u041C\u0430\u0430\u0430\u0430\u0448."
     authorColor: {r: 0.5529412, g: 0.6039216, b: 0.7372549, a: 1}
     useColor: 0
   - subscribersCountToActivate: 8
-    authorName: "\u041C\u0430\u0440\u0438\u044F\u0423\u0436\u0435\u041D\u0435\u0415\u043B\u0438\u0441\u0435\u0435\u0432\u0430"
+    authorName: "\u041C\u0430\u0440\u0438\u044F \u0411\u0430\u043B\u0430\u043A\u0438\u043D\u0430"
     messageText: "\u0410\u0441\u044C?)"
     authorColor: {r: 0.735849, g: 0.5518868, b: 0.7140483, a: 1}
     useColor: 0
   - subscribersCountToActivate: 8
-    authorName: "\u0421\u0435\u0440\u0433\u0435\u0439 \u0417\u0432\u044F\u0433\u0438\u043D"
+    authorName: "\u0421\u0435\u0440\u0433\u0435\u0439 \u0411\u0430\u043B\u0430\u043A\u0438\u043D"
     messageText: "\u0425\u043E\u0447\u0443 \u0435\u0441\u0442\u044C."
     authorColor: {r: 0.5529412, g: 0.6039216, b: 0.7372549, a: 1}
     useColor: 0
   - subscribersCountToActivate: 8
-    authorName: "\u041C\u0430\u0440\u0438\u044F\u0423\u0436\u0435\u041D\u0435\u0415\u043B\u0438\u0441\u0435\u0435\u0432\u0430"
+    authorName: "\u041C\u0430\u0440\u0438\u044F \u0411\u0430\u043B\u0430\u043A\u0438\u043D\u0430"
     messageText: "\u042F \u0442\u043E\u0436\u0435. \u0421\u043F\u0430\u0441\u0438\u0431\u043E,
       \u0447\u0442\u043E \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0438\u043B.
       \u0418\u0434\u0438 \u0433\u043E\u0442\u043E\u0432\u044C, \u044F \u043F\u043E\u0441\u0438\u0436\u0443
@@ -11407,7 +11426,7 @@ MonoBehaviour:
     authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
     useColor: 0
   - subscribersCountToActivate: 8
-    authorName: "\u041C\u0430\u0440\u0438\u044F\u0423\u0436\u0435\u041D\u0435\u0415\u043B\u0438\u0441\u0435\u0435\u0432\u0430"
+    authorName: "\u041C\u0430\u0440\u0438\u044F \u0411\u0430\u043B\u0430\u043A\u0438\u043D\u0430"
     messageText: "\u041D\u0438\u0447\u0451 \u043F\u043E\u0434\u043E\u0431\u043D\u043E\u0433\u043E.
       \u041E\u043D \u043F\u0440\u043E\u0441\u0442\u043E \u0432\u043A\u0443\u0441\u043D\u043E
       \u0433\u043E\u0442\u043E\u0432\u0438\u0442! \u041B\u0430\u0434\u043D\u043E,
@@ -11422,7 +11441,7 @@ MonoBehaviour:
     authorColor: {r: 0.126691, g: 0.6886792, b: 0.13817756, a: 1}
     useColor: 0
   - subscribersCountToActivate: 8
-    authorName: "\u041C\u0430\u0440\u0438\u044F\u0423\u0436\u0435\u041D\u0435\u0415\u043B\u0438\u0441\u0435\u0435\u0432\u0430"
+    authorName: "\u041C\u0430\u0440\u0438\u044F \u0411\u0430\u043B\u0430\u043A\u0438\u043D\u0430"
     messageText: "\u041C\u044B \u0441\u043C\u043E\u0442\u0440\u0438\u043C, \u043D\u043E
       \u043D\u0435 \u0432 \u0447\u0430\u0442\u0435."
     authorColor: {r: 0.735849, g: 0.5518868, b: 0.7140483, a: 1}
@@ -11641,6 +11660,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d2467c0221359649b0ed5b1b27768b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: 0
+  used: 0
   clipToPlay: {fileID: 8300000, guid: 9603a4ab021ef574c9908ca5ba79ac6f, type: 3}
   mode: 2
   targetLine: 2
@@ -12029,7 +12050,10 @@ MonoBehaviour:
       \u0433\u043B\u0430\u0437\u0430! \u0427\u0435\u0433\u043E \u0442\u0430\u043A
       \u044F\u0440\u043A\u043E?!"
     sum: 70
-    donateAction:
+    onDonateStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onDonateEnd:
       m_PersistentCalls:
         m_Calls: []
 --- !u!1 &871462917
@@ -12267,17 +12291,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6078940420239584931, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
   m_PrefabInstance: {fileID: 878573808}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &878573810 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 266073814, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
-  m_PrefabInstance: {fileID: 878573808}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46e95ea38c15dd2439e4228929e81ab2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &889095130
 GameObject:
   m_ObjectHideFlags: 0
@@ -12331,6 +12344,7 @@ MonoBehaviour:
     \u0434\u043E\u0431\u0440\u0430\u043B\u0441\u044F \u0432\u043C\u0435\u0441\u0442\u0435
     \u0441 \u0432\u0430\u043C\u0438."
   withNumberSaving: 1
+  withSceneLoading: 0
 --- !u!23 &889095133
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12473,7 +12487,7 @@ MonoBehaviour:
     m_RotationOrder: 4
 --- !u!95 &889796823
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -12486,10 +12500,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &930114500
 GameObject:
   m_ObjectHideFlags: 0
@@ -14676,6 +14692,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d81918638df29343b626ef20dda64c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: 0
+  used: 0
   newMusic: {fileID: 8300000, guid: f5a67c16318b13f40814cd942ef86425, type: 3}
   useMetronome: 1
   hardChange: 0
@@ -15251,23 +15269,15 @@ MonoBehaviour:
         \u044F \u0435\u0441\u0442\u044C \u0442\u0432\u043E\u0439 \u043F\u0440\u043E\u0432\u043E\u0434\u043D\u0438\u043A!"
       characterVoice: {fileID: 8300000, guid: 3a3047424e810d041a55ca8c42c53058, type: 3}
       onReplicaStart:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 878573810}
-            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
-            m_MethodName: Talk_Default
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
       onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
       characterText: "\u041C\u044B \u043F\u0440\u043E\u0439\u0442\u0438 \u0432\u043C\u0435\u0441\u0442\u0435
@@ -15275,11 +15285,15 @@ MonoBehaviour:
         \u0432\u0435\u0441\u0435\u043B\u043E?"
       characterVoice: {fileID: 8300000, guid: a69cd7b8f8e81f44fb77bd1144a6db35, type: 3}
       onReplicaStart:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
       onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
       characterText: "\u0422\u044B \u0437\u043D\u0430\u0442\u044C, \u044D\u0442\u043E\u0442
@@ -15287,46 +15301,30 @@ MonoBehaviour:
         \u0441\u043E\u0432\u0441\u0435\u043C \u043D\u0435\u0434\u0430\u0432\u043D\u043E!"
       characterVoice: {fileID: 8300000, guid: d0dd7d9ece27a4a4b9e90c84c957fc73, type: 3}
       onReplicaStart:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
       onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
       characterText: "\u041E\u043D \u0431\u044B\u043B \u0441\u0434\u0435\u043B\u0430\u043D
         \u0432\u0441\u0435\u0433\u043E \u043E\u0434\u0438\u043D \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A!"
       characterVoice: {fileID: 8300000, guid: 5c056b71393a78440a9c9dffd2c29c5e, type: 3}
       onReplicaStart:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 878573810}
-            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
-            m_MethodName: Talk_Yes
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: SubscribersPoint, Assembly-CSharp
-            m_MethodName: AddSubscribers
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
       onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
       characterText: "\u0418 \u043E\u043D \u0438\u043C\u0435\u0442\u044C \u043C\u0430\u043B\u044B\u0439
@@ -15334,11 +15332,15 @@ MonoBehaviour:
         \u0440\u0430\u0431\u043E\u0442\u0430."
       characterVoice: {fileID: 8300000, guid: 242b2f73c3d7dc644a512b3d4c516564, type: 3}
       onReplicaStart:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
       onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
       characterText: "\u0422\u044B \u0437\u043D\u0430\u0442\u044C, \u043C\u044B \u0434\u0430\u0436\u0435
@@ -15348,23 +15350,15 @@ MonoBehaviour:
         \u0442\u0435\u043A\u0441\u0442\u0443\u0440\u0430!"
       characterVoice: {fileID: 8300000, guid: fc7fed38e322bc340b6cac1a47a3acf6, type: 3}
       onReplicaStart:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 878573810}
-            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
-            m_MethodName: Talk_Tired
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
       onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
       characterText: "\u041F\u0440\u0438\u0437\u043D\u0430\u0442\u044C\u0441\u044F,
@@ -15375,11 +15369,15 @@ MonoBehaviour:
         \u0438\u0441\u043F\u0440\u0430\u0432\u0438\u0442\u044C!"
       characterVoice: {fileID: 8300000, guid: c36315b2441a6594a8ef86e5def37a54, type: 3}
       onReplicaStart:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
       onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
       characterText: "\u042F \u043D\u0430\u0434\u0435\u044F\u0442\u044C\u0441\u044F,
@@ -15387,11 +15385,15 @@ MonoBehaviour:
         \u044D\u0442\u043E\u0442 \u043E\u0448\u0438\u0431\u043A\u0430 \u0441\u043F\u0440\u044F\u0442\u0430\u0442\u044C\u0441\u044F!"
       characterVoice: {fileID: 8300000, guid: 2072ad6e5e3c7ac4aae892d65efa672c, type: 3}
       onReplicaStart:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
       onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
       characterText: "\u0412 \u043E\u0431\u0449\u0435\u043C, \u044F \u043F\u0440\u043E\u0441\u0438\u0442\u044C
@@ -15401,23 +15403,15 @@ MonoBehaviour:
         \u043C\u043E\u0434\u0435\u043B\u044C\u043A\u0430."
       characterVoice: {fileID: 8300000, guid: 70f536ad6345d2647be0fedbaa3ba3db, type: 3}
       onReplicaStart:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 878573810}
-            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
-            m_MethodName: Talk_Joy
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
       onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
       characterText: "\u041C\u044B \u043F\u0440\u0430\u0432\u0434\u0430 \u0441\u0442\u0430\u0440\u0430\u0442\u044C\u0441\u044F
@@ -15426,11 +15420,15 @@ MonoBehaviour:
         \u0438\u0433\u0440\u0430!"
       characterVoice: {fileID: 8300000, guid: a60fda1bee71f28488be248476a84a08, type: 3}
       onReplicaStart:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
       onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
       characterText: "\u0418 \u0432\u043E\u043E\u0431\u0449\u0435! \u0422\u044B \u0441\u0430\u043C
@@ -15439,11 +15437,15 @@ MonoBehaviour:
         \u0430\u043B\u044C\u0444\u0430-\u0432\u0435\u0440\u0441\u0438\u044F."
       characterVoice: {fileID: 8300000, guid: e1b46ef814a90e94283ae3faa308fe85, type: 3}
       onReplicaStart:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
       onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
       characterText: "\u041A\u0430\u043A \u0438\u0437\u0432\u0435\u0441\u0442\u043D\u043E,
@@ -15453,11 +15455,15 @@ MonoBehaviour:
         \u043D\u0435\u043F\u0440\u0438\u043A\u043E\u0441\u043D\u043E\u0432\u0435\u043D\u043D\u043E\u0441\u0442\u044C!"
       characterVoice: {fileID: 8300000, guid: ed59433f354a59c4baaee0c1fa2131a7, type: 3}
       onReplicaStart:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
       onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
       characterText: "\u0422\u0430\u043A \u0447\u0442\u043E \u0442\u044B \u043C\u043E\u0447\u044C
@@ -15465,34 +15471,30 @@ MonoBehaviour:
         \u0437\u043B\u0438\u0442\u044C\u0441\u044F!"
       characterVoice: {fileID: 8300000, guid: 8f6dccba336588946a239b0f1804189f, type: 3}
       onReplicaStart:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 878573810}
-            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
-            m_MethodName: Talk_No
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
       onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
       characterText: "\u0410 \u0441\u0435\u0439\u0447\u0430\u0441 \u043C\u044B \u043D\u0430\u0447\u0430\u0442\u044C
         \u0438\u0433\u0440\u0430!"
       characterVoice: {fileID: 8300000, guid: a797551d1dd832042891d7382cd72c0f, type: 3}
       onReplicaStart:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
       onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
       characterText: "\u041F\u043E\u0441\u043A\u043E\u043B\u044C\u043A\u0443 \u043C\u044B
@@ -15500,23 +15502,15 @@ MonoBehaviour:
         \u0441\u0442\u0430\u0440\u0442\u043E\u0432\u044B\u0439 \u0432\u0438\u0434\u0435\u043E\u0440\u043E\u043B\u0438\u043A,"
       characterVoice: {fileID: 8300000, guid: 4a76bdbe5c809aa4fb115d463cbc8806, type: 3}
       onReplicaStart:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 878573810}
-            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
-            m_MethodName: Talk_Decision
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
       onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
       characterText: "\u0434\u0430\u0432\u0430\u0439 \u043F\u0440\u043E\u0441\u0442\u043E
@@ -15524,11 +15518,15 @@ MonoBehaviour:
         \u0447\u0442\u043E \u0442\u044B \u0432\u0441\u0451 \u0437\u043D\u0430\u0442\u044C!"
       characterVoice: {fileID: 8300000, guid: 2f2c3d740ac3e7449af2192cd0bb1217, type: 3}
       onReplicaStart:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
       onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
       characterText: "\u0422\u044B \u0442\u0438\u043F\u0430 \u0435\u0441\u0442\u044C
@@ -15537,57 +15535,29 @@ MonoBehaviour:
         \u043D\u0430 \u043A\u0430\u043D\u0430\u043B!"
       characterVoice: {fileID: 8300000, guid: 146ce1894f671ca4596e2f437ba053c2, type: 3}
       onReplicaStart:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
       onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 878573810}
-            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
-            m_MethodName: StopTalk
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
       characterText: "\u041F\u043E\u0435\u0445\u0430\u0442\u044C!"
       characterVoice: {fileID: 8300000, guid: 36c9e38227d10eb4795505091d380322, type: 3}
       onReplicaStart:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: ChatModule, Assembly-CSharp
-            m_MethodName: AddAllMessages
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
       onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: TransformModule, Assembly-CSharp
-            m_MethodName: ActivateModule
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
     skipList:
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
@@ -15597,80 +15567,47 @@ MonoBehaviour:
         \u0441\u043E\u0431\u0435\u0441\u0435\u0434\u043D\u0438\u043A, \u043B\u0430\u0434\u043D\u043E?"
       characterVoice: {fileID: 8300000, guid: 43377c318f9a2b0409b0d1f71c004808, type: 3}
       onReplicaStart:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 878573810}
-            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
-            m_MethodName: Talk_Sad
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
       onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: ChatModule, Assembly-CSharp
-            m_MethodName: AddAllMessagesAsNew
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
       characterText: "\u041B\u0430\u0434\u043D\u043E!"
       characterVoice: {fileID: 8300000, guid: 20cfc61103529d2469dff8ace75d7d67, type: 3}
       onReplicaStart:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
       onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
       characterText: "\u0421\u0435\u0439\u0447\u0430\u0441 \u043C\u044B \u043D\u0430\u0447\u0430\u0442\u044C
         \u0438\u0433\u0440\u0430. \u041F\u043E\u0435\u0445\u0430\u0442\u044C!"
       characterVoice: {fileID: 8300000, guid: 5a295376636b67044b9091d9f8e86ce6, type: 3}
       onReplicaStart:
-        m_PersistentCalls:
-          m_Calls: []
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
       onReplicaEnd:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: TransformModule, Assembly-CSharp
-            m_MethodName: ActivateModule
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-          - m_Target: {fileID: 878573810}
-            m_TargetAssemblyTypeName: BotController, Assembly-CSharp
-            m_MethodName: StopTalk
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
+        isDecorEvent: 0
+        action:
+          m_PersistentCalls:
+            m_Calls: []
+    onSkipAll:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1182960343
 GameObject:
   m_ObjectHideFlags: 0
@@ -16147,6 +16084,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d2467c0221359649b0ed5b1b27768b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: 0
+  used: 0
   clipToPlay: {fileID: 8300000, guid: dbf53fbbaba93934f9b1696a9c18bc7a, type: 3}
   mode: 0
   targetLine: 2
@@ -19204,12 +19143,12 @@ MonoBehaviour:
     authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
     useColor: 0
   - subscribersCountToActivate: 7
-    authorName: "\u041C\u0430\u0440\u0438\u044F\u0423\u0436\u0435\u041D\u0435\u0415\u043B\u0438\u0441\u0435\u0435\u0432\u0430"
+    authorName: "\u041C\u0430\u0440\u0438\u044F \u0411\u0430\u043B\u0430\u043A\u0438\u043D\u0430"
     messageText: "\u0425\u043E\u0442\u0438\u043C \u043A\u0430\u043D\u0430\u043B!\n\u2570(\u2594\u2200\u2594)\u256F"
     authorColor: {r: 0.735849, g: 0.5518868, b: 0.7140483, a: 1}
     useColor: 0
   - subscribersCountToActivate: 8
-    authorName: "\u0421\u0435\u0440\u0433\u0435\u0439 \u0417\u0432\u044F\u0433\u0438\u043D"
+    authorName: "\u0421\u0435\u0440\u0433\u0435\u0439 \u0411\u0430\u043B\u0430\u043A\u0438\u043D"
     messageText: "\u0425\u043E\u0442\u0438\u043C \u043A\u0430\u043D\u0430\u043B!"
     authorColor: {r: 0.5529412, g: 0.60215104, b: 0.7372549, a: 1}
     useColor: 0
@@ -21357,7 +21296,7 @@ MonoBehaviour:
     m_RotationOrder: 4
 --- !u!95 &1703404220
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -21370,10 +21309,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1708267312
 GameObject:
   m_ObjectHideFlags: 0
@@ -21624,7 +21565,7 @@ MonoBehaviour:
     m_RotationOrder: 4
 --- !u!95 &1727986295
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -21637,10 +21578,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1737580735
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22666,6 +22609,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5587016984491119084, guid: d782be675ce3aed4780569977277eac5, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5594643582014675252, guid: d782be675ce3aed4780569977277eac5, type: 3}
       propertyPath: donateSoundSource
       value: 
@@ -22925,7 +22872,10 @@ MonoBehaviour:
       \u0412\u0441\u0451 \u0432 \u043E\u0433\u043D\u0435! \u041C\u0438\u0440 \u0432
       \u043E\u0433\u043D\u0435!"
     sum: 666
-    donateAction:
+    onDonateStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onDonateEnd:
       m_PersistentCalls:
         m_Calls: []
 --- !u!1 &1792198730
@@ -22971,6 +22921,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d2467c0221359649b0ed5b1b27768b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: 0
+  used: 0
   clipToPlay: {fileID: 8300000, guid: 56c6c84adffe90b4186f6f508cde5375, type: 3}
   mode: 2
   targetLine: 1
@@ -25133,6 +25085,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d81918638df29343b626ef20dda64c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: 0
+  used: 0
   newMusic: {fileID: 8300000, guid: c369e3207f63b814e86602282aed9208, type: 3}
   useMetronome: 1
   hardChange: 0
@@ -25617,7 +25571,7 @@ MonoBehaviour:
     m_RotationOrder: 4
 --- !u!95 &2000345203
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -25630,10 +25584,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2009675540
 GameObject:
   m_ObjectHideFlags: 0

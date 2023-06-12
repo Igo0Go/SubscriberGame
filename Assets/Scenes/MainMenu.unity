@@ -2783,7 +2783,7 @@ MonoBehaviour:
     authorColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
     useColor: 0
   - subscribersCountToActivate: 7
-    authorName: "\u041C\u0430\u0440\u0438\u044F\u0423\u0436\u0435\u041D\u0435\u0415\u043B\u0438\u0441\u0435\u0435\u0432\u0430"
+    authorName: "\u041C\u0430\u0440\u0438\u044F\u0411\u0430\u043B\u0430\u043A\u0438\u043D\u0430"
     messageText: "\u041F\u0440\u0438\u0432\u0435\u0442!)))\n\u2570(\u2594\u2200\u2594)\u256F"
     authorColor: {r: 0.735849, g: 0.5518868, b: 0.7140483, a: 1}
     useColor: 0
@@ -2794,7 +2794,7 @@ MonoBehaviour:
     authorColor: {r: 1, g: 0.59284186, b: 0, a: 1}
     useColor: 0
   - subscribersCountToActivate: 8
-    authorName: "\u0421\u0435\u0440\u0433\u0435\u0439 \u0417\u0432\u044F\u0433\u0438\u043D"
+    authorName: "\u0421\u0435\u0440\u0433\u0435\u0439 \u0411\u0430\u043B\u0430\u043A\u0438\u043D"
     messageText: "\u0414\u0430-\u0434\u0430. \u042F \u0441 \u043D\u0435\u0439)))"
     authorColor: {r: 0.5529412, g: 0.60215104, b: 0.7372549, a: 1}
     useColor: 0
@@ -9441,7 +9441,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1375063371654695600
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9454,10 +9454,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1410023809196451266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14634,7 +14636,7 @@ GameObject:
   m_IsActive: 1
 --- !u!95 &6541250466936007772
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -14647,10 +14649,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &6548677290516532126
 MonoBehaviour:
   m_ObjectHideFlags: 0
