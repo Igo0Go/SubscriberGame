@@ -912,7 +912,7 @@ MonoBehaviour:
   logicEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 366488289}
+      - m_Target: {fileID: 2115275782}
         m_TargetAssemblyTypeName: PlayerLocomotion, Assembly-CSharp
         m_MethodName: SetLocomotionOpportunity
         m_Mode: 6
@@ -2376,25 +2376,25 @@ MonoBehaviour:
     onSkipAll:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 366488289}
-          m_TargetAssemblyTypeName: PlayerLocomotion, Assembly-CSharp
-          m_MethodName: FastTeleportToPoint
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 90444997}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 366488289}
+        - m_Target: {fileID: 2115275782}
           m_TargetAssemblyTypeName: PlayerLocomotion, Assembly-CSharp
           m_MethodName: SetLocomotionOpportunity
           m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 2115275782}
+          m_TargetAssemblyTypeName: PlayerLocomotion, Assembly-CSharp
+          m_MethodName: FastTeleportToPoint
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 65097330}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -3464,17 +3464,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6e65ae4a97617a44864f9baf0734059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &366488289 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6078940420239584933, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
-  m_PrefabInstance: {fileID: 2017908042}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16bca43cdcf296545ba5d267656e10df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &377056165
@@ -15073,6 +15062,18 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
+            - m_Target: {fileID: 1355104958}
+              m_TargetAssemblyTypeName: SceneLoaderPoint, Assembly-CSharp
+              m_MethodName: LoadScene
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
     skipList:
     - CharacterName: "\u0411\u043E\u0442"
       characterColor: {r: 1, g: 1, b: 1, a: 1}
@@ -15198,9 +15199,33 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
+            - m_Target: {fileID: 1355104958}
+              m_TargetAssemblyTypeName: SceneLoaderPoint, Assembly-CSharp
+              m_MethodName: LoadScene
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
     onSkipAll:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1355104958}
+          m_TargetAssemblyTypeName: SceneLoaderPoint, Assembly-CSharp
+          m_MethodName: LoadScene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1591107227
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18975,21 +19000,9 @@ MonoBehaviour:
     onSkipAll:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1136582898}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1563941056}
-          m_TargetAssemblyTypeName: ReplicModule, Assembly-CSharp
-          m_MethodName: UsePack
+        - m_Target: {fileID: 1136582901}
+          m_TargetAssemblyTypeName: Timer, Assembly-CSharp
+          m_MethodName: ActivateModule
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -18997,7 +19010,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
 --- !u!1001 &1981815400
 PrefabInstance:
@@ -19192,6 +19205,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 693799075}
     m_Modifications:
+    - target: {fileID: 4461438967422717244, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
+      propertyPath: opportunityToMoveOnStart
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6078940419419532635, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
       propertyPath: far clip plane
       value: 1000
@@ -19263,6 +19280,22 @@ PrefabInstance:
     - target: {fileID: 6078940420239584934, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6466104412605168436, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
+      propertyPath: maximumVert
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6466104412605168436, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
+      propertyPath: minimumVert
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6466104412605168436, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
+      propertyPath: sensitivityHor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6466104412605168436, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
+      propertyPath: sensitivityVert
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
@@ -19842,6 +19875,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1455969324683375380, guid: 1ed269c3b901cac4194d213c050f999d, type: 3}
   m_PrefabInstance: {fileID: 2113857606}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2115275782 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4461438967422717244, guid: 991cb54e8d009f343babd1f7f4f4eb90, type: 3}
+  m_PrefabInstance: {fileID: 2017908042}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f72baab6f3895654f82b708bb6f5c0ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2121666269
 PrefabInstance:
   m_ObjectHideFlags: 0

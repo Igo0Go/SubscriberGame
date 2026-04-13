@@ -9,9 +9,9 @@ public class PlayerLook : MonoBehaviour
 {
     [SerializeField, Tooltip("Объект - камера")] private Transform cam;
     [SerializeField, Tooltip("Объект - пустышка, в которой находится камера")] private Transform camBufer;
-    [SerializeField, Range(0, 2), Tooltip("Чувствительность камеры по горизонтали")]
+    [SerializeField, Range(0, 5), Tooltip("Чувствительность камеры по горизонтали")]
     private float sensitivityHor = 0.5f;
-    [SerializeField, Range(0, 2), Tooltip("Чувствительность камеры по вертикали")]
+    [SerializeField, Range(0, 5), Tooltip("Чувствительность камеры по вертикали")]
     private float sensitivityVert = 0.5f;
     [SerializeField, Tooltip("Ограничение угла камеры снизу"), Range(-90, 0)] private float minimumVert = -45.0f;
     [SerializeField, Tooltip("Ограничение угла камеры сверху"), Range(0, 90)] private float maximumVert = 45.0f;

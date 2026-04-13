@@ -238,10 +238,10 @@ GameObject:
   - component: {fileID: 6078940420239584931}
   - component: {fileID: 5254427883222694709}
   - component: {fileID: 7092909417022481199}
-  - component: {fileID: 6078940420239584933}
-  - component: {fileID: 1530491481243161952}
   - component: {fileID: 199308753}
   - component: {fileID: 266073816}
+  - component: {fileID: 4461438967422717244}
+  - component: {fileID: 6466104412605168436}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -297,47 +297,6 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &6078940420239584933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6078940420239584934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16bca43cdcf296545ba5d267656e10df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  jumpForce: 15
-  terminalVelocity: -40
-  gravity: 1
-  jumpCheck: {fileID: 1900927130}
-  ignoreMask:
-    serializedVersion: 2
-    m_Bits: 140
-  useSound:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1530491481243161952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6078940420239584934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d748eff90c8c50841aaa06b9ac5eeba0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 6078940419419532634}
-  camBufer: {fileID: 1010457539141896640}
-  sensitivityHor: 1
-  sensitivityVert: 1
-  minimumVert: -90
-  maximumVert: 90
 --- !u!114 &199308753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,6 +329,45 @@ MonoBehaviour:
   OnDead:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4461438967422717244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6078940420239584934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f72baab6f3895654f82b708bb6f5c0ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 7
+  jumpForce: 15
+  terminalVelocity: -10
+  gravity: 1
+  jumpCheck: {fileID: 1900927130}
+  ignoreMask:
+    serializedVersion: 2
+    m_Bits: 190
+  opportunityToMoveOnStart: 1
+--- !u!114 &6466104412605168436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6078940420239584934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f1153c9adc11fc4ba2dc184df4a26d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 6078940419419532634}
+  camBufer: {fileID: 1010457539141896640}
+  sensitivityHor: 5
+  sensitivityVert: 5
+  minimumVert: -45
+  maximumVert: 45
 --- !u!1 &6726778750851331438
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,7 +542,7 @@ PrefabInstance:
     - target: {fileID: 5846591840409481764, guid: b708d20572bf4664ca26e59d02e34adc, type: 3}
       propertyPath: playerLocomotion
       value: 
-      objectReference: {fileID: 6078940420239584933}
+      objectReference: {fileID: 0}
     - target: {fileID: 5846591840409481764, guid: b708d20572bf4664ca26e59d02e34adc, type: 3}
       propertyPath: ignoreMask.m_Bits
       value: 156
@@ -647,7 +645,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &266073815
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -660,7 +658,9 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
